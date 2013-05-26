@@ -61,23 +61,42 @@
     width: 98%;
 }
 
-@column-count: 12;
+@wrapper-width: 960px;
 @gutter-width: 2%;
+@total-columns: 12;
 
-.row {
-    margin: 1em auto;
-    width: 102%;
-    margin-left: -2%;
-    overflow: hidden;
-    clear: both;
-    /* Clearfix hack for IE 6/7 only */
-    *zoom: 1;
+.wrapper {
+  max-width: @wrapper-width;
 }
 
-.span( @columns ) {
-  width: @columns / @column-count * 100 - @gutter-width;
-  margin-top: 1em;
-  margin-left: @gutter-width;
-  min-height: 100px;
+.row {
+  margin: 1em auto;
+  width: 100% + @gutter-width;
+  margin-left: -@gutter-width;
+  overflow: hidden;
+  clear: both;
+  /* Clearfix hack for IE 6/7 only */
+  *zoom: 1;
+
+  &:before,
+  &:after {
+    content: " ";
+    display: table; 
+  };
+
+  &:after {
+    clear: both;
+  };
+}
+
+.span( @columns ) when ( ispixel(@gutter-width) ) {
+  width: @columns / @total-columns * @wrapper-width - @gutter-width;
+  margin: 0 ( @gutter-width / 2 );
+  float: left;
+}
+
+.span( @columns ) when ( ispercentage(@gutter-width) ) {
+  width: @columns / @total-columns * 100 - @gutter-width;
+  margin: 0 ( @gutter-width / 2 );
   float: left;
 }
