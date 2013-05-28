@@ -1,4 +1,4 @@
-// Grid variables, change as you please
+// Grid variables, override these in your application's stylesheet.
 // 
 // @wrapper-width is the grid's max width in px.
 // 
@@ -16,9 +16,9 @@
 }
 
 .sg-row {
-  margin: 1em auto;
-  width: 100% + @gutter-width;
+  margin: 0 auto;
   margin-left: -@gutter-width;
+  width: 100% + @gutter-width;
   overflow: hidden;
   clear: both;
   // Clearfix hack for IE 6/7 only
@@ -45,7 +45,7 @@
 //  
 .sg-span( @columns ) when ( ispercentage(@gutter-width) ) {
   width: @columns / @total-columns * 100 - @gutter-width;
-  margin: 0 ( @gutter-width / 2 );
+  margin: 0 0 0 @gutter-width;
   float: left;
 }
 

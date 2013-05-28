@@ -4,9 +4,9 @@
 }
 
 .sg-row {
-  width: 130%;
-  margin: 1em auto;
-  margin-left: -30px;
+  width: 102%;
+  margin: 0 auto;
+  margin-left: -2%;
   overflow: hidden;
   clear: both;
   *zoom: 1;
@@ -22,35 +22,54 @@
   clear: both;
 }
 
-.wrapper {
+.fun-page {
   max-width: 960px;
   margin: 0 auto;
 }
 
+.row {
+  width: 102%;
+  margin: 0 auto;
+  margin-left: -2%;
+  overflow: hidden;
+  clear: both;
+  *zoom: 1;
+}
+
+.row:before,
+.row:after {
+  display: table;
+  content: " ";
+}
+
+.row:after {
+  clear: both;
+}
+
 .small {
   float: left;
-  width: 50px;
-  margin: 0 15px;
+  width: 6.333333333333332%;
+  margin: 0 0 0 2%;
 }
 
 .big {
   float: left;
-  width: 850px;
-  margin: 0 15px;
+  width: 89.66666666666666%;
+  margin: 0 0 0 2%;
 }
 
 .kinda-small {
   float: left;
-  width: 130px;
-  margin: 0 15px;
+  width: 14.666666666666664%;
+  margin: 0 0 0 2%;
 }
 
 .kinda-big {
   float: left;
-  width: 770px;
-  margin: 0 15px;
+  width: 81.33333333333334%;
+  margin: 0 0 0 2%;
 }
 
 .show-grid div {
-  background-color: blue;
+  background-color: #ccc;
 }

@@ -1,7 +1,14 @@
 @import url(simple-grid.less);
 
-.wrapper {
+// Override the wrapper width, gutter width and/or column count if you please 
+@gutter-width: 2%;
+
+.fun-page {
   .sg-wrapper;
+}
+
+.row {
+  .sg-row;
 }
 
 .small {
@@ -22,6 +29,6 @@
 
 .show-grid {
   div {
-    background-color: blue;
+    background-color: #ccc;
   }
 }
