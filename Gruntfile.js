@@ -44,11 +44,11 @@ module.exports = function(grunt) {
      */
     recess: {
       dist: {
-        src: ['<%= banner %>', 'static/css/font-awesome.css', 'static/css/<%= pkg.name %>.css', '!static/css/*.min.css'],
-        dest: 'static/css/<%= pkg.name %>.min.css',
+        src: ['<%= banner %>', 'dist/example/static/example.less', '!*.min.css'],
+        dest: 'dist/example/static/style.css',
         options: {
           compile: true,
-          compress: true
+          compress: false
         }
       }
     },
@@ -61,7 +61,7 @@ module.exports = function(grunt) {
      */
     watch: {
       gruntfile: {
-        files: ['Gruntfile.js', '<%= recess.dist.src %>', '<%= uglify.dist.src %>', '<%= jasmine.options.specs %>'],
+        files: ['Gruntfile.js', '<%= recess.dist.src %>'],
         tasks: ['default']
       }
     }
@@ -71,7 +71,6 @@ module.exports = function(grunt) {
    * The above tasks are loaded here.
    */
   grunt.loadNpmTasks('grunt-recess');
-  grunt.loadNpmTasks('grunt-contrib-jasmine');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-notify');
 

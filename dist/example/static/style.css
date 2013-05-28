@@ -1,0 +1,56 @@
+.sg-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.sg-row {
+  width: 130%;
+  margin: 1em auto;
+  margin-left: -30px;
+  overflow: hidden;
+  clear: both;
+  *zoom: 1;
+}
+
+.sg-row:before,
+.sg-row:after {
+  display: table;
+  content: " ";
+}
+
+.sg-row:after {
+  clear: both;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.small {
+  float: left;
+  width: 50px;
+  margin: 0 15px;
+}
+
+.big {
+  float: left;
+  width: 850px;
+  margin: 0 15px;
+}
+
+.kinda-small {
+  float: left;
+  width: 130px;
+  margin: 0 15px;
+}
+
+.kinda-big {
+  float: left;
+  width: 770px;
+  margin: 0 15px;
+}
+
+.show-grid div {
+  background-color: blue;
+}
