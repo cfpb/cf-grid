@@ -1,6 +1,6 @@
 # Ghost
 
-An invisible, totally-not-ready-for-production LESS-based grid system promoting semantic HTML.
+An invisible, LESS-based grid system promoting semantic HTML. Based on [Dan's CSS grid](https://fake.ghe.domain/pages/danmurphy/DansDoodles/html5-framework/grid-system/grid_percent.html) and definitely not ready for production.
 
 Instead of:
 
