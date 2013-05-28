@@ -4,22 +4,24 @@
 // Override the wrapper width, gutter width and/or column count if you please.
 // You may also set @debug to true if you want columns to be colored.
 @gutter-width: 2%;
-@debug: true;
 
 .employee-page {
   .ghost-wrapper;
 }
 
-header {
+header,
+section,
+footer {
   .ghost-row;
 }
 
-.welcome {
-  .ghost-span(12);
+.welcome,
+.copyright {
+  .ghost-span(10);
 }
 
-.employee-info {
-  .ghost-span(4);
+.employee-pic {
+  .ghost-span(2);
 }
 
 .recent-activity {

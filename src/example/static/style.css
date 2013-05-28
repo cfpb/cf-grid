@@ -27,7 +27,9 @@
   margin: 0 auto;
 }
 
-header {
+header,
+section,
+footer {
   width: 102%;
   margin: 0 auto;
   margin-left: -2%;
@@ -37,35 +39,36 @@ header {
 }
 
 header:before,
-header:after {
+section:before,
+footer:before,
+header:after,
+section:after,
+footer:after {
   display: table;
   content: " ";
 }
 
-header:after {
+header:after,
+section:after,
+footer:after {
   clear: both;
 }
 
-.welcome {
+.welcome,
+.copyright {
   float: left;
-  width: 98%;
+  width: 81.33333333333334%;
   margin: 0 0 0 2%;
-  background-color: #ccc;
-  border-radius: 10px;
 }
 
-.employee-info {
+.employee-pic {
   float: left;
-  width: 31.33333333333333%;
+  width: 14.666666666666664%;
   margin: 0 0 0 2%;
-  background-color: #ccc;
-  border-radius: 10px;
 }
 
 .recent-activity {
   float: left;
   width: 64.66666666666666%;
   margin: 0 0 0 2%;
-  background-color: #ccc;
-  border-radius: 10px;
 }
