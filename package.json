@@ -30,9 +30,10 @@
   "devDependencies": {
     "grunt-contrib-jasmine": "~0.3.3",
     "grunt-recess": "~0.3.3",
-    "grunt-contrib-watch": "~0.3.1",
+    "grunt-contrib-watch": "~0.4.4",
     "grunt-notify": "~0.1.4",
-    "grunt": "~0.4.1"
+    "grunt": "~0.4.1",
+    "grunt-shell": "~0.2.2"
   },
   "keywords": []
 }

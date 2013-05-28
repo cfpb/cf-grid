@@ -32,6 +32,26 @@ module.exports = function(grunt) {
       ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */\n\n',
 
     /**
+     * Shell: https://github.com/sindresorhus/grunt-shell
+     * 
+     * Grunt task to run shell commands.
+     * For now we're just copying the src file over to dist and
+     * zipping the example directory.
+     */
+    shell: {
+      copyGhost: {
+        command: 'cp src/ghost.less dist/ghost.less'
+      },
+      packageExample: {
+        command: [
+          'cp src/ghost.less src/example/static/ghost.less',
+          'cd src/example',
+          'zip -r ../../dist/example.zip . -x "*.DS_Store"'
+        ].join('&&')
+      }
+    },
+
+    /**
      * Recess: https://github.com/sindresorhus/grunt-recess
      * 
      * Compile, concat and compress LESS files.
@@ -41,9 +61,9 @@ module.exports = function(grunt) {
     recess: {
       dist: {
         files: {
-          'dist/example/static/style.css': [
+          'src/example/static/style.css': [
             '<%= banner %>', 
-            'dist/example/static/example.less', 
+            'src/example/static/example.less', 
             '!*.min.css'
           ]
         },
@@ -61,8 +81,8 @@ module.exports = function(grunt) {
      * Add files to monitor below.
      */
     watch: {
-      gruntfile: {
-        files: ['Gruntfile.js', '<%= recess.dist.src %>'],
+      scripts: {
+        files: ['Gruntfile.js', 'src/example/static/example.less'],
         tasks: ['default']
       }
     }
@@ -71,6 +91,7 @@ module.exports = function(grunt) {
   /**
    * The above tasks are loaded here.
    */
+  grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-recess');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-notify');
@@ -79,10 +100,11 @@ module.exports = function(grunt) {
    * Create task aliases by registering new tasks
    */
   grunt.registerTask('test', ['jasmine']);
+  grunt.registerTask('build', ['shell']);
 
   /**
    * The 'default' task will run whenever `grunt` is run without specifying a task
    */
-  grunt.registerTask('default', ['recess']);
+  grunt.registerTask('default', ['recess', 'shell']);
 
 };
