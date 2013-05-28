@@ -1,4 +1,11 @@
 // Grid variables, change as you please
+// 
+// @wrapper-width is the grid's max width in px.
+// 
+// @gutter-width is the width between columns.
+//   Use % if you want a fluid-width grid.
+//   Use px for a fixed-width grid.
+//   
 @wrapper-width: 960px;
 @gutter-width: 2%;
 @total-columns: 12;
@@ -28,12 +35,26 @@
   };
 }
 
+// Fixed-width grid
+// This mixin will be used if gutter-width unit is px
+// 
+// num cols used
+// -------------  *  width of wrapper - width of gutter
+//  total cols
+//  
 .span( @columns ) when ( ispixel(@gutter-width) ) {
   width: @columns / @total-columns * @wrapper-width - @gutter-width;
   margin: 0 ( @gutter-width / 2 );
   float: left;
 }
 
+// Fluid-width grid
+// This mixin will be used if gutter-width unit is %
+// 
+// num cols used
+// -------------  *  100% - width of gutter
+//  total cols
+//  
 .span( @columns ) when ( ispercentage(@gutter-width) ) {
   width: @columns / @total-columns * 100 - @gutter-width;
   margin: 0 ( @gutter-width / 2 );
