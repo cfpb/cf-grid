@@ -1,6 +1,6 @@
 # Ghost
 
-An invisible, LESS-based grid system promoting semantic HTML. Based on [Dan's CSS grid](https://fake.ghe.domain/pages/danmurphy/DansDoodles/html5-framework/grid-system/grid_percent.html) and definitely not ready for production.
+An invisible, LESS-based grid system promoting semantic HTML. Based on [Dan's CSS grid](https://fake.ghe.domain/pages/danmurphy/DansDoodles/html5-framework/grid-system/grid_percent.html). Definitely not ready for production.
 
 Instead of:
 
@@ -23,7 +23,7 @@ Ghost allows you to write:
         Lorem ipsum Ut deserunt do nostrud. 
     </aside>
     <section class="customer-info">
-        Main content goes here.
+        Lorem ipsum Voluptate pariatur Duis fugiat cupidatat quis pariatur.
     </section>
 </header>
 ```
@@ -53,7 +53,7 @@ _(Coming soon)_
 
 ## Examples
 
-An in-progress example can be found in `dist/example`.
+An in-progress example can be found at `dist/example.zip`.
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [grunt](http://gruntjs.com/).
