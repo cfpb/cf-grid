@@ -105,6 +105,6 @@ module.exports = function(grunt) {
   /**
    * The 'default' task will run whenever `grunt` is run without specifying a task
    */
-  grunt.registerTask('default', ['recess', 'shell']);
+  grunt.registerTask('default', ['recess', 'build']);
 
 };
