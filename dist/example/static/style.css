@@ -1,5 +1,5 @@
 .sg-wrapper {
-  max-width: 960px;
+  width: 960px;
   margin: 0 auto;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .employee-page {
-  max-width: 960px;
+  width: 960px;
   margin: 0 auto;
 }
 
@@ -51,7 +51,7 @@ header:after {
   width: 98%;
   margin: 0 0 0 2%;
   background-color: #ccc;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .employee-info {
@@ -59,7 +59,7 @@ header:after {
   width: 31.33333333333333%;
   margin: 0 0 0 2%;
   background-color: #ccc;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .recent-activity {
@@ -67,5 +67,5 @@ header:after {
   width: 64.66666666666666%;
   margin: 0 0 0 2%;
   background-color: #ccc;
-  border-radius: 5px;
+  border-radius: 10px;
 }

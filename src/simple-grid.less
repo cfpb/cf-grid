@@ -1,23 +1,30 @@
-// Grid variables, change as you please
+// Grid variables. Override these in your application's stylesheet.
 // 
-// @wrapper-width is the grid's max width in px.
+// @wrapper-width = grid's max width in px.
 // 
-// @gutter-width is the width between columns.
+// @gutter-width = width between columns.
 //   Use % if you want a fluid-width grid.
 //   Use px for a fixed-width grid.
 //   
+// @total-columns = total number of columns
+//   
+// @debug = span blocks have a bg color if set to true
 @wrapper-width: 960px;
 @gutter-width: 2%;
 @total-columns: 12;
+@debug: false;
 
+// The .sg- prefix is to avoid naming collisions
+// TODO: set this to max-width and make everything mobile-first responsive
 .sg-wrapper {
-  max-width: @wrapper-width;
+  width: @wrapper-width;
+  margin: 0 auto;
 }
 
 .sg-row {
-  margin: 1em auto;
-  width: 100% + @gutter-width;
+  margin: 0 auto;
   margin-left: -@gutter-width;
+  width: 100% + @gutter-width;
   overflow: hidden;
   clear: both;
   // Clearfix hack for IE 6/7 only
@@ -35,6 +42,19 @@
   };
 }
 
+// Fluid-width grid
+// This mixin will be used if gutter-width unit is %
+// 
+// num cols used
+// -------------  *  100% - width of gutter
+//  total cols
+//  
+.sg-span( @columns ) when ( ispercentage(@gutter-width) ) {
+  width: @columns / @total-columns * 100 - @gutter-width;
+  margin: 0 0 0 @gutter-width;
+  float: left;
+}
+
 // Fixed-width grid
 // This mixin will be used if gutter-width unit is px
 // 
@@ -48,15 +68,11 @@
   float: left;
 }
 
-// Fluid-width grid
-// This mixin will be used if gutter-width unit is %
-// 
-// num cols used
-// -------------  *  100% - width of gutter
-//  total cols
-//  
-.sg-span( @columns ) when ( ispercentage(@gutter-width) ) {
-  width: @columns / @total-columns * 100 - @gutter-width;
-  margin: 0 ( @gutter-width / 2 );
-  float: left;
+// TODO: add media query support, fixed-width spans needs to change width when viewport changes size
+// With fluid-width layouts we also need to stack columns on smaller viewports
+
+// Debug tools
+.sg-span( @columns ) when ( @debug ) {
+  background-color: #ccc;
+  border-radius: 10px;
 }

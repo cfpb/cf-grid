@@ -15,8 +15,9 @@
 @debug: false;
 
 // The .sg- prefix is to avoid naming collisions
+// TODO: set this to max-width and make everything mobile-first responsive
 .sg-wrapper {
-  max-width: @wrapper-width;
+  width: @wrapper-width;
   margin: 0 auto;
 }
 
@@ -67,7 +68,7 @@
   float: left;
 }
 
-// @TODO add media query support, fixed-width spans needs to change width when viewport changes size
+// TODO: add media query support, fixed-width spans needs to change width when viewport changes size
 // With fluid-width layouts we also need to stack columns on smaller viewports
 
 // Debug tools
