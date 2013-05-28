@@ -14,21 +14,17 @@ module.exports = function(grunt) {
      * We'll be inserting it at the top of minified assets.
      */
     banner: 
-      '/*                        _                                          \n' +
-      '                         //\\                                         \n' +
-      '                         V  \\                                        \n' +
-      '                          \\  \\_                                      \n' +
-      '            /$$$$$$        \\,".`.                                    \n' +
-      '           /$$__  $$       |\\ `. `.                                  \n' +
-      '  /$$$$$$$| $$  \\__//$$$$$$\\ \\  `. `-.                        _,.-:\\ \n' +
-      ' /$$_____/| $$$$   /$$__  $$\\ \\   `.  `-._             __..--" "-";/ \n' +
-      '| $$      | $$_/  | $$  | $$ \\ `.   `-.   `-..___..---"   _.--" ,"/  \n' +
-      '| $$      | $$    | $$  | $$  `. `.    `-._        __..--"    ," /   \n' +
-      '|  $$$$$$$| $$    | $$$$$$$/    `. `-_     ``--..""       _.-" ,"    \n' +
-      ' \\_______/|__/    | $$____/       `-_ `-.___        __,--"   ,"      \n' +
-      '                  | $$               `-.__  `----"""    __.-"        \n' +
-      '                  | $$                    `--..____..--"             \n' +
-      '                  |__/                                               \n\n' +
+      '/*          /$$$$$$          /$$        \n' +
+      '           /$$__  $$        | $$        \n' +
+      '  /$$$$$$$| $$  \\__//$$$$$$ | $$$$$$$  \n' +
+      ' /$$_____/| $$$$   /$$__  $$| $$__  $$  \n' +
+      '| $$      | $$_/  | $$  \\ $$| $$  \\ $$\n' +
+      '| $$      | $$    | $$  | $$| $$  | $$  \n' +
+      '|  $$$$$$$| $$    | $$$$$$$/| $$$$$$$/  \n' +
+      ' \\_______/|__/    | $$____/ |_______/  \n' +
+      '                  | $$                  \n' +
+      '                  | $$                  \n' +
+      '                  |__/                  \n\n' +
       '* <%= pkg.name %> - v<%= pkg.version %> - ' +
       '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
       '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
@@ -44,8 +40,13 @@ module.exports = function(grunt) {
      */
     recess: {
       dist: {
-        src: ['<%= banner %>', 'dist/example/static/example.less', '!*.min.css'],
-        dest: 'dist/example/static/style.css',
+        files: {
+          'dist/example/static/style.css': [
+            '<%= banner %>', 
+            'dist/example/static/example.less', 
+            '!*.min.css'
+          ]
+        },
         options: {
           compile: true,
           compress: false

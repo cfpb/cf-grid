@@ -1,6 +1,6 @@
 {
-  "name": "cfpb-simple-grid",
-  "description": "CFPB simple grid system",
+  "name": "ghost",
+  "description": "An invisible grid system",
   "version": "0.1.0",
   "homepage": "http://consumerfinance.gov",
   "author": {
@@ -10,19 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@fake.ghe.domain:contolini/cfpb-simple-grid.git"
+    "url": "git@fake.ghe.domain:contolini/ghost.git"
   },
   "bugs": {
     "url": ""
   },
   "licenses": [
     {
-      "type": "Public",
+      "type": "Public Domain",
       "url": "http://consumerfinance.gov/blob/master/LICENSE-Public"
-    },
-    {
-      "type": "Domain",
-      "url": "http://consumerfinance.gov/blob/master/LICENSE-Domain"
     }
   ],
   "engines": {
@@ -31,16 +27,11 @@
   "scripts": {
     "test": "grunt jasmine"
   },
-  "dependencies": {
-    "grunt-contrib-uglify": "~0.2.0",
-    "grunt-contrib-jshint": "~0.3.0",
+  "devDependencies": {
     "grunt-contrib-jasmine": "~0.3.3",
-    "grunt-recess": "~0.3.1",
+    "grunt-recess": "~0.3.3",
     "grunt-contrib-watch": "~0.3.1",
     "grunt-notify": "~0.1.4",
-    "grunt": "~0.4.1"
-  },
-  "devDependencies": {
     "grunt": "~0.4.1"
   },
   "keywords": []

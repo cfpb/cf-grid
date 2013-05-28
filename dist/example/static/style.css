@@ -1,9 +1,9 @@
-.sg-wrapper {
+.ghost-wrapper {
   width: 960px;
   margin: 0 auto;
 }
 
-.sg-row {
+.ghost-row {
   width: 102%;
   margin: 0 auto;
   margin-left: -2%;
@@ -12,13 +12,13 @@
   *zoom: 1;
 }
 
-.sg-row:before,
-.sg-row:after {
+.ghost-row:before,
+.ghost-row:after {
   display: table;
   content: " ";
 }
 
-.sg-row:after {
+.ghost-row:after {
   clear: both;
 }
 

@@ -14,14 +14,14 @@
 @total-columns: 12;
 @debug: false;
 
-// The .sg- prefix is to avoid naming collisions
+// The .ghost- prefix is to avoid naming collisions
 // TODO: set this to max-width and make everything mobile-first responsive
-.sg-wrapper {
+.ghost-wrapper {
   width: @wrapper-width;
   margin: 0 auto;
 }
 
-.sg-row {
+.ghost-row {
   margin: 0 auto;
   margin-left: -@gutter-width;
   width: 100% + @gutter-width;
@@ -49,7 +49,7 @@
 // -------------  *  100% - width of gutter
 //  total cols
 //  
-.sg-span( @columns ) when ( ispercentage(@gutter-width) ) {
+.ghost-span( @columns ) when ( ispercentage(@gutter-width) ) {
   width: @columns / @total-columns * 100 - @gutter-width;
   margin: 0 0 0 @gutter-width;
   float: left;
@@ -62,7 +62,7 @@
 // -------------  *  width of wrapper - width of gutter
 //  total cols
 //  
-.sg-span( @columns ) when ( ispixel(@gutter-width) ) {
+.ghost-span( @columns ) when ( ispixel(@gutter-width) ) {
   width: @columns / @total-columns * @wrapper-width - @gutter-width;
   margin: 0 ( @gutter-width / 2 );
   float: left;
@@ -72,7 +72,7 @@
 // With fluid-width layouts we also need to stack columns on smaller viewports
 
 // Debug tools
-.sg-span( @columns ) when ( @debug ) {
+.ghost-span( @columns ) when ( @debug ) {
   background-color: #ccc;
   border-radius: 10px;
 }
