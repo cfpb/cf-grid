@@ -50,26 +50,26 @@
   float: left;
   width: 6.333333333333332%;
   margin: 0 0 0 2%;
+  background-color: #ccc;
 }
 
 .big {
   float: left;
   width: 89.66666666666666%;
   margin: 0 0 0 2%;
+  background-color: #ccc;
 }
 
 .kinda-small {
   float: left;
   width: 14.666666666666664%;
   margin: 0 0 0 2%;
+  background-color: #ccc;
 }
 
 .kinda-big {
   float: left;
   width: 81.33333333333334%;
   margin: 0 0 0 2%;
-}
-
-.show-grid div {
   background-color: #ccc;
 }
