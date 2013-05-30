@@ -1,6 +1,6 @@
 .ghost-wrapper {
   position: relative;
-  width: 960px;
+  max-width: 960px;
   padding: 0;
   margin: 0 auto;
 }
@@ -8,6 +8,18 @@
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   .ghost-wrapper {
     width: 768px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .ghost-wrapper {
+    width: 420px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ghost-wrapper {
+    width: 300px;
   }
 }
 
@@ -31,7 +43,7 @@
 
 .employee-page {
   position: relative;
-  width: 960px;
+  max-width: 960px;
   padding: 0;
   margin: 0 auto;
 }
@@ -39,6 +51,18 @@
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   .employee-page {
     width: 768px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .employee-page {
+    width: 420px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .employee-page {
+    width: 300px;
   }
 }
 
@@ -82,6 +106,20 @@ footer:after {
   }
 }
 
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .welcome,
+  .copyright {
+    width: 390px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .welcome,
+  .copyright {
+    width: 270px;
+  }
+}
+
 .employee-pic {
   float: left;
   width: 130px;
@@ -94,6 +132,18 @@ footer:after {
   }
 }
 
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .employee-pic {
+    width: 40px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .employee-pic {
+    width: 20px;
+  }
+}
+
 .recent-activity {
   float: left;
   width: 770px;
@@ -103,5 +153,17 @@ footer:after {
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   .recent-activity {
     width: 610px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .recent-activity {
+    width: 320px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .recent-activity {
+    width: 220px;
   }
 }

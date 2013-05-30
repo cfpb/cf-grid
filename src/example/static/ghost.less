@@ -9,35 +9,54 @@
 // @total-columns = total number of columns
 //   
 // @debug = span blocks have a bg color if set to true
+
 @wrapper-width: 960px;
 @gutter-width: 30px;
 @total-columns: 12;
 @debug: false;
 
 // The .ghost- prefix is to avoid naming collisions
-// TODO: set this to max-width and make everything mobile-first responsive
+
 .ghost-wrapper {
 
-  width: @wrapper-width;
+  max-width: @wrapper-width;
   margin: 0 auto;
   padding: 0;
   position: relative;
+
+  // Tablet (portrait)
 
   @media only screen and (min-width: 768px) and (max-width: 959px) {
     width: 768px;
   }
 
+  // Mobile (landscape)
+  
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    width: 420px;
+  }
+
+  // Mobile (portrait)
+  
+  @media only screen and (max-width: 767px) {
+    width: 300px;
+  }
+
 }
 
 .ghost-row {
+
   margin: 0 auto;
   width: 100%;
   overflow: hidden;
   clear: both;
+
   // Clearfix hack for IE 6/7 only
+
   *zoom: 1;
 
   // Clearfix hack: http://nicolasgallagher.com/micro-clearfix-hack/
+
   &:before,
   &:after {
     content: " ";
@@ -47,6 +66,7 @@
   &:after {
     clear: both;
   };
+
 }
 
 // Fluid-width grid
@@ -55,7 +75,7 @@
 // num cols used
 // -------------  *  100% - width of gutter
 //  total cols
-//  
+
 .ghost-span( @columns ) when ( ispercentage(@gutter-width) ) {
   width: @columns / @total-columns * 100 - @gutter-width;
   margin: 0 ( @gutter-width / 2 );
@@ -64,21 +84,41 @@
 
 // Fixed-width grid
 // This mixin will be used if gutter-width unit is px
-// 
-// num cols used
-// -------------  *  width of wrapper - width of gutter
-//  total cols
-//  
+
 .ghost-span( @columns ) when ( ispixel(@gutter-width) ) {
+
+  float: left;
+
+  // num cols used
+  // -------------  *  width of wrapper - width of gutter
+  //  total cols
+
+  width: @columns / @total-columns * @wrapper-width - @gutter-width;
+
+  // Margin on left and right is half the gutter's width
+
+  margin: 0 ( @gutter-width / 2 );
+
+  // Tablet (portrait)
 
   @media only screen and (min-width: 768px) and (max-width: 959px) {
     @wrapper-width: 768px;
     width: @columns / @total-columns * @wrapper-width - @gutter-width;
   }
 
-  width: @columns / @total-columns * @wrapper-width - @gutter-width;
-  margin: 0 ( @gutter-width / 2 );
-  float: left;
+  // Mobile (landscape)
+  
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    @wrapper-width: 420px;
+    width: @columns / @total-columns * @wrapper-width - @gutter-width;
+  }
+
+  // Mobile (portrait)
+  
+  @media only screen and (max-width: 767px) {
+    @wrapper-width: 300px;
+    width: @columns / @total-columns * @wrapper-width - @gutter-width;
+  }
 
 }
 
@@ -88,7 +128,10 @@
 // With fluid-width layouts we also need to stack columns on smaller viewports
 
 // Debug tools
+
 .ghost-span( @columns ) when ( @debug ) {
+
   background-color: #ccc;
   border-radius: 10px;
+
 }
