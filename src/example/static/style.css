@@ -11,15 +11,15 @@
   }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .ghost-wrapper {
-    width: 420px;
-  }
-}
-
 @media only screen and (max-width: 767px) {
   .ghost-wrapper {
     width: 300px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .ghost-wrapper {
+    width: 420px;
   }
 }
 
@@ -54,15 +54,15 @@
   }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .employee-page {
-    width: 420px;
-  }
-}
-
 @media only screen and (max-width: 767px) {
   .employee-page {
     width: 300px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .employee-page {
+    width: 420px;
   }
 }
 
@@ -97,6 +97,7 @@ footer:after {
   float: left;
   width: 930px;
   margin: 0 15px;
+  background-color: #ffc;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
@@ -106,17 +107,19 @@ footer:after {
   }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .welcome,
-  .copyright {
-    width: 390px;
-  }
-}
-
 @media only screen and (max-width: 767px) {
   .welcome,
   .copyright {
-    width: 270px;
+    width: 300px;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .welcome,
+  .copyright {
+    width: 420px;
+    margin: 0;
   }
 }
 
@@ -124,6 +127,7 @@ footer:after {
   float: left;
   width: 130px;
   margin: 0 15px;
+  background-color: #ffc;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
@@ -132,15 +136,17 @@ footer:after {
   }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .employee-pic {
-    width: 40px;
+    width: 300px;
+    margin: 0;
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
   .employee-pic {
-    width: 20px;
+    width: 420px;
+    margin: 0;
   }
 }
 
@@ -148,6 +154,7 @@ footer:after {
   float: left;
   width: 770px;
   margin: 0 15px;
+  background-color: #ffc;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
@@ -156,14 +163,16 @@ footer:after {
   }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .recent-activity {
-    width: 320px;
+    width: 300px;
+    margin: 0;
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
   .recent-activity {
-    width: 220px;
+    width: 420px;
+    margin: 0;
   }
 }
