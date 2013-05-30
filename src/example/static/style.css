@@ -1,6 +1,14 @@
 .ghost-wrapper {
+  position: relative;
   width: 960px;
+  padding: 0;
   margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .ghost-wrapper {
+    width: 768px;
+  }
 }
 
 .ghost-row {
@@ -22,8 +30,16 @@
 }
 
 .employee-page {
+  position: relative;
   width: 960px;
+  padding: 0;
   margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .employee-page {
+    width: 768px;
+  }
 }
 
 header,
@@ -59,14 +75,33 @@ footer:after {
   margin: 0 15px;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .welcome,
+  .copyright {
+    width: 738px;
+  }
+}
+
 .employee-pic {
   float: left;
   width: 130px;
   margin: 0 15px;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .employee-pic {
+    width: 98px;
+  }
+}
+
 .recent-activity {
   float: left;
   width: 770px;
   margin: 0 15px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .recent-activity {
+    width: 610px;
+  }
 }

@@ -17,8 +17,16 @@
 // The .ghost- prefix is to avoid naming collisions
 // TODO: set this to max-width and make everything mobile-first responsive
 .ghost-wrapper {
+
   width: @wrapper-width;
   margin: 0 auto;
+  padding: 0;
+  position: relative;
+
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    width: 768px;
+  }
+
 }
 
 .ghost-row {
@@ -50,7 +58,7 @@
 //  
 .ghost-span( @columns ) when ( ispercentage(@gutter-width) ) {
   width: @columns / @total-columns * 100 - @gutter-width;
-  margin: 0 0 0 @gutter-width;
+  margin: 0 ( @gutter-width / 2 );
   float: left;
 }
 
@@ -62,10 +70,19 @@
 //  total cols
 //  
 .ghost-span( @columns ) when ( ispixel(@gutter-width) ) {
+
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    @wrapper-width: 768px;
+    width: @columns / @total-columns * @wrapper-width - @gutter-width;
+  }
+
   width: @columns / @total-columns * @wrapper-width - @gutter-width;
   margin: 0 ( @gutter-width / 2 );
   float: left;
+
 }
+
+
 
 // TODO: add media query support, fixed-width spans needs to change width when viewport changes size
 // With fluid-width layouts we also need to stack columns on smaller viewports

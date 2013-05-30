@@ -82,7 +82,7 @@ module.exports = function(grunt) {
      */
     watch: {
       scripts: {
-        files: ['Gruntfile.js', 'src/example/static/example.less'],
+        files: ['Gruntfile.js', 'src/ghost.less', 'src/example/static/example.less'],
         tasks: ['default']
       }
     }
