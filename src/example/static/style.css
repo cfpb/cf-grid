@@ -4,9 +4,8 @@
 }
 
 .ghost-row {
-  width: 102%;
+  width: 100%;
   margin: 0 auto;
-  margin-left: -2%;
   overflow: hidden;
   clear: both;
   *zoom: 1;
@@ -30,9 +29,8 @@
 header,
 section,
 footer {
-  width: 102%;
+  width: 100%;
   margin: 0 auto;
-  margin-left: -2%;
   overflow: hidden;
   clear: both;
   *zoom: 1;
@@ -57,18 +55,18 @@ footer:after {
 .welcome,
 .copyright {
   float: left;
-  width: 81.33333333333334%;
-  margin: 0 0 0 2%;
+  width: 930px;
+  margin: 0 15px;
 }
 
 .employee-pic {
   float: left;
-  width: 14.666666666666664%;
-  margin: 0 0 0 2%;
+  width: 130px;
+  margin: 0 15px;
 }
 
 .recent-activity {
   float: left;
-  width: 64.66666666666666%;
-  margin: 0 0 0 2%;
+  width: 770px;
+  margin: 0 15px;
 }

@@ -10,7 +10,7 @@
 //   
 // @debug = span blocks have a bg color if set to true
 @wrapper-width: 960px;
-@gutter-width: 2%;
+@gutter-width: 30px;
 @total-columns: 12;
 @debug: false;
 
@@ -23,8 +23,7 @@
 
 .ghost-row {
   margin: 0 auto;
-  margin-left: -@gutter-width;
-  width: 100% + @gutter-width;
+  width: 100%;
   overflow: hidden;
   clear: both;
   // Clearfix hack for IE 6/7 only
