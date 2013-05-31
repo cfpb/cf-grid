@@ -10,7 +10,7 @@
 //   
 // @debug = span blocks have a bg color if set to true
 
-@wrapper-width: 960px;
+@wrapper-width: 1200px;
 @gutter-width: 30px;
 @total-columns: 12;
 @debug: false;
@@ -19,19 +19,27 @@
 // A wrapper holds one or more rows
 // The .ghost- prefix is to avoid naming collisions
 
-.ghost-wrapper {
+.ghost-wrapper() {
 
   max-width: @wrapper-width;
   margin: 0 auto;
   padding: 0;
   position: relative;
 
+  // Ghost uses calc() to allow flexible columns with fixed gutters.
+  // As a fallback for older browsers, Ghost will use fixed columns.
+  // A min width is required to preserve the fixed width layout.
+  // It is zeroed out for calc()-compatible browsers.
+
+  min-width: @wrapper-width;
+  min-width: calc( 0px );
+
 }
 
 
 // A row holds one or more spans
 
-.ghost-row {
+.ghost-row() {
 
   margin: 0 auto;
   width: 100%;
@@ -64,7 +72,7 @@
   float: left;
 
   // We use calc() to allow flexible columns with fixed gutters.
-  // But first, as a fallback, we set fixed columns widths for older browsers.
+  // But first, as a fallback, we set fixed column widths for older browsers.
   // 
   // num cols used
   // -------------  *  width of wrapper - width of gutter = column width in px
@@ -90,14 +98,16 @@
   // Tablet (portrait)
 
   @media only screen and (min-width: 768px) and (max-width: 959px) {
-    // Tablets can stay the same
+    // Tablets can stay the same for now
   }
 
-  // Mobile (landscape) and below
+  // Mobile (landscape and portrait)
+  // 
+  // wrapper width - gutter width = width of single column
 
   @media only screen and (max-width: 767px) {
-    width: 100%;
-    margin: 0;
+    width: @wrapper-width - @gutter-width;
+    width: calc( ~"100% - @{gutter-width}" );
   }
 
 }

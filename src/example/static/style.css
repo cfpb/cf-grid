@@ -1,29 +1,10 @@
-.ghost-wrapper {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0;
-  position: relative;
-}
-.ghost-row {
-  margin: 0 auto;
-  width: 100%;
-  overflow: hidden;
-  clear: both;
-  *zoom: 1;
-}
-.ghost-row:before,
-.ghost-row:after {
-  content: " ";
-  display: table;
-}
-.ghost-row:after {
-  clear: both;
-}
 .employee-page {
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0;
   position: relative;
+  min-width: 1200px;
+  min-width: calc(0px);
 }
 header,
 section,
@@ -51,7 +32,7 @@ footer:after {
 .welcome,
 .copyright {
   float: left;
-  width: 930px;
+  width: 1170px;
   width: calc(100% - 30px);
   margin: 0 15px;
   background-color: #ffc;
@@ -62,13 +43,13 @@ footer:after {
 @media only screen and (max-width: 767px) {
   .welcome,
   .copyright {
-    width: 100%;
-    margin: 0;
+    width: 1170px;
+    width: calc(100% - 30px);
   }
 }
 .employee-pic {
   float: left;
-  width: 130px;
+  width: 170px;
   width: calc(16.666666666666664% - 30px);
   margin: 0 15px;
   background-color: #ffc;
@@ -78,13 +59,13 @@ footer:after {
 }
 @media only screen and (max-width: 767px) {
   .employee-pic {
-    width: 100%;
-    margin: 0;
+    width: 1170px;
+    width: calc(100% - 30px);
   }
 }
 .recent-activity {
   float: left;
-  width: 770px;
+  width: 970px;
   width: calc(83.33333333333334% - 30px);
   margin: 0 15px;
   background-color: #ffc;
@@ -94,7 +75,7 @@ footer:after {
 }
 @media only screen and (max-width: 767px) {
   .recent-activity {
-    width: 100%;
-    margin: 0;
+    width: 1170px;
+    width: calc(100% - 30px);
   }
 }
