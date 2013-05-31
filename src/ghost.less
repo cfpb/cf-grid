@@ -26,25 +26,8 @@
   padding: 0;
   position: relative;
 
-  // Tablet (portrait)
-
-  @media only screen and (min-width: 768px) and (max-width: 959px) {
-    width: 768px;
-  }
-
-  // Mobile (portrait)
-  
-  @media only screen and (max-width: 767px) {
-    width: 300px;
-  }
-
-  // Mobile (landscape)
-  
-  @media only screen and (min-width: 480px) and (max-width: 767px) {
-    width: 420px;
-  }
-
 }
+
 
 // A row holds one or more spans
 
@@ -74,34 +57,26 @@
 }
 
 
-// Fluid-width grid
-// This mixin will be used if gutter-width unit is %
-
-.ghost-span( @columns ) when ( ispercentage(@gutter-width) ) {
-
-  // num cols used
-  // -------------  *  100% - width of gutter
-  //  total cols
-
-  width: @columns / @total-columns * 100 - @gutter-width;
-  margin: 0 ( @gutter-width / 2 );
-  float: left;
-
-}
-
-
-// Fixed-width grid
-// This mixin will be used if gutter-width unit is px
+// Spans hold actual content
 
 .ghost-span( @columns ) {
 
   float: left;
 
+  // We use calc() to allow flexible columns with fixed gutters.
+  // But first, as a fallback, we set fixed columns widths for older browsers.
+  // 
+  // num cols used
+  // -------------  *  width of wrapper - width of gutter = column width in px
+  //  total cols
+
+  width: @columns / @total-columns * @wrapper-width - @gutter-width;
+
+  // Now we use calc() to get the ideal flexible columns w/ fixed gutters.
+  // 
   // num cols used
   // -------------  *  100%  - gutter width = column width in %
   //  total cols
-  //  
-  // calc() is used to allow flexible columns with fixed gutters
 
   @col-width: @columns / @total-columns * 100;
   width: calc( ~"@{col-width}% - @{gutter-width}" );
@@ -110,27 +85,18 @@
 
   margin: 0 ( @gutter-width / 2 );
 
+  // Now we permute the above calculations to accomodate smaller viewports.
+
   // Tablet (portrait)
 
   @media only screen and (min-width: 768px) and (max-width: 959px) {
-    @wrapper-width: 768px;
-    @col-width: @columns / @total-columns * 100;
-    width: calc( ~"@{col-width}% - @{gutter-width}px" );
+    // Tablets can stay the same
   }
 
-  // Mobile (portrait)
-  
+  // Mobile (landscape) and below
+
   @media only screen and (max-width: 767px) {
-    @wrapper-width: 300px;
-    width: 300px;
-    margin: 0;
-  }
-
-  // Mobile (landscape)
-  
-  @media only screen and (min-width: 480px) and (max-width: 767px) {
-    @wrapper-width: 420px;
-    width: 420px;
+    width: 100%;
     margin: 0;
   }
 
