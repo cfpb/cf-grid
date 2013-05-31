@@ -52,24 +52,17 @@ module.exports = function(grunt) {
     },
 
     /**
-     * Recess: https://github.com/sindresorhus/grunt-recess
+     * LESS: https://github.com/gruntjs/grunt-contrib-less
      * 
-     * Compile, concat and compress LESS files.
-     * Make sure to add any other CSS libraries/files you'll be using.
-     * We are excluding minified files with the final ! pattern.
+     * Compile LESS files to CSS.
      */
-    recess: {
-      dist: {
-        files: {
-          'src/example/static/style.css': [
-            '<%= banner %>', 
-            'src/example/static/example.less', 
-            '!*.min.css'
-          ]
-        },
+    less: {
+      production: {
         options: {
-          compile: true,
-          compress: false
+          paths: ["src"]
+        },
+        files: {
+          "src/example/static/style.css": "src/example/static/example.less"
         }
       }
     },
@@ -92,7 +85,7 @@ module.exports = function(grunt) {
    * The above tasks are loaded here.
    */
   grunt.loadNpmTasks('grunt-shell');
-  grunt.loadNpmTasks('grunt-recess');
+  grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-notify');
 
@@ -105,6 +98,6 @@ module.exports = function(grunt) {
   /**
    * The 'default' task will run whenever `grunt` is run without specifying a task
    */
-  grunt.registerTask('default', ['recess', 'build']);
+  grunt.registerTask('default', ['less', 'build']);
 
 };

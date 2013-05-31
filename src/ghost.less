@@ -93,15 +93,18 @@
 // Fixed-width grid
 // This mixin will be used if gutter-width unit is px
 
-.ghost-span( @columns ) when ( ispixel(@gutter-width) ) {
+.ghost-span( @columns ) {
 
   float: left;
 
   // num cols used
-  // -------------  *  width of wrapper - width of gutter
+  // -------------  *  100%  - gutter width = column width in %
   //  total cols
+  //  
+  // calc() is used to allow flexible columns with fixed gutters
 
-  width: @columns / @total-columns * @wrapper-width - @gutter-width;
+  @col-width: @columns / @total-columns * 100;
+  width: calc( ~"@{col-width}% - @{gutter-width}" );
 
   // Margin on left and right is half the gutter's width
 
@@ -111,7 +114,8 @@
 
   @media only screen and (min-width: 768px) and (max-width: 959px) {
     @wrapper-width: 768px;
-    width: @columns / @total-columns * @wrapper-width - @gutter-width;
+    @col-width: @columns / @total-columns * 100;
+    width: calc( ~"@{col-width}% - @{gutter-width}px" );
   }
 
   // Mobile (portrait)
