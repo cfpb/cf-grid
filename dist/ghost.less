@@ -15,7 +15,8 @@
 @total-columns: 12;
 @debug: false;
 
-// 
+
+// A wrapper holds one or more rows
 // The .ghost- prefix is to avoid naming collisions
 
 .ghost-wrapper {
@@ -72,18 +73,22 @@
 
 }
 
+
 // Fluid-width grid
 // This mixin will be used if gutter-width unit is %
-// 
-// num cols used
-// -------------  *  100% - width of gutter
-//  total cols
 
 .ghost-span( @columns ) when ( ispercentage(@gutter-width) ) {
+
+  // num cols used
+  // -------------  *  100% - width of gutter
+  //  total cols
+
   width: @columns / @total-columns * 100 - @gutter-width;
   margin: 0 ( @gutter-width / 2 );
   float: left;
+
 }
+
 
 // Fixed-width grid
 // This mixin will be used if gutter-width unit is px
@@ -127,10 +132,6 @@
 
 }
 
-
-
-// TODO: add media query support, fixed-width spans needs to change width when viewport changes size
-// With fluid-width layouts we also need to stack columns on smaller viewports
 
 // Debug tools
 
