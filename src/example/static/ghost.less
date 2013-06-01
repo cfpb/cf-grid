@@ -17,9 +17,8 @@
 
 
 // A wrapper holds one or more rows
-// The .ghost- prefix is to avoid naming collisions
 
-.ghost-wrapper() {
+.wrapper() {
 
   max-width: @wrapper-width;
   margin: 0 auto;
@@ -39,7 +38,7 @@
 
 // A row holds one or more spans
 
-.ghost-row() {
+.row() {
 
   margin: 0 auto;
   width: 100%;
@@ -67,7 +66,7 @@
 
 // Spans hold actual content
 
-.ghost-span( @columns ) {
+.span( @columns ) {
 
   float: left;
 
@@ -115,6 +114,6 @@
 
 // Debug tools
 
-.ghost-span( @columns ) when ( @debug ) {
+.span( @columns ) when ( @debug ) {
   background-color: #ffc;
 }
