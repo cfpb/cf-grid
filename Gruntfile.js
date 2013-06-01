@@ -44,9 +44,10 @@ module.exports = function(grunt) {
       },
       packageExample: {
         command: [
-          'cp src/ghost.less src/example/static/ghost.less',
-          'cd src/example',
-          'zip -r ../../dist/example.zip . -x "*.DS_Store"'
+          'cp src/ghost.less src/examples/employee/static/ghost.less',
+          'cp src/ghost.less src/examples/bootstrap/static/ghost.less',
+          'cd src/examples',
+          'zip -r ../../dist/examples.zip . -x \*.DS_Store \*style.css'
         ].join('&&')
       }
     },
@@ -57,12 +58,20 @@ module.exports = function(grunt) {
      * Compile LESS files to CSS.
      */
     less: {
-      production: {
+      example1: {
         options: {
           paths: ["src"]
         },
         files: {
-          "src/example/static/style.css": "src/example/static/example.less"
+          "src/examples/employee/static/style.css": "src/examples/employee/static/example.less"
+        }
+      },
+      example2: {
+        options: {
+          paths: ["src"]
+        },
+        files: {
+          "src/examples/bootstrap/static/style.css": "src/examples/bootstrap/static/example.less"
         }
       }
     },
@@ -75,7 +84,7 @@ module.exports = function(grunt) {
      */
     watch: {
       scripts: {
-        files: ['Gruntfile.js', 'src/ghost.less', 'src/example/static/example.less'],
+        files: ['Gruntfile.js', 'src/ghost.less', 'src/examples/**/static/example.less'],
         tasks: ['default']
       }
     }

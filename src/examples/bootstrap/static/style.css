@@ -1,0 +1,78 @@
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  min-width: 1200px;
+  min-width: calc(0px);
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+.marketing-promo,
+.fun-facts,
+footer {
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+  clear: both;
+  *zoom: 1;
+}
+.marketing-promo:before,
+.fun-facts:before,
+footer:before,
+.marketing-promo:after,
+.fun-facts:after,
+footer:after {
+  content: " ";
+  display: table;
+}
+.marketing-promo:after,
+.fun-facts:after,
+footer:after {
+  clear: both;
+}
+.sidebar {
+  float: left;
+  width: 270px;
+  width: calc(25% - 30px);
+  margin: 0 15px;
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  
+}
+@media only screen and (max-width: 767px) {
+  .sidebar {
+    width: 1170px;
+    width: calc(100% - 30px);
+  }
+}
+.main-promo {
+  float: left;
+  width: 870px;
+  width: calc(75% - 30px);
+  margin: 0 15px;
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  
+}
+@media only screen and (max-width: 767px) {
+  .main-promo {
+    width: 1170px;
+    width: calc(100% - 30px);
+  }
+}
+.fun-fact {
+  float: left;
+  width: 370px;
+  width: calc(33.33333333333333% - 30px);
+  margin: 0 15px;
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  
+}
+@media only screen and (max-width: 767px) {
+  .fun-fact {
+    width: 1170px;
+    width: calc(100% - 30px);
+  }
+}

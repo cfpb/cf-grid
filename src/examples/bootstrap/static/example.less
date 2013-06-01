@@ -1,0 +1,30 @@
+// Make sure you import Ghost.
+@import "ghost.less";
+
+// Override the wrapper width, gutter width and/or column count if you please.
+// You may also set @debug to true if you want columns to be colored.
+@wrapper-width: 1200px;
+
+body {
+  .wrapper();
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.marketing-promo,
+.fun-facts,
+footer {
+  .row()
+}
+
+.sidebar {
+  .span(3);
+}
+
+.main-promo {
+  .span(9);
+}
+
+.fun-fact {
+  .span(4);
+}
