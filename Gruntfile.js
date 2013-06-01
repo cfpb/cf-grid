@@ -14,7 +14,8 @@ module.exports = function(grunt) {
      * We'll be inserting it at the top of minified assets.
      */
     banner: 
-      '/*          /$$$$$$          /$$        \n' +
+      '/*                                      \n' +
+      '            /$$$$$$          /$$        \n' +
       '           /$$__  $$        | $$        \n' +
       '  /$$$$$$$| $$  \\__//$$$$$$ | $$$$$$$  \n' +
       ' /$$_____/| $$$$   /$$__  $$| $$__  $$  \n' +
@@ -39,9 +40,6 @@ module.exports = function(grunt) {
      * zipping the example directory.
      */
     shell: {
-      copyGhost: {
-        command: 'cp src/ghost.less dist/ghost.less'
-      },
       packageExample: {
         command: [
           'cp src/ghost.less src/examples/employee/static/ghost.less',
@@ -63,7 +61,7 @@ module.exports = function(grunt) {
           paths: ["src"]
         },
         files: {
-          "src/examples/employee/static/style.css": "src/examples/employee/static/example.less"
+          "src/examples/employee/static/style.css": ["<%= banner %>", "src/examples/employee/static/example.less"]
         }
       },
       example2: {
@@ -73,6 +71,21 @@ module.exports = function(grunt) {
         files: {
           "src/examples/bootstrap/static/style.css": "src/examples/bootstrap/static/example.less"
         }
+      }
+    },
+
+    /**
+     * Concat: https://github.com/gruntjs/grunt-contrib-concat
+     * 
+     * Concatenate files.
+     */
+    concat: {
+      options: {
+        banner: '<%= banner %>'
+      },
+      dist: {
+        src: ['src/ghost.less'],
+        dest: 'dist/ghost.less'
       }
     },
 
@@ -95,6 +108,7 @@ module.exports = function(grunt) {
    */
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-notify');
 
@@ -102,7 +116,7 @@ module.exports = function(grunt) {
    * Create task aliases by registering new tasks
    */
   grunt.registerTask('test', ['jasmine']);
-  grunt.registerTask('build', ['shell']);
+  grunt.registerTask('build', ['shell', 'concat']);
 
   /**
    * The 'default' task will run whenever `grunt` is run without specifying a task
