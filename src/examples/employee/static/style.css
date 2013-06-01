@@ -3,8 +3,6 @@
   margin: 0 auto;
   padding: 0;
   position: relative;
-  min-width: 1200px;
-  min-width: calc(0px);
 }
 header,
 section,
@@ -32,9 +30,10 @@ footer:after {
 .welcome,
 .copyright {
   float: left;
-  width: 1170px;
+  width: 97.5%;
   width: calc(100% - 30px);
-  margin: 0 15px;
+  margin: 0 1.25%;
+  margin: 0 calc(15px);
   background-color: #ffc;
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
@@ -43,15 +42,16 @@ footer:after {
 @media only screen and (max-width: 767px) {
   .welcome,
   .copyright {
-    width: 1170px;
+    width: 97.5%;
     width: calc(100% - 30px);
   }
 }
 .employee-pic {
   float: left;
-  width: 170px;
+  width: 14.166666666666664%;
   width: calc(16.666666666666664% - 30px);
-  margin: 0 15px;
+  margin: 0 1.25%;
+  margin: 0 calc(15px);
   background-color: #ffc;
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
@@ -59,15 +59,16 @@ footer:after {
 }
 @media only screen and (max-width: 767px) {
   .employee-pic {
-    width: 1170px;
+    width: 97.5%;
     width: calc(100% - 30px);
   }
 }
 .recent-activity {
   float: left;
-  width: 970px;
+  width: 80.83333333333334%;
   width: calc(83.33333333333334% - 30px);
-  margin: 0 15px;
+  margin: 0 1.25%;
+  margin: 0 calc(15px);
   background-color: #ffc;
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
@@ -75,7 +76,7 @@ footer:after {
 }
 @media only screen and (max-width: 767px) {
   .recent-activity {
-    width: 1170px;
+    width: 97.5%;
     width: calc(100% - 30px);
   }
 }

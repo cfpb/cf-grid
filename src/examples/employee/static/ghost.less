@@ -24,14 +24,6 @@
   padding: 0;
   position: relative;
 
-  // Ghost uses calc() to allow flexible columns with fixed gutters.
-  // As a fallback for older browsers, Ghost will use fixed columns.
-  // A min width is required to preserve the fixed width layout.
-  // It is zeroed out for calc()-compatible browsers.
-
-  min-width: @wrapper-width;
-  min-width: calc( 0px );
-
 }
 
 
@@ -70,26 +62,29 @@
   float: left;
 
   // We use calc() to allow flexible columns with fixed gutters.
-  // But first, as a fallback, we set fixed column widths for older browsers.
+  // But first, as a fallback, we set fluid column widths for older browsers.
   // 
   // num cols used
-  // -------------  *  width of wrapper - width of gutter = column width in px
+  // ------------- - width of gutter in % = column width in %
   //  total cols
 
-  width: @columns / @total-columns * @wrapper-width - @gutter-width;
+  @gutter-percentage: percentage( @gutter-width / @wrapper-width );
+  width: percentage( @columns / @total-columns ) - @gutter-percentage;
 
   // Now we use calc() to get the ideal flexible columns w/ fixed gutters.
   // 
   // num cols used
-  // -------------  *  100%  - gutter width = column width in %
+  // ------------- - gutter width = column width in %
   //  total cols
 
-  @col-width: @columns / @total-columns * 100;
-  width: calc( ~"@{col-width}% - @{gutter-width}" );
+  @col-width: percentage( @columns / @total-columns );
+  width: calc( ~"@{col-width} - @{gutter-width}" );
 
   // Margin on left and right is half the gutter's width
+  // Again, using percentages for non-calc() browsers
 
-  margin: 0 ( @gutter-width / 2 );
+  margin: 0 ( @gutter-percentage / 2 );
+  margin: 0 calc( @gutter-width / 2 );
 
   // Now we permute the above calculations to accomodate smaller viewports.
 
@@ -104,8 +99,11 @@
   // wrapper width - gutter width = width of single column
 
   @media only screen and (max-width: 767px) {
-    width: @wrapper-width - @gutter-width;
+
+    @gutter-percentage: percentage( @gutter-width / @wrapper-width );
+    width: 100 - @gutter-percentage;
     width: calc( ~"100% - @{gutter-width}" );
+
   }
 
 }
