@@ -1,5 +1,5 @@
 body {
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0;
   position: relative;
@@ -30,9 +30,9 @@ footer:after {
 }
 .sidebar {
   float: left;
-  width: 21.875%;
+  width: 22.5%;
   width: calc(25% - 30px);
-  margin: 0 1.5625%;
+  margin: 0 1.25%;
   margin: 0 calc(15px);
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
@@ -40,15 +40,15 @@ footer:after {
 }
 @media only screen and (max-width: 767px) {
   .sidebar {
-    width: 96.875%;
+    width: 97.5%;
     width: calc(100% - 30px);
   }
 }
 .main-promo {
   float: left;
-  width: 71.875%;
+  width: 72.5%;
   width: calc(75% - 30px);
-  margin: 0 1.5625%;
+  margin: 0 1.25%;
   margin: 0 calc(15px);
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
@@ -56,15 +56,15 @@ footer:after {
 }
 @media only screen and (max-width: 767px) {
   .main-promo {
-    width: 96.875%;
+    width: 97.5%;
     width: calc(100% - 30px);
   }
 }
 .fun-fact {
   float: left;
-  width: 30.20833333333333%;
+  width: 30.83333333333333%;
   width: calc(33.33333333333333% - 30px);
-  margin: 0 1.5625%;
+  margin: 0 1.25%;
   margin: 0 calc(15px);
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
@@ -72,7 +72,7 @@ footer:after {
 }
 @media only screen and (max-width: 767px) {
   .fun-fact {
-    width: 96.875%;
+    width: 97.5%;
     width: calc(100% - 30px);
   }
 }

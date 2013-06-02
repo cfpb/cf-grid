@@ -96,6 +96,9 @@ module.exports = function(grunt) {
      * Add files to monitor below.
      */
     watch: {
+      options: {
+        livereload: true
+      },
       scripts: {
         files: ['Gruntfile.js', 'src/ghost.less', 'src/examples/**/static/example.less'],
         tasks: ['default']

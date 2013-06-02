@@ -1,17 +1,15 @@
-// @wrapper-width = grid's max width in px.
+// The following variables can be overridden in your application's stylesheet.
 
+// Grid's max width in px.
 @wrapper-width: 1200px;
 
-// @gutter-width = width between columns.
-
+// Width between columns.
 @gutter-width: 30px;
 
-// @total-columns = total number of columns.
-
+// Total number of columns.
 @total-columns: 12;
 
-// @debug = span blocks have a bg color if set to true.
-
+// Span blocks have a bg color if set to true.
 @debug: false;
 
 
@@ -103,6 +101,45 @@
     @gutter-percentage: percentage( @gutter-width / @wrapper-width );
     width: 100 - @gutter-percentage;
     width: calc( ~"100% - @{gutter-width}" );
+
+  }
+
+}
+
+
+// Apply offset to spans to push them to the right
+
+.offset( @columns ) {
+
+  // Fallback for non-calc() browsers.
+  // 
+  // num cols used
+  // ------------- - width of gutter in % = column offset in %
+  //  total cols
+
+  @gutter-percentage: percentage( @gutter-width / @wrapper-width );
+  padding-left: percentage( @columns / @total-columns ) - @gutter-percentage;
+
+  // Modern browsers' offset.
+  // 
+  // num cols used
+  // ------------- - gutter width = column offset in %
+  //  total cols
+
+  @col-width: percentage( @columns / @total-columns );
+  padding-left: calc( ~"@{col-width} - @{gutter-width}" );
+  
+  // Tablet (portrait)
+
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    // Tablets can stay the same for now
+  }
+
+  // Mobile (landscape and portrait)
+
+  @media only screen and (max-width: 767px) {
+
+    padding-left: 0;
 
   }
 
