@@ -1,6 +1,10 @@
 # Ghost
 
-An invisible, LESS-based grid system promoting semantic HTML. Based on [Dan's CSS grid](https://fake.ghe.domain/pages/danmurphy/DansDoodles/html5-framework/grid-system/grid_percent.html). Definitely not ready for production.
+An experimental LESS-based grid system using parametric mixins to encourage semantic HTML. Ghost uses CSS3's <a href="http://updates.html5rocks.com/2012/03/CSS-layout-gets-smarter-with-calc">calc() property</a> to provide fixed-width gutters with fluid-width columns without resorting to padding hacks. Older browsers will use fluid gutters.
+
+Ghost was built during Fluent 2013 and was inspired by @danmurphy's [simple grid](https://fake.ghe.domain/pages/danmurphy/DansDoodles/html5-framework/grid-system/grid_percent.html) and a comment @scranfill made in #dev-tango.
+
+## Semantic HTML
 
 Instead of:
 
@@ -32,15 +36,15 @@ Using LESS that looks like this:
 
 ```
 header {
-  .ghost-row;
+  .row();
 }
 
 .welcome-message {
-  .ghost-span(4);
+  .span(4);
 }
 
 .customer-info {
-  .ghost-span(8);
+  .span(8);
 }
 ```
 
@@ -53,14 +57,17 @@ _(Coming soon)_
 
 ## Examples
 
-An in-progress example can be found at `dist/example.zip`.
+Examples can be found in the archive at `dist/example.zip`. Note: They use less.js to compile their LESS. You'll need to run a server locally to avoid cross-origin complaints. Try `python -m SimpleHTTPServer` in the example's directory.
 
 ## Contributing
+
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [grunt](http://gruntjs.com/).
 
 ## Release History
+
 _(Nothing yet)_
 
 ## License
+
 Copyright (c) 2013 Consumer Financial Protection Bureau  
 A work of the Public Domain.
