@@ -1,8 +1,8 @@
 # Ghost
 
-An experimental LESS-based grid system using parametric mixins to encourage semantic HTML. Ghost uses CSS3's <a href="http://updates.html5rocks.com/2012/03/CSS-layout-gets-smarter-with-calc">calc() property</a> to provide fixed-width gutters with fluid-width columns without resorting to padding hacks. Older browsers will use fluid gutters.
+An experimental LESS-based grid system using parametric mixins to encourage semantic HTML.
 
-Ghost was built during Fluent 2013 and was inspired by @danmurphy's [simple grid](https://fake.ghe.domain/pages/danmurphy/DansDoodles/html5-framework/grid-system/grid_percent.html) and a comment @scranfill made in #dev-tango.
+Ghost uses CSS3's <a href="http://updates.html5rocks.com/2012/03/CSS-layout-gets-smarter-with-calc">calc() property</a> to provide fixed-width gutters with fluid-width columns without resorting to padding hacks. Older browsers will use fluid gutters. Ghost was built during Fluent 2013 and was inspired by @danmurphy's [simple grid](https://fake.ghe.domain/pages/danmurphy/DansDoodles/html5-framework/grid-system/grid_percent.html) and a comment @scranfill made in #dev-tango.
 
 ## Semantic HTML
 
