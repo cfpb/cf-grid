@@ -50,7 +50,7 @@ header {
 
 ## Getting Started
 
-Grab `ghost.less` from the `dist` directory.
+Grab `ghost.less` from the `dist` directory and @import it at the top of your application's LESS stylesheet. Some in-progress examples of how to use Ghost can be found in `dist/examples.zip`.
 
 ## Documentation
 _(Coming soon)_
