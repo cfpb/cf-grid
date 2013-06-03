@@ -63,22 +63,6 @@ module.exports = function(grunt) {
         files: {
           "dist/ghost-legacy.css": ["<%= banner %>", "src/ghost-legacy.less"]
         }
-      },
-      example1: {
-        options: {
-          paths: ["src"]
-        },
-        files: {
-          "src/examples/employee/static/style.css": ["<%= banner %>", "src/examples/employee/static/example.less"]
-        }
-      },
-      example2: {
-        options: {
-          paths: ["src"]
-        },
-        files: {
-          "src/examples/bootstrap/static/style.css": "src/examples/bootstrap/static/example.less"
-        }
       }
     },
 
