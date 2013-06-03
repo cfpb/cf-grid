@@ -56,6 +56,14 @@ module.exports = function(grunt) {
      * Compile LESS files to CSS.
      */
     less: {
+      legacy: {
+        options: {
+          paths: ["src"]
+        },
+        files: {
+          "dist/ghost-legacy.css": ["<%= banner %>", "src/ghost-legacy.less"]
+        }
+      },
       example1: {
         options: {
           paths: ["src"]
@@ -100,7 +108,7 @@ module.exports = function(grunt) {
         livereload: true
       },
       scripts: {
-        files: ['Gruntfile.js', 'src/ghost.less', 'src/examples/**/static/example.less'],
+        files: ['Gruntfile.js', 'src/*.less', 'src/examples/**/static/example.less'],
         tasks: ['default']
       }
     }

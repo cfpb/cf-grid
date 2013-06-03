@@ -1,0 +1,24 @@
+@import "ghost.less";
+
+@wrapper-width: 1200px;
+@gutter-width: 30px;
+@total-columns: 12;
+
+.wrapper {
+  .wrapper();
+}
+
+.row {
+  .row();
+}
+
+.spanX ( @index ) when ( @index > 0 ) {
+  ( ~".span@{index}" ) {
+    .span(@index);
+  }
+  .spanX( @index - 1 );
+}
+
+.spanX ( 0 ) {}
+
+.spanX ( @total-columns );

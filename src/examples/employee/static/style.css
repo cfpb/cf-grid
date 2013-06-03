@@ -1,3 +1,6 @@
+@media only screen and (max-width: 767px) {
+  
+}
 .employee-page {
   max-width: 1200px;
   margin: 0 auto;
@@ -36,16 +39,6 @@ footer:after {
   margin: 0 calc(15px);
   background-color: #ffc;
 }
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  
-}
-@media only screen and (max-width: 767px) {
-  .welcome,
-  .copyright {
-    width: 97.5%;
-    width: calc(100% - 30px);
-  }
-}
 .employee-pic {
   float: left;
   width: 14.166666666666664%;
@@ -54,15 +47,6 @@ footer:after {
   margin: 0 calc(15px);
   background-color: #ffc;
 }
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  
-}
-@media only screen and (max-width: 767px) {
-  .employee-pic {
-    width: 97.5%;
-    width: calc(100% - 30px);
-  }
-}
 .recent-activity {
   float: left;
   width: 80.83333333333334%;
@@ -70,13 +54,4 @@ footer:after {
   margin: 0 1.25%;
   margin: 0 calc(15px);
   background-color: #ffc;
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  
-}
-@media only screen and (max-width: 767px) {
-  .recent-activity {
-    width: 97.5%;
-    width: calc(100% - 30px);
-  }
 }

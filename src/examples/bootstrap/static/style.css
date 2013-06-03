@@ -1,3 +1,6 @@
+@media only screen and (max-width: 767px) {
+  
+}
 body {
   max-width: 1200px;
   margin: 0 auto;
@@ -35,15 +38,6 @@ footer:after {
   margin: 0 1.25%;
   margin: 0 calc(15px);
 }
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  
-}
-@media only screen and (max-width: 767px) {
-  .sidebar {
-    width: 97.5%;
-    width: calc(100% - 30px);
-  }
-}
 .main-promo {
   float: left;
   width: 72.5%;
@@ -51,28 +45,10 @@ footer:after {
   margin: 0 1.25%;
   margin: 0 calc(15px);
 }
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  
-}
-@media only screen and (max-width: 767px) {
-  .main-promo {
-    width: 97.5%;
-    width: calc(100% - 30px);
-  }
-}
 .fun-fact {
   float: left;
   width: 30.83333333333333%;
   width: calc(33.33333333333333% - 30px);
   margin: 0 1.25%;
   margin: 0 calc(15px);
-}
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  
-}
-@media only screen and (max-width: 767px) {
-  .fun-fact {
-    width: 97.5%;
-    width: calc(100% - 30px);
-  }
 }

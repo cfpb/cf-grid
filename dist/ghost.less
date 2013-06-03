@@ -101,19 +101,16 @@
   margin: 0 ( @gutter-percentage / 2 );
   margin: 0 calc( @gutter-width / 2 );
 
-  // Now we permute the above calculations to accomodate smaller viewports.
+}
 
-  // Tablet (portrait)
 
-  @media only screen and (min-width: 768px) and (max-width: 959px) {
-    // Tablets can stay the same for now
-  }
+// Mobile (landscape and portrait)
+//  
+// wrapper width - gutter width = width of single column
 
-  // Mobile (landscape and portrait)
-  // 
-  // wrapper width - gutter width = width of single column
+@media only screen and (max-width: 767px) {
 
-  @media only screen and (max-width: 767px) {
+  .span( @columns ) {
 
     @gutter-percentage: percentage( @gutter-width / @wrapper-width );
     width: 100 - @gutter-percentage;
@@ -145,12 +142,6 @@
 
   @col-width: percentage( @columns / @total-columns );
   padding-left: calc( ~"@{col-width} - @{gutter-width}" );
-  
-  // Tablet (portrait)
-
-  @media only screen and (min-width: 768px) and (max-width: 959px) {
-    // Tablets can stay the same for now
-  }
 
   // Mobile (landscape and portrait)
 
@@ -166,5 +157,7 @@
 // Debug tools
 
 .span( @columns ) when ( @debug ) {
+
   background-color: #ffc;
+
 }

@@ -1,0 +1,108 @@
+@media only screen and (max-width: 767px) {
+  
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+.row {
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+  clear: both;
+  *zoom: 1;
+}
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+.span12 {
+  float: left;
+  width: 97.5%;
+  width: calc(100% - 30px);
+  margin: 0 1.25%;
+  margin: 0 calc(15px);
+}
+.span11 {
+  float: left;
+  width: 89.16666666666666%;
+  width: calc(91.66666666666666% - 30px);
+  margin: 0 1.25%;
+  margin: 0 calc(15px);
+}
+.span10 {
+  float: left;
+  width: 80.83333333333334%;
+  width: calc(83.33333333333334% - 30px);
+  margin: 0 1.25%;
+  margin: 0 calc(15px);
+}
+.span9 {
+  float: left;
+  width: 72.5%;
+  width: calc(75% - 30px);
+  margin: 0 1.25%;
+  margin: 0 calc(15px);
+}
+.span8 {
+  float: left;
+  width: 64.16666666666666%;
+  width: calc(66.66666666666666% - 30px);
+  margin: 0 1.25%;
+  margin: 0 calc(15px);
+}
+.span7 {
+  float: left;
+  width: 55.833333333333336%;
+  width: calc(58.333333333333336% - 30px);
+  margin: 0 1.25%;
+  margin: 0 calc(15px);
+}
+.span6 {
+  float: left;
+  width: 47.5%;
+  width: calc(50% - 30px);
+  margin: 0 1.25%;
+  margin: 0 calc(15px);
+}
+.span5 {
+  float: left;
+  width: 39.16666666666667%;
+  width: calc(41.66666666666667% - 30px);
+  margin: 0 1.25%;
+  margin: 0 calc(15px);
+}
+.span4 {
+  float: left;
+  width: 30.83333333333333%;
+  width: calc(33.33333333333333% - 30px);
+  margin: 0 1.25%;
+  margin: 0 calc(15px);
+}
+.span3 {
+  float: left;
+  width: 22.5%;
+  width: calc(25% - 30px);
+  margin: 0 1.25%;
+  margin: 0 calc(15px);
+}
+.span2 {
+  float: left;
+  width: 14.166666666666664%;
+  width: calc(16.666666666666664% - 30px);
+  margin: 0 1.25%;
+  margin: 0 calc(15px);
+}
+.span1 {
+  float: left;
+  width: 5.833333333333332%;
+  width: calc(8.333333333333332% - 30px);
+  margin: 0 1.25%;
+  margin: 0 calc(15px);
+}
