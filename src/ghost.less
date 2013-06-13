@@ -79,7 +79,7 @@
   // ------------- - width of gutter in % = column width in %
   //  total cols
 
-  width: percentage( @columns / @total-columns ) - @gutter-percentage;
+  width: percentage( @columns / @total-columns ) - ( @gutter-percentage / @columns);
 
   // Now we use calc() to get the ideal flexible columns w/ fixed gutters.
   // 
@@ -87,7 +87,7 @@
   // ------------- - gutter width = column width in %
   //  total cols
 
-  @col-width: percentage( @columns / @total-columns );
+  @col-width: percentage( @columns / @total-columns ) + ( @gutter-percentage * ( @columns / @total-columns ) );
   width: calc( ~"@{col-width} - @{gutter-width}" );
 
   // Margin on left is the full gutter's width

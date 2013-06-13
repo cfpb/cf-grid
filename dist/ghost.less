@@ -33,6 +33,9 @@
 
 @debug: false;
 
+// Gutter percentage is calculated by putting gutter width over wrapper width.
+
+@gutter-percentage: percentage( @gutter-width / @wrapper-width );
 
 // A wrapper holds one or more rows.
 
@@ -42,6 +45,12 @@
   margin: 0 auto;
   padding: 0;
   position: relative;
+
+  // We use padding so margin can be used for centering
+  // A percentage is used for non-calc() browsers
+
+  padding: 0 ( @gutter-percentage / 2 );
+  padding: 0 calc( @gutter-width / 2 );
 
 }
 
@@ -87,8 +96,7 @@
   // ------------- - width of gutter in % = column width in %
   //  total cols
 
-  @gutter-percentage: percentage( @gutter-width / @wrapper-width );
-  width: percentage( @columns / @total-columns ) - @gutter-percentage;
+  width: percentage( @columns / @total-columns ) - ( @gutter-percentage / @columns);
 
   // Now we use calc() to get the ideal flexible columns w/ fixed gutters.
   // 
@@ -96,7 +104,7 @@
   // ------------- - gutter width = column width in %
   //  total cols
 
-  @col-width: percentage( @columns / @total-columns );
+  @col-width: percentage( @columns / @total-columns ) + ( @gutter-percentage * ( @columns / @total-columns ) );
   width: calc( ~"@{col-width} - @{gutter-width}" );
 
   // Margin on left is the full gutter's width
@@ -104,6 +112,8 @@
 
   margin: 0 0 0 @gutter-percentage;
   margin: 0 0 0 calc( @gutter-width );
+
+  // Remove gutter from first children
 
   &:first-child {
     margin-left: 0;
