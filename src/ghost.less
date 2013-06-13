@@ -16,6 +16,12 @@
 
 @debug: false;
 
+// Setting @exposed to true will shift gutters from the left side of columns
+// to the right. This allows spans to be left aligned which is necessary when 
+// rows are not used and spans are left to float on their own.
+
+@exposed: false;
+
 // Gutter percentage is calculated by putting gutter width over wrapper width.
 
 @gutter-percentage: percentage( @gutter-width / @wrapper-width );
@@ -120,6 +126,16 @@
     margin-left: 0;
 
   }
+
+}
+
+.span( @columns ) when ( @exposed ) {
+
+  // When @exposed is true, place gutters on the right so that content
+  // can be left-aligned.
+
+  margin: 0 @gutter-percentage 0 0;
+  margin: 0 calc( @gutter-width ) 0 0;
 
 }
 
