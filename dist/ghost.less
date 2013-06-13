@@ -47,7 +47,7 @@
   position: relative;
 
   // We use padding so margin can be used for centering
-  // A percentage is used for non-calc() browsers
+  // A percentage is used first for non-calc() browsers
 
   padding: 0 ( @gutter-percentage / 2 );
   padding: 0 calc( @gutter-width / 2 );
@@ -92,22 +92,30 @@
   // We use calc() to allow flexible columns with fixed gutters.
   // But first, as a fallback, we set fluid column widths for older browsers.
   // 
-  // num cols used
-  // ------------- - width of gutter in % = column width in %
-  //  total cols
+  // To calculate the percentage width of this element, we take the number of 
+  // columns it'll span and divide by the total number of columns. We then have
+  // to subtract the gutter width because it's specified using a margin rule later.
+  // We don't simply subtract the gutter width because there are n - 1 gutters 
+  // per row. Instead, we subtract the gutter width multiplied by the column 
+  // difference over the number of total columns. This gives us a span that is 
+  // slightly larger than if we had simply subtracted 100% of the gutter width.
+  //  
+  //                      num cols used                            total cols - num cols used 
+  //  column width in % = ------------- - ( width of gutter in % * --------------------------- )
+  //                       total cols                                     total cols
 
-  width: percentage( @columns / @total-columns ) - ( @gutter-percentage / @columns);
+  width: percentage( @columns / @total-columns ) - ( @gutter-percentage * ( ( @total-columns - @columns ) / @total-columns ) );
 
   // Now we use calc() to get the ideal flexible columns w/ fixed gutters.
   // 
-  // num cols used
-  // ------------- - gutter width = column width in %
-  //  total cols
+  //                      num cols used                            num cols used 
+  //  column width in % = ------------- + ( width of gutter in % * ------------- )
+  //                       total cols                               total cols
 
   @col-width: percentage( @columns / @total-columns ) + ( @gutter-percentage * ( @columns / @total-columns ) );
   width: calc( ~"@{col-width} - @{gutter-width}" );
 
-  // Margin on left is the full gutter's width
+  // Margin on left is the full gutter's width in px
   // Again, using percentages for non-calc() browsers
 
   margin: 0 0 0 @gutter-percentage;
@@ -125,9 +133,8 @@
 
   @media only screen and ( max-width: 767px ) {
 
-    @gutter-percentage: percentage( @gutter-width / @wrapper-width );
-    width: 100 - @gutter-percentage;
-    width: calc( ~"100% - @{gutter-width}" );
+    width: 100%;
+    margin-left: 0;
 
   }
 
