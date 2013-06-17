@@ -62,6 +62,8 @@ _(Coming soon)_
 
 Examples can be found in the archive at `dist/example.zip`. Note: They use less.js to compile their LESS. You'll need to run a server locally to avoid cross-origin complaints. Try `python -m SimpleHTTPServer` in the example's directory.
 
+Ghost is used by [Qui](https://fake.ghe.domain/pages/contolini/qui) (<a href="https://fake.ghe.domain/contolini/qui/blob/master/src/less/main.less">stylesheet</a>).
+
 ## Contributing
 
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [grunt](http://gruntjs.com/).
