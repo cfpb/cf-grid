@@ -12,14 +12,14 @@
 
 @total-columns: 12;
 
-// Span blocks have a bg color if set to true.
+// Column blocks have a bg color if set to true.
 
 @debug: false;
 
 // Setting @exposed to true will shift gutters from the left side of columns
-// to the right. This allows spans to be left aligned which is necessary when 
-// rows are not used and spans are allowed to float on their own. For example,
-// if you have a long unordered list of blocks that you want to float without
+// to the right. This allows elements to be left aligned which is necessary when 
+// rows are not used and blocks are allowed to float on their own. For example,
+// if you have a long unordered list of li's that you want to float without
 // having to break them up into rows, you could use this feature.
 
 @exposed: false;
@@ -46,7 +46,7 @@
 }
 
 
-// A row holds one or more spans
+// A row holds one or more column() elements
 
 .row() {
 
@@ -74,9 +74,9 @@
 }
 
 
-// Spans hold actual content
+// Column()s hold actual content
 
-.span( @columns ) {
+.column( @columns ) {
 
   float: left;
 
@@ -88,7 +88,7 @@
   // to subtract the gutter width because it's specified using a margin rule later.
   // We don't simply subtract the gutter width because there are n - 1 gutters 
   // per row. Instead, we subtract the gutter width multiplied by the column 
-  // difference over the number of total columns. This gives us a span that is 
+  // difference over the number of total columns. This gives us a column that is 
   // slightly larger than if we had simply subtracted 100% of the gutter width.
   //  
   //                      num cols used                            total cols - num cols used 
@@ -131,7 +131,7 @@
 
 }
 
-.span( @columns ) when ( @exposed ) {
+.column( @columns ) when ( @exposed ) {
 
   // When @exposed is true, place gutters on the right so that content
   // can be left-aligned.
@@ -142,7 +142,7 @@
 }
 
 
-// Apply offset to spans to push them to the right
+// Apply offset to columns to push them to the right
 
 .offset( @columns ) {
 
@@ -177,7 +177,7 @@
 
 // Debug tools
 
-.span( @columns ) when ( @debug ) {
+.column( @columns ) when ( @debug ) {
 
   background-color: #ffc;
 
