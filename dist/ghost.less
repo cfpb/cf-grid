@@ -123,13 +123,20 @@
   @col-width: percentage( @columns / @total-columns ) + ( @gutter-percentage * ( @columns / @total-columns ) );
   width: calc( ~"@{col-width} - @{gutter-width}" );
 
+}
+
+
+// When the element spans less than the full length of total columns, give it a gutter.
+
+.column( @columns ) when ( @columns < @total-columns ) {
+
   // Margin on left is the full gutter's width in px
   // Again, using percentages for non-calc() browsers
 
   margin: 0 0 0 @gutter-percentage;
   margin: 0 0 0 calc( @gutter-width );
 
-  // Remove gutter from first children
+  // Remove gutter from first children, each row will have n - 1 gutters.
 
   &:first-child {
     margin-left: 0;
@@ -138,12 +145,12 @@
 }
 
 
-// When @columns spans the full length of possible columns, remove left margin
+// When @columns spans the full length of total columns, remove side margin
 // because the content will fill the entire width of the page.
 
-.column( @columns ) when ( @columns = @total-columns ) {
+.column( @columns ) when ( @columns >= @total-columns ) {
 
-  margin-left: 0;
+  margin: 0;
 
 }
 
@@ -152,6 +159,11 @@
 // can be left-aligned.
 
 .column( @columns ) when ( @exposed ) {
+
+  width: percentage( @columns / @total-columns ) - @gutter-percentage;
+
+  @col-width: percentage( @columns / @total-columns );
+  width: calc( ~"@{col-width} - @{gutter-width}" );
 
   margin: 0 @gutter-percentage 0 0;
   margin: 0 calc( @gutter-width ) 0 0;
