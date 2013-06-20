@@ -12,13 +12,13 @@
   .row();
 }
 
-.spanX ( @index ) when ( @index > 0 ) {
-  ( ~".span@{index}" ) {
-    .span(@index);
+.columnX ( @index ) when ( @index > 0 ) {
+  ( ~".column@{index}" ) {
+    .column(@index);
   }
-  .spanX( @index - 1 );
+  .columnX( @index - 1 );
 }
 
-.spanX ( 0 ) {}
+.columnX ( 0 ) {}
 
-.spanX ( @total-columns );
+.columnX ( @total-columns );
