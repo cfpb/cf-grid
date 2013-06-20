@@ -43,11 +43,11 @@ header {
 }
 
 .welcome-message {
-  .span(4);
+  .column(4);
 }
 
 .customer-info {
-  .span(8);
+  .column(8);
 }
 ```
 
