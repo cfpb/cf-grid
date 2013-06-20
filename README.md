@@ -66,7 +66,9 @@ Ghost is used by [Qui](https://fake.ghe.domain/pages/contolini/qui) (<a href="ht
 
 ## Contributing
 
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [grunt](http://gruntjs.com/).
+Running `grunt` will compile LESS and run a build script that copies appropriate source files into the `dist` dir, archive the examples in a .zip. `grunt watch` to build when files change.
+
+In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
