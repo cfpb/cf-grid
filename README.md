@@ -66,7 +66,7 @@ Ghost is used by [Qui](https://fake.ghe.domain/pages/contolini/qui) (<a href="ht
 
 ## Contributing
 
-Running `grunt` will compile LESS and run a build script that copies appropriate source files into the `dist` dir, archive the examples in a .zip. `grunt watch` to build when files change.
+Running `grunt` will compile LESS and run a build script that copies appropriate source files into the `dist` dir, archiving the examples in a .zip. `grunt watch` to build when files change.
 
 In lieu of a formal styleguide, take care to maintain the existing coding style.
 
