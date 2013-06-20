@@ -65,11 +65,11 @@
   &:after {
     content: " ";
     display: table; 
-  };
+  }
 
   &:after {
     clear: both;
-  };
+  }
 
 }
 
@@ -118,23 +118,23 @@
     margin-left: 0;
   }
 
-  // Mobile (landscape and portrait)
-  //  
-  // Single column, remove margin from first children
+}
 
-  @media only screen and ( max-width: 767px ) {
 
-    width: 100%;
-    margin-left: 0;
+// When @columns spans the full length of possible columns, remove left margin
+// because the content will fill the entire width of the page.
 
-  }
+.column( @columns ) when ( @columns = @total-columns ) {
+
+  margin-left: 0;
 
 }
 
-.column( @columns ) when ( @exposed ) {
 
-  // When @exposed is true, place gutters on the right so that content
-  // can be left-aligned.
+// When @exposed is true, place gutters on the right so that content
+// can be left-aligned.
+
+.column( @columns ) when ( @exposed ) {
 
   margin: 0 @gutter-percentage 0 0;
   margin: 0 calc( @gutter-width ) 0 0;
@@ -163,14 +163,6 @@
 
   @col-width: percentage( @columns / @total-columns );
   padding-left: calc( ~"@{col-width} - @{gutter-width}" );
-
-  // Mobile (landscape and portrait)
-
-  @media only screen and ( max-width: 767px ) {
-
-    padding-left: 0;
-
-  }
 
 }
 
