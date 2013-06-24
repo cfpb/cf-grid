@@ -164,19 +164,17 @@
 
   // Fallback for non-calc() browsers. This is the same formula we use for 
   // col widths above but we use it for the column()'s margin-left instead.
-  // We add twice the original gutter to the offset.
+  // We add the gutter width to the offset.
   // 
   //                num cols used                            total cols - num cols used 
   //  offset in % = ------------- - ( width of gutter in % * --------------------------- ) + twice the orig gutter %
   //                  total cols                                     total cols
 
   @push: percentage( @offset / @total-columns ) - ( @gutter-percentage * ( ( @total-columns - @offset / @total-columns ) ) );
-  margin-left: @push + ( @gutter-percentage * 2 );
+  margin-left: @push + @gutter-percentage;
 
   // Now we use calc() for modern browsers. Same formula from the column() 
-  // section which involves subtracting the fixed-width gutter. The orig 
-  // gutter is added twice (it looks like we're only adding it once because
-  // in the original col width formula we subtract the gutter).
+  // section but we add the gutter width.
   // 
   //                      num cols used                            num cols used 
   //  column width in % = ------------- + ( width of gutter in % * ------------- )
@@ -189,7 +187,7 @@
 
   &:first-child {
     @push: percentage( @offset / @total-columns ) - ( @gutter-percentage * ( ( @total-columns - @offset / @total-columns ) ) );
-    margin-left: @push + @gutter-percentage;
+    margin-left: @push;
 
     @push: percentage( @offset / @total-columns ) + ( @gutter-percentage * ( @offset / @total-columns ) );
     margin-left: calc( ~"@{push}" );
@@ -202,14 +200,14 @@
 
   // Fallback for non-calc() browsers. This is the same formula we use for 
   // col widths above but we use it for the column()'s margin-left instead.
-  // We add the original gutter to the offset.
+  // We add the gutter width to the offset.
   // 
   //                num cols used                            total cols - num cols used 
   //  offset in % = ------------- - ( width of gutter in % * --------------------------- ) + orig gutter %
   //                  total cols                                     total cols
 
-  @push: percentage( @offset / @total-columns ) - ( @gutter-percentage * ( ( @total-columns - @offset / @total-columns ) ) );
-  margin-right: @push + @gutter-percentage;
+  @pull: percentage( @offset / @total-columns ) - ( @gutter-percentage * ( ( @total-columns - @offset / @total-columns ) ) );
+  margin-right: @pull;
 
   // Now we use calc() for modern browsers. Same formula from the column() 
   // section which involves subtracting the fixed-width gutter. By adding the
@@ -219,8 +217,8 @@
   //  column width in % = ------------- + ( width of gutter in % * ------------- )
   //                       total cols                               total cols
 
-  @push: percentage( @offset / @total-columns ) + ( @gutter-percentage * ( @offset / @total-columns ) );
-  margin-right: calc( ~"@{push}" );
+  @pull: percentage( @offset / @total-columns ) + ( @gutter-percentage * ( @offset / @total-columns ) );
+  margin-right: calc( ~"@{pull}" );
 
 }
 
