@@ -69,7 +69,7 @@ Ghost is used by [Qui](https://fake.ghe.domain/pages/contolini/qui) (<a href="ht
 
 ## Contributing
 
-Run `grunt`. Whenever a file is changed, grunt will compile LESS and run a build script that copies appropriate source files into the `dist` dir, archiving the examples in a .zip.
+Edit the files in `src` and runt `grunt build` to compile LESS and automagically copy appropriate source files into the `dist` dir, archiving the examples in a .zip. Running `grunt` with no options will start a server on port 8000 (for testing the examples locally) and automatically build whenever a source file is changed.
 
 In lieu of a formal styleguide, take care to maintain the existing coding style.
 
