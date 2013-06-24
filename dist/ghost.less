@@ -200,6 +200,34 @@
 }
 
 
+
+.push( @offset: 1 ) {
+
+  // Fallback for non-calc() browsers.
+  // 
+  //                      num cols used                            total cols - num cols used 
+  //  column width in % = ------------- - ( width of gutter in % * --------------------------- )
+  //                       total cols                                     total cols
+
+  margin-left: percentage( @offset / @total-columns ) - ( @gutter-percentage * ( ( @total-columns - @offset ) / @total-columns ) );
+
+  // Now we use calc() to get the ideal flexible columns w/ fixed gutters.
+  // 
+  //                      num cols used                            num cols used 
+  //  column width in % = ------------- + ( width of gutter in % * ------------- )
+  //                       total cols                               total cols
+
+  @col-width: percentage( @offset / @total-columns ) + ( @gutter-percentage * ( @offset / @total-columns ) );
+  margin-left: calc( ~"@{col-width} - @{gutter-width}" );
+
+  // Remove gutter from first children, each row will have n - 1 gutters.
+
+  &:first-child {
+    margin-left: inherit;
+  }
+
+}
+
 // Debug tools
 
 .column( @columns ) when ( @debug ) {

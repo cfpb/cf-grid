@@ -33,6 +33,20 @@ module.exports = function(grunt) {
       ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */\n\n',
 
     /**
+     * Connect: https://github.com/gruntjs/grunt-contrib-connect
+     * 
+     * Start a connect web server.
+     */
+    connect: {
+      demo: {
+        options: {
+          port: 8000,
+          base: 'src/examples'
+        }
+      }
+    },
+
+    /**
      * Shell: https://github.com/sindresorhus/grunt-shell
      * 
      * Grunt task to run shell commands.
@@ -44,6 +58,7 @@ module.exports = function(grunt) {
         command: [
           'cp src/ghost.less src/examples/employee/static/ghost.less',
           'cp src/ghost.less src/examples/bootstrap/static/ghost.less',
+          'cp src/ghost.less src/examples/grid/static/ghost.less',
           'cd src/examples',
           'zip -r ../../dist/examples.zip . -x \*.DS_Store \*style.css'
         ].join('&&')
@@ -93,7 +108,7 @@ module.exports = function(grunt) {
       },
       scripts: {
         files: ['Gruntfile.js', 'src/*.less', 'src/examples/**/static/example.less'],
-        tasks: ['default']
+        tasks: ['connect:demo', 'default']
       }
     }
   });
@@ -106,6 +121,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-notify');
+  grunt.loadNpmTasks('grunt-contrib-connect');
 
   /**
    * Create task aliases by registering new tasks

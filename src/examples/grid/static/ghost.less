@@ -128,7 +128,7 @@
 }
 
 
-// When @columns spans the full length of total columns, remove side margin
+// When @columns spans the full length of total columns, remove gutters
 // because the content will fill the entire width of the page.
 
 .column( @columns ) when ( @columns >= @total-columns ) {
@@ -143,6 +143,9 @@
 
 .column( @columns ) when ( @exposed ) {
 
+  // There are the same number of gutters as column()s, so we calculate
+  // width in a simpler fashion.
+
   width: percentage( @columns / @total-columns ) - @gutter-percentage;
 
   @col-width: percentage( @columns / @total-columns );
@@ -155,6 +158,7 @@
 
 
 // Apply offset to columns to push them to the right
+// TODO: Fix this, I haven't changed it since making some API updates
 
 .offset( @columns ) {
 
@@ -178,6 +182,34 @@
 
 }
 
+
+
+.push( @offset: 1 ) {
+
+  // Fallback for non-calc() browsers.
+  // 
+  //                      num cols used                            total cols - num cols used 
+  //  column width in % = ------------- - ( width of gutter in % * --------------------------- )
+  //                       total cols                                     total cols
+
+  margin-left: percentage( @offset / @total-columns ) - ( @gutter-percentage * ( ( @total-columns - @offset ) / @total-columns ) );
+
+  // Now we use calc() to get the ideal flexible columns w/ fixed gutters.
+  // 
+  //                      num cols used                            num cols used 
+  //  column width in % = ------------- + ( width of gutter in % * ------------- )
+  //                       total cols                               total cols
+
+  @col-width: percentage( @offset / @total-columns ) + ( @gutter-percentage * ( @offset / @total-columns ) );
+  margin-left: calc( ~"@{col-width} - @{gutter-width}" );
+
+  // Remove gutter from first children, each row will have n - 1 gutters.
+
+  &:first-child {
+    margin-left: inherit;
+  }
+
+}
 
 // Debug tools
 
