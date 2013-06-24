@@ -128,7 +128,7 @@
 }
 
 
-// When @columns spans the full length of total columns, remove side margin
+// When @columns spans the full length of total columns, remove gutters
 // because the content will fill the entire width of the page.
 
 .column( @columns ) when ( @columns >= @total-columns ) {
@@ -143,6 +143,9 @@
 
 .column( @columns ) when ( @exposed ) {
 
+  // There are the same number of gutters as column()s, so we calculate
+  // width in a simpler fashion.
+
   width: percentage( @columns / @total-columns ) - @gutter-percentage;
 
   @col-width: percentage( @columns / @total-columns );
@@ -155,6 +158,7 @@
 
 
 // Apply offset to columns to push them to the right
+// TODO: Fix this, I haven't changed it since making some API updates
 
 .offset( @columns ) {
 

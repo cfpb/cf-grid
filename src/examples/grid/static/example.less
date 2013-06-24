@@ -1,0 +1,50 @@
+// Make sure you import Ghost.
+@import "ghost.less";
+
+// Override the wrapper width, gutter width and/or column count if you please.
+// You may also set @debug to true if you want columns to be colored.
+@wrapper-width: 1200px;
+@debug: true;
+
+body {
+  .wrapper();
+}
+
+section {
+  .row();
+  div {
+    min-height: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
+.one {
+  .column(1);
+}
+
+.two {
+  .column(2);
+}
+
+.three {
+  .column(3);
+}
+
+.four {
+  .column(4);
+}
+
+.six {
+  .column(6);
+}
+
+// Viewport adjustments
+
+@media only screen and ( max-width: 767px ) {
+
+  section div {
+    .column(12);
+  }
+
+}
