@@ -1,4 +1,4 @@
-# Ghost
+# [Ghost](https://fake.ghe.domain/pages/contolini/ghost/grid/index.html)
 
 A LESS-based CSS3 grid system using parametric mixins to encourage semantic HTML. Ghost has three main features:
 
