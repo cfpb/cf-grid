@@ -1,7 +1,5 @@
 /**
- *  If you don't like LESS, this stylesheet will generate a 
- *  CSS version of Ghost with the same fixed-width fluid-column
- *  functionality.
+ *  A CSS version of Ghost
  **/
 .wrapper {
   max-width: 1200px;
