@@ -29,6 +29,14 @@
 
 @total-columns: 12;
 
+// Border-box needs to be enforced on columns. This is mixed-in below.
+
+.border-box() {
+     -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 // Column blocks have a bg color if set to true.
 
 @debug: false;
@@ -97,7 +105,8 @@
 // Column()s hold actual content
 
 .column( @columns, @total-columns: @total-columns ) {
-  
+
+  .border-box();
   float: left;
 
   // We use calc() to allow flexible columns with fixed gutters.
