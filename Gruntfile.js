@@ -73,10 +73,11 @@ module.exports = function(grunt) {
     less: {
       legacy: {
         options: {
-          paths: ["src"]
+          paths: ["src"],
+          banner: '<%= banner %>'
         },
         files: {
-          "dist/ghost-legacy.css": ["<%= banner %>", "src/ghost-legacy.less"]
+          'dist/ghost.css': ['src/ghost-legacy.less']
         }
       }
     },
