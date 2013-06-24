@@ -1,8 +1,8 @@
 // Make sure you import Ghost.
 @import "ghost.less";
 
-// Override the wrapper width, gutter width and/or column count if you please.
-// You may also set @debug to true if you want columns to be colored.
+// Give columns a background color to aid debugging.
+@total-columns: 12;
 @wrapper-width: 1200px;
 @debug: true;
 
@@ -11,49 +11,165 @@ body {
   font-family: "Avenir Next", Arial, sans-serif;
 }
 
-section {
-  .row();
+h1 {
+  margin: 100px 0 20px;
 }
 
-.one {
-  .column(1);
-}
+// Twelve columns, 1200px wide
 
-.two {
-  .column(2);
-}
+.col-12 {
 
-.three {
-  .column(3);
-}
+  .wrapper();
 
-.four {
-  .column(4);
-}
+  section {
+    .row();
+  }
 
-.six {
-  .column(6);
-}
+  .one {
+    .column(1);
+  }
 
-.column {
-  padding: 20px 0;
-  text-align: center;
-  margin-bottom: 10px;
-}
+  .two {
+    .column(2);
+  }
 
-// Offset tests
+  .three {
+    .column(3);
+  }
 
-.push {
-  .push(3);
-}
+  .four {
+    .column(4);
+  }
 
-// Viewport adjustments
-
-@media only screen and ( max-width: 767px ) {
+  .six {
+    .column(6);
+  }
 
   .column {
-    .column(12);
+    padding: 20px 0;
+    text-align: center;
     margin-bottom: 10px;
   }
+
+  // Offset tests
+
+  .push-one {
+    .push(1);
+  }
+
+  .push-two {
+    .push(2);
+  }
+
+  .push-three {
+    .push(3);
+  }
+
+  // Viewport adjustments
+
+  @media only screen and ( max-width: 767px ) {
+
+    .column {
+      .column(12);
+      // Because we're using push(), we have to make sure the offset is
+      // removed on smaller screens. Ideally this will someday be baked
+      // into core ghost.less.
+      margin-left: 0 !important;
+      margin-bottom: 10px;
+    }
+
+  }
+
+}
+
+
+// Twelve columns, 960px wide
+
+.col-12.w-960 {
+
+  .wrapper( 960px );
+
+}
+
+
+// Sixteen columns, 1200px wide
+
+.col-16 {
+
+  .wrapper();
+
+  section {
+    .row();
+  }
+
+  .one {
+    .column(1, 16);
+  }
+
+  .two {
+    .column(2, 16);
+  }
+
+  .four {
+    .column(4, 16);
+  }
+
+  .eight {
+    .column(8, 16);
+  }
+
+  .column {
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  // Offset tests
+
+  .push-one {
+    .push(1, 16);
+  }
+
+  .push-two {
+    .push(2, 16);
+  }
+
+  .push-four {
+    .push(4, 16);
+  }
+
+  // Viewport adjustments
+
+  @media only screen and ( max-width: 767px ) {
+
+    .column {
+      .column(12);
+      // Because we're using push(), we have to make sure the offset is
+      // removed on smaller screens. Ideally this will someday be baked
+      // into core ghost.less.
+      margin-left: 0 !important;
+      margin-bottom: 10px;
+    }
+
+  }
+
+}
+
+
+// Sixteen columns, 960px wide
+
+.col-16.w-960 {
+
+  .wrapper( 960px );
+
+}
+
+
+// Misc. test runner stuff
+
+body > div {
+
+  border-bottom: 1px solid #ccc;
+  padding: 20px 0 40px !important;
 
 }

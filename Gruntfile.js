@@ -108,7 +108,7 @@ module.exports = function(grunt) {
       },
       scripts: {
         files: ['Gruntfile.js', 'src/*.less', 'src/examples/**/static/example.less'],
-        tasks: ['connect:demo', 'default']
+        tasks: ['less', 'build']
       }
     }
   });
@@ -132,6 +132,6 @@ module.exports = function(grunt) {
   /**
    * The 'default' task will run whenever `grunt` is run without specifying a task
    */
-  grunt.registerTask('default', ['less', 'build']);
+  grunt.registerTask('default', ['connect:demo', 'watch']);
 
 };
