@@ -29,7 +29,7 @@ module.exports = function(grunt) {
       '* <%= pkg.name %> - v<%= pkg.version %> - ' +
       '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
       '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
-      '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
+      '* A work of the <%= pkg.author.name %>;' +
       ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */\n\n',
 
     /**
@@ -109,7 +109,7 @@ module.exports = function(grunt) {
       },
       scripts: {
         files: ['Gruntfile.js', 'src/*.less', 'src/examples/**/static/example.less'],
-        tasks: ['less', 'build']
+        tasks: ['build']
       }
     }
   });
@@ -128,7 +128,7 @@ module.exports = function(grunt) {
    * Create task aliases by registering new tasks
    */
   grunt.registerTask('test', ['jasmine']);
-  grunt.registerTask('build', ['shell', 'concat']);
+  grunt.registerTask('build', ['less', 'shell', 'concat']);
 
   /**
    * The 'default' task will run whenever `grunt` is run without specifying a task
