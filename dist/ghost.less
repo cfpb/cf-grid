@@ -13,7 +13,7 @@
 
 * Ghost - v0.2.0 - 2013-06-24
 * http://consumerfinance.gov
-* A work of the Consumer Financial Protection Bureau; Licensed Public Domain */
+* Copyright (c) 2013 Consumer Financial Protection Bureau; Licensed Public Domain */
 
 // The following variables can be overridden in your application's stylesheet.
 
@@ -196,13 +196,8 @@
   //  offset in % = ------------- - ( width of gutter in % * --------------------------- ) + twice the orig gutter %
   //                  total cols                                     total cols
 
-<<<<<<< HEAD
   @push: percentage( @offset / @total-columns ) - ( @gutter-percentage * ( ( @total-columns - @offset / @total-columns ) ) );
   margin-left: @push + @gutter-percentage;
-=======
-  @push: percentage( @offset / @total-columns ) - ( @gutter-percentage * ( @total-columns - ( @offset / @total-columns ) ) );
-  margin-left: @push + ( @gutter-percentage * 2 );
->>>>>>> 1d79ac07abc4b95e6262137b2677aa60db57f99a
 
   // Now we use calc() for modern browsers. Same formula from the column() 
   // section but we add the gutter width.
@@ -217,13 +212,8 @@
   // With first-children we want to add only one gutter width to the equation.
 
   &:first-child {
-<<<<<<< HEAD
     @push: percentage( @offset / @total-columns ) - ( @gutter-percentage * ( ( @total-columns - @offset / @total-columns ) ) );
     margin-left: @push;
-=======
-    @push: percentage( @offset / @total-columns ) - ( @gutter-percentage * ( @total-columns - ( @offset / @total-columns ) ) );
-    margin-left: @push + @gutter-percentage;
->>>>>>> 1d79ac07abc4b95e6262137b2677aa60db57f99a
 
     @push: percentage( @offset / @total-columns ) + ( @gutter-percentage * ( @offset / @total-columns ) );
     margin-left: calc( ~"@{push}" );
@@ -242,13 +232,8 @@
   //  offset in % = ------------- - ( width of gutter in % * --------------------------- ) + orig gutter %
   //                  total cols                                     total cols
 
-<<<<<<< HEAD
   @pull: percentage( @offset / @total-columns ) - ( @gutter-percentage * ( ( @total-columns - @offset / @total-columns ) ) );
   margin-right: @pull;
-=======
-  @push: percentage( @offset / @total-columns ) - ( @gutter-percentage * ( @total-columns - ( @offset / @total-columns ) ) );
-  margin-right: @push + @gutter-percentage;
->>>>>>> 1d79ac07abc4b95e6262137b2677aa60db57f99a
 
   // Now we use calc() for modern browsers. Same formula from the column() 
   // section which involves subtracting the fixed-width gutter. By adding the
