@@ -128,8 +128,9 @@
   // Margin on left is the full gutter's width in px
   // Again, using percentages for non-calc() browsers
 
-  margin: 0 0 0 @gutter-percentage;
-  margin: 0 0 0 calc( @gutter-width );
+  margin-right: 0;
+  margin-left: @gutter-percentage;
+  margin-left: calc( @gutter-width );
 
   // Remove gutter from first children, each row will have n - 1 gutters.
 
@@ -146,7 +147,7 @@
 .column( @columns, @total-columns: @total-columns ) when ( @columns >= @total-columns ) {
 
   width: 100%;
-  margin: 0;
+  margin-left: 0;
 
 }
 
@@ -164,8 +165,9 @@
   @col-width: percentage( @columns / @total-columns );
   width: calc( ~"@{col-width} - @{gutter-width}" );
 
-  margin: 0 @gutter-percentage 0 0;
-  margin: 0 calc( @gutter-width ) 0 0;
+  margin-right: @gutter-percentage;
+  margin-right: calc( @gutter-width );
+  margin-left: 0;
 
 }
 
