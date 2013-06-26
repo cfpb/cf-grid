@@ -12,7 +12,6 @@
 .row {
   margin: 0 auto;
   width: 100%;
-  overflow: hidden;
   clear: both;
   *zoom: 1;
 }
@@ -29,8 +28,8 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   float: left;
+  width: calc(103.5% - 30px);
   width: 100%;
-  width: calc(102.5% - 30px);
   margin: 0;
 }
 .push-12 {
@@ -51,7 +50,7 @@
   box-sizing: border-box;
   float: left;
   width: 91.45833333333333%;
-  width: calc(93.95833333333333% - 30px);
+  width: calc(94.87499999999999% - 30px);
   margin: 0 0 0 2.5%;
   margin: 0 0 0 calc(30px);
 }
@@ -76,7 +75,7 @@
   box-sizing: border-box;
   float: left;
   width: 82.91666666666667%;
-  width: calc(85.41666666666667% - 30px);
+  width: calc(86.25000000000001% - 30px);
   margin: 0 0 0 2.5%;
   margin: 0 0 0 calc(30px);
 }
@@ -101,7 +100,7 @@
   box-sizing: border-box;
   float: left;
   width: 74.375%;
-  width: calc(76.875% - 30px);
+  width: calc(77.625% - 30px);
   margin: 0 0 0 2.5%;
   margin: 0 0 0 calc(30px);
 }
@@ -126,7 +125,7 @@
   box-sizing: border-box;
   float: left;
   width: 65.83333333333333%;
-  width: calc(68.33333333333333% - 30px);
+  width: calc(68.99999999999999% - 30px);
   margin: 0 0 0 2.5%;
   margin: 0 0 0 calc(30px);
 }
@@ -151,7 +150,7 @@
   box-sizing: border-box;
   float: left;
   width: 57.29166666666667%;
-  width: calc(59.79166666666667% - 30px);
+  width: calc(60.375% - 30px);
   margin: 0 0 0 2.5%;
   margin: 0 0 0 calc(30px);
 }
@@ -176,7 +175,7 @@
   box-sizing: border-box;
   float: left;
   width: 48.75%;
-  width: calc(51.25% - 30px);
+  width: calc(51.75% - 30px);
   margin: 0 0 0 2.5%;
   margin: 0 0 0 calc(30px);
 }
@@ -201,7 +200,7 @@
   box-sizing: border-box;
   float: left;
   width: 40.208333333333336%;
-  width: calc(42.708333333333336% - 30px);
+  width: calc(43.12500000000001% - 30px);
   margin: 0 0 0 2.5%;
   margin: 0 0 0 calc(30px);
 }
@@ -226,7 +225,7 @@
   box-sizing: border-box;
   float: left;
   width: 31.66666666666666%;
-  width: calc(34.166666666666664% - 30px);
+  width: calc(34.49999999999999% - 30px);
   margin: 0 0 0 2.5%;
   margin: 0 0 0 calc(30px);
 }
@@ -251,7 +250,7 @@
   box-sizing: border-box;
   float: left;
   width: 23.125%;
-  width: calc(25.625% - 30px);
+  width: calc(25.875% - 30px);
   margin: 0 0 0 2.5%;
   margin: 0 0 0 calc(30px);
 }
@@ -276,7 +275,7 @@
   box-sizing: border-box;
   float: left;
   width: 14.58333333333333%;
-  width: calc(17.083333333333332% - 30px);
+  width: calc(17.249999999999996% - 30px);
   margin: 0 0 0 2.5%;
   margin: 0 0 0 calc(30px);
 }
@@ -301,7 +300,7 @@
   box-sizing: border-box;
   float: left;
   width: 6.041666666666666%;
-  width: calc(8.541666666666666% - 30px);
+  width: calc(8.624999999999998% - 30px);
   margin: 0 0 0 2.5%;
   margin: 0 0 0 calc(30px);
 }

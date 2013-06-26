@@ -11,7 +11,7 @@
                   | $$                  
                   |__/                  
 
-* Ghost - v0.2.0 - 2013-06-25
+* Ghost - v0.2.0 - 2013-06-26
 * http://consumerfinance.gov
 * A Public Domain work of the Consumer Financial Protection Bureau */
 
@@ -80,7 +80,7 @@
 
   margin: 0 auto;
   width: 100%;
-  overflow: hidden;
+  //overflow: hidden; temporarily disabling this
   clear: both;
 
   // Clearfix hack for IE 6/7 only
@@ -132,7 +132,7 @@
   //  column width in % = ------------- + ( width of gutter in % * ------------- )
   //                       total cols                               total cols
 
-  @col-width: percentage( @columns / @total-columns ) + ( @gutter-percentage * ( @columns / @total-columns ) );
+  @col-width: percentage( @columns / @total-columns ) + ( @gutter-percentage * ( ( @columns ) / @total-columns ) ) * 1.4;
   width: calc( ~"@{col-width} - @{gutter-width}" );
 
 }
@@ -162,6 +162,7 @@
 
 .column( @columns, @total-columns: @total-columns ) when ( @columns >= @total-columns ) {
 
+  width: 100%;
   margin: 0;
 
 }
