@@ -83,14 +83,22 @@ h1 {
   // Nesting tests
   
   .six {
+    section {
+      .row();
+    }
     .two {
       .column( 2, 6 );
+      background-color: rgba( 255, 255, 255, .5 ) !important;
     }
   }
   
   .three {
+    section {
+      .row();
+    }
     .one {
       .column( 1, 3 );
+      background-color: rgba( 255, 255, 255, .5 ) !important;
     }
   }
 
@@ -170,6 +178,28 @@ h1 {
 
   .pull-two {
     .pull(2, 16);
+  }
+
+  // Nesting tests
+  
+  .six {
+    section {
+      .row();
+    }
+    .two {
+      .column( 2, 6 );
+      background-color: rgba( 255, 255, 255, .5 ) !important;
+    }
+  }
+  
+  .three {
+    section {
+      .row();
+    }
+    .one {
+      .column( 1, 3 );
+      background-color: rgba( 255, 255, 255, .5 ) !important;
+    }
   }
 
   // Viewport adjustments
