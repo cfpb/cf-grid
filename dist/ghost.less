@@ -133,7 +133,7 @@
   //                       total cols                               total cols
 
   @col-width: percentage( @columns / @total-columns ) + ( @gutter-percentage * ( @columns / @total-columns ) );
-  //width: calc( ~"@{col-width} - @{gutter-width}" );
+  width: calc( ~"@{col-width} - @{gutter-width}" );
 
 }
 
@@ -146,7 +146,7 @@
   // Again, using percentages for non-calc() browsers
 
   margin: 0 0 0 @gutter-percentage;
-  //margin: 0 0 0 calc( @gutter-width );
+  margin: 0 0 0 calc( @gutter-width );
 
   // Remove gutter from first children, each row will have n - 1 gutters.
 
@@ -179,10 +179,10 @@
   width: percentage( @columns / @total-columns ) - @gutter-percentage;
 
   @col-width: percentage( @columns / @total-columns );
-  //width: calc( ~"@{col-width} - @{gutter-width}" );
+  width: calc( ~"@{col-width} - @{gutter-width}" );
 
   margin: 0 @gutter-percentage 0 0;
-  //margin: 0 calc( @gutter-width ) 0 0;
+  margin: 0 calc( @gutter-width ) 0 0;
 
 }
 
@@ -208,7 +208,7 @@
   //                       total cols                               total cols
 
   @push: percentage( @offset / @total-columns ) + ( @gutter-percentage * ( @offset / @total-columns ) );
-  //margin-left: calc( ~"@{push} + @{gutter-width}" );
+  margin-left: calc( ~"@{push} + @{gutter-width}" );
 
   // With first-children we want to add only one gutter width to the equation.
 
@@ -217,7 +217,7 @@
     margin-left: @push;
 
     @push: percentage( @offset / @total-columns ) + ( @gutter-percentage * ( @offset / @total-columns ) );
-    //margin-left: calc( ~"@{push}" );
+    margin-left: calc( ~"@{push}" );
   }
 
 }
@@ -245,7 +245,7 @@
   //                       total cols                               total cols
 
   @pull: percentage( @offset / @total-columns ) + ( @gutter-percentage * ( @offset / @total-columns ) );
-  //margin-right: calc( ~"@{pull}" );
+  margin-right: calc( ~"@{pull}" );
 
 }
 
