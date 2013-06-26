@@ -80,17 +80,32 @@ h1 {
     .pull(2);
   }
 
+  // Nesting tests
+  
+  .six {
+    .two {
+      .column( 2, 6 );
+    }
+  }
+  
+  .three {
+    .one {
+      .column( 1, 3 );
+    }
+  }
+
   // Viewport adjustments
 
   @media only screen and ( max-width: 767px ) {
 
     .column {
-      .column(12);
-      // Because we're using push(), we have to make sure the offset is
-      // removed on smaller screens. Ideally this will someday be baked
-      // into core ghost.less.
-      margin-left: 0 !important;
-      margin-bottom: 10px;
+      // We're using an important flag to ensure the above nested children 
+      // are also set to 12 columns. Normally, you'd have CSS rules for 
+      // nested children in your media query but to keep things simple in 
+      // this test runner I'm just using !important to coerce all columns.
+      .column(12) !important;
+      // For the push() column()s, we have to make sure the offset is removed.
+      margin-left: 0;
     }
 
   }
@@ -193,6 +208,13 @@ body > div {
   padding-bottom: 40px !important;
   clear: both;
 
+}
+
+@media only screen and ( max-width: 99999px ) {
+  .col-12 .column {
+    background-color: #f9af51 !important;
+    margin-bottom: 10px;
+  }
 }
 
 h2, h3 {
