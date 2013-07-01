@@ -15,8 +15,8 @@
 // Border-box needs to be enforced on columns. This is mixed-in below.
 
 .border-box() {
-     -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
 
@@ -30,7 +30,7 @@
 // if you have a long unordered list of li's that you want to float without
 // having to break them up into rows, you could use this feature.
 
-@exposed: false;
+// @exposed: false;
 
 
 // Gutter percentage is calculated by putting gutter width over wrapper width.
@@ -107,7 +107,8 @@
   //  column width in % = ------------- - ( width of gutter in % * --------------------------- )
   //                       total cols                                     total cols
 
-  width: percentage( @columns / @total-columns ) - ( @gutter-percentage * ( ( @total-columns - @columns ) / @total-columns ) );
+  // width: percentage( @columns / @total-columns ) - ( @gutter-percentage * ( ( @total-columns - @columns ) / @total-columns ) );
+  width: percentage( @columns / @total-columns );
 
   // Now we use calc() to get the ideal flexible columns w/ fixed gutters.
   // 
@@ -115,9 +116,10 @@
   //  column width in % = ------------- + ( width of gutter in % * ------------- )
   //                       total cols                               total cols
 
-  @col-width: percentage( @columns / @total-columns ) + ( @gutter-percentage * ( @columns / @total-columns ) );
-  width: calc( ~"@{col-width} - @{gutter-width}" );
+  // @col-width: percentage( @columns / @total-columns ) + ( @gutter-percentage * ( @columns / @total-columns ) );
+  // width: calc( ~"@{col-width} - @{gutter-width}" );
 
+  padding: 0 (@gutter-width / 2);
 }
 
 
@@ -128,15 +130,15 @@
   // Margin on left is the full gutter's width in px
   // Again, using percentages for non-calc() browsers
 
-  margin-right: 0;
-  margin-left: @gutter-percentage;
-  margin-left: calc( @gutter-width );
+  // margin-right: 0;
+  // margin-left: @gutter-percentage;
+  // margin-left: calc( @gutter-width );
 
   // Remove gutter from first children, each row will have n - 1 gutters.
 
-  &:first-child {
-    margin-left: 0;
-  }
+  // &:first-child {
+  //   margin-left: 0;
+  // }
 
 }
 
@@ -155,21 +157,21 @@
 // When @exposed is true, place gutters on the right so that content
 // can be left-aligned.
 
-.column( @columns, @total-columns: @total-columns ) when ( @exposed ) {
+// .column( @columns, @total-columns: @total-columns ) when ( @exposed ) {
 
-  // There are the same number of gutters as column()s, so we calculate
-  // width in a simpler fashion.
+//   // There are the same number of gutters as column()s, so we calculate
+//   // width in a simpler fashion.
 
-  width: percentage( @columns / @total-columns ) - @gutter-percentage;
+//   width: percentage( @columns / @total-columns ) - @gutter-percentage;
 
-  @col-width: percentage( @columns / @total-columns );
-  width: calc( ~"@{col-width} - @{gutter-width}" );
+//   @col-width: percentage( @columns / @total-columns );
+//   width: calc( ~"@{col-width} - @{gutter-width}" );
 
-  margin-right: @gutter-percentage;
-  margin-right: calc( @gutter-width );
-  margin-left: 0;
+//   margin-right: @gutter-percentage;
+//   margin-right: calc( @gutter-width );
+//   margin-left: 0;
 
-}
+// }
 
 
 .push( @offset: 1, @total-columns: @total-columns ) {
@@ -182,8 +184,10 @@
   //  offset in % = ------------- - ( width of gutter in % * --------------------------- ) + twice the orig gutter %
   //                  total cols                                     total cols
 
-  @push: percentage( @offset / @total-columns ) - ( @gutter-percentage * ( ( @total-columns - @offset / @total-columns ) ) );
-  margin-left: @push + @gutter-percentage;
+  // @push: percentage( @offset / @total-columns ) - ( @gutter-percentage * ( ( @total-columns - @offset / @total-columns ) ) );
+  @push: percentage( @offset / @total-columns );
+  // margin-left: @push + @gutter-percentage;
+  margin-left: @push;
 
   // Now we use calc() for modern browsers. Same formula from the column() 
   // section but we add the gutter width.
@@ -192,18 +196,18 @@
   //  column width in % = ------------- + ( width of gutter in % * ------------- )
   //                       total cols                               total cols
 
-  @push: percentage( @offset / @total-columns ) + ( @gutter-percentage * ( @offset / @total-columns ) );
-  margin-left: calc( ~"@{push} + @{gutter-width}" );
+  // @push: percentage( @offset / @total-columns ) + ( @gutter-percentage * ( @offset / @total-columns ) );
+  // margin-left: calc( ~"@{push} + @{gutter-width}" );
 
   // With first-children we want to add only one gutter width to the equation.
 
-  &:first-child {
-    @push: percentage( @offset / @total-columns ) - ( @gutter-percentage * ( ( @total-columns - @offset / @total-columns ) ) );
-    margin-left: @push;
+  // &:first-child {
+  //   @push: percentage( @offset / @total-columns ) - ( @gutter-percentage * ( ( @total-columns - @offset / @total-columns ) ) );
+  //   margin-left: @push;
 
-    @push: percentage( @offset / @total-columns ) + ( @gutter-percentage * ( @offset / @total-columns ) );
-    margin-left: calc( ~"@{push}" );
-  }
+  //   @push: percentage( @offset / @total-columns ) + ( @gutter-percentage * ( @offset / @total-columns ) );
+  //   margin-left: calc( ~"@{push}" );
+  // }
 
 }
 
@@ -218,7 +222,8 @@
   //  offset in % = ------------- - ( width of gutter in % * --------------------------- ) + orig gutter %
   //                  total cols                                     total cols
 
-  @pull: percentage( @offset / @total-columns ) - ( @gutter-percentage * ( ( @total-columns - @offset / @total-columns ) ) );
+  // @pull: percentage( @offset / @total-columns ) - ( @gutter-percentage * ( ( @total-columns - @offset / @total-columns ) ) );
+  @pull: percentage( @offset / @total-columns );
   margin-right: @pull;
 
   // Now we use calc() for modern browsers. Same formula from the column() 
@@ -229,8 +234,9 @@
   //  column width in % = ------------- + ( width of gutter in % * ------------- )
   //                       total cols                               total cols
 
-  @pull: percentage( @offset / @total-columns ) + ( @gutter-percentage * ( @offset / @total-columns ) );
-  margin-right: calc( ~"@{pull}" );
+  // @pull: percentage( @offset / @total-columns ) + ( @gutter-percentage * ( @offset / @total-columns ) );
+  // @pull: percentage( @offset / @total-columns ) + ( @offset / @total-columns );
+  // margin-right: calc( ~"@{pull}" );
 
 }
 
@@ -240,6 +246,6 @@
 .column( @columns, @total-columns: @total-columns ) when ( @debug ) {
 
   background-color: #ffc;
-  background-color: fade(#ffc, 50%);
+  // background-color: fade(#ffc, 50%);
 
 }

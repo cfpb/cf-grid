@@ -5,7 +5,14 @@
     <title>Ghost Example</title>
     <!--[if IE]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <link rel="stylesheet/less" type="text/css" href="static/example.less" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/1.3.3/less.min.js"></script>
+    <script type="text/javascript">
+        less = {
+            relativeUrls: true, // whether to adjust url's to be relative
+                                // if false, url's are already relative to the
+                                // entry less file
+        };
+    </script>
+    <script src="static/less-1.3.3.min.js"></script>
 </head>
 
 <body>
@@ -17,83 +24,83 @@
         <h2>12 columns w/ 1200px max width</h2>
 
         <section>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
         </section>
 
         <section>
-            <div class="two column">two</div>
-            <div class="two column">two</div>
-            <div class="two column">two</div>
-            <div class="two column">two</div>
-            <div class="two column">two</div>
-            <div class="two column">two</div>
+            <div class="two column"><div>two</div></div>
+            <div class="two column"><div>two</div></div>
+            <div class="two column"><div>two</div></div>
+            <div class="two column"><div>two</div></div>
+            <div class="two column"><div>two</div></div>
+            <div class="two column"><div>two</div></div>
         </section>
 
         <section>
-            <div class="two column">two</div>
-            <div class="three column">three</div>
-            <div class="two column">two</div>
-            <div class="three column">three</div>
-            <div class="two column">two</div>
+            <div class="two column"><div>two</div></div>
+            <div class="three column"><div>three</div></div>
+            <div class="two column"><div>two</div></div>
+            <div class="three column"><div>three</div></div>
+            <div class="two column"><div>two</div></div>
         </section>
 
         <section>
-            <div class="three column">three</div>
-            <div class="three column">three</div>
-            <div class="three column">three</div>
-            <div class="three column">three</div>
+            <div class="three column"><div>three</div></div>
+            <div class="three column"><div>three</div></div>
+            <div class="three column"><div>three</div></div>
+            <div class="three column"><div>three</div></div>
         </section>
 
         <section>
-            <div class="four column">four</div>
-            <div class="four column">four</div>
-            <div class="four column">four</div>
+            <div class="four column"><div>four</div></div>
+            <div class="four column"><div>four</div></div>
+            <div class="four column"><div>four</div></div>
         </section>
 
         <section>
-            <div class="six column">six</div>
-            <div class="six column">six</div>
+            <div class="six column"><div>six</div></div>
+            <div class="six column"><div>six</div></div>
         </section>
 
         <h3>Offsets</h3>
 
         <section>
-            <div class="two column push-two">two, push two</div>
-            <div class="two column push-two">two, push two</div>
-            <div class="two column push-two">two, push two</div>
+            <div class="two column push-two"><div>two, push two</div></div>
+            <div class="two column push-two"><div>two, push two</div></div>
+            <div class="two column push-two"><div>two, push two</div></div>
         </section>
 
         <section>
-            <div class="two column pull-two">two, pull two</div>
-            <div class="two column pull-two">two, pull two</div>
-            <div class="two column pull-two">two, pull two</div>
+            <div class="two column pull-two"><div>two, pull two</div></div>
+            <div class="two column pull-two"><div>two, pull two</div></div>
+            <div class="two column pull-two"><div>two, pull two</div></div>
         </section>
 
         <section>
-            <div class="three column">three</div>
-            <div class="four column push-one">four, push one</div>
-            <div class="three column push-one">three, push one</div>
+            <div class="three column"><div>three</div></div>
+            <div class="four column push-one"><div>four, push one</div></div>
+            <div class="three column push-one"><div>three, push one</div></div>
         </section>
 
         <section>
-            <div class="three column pull-one">three, pull one</div>
-            <div class="four column pull-one">four, pull one</div>
-            <div class="three column">three</div>
+            <div class="three column pull-one"><div>three, pull one</div></div>
+            <div class="four column pull-one"><div>four, pull one</div></div>
+            <div class="three column"><div>three</div></div>
         </section>
 
         <section>
-            <div class="six column push-three">six, push three</div>
+            <div class="six column push-three"><div>six, push three</div></div>
         </section>
 
         <h3>Nesting</h3>
@@ -101,16 +108,16 @@
         <section class="nesting">
             <div class="six column">
                 <section>
-                    <div class="two column">two</div>
-                    <div class="two column">two</div>
-                    <div class="two column">two</div>
+                    <div class="two column"><div>two</div></div>
+                    <div class="two column"><div>two</div></div>
+                    <div class="two column"><div>two</div></div>
                 </section>
             </div>
             <div class="six column">
                 <section>
-                    <div class="two column">two</div>
-                    <div class="two column">two</div>
-                    <div class="two column">two</div>
+                    <div class="two column"><div>two</div></div>
+                    <div class="two column"><div>two</div></div>
+                    <div class="two column"><div>two</div></div>
                 </section>
             </div>
         </section>
@@ -118,113 +125,113 @@
         <section>
             <div class="three column">
                 <section>
-                    <div class="one column">one</div>
-                    <div class="one column">one</div>
-                    <div class="one column">one</div>
+                    <div class="one column"><div>one</div></div>
+                    <div class="one column"><div>one</div></div>
+                    <div class="one column"><div>one</div></div>
                 </section>
             </div>
             <div class="six column">
                 <section>
-                    <div class="two column">two</div>
-                    <div class="two column">two</div>
-                    <div class="two column">two</div>
+                    <div class="two column"><div>two</div></div>
+                    <div class="two column"><div>two</div></div>
+                    <div class="two column"><div>two</div></div>
                 </section>
             </div>
             <div class="three column">
                 <section>
-                    <div class="one column">one</div>
-                    <div class="one column">one</div>
-                    <div class="one column">one</div>
+                    <div class="one column"><div>one</div></div>
+                    <div class="one column"><div>one</div></div>
+                    <div class="one column"><div>one</div></div>
                 </section>
             </div>
         </section>
 
     </div>
 
-    <!-- --------------------------------------------------- -->
+    <!-- -------------------------------------------------- -->
 
     <div class="col-12 w-960">
 
         <h2>12 columns w/ 960px max width</h2>
 
         <section>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
         </section>
 
         <section>
-            <div class="two column">two</div>
-            <div class="two column">two</div>
-            <div class="two column">two</div>
-            <div class="two column">two</div>
-            <div class="two column">two</div>
-            <div class="two column">two</div>
+            <div class="two column"><div>two</div></div>
+            <div class="two column"><div>two</div></div>
+            <div class="two column"><div>two</div></div>
+            <div class="two column"><div>two</div></div>
+            <div class="two column"><div>two</div></div>
+            <div class="two column"><div>two</div></div>
         </section>
 
         <section>
-            <div class="two column">two</div>
-            <div class="three column">three</div>
-            <div class="two column">two</div>
-            <div class="three column">three</div>
-            <div class="two column">two</div>
+            <div class="two column"><div>two</div></div>
+            <div class="three column"><div>three</div></div>
+            <div class="two column"><div>two</div></div>
+            <div class="three column"><div>three</div></div>
+            <div class="two column"><div>two</div></div>
         </section>
 
         <section>
-            <div class="three column">three</div>
-            <div class="three column">three</div>
-            <div class="three column">three</div>
-            <div class="three column">three</div>
+            <div class="three column"><div>three</div></div>
+            <div class="three column"><div>three</div></div>
+            <div class="three column"><div>three</div></div>
+            <div class="three column"><div>three</div></div>
         </section>
 
         <section>
-            <div class="four column">four</div>
-            <div class="four column">four</div>
-            <div class="four column">four</div>
+            <div class="four column"><div>four</div></div>
+            <div class="four column"><div>four</div></div>
+            <div class="four column"><div>four</div></div>
         </section>
 
         <section>
-            <div class="six column">six</div>
-            <div class="six column">six</div>
+            <div class="six column"><div>six</div></div>
+            <div class="six column"><div>six</div></div>
         </section>
 
         <h3>Offsets</h3>
 
         <section>
-            <div class="two column push-two">two, push two</div>
-            <div class="two column push-two">two, push two</div>
-            <div class="two column push-two">two, push two</div>
+            <div class="two column push-two"><div>two, push two</div></div>
+            <div class="two column push-two"><div>two, push two</div></div>
+            <div class="two column push-two"><div>two, push two</div></div>
         </section>
 
         <section>
-            <div class="two column pull-two">two, pull two</div>
-            <div class="two column pull-two">two, pull two</div>
-            <div class="two column pull-two">two, pull two</div>
+            <div class="two column pull-two"><div>two, pull two</div></div>
+            <div class="two column pull-two"><div>two, pull two</div></div>
+            <div class="two column pull-two"><div>two, pull two</div></div>
         </section>
 
         <section>
-            <div class="three column">three</div>
-            <div class="four column push-one">four, push one</div>
-            <div class="three column push-one">three, push one</div>
+            <div class="three column"><div>three</div></div>
+            <div class="four column push-one"><div>four, push one</div></div>
+            <div class="three column push-one"><div>three, push one</div></div>
         </section>
 
         <section>
-            <div class="three column pull-one">three, pull one</div>
-            <div class="four column pull-one">four, pull one</div>
-            <div class="three column">three</div>
+            <div class="three column pull-one"><div>three, pull one</div></div>
+            <div class="four column pull-one"><div>four, pull one</div></div>
+            <div class="three column"><div>three</div></div>
         </section>
 
         <section>
-            <div class="six column push-three">six, push three</div>
+            <div class="six column push-three"><div>six, push three</div></div>
         </section>
 
         <h3>Nesting</h3>
@@ -232,16 +239,16 @@
         <section>
             <div class="six column">
                 <section>
-                    <div class="two column">two</div>
-                    <div class="two column">two</div>
-                    <div class="two column">two</div>
+                    <div class="two column"><div>two</div></div>
+                    <div class="two column"><div>two</div></div>
+                    <div class="two column"><div>two</div></div>
                 </section>
             </div>
             <div class="six column">
                 <section>
-                    <div class="two column">two</div>
-                    <div class="two column">two</div>
-                    <div class="two column">two</div>
+                    <div class="two column"><div>two</div></div>
+                    <div class="two column"><div>two</div></div>
+                    <div class="two column"><div>two</div></div>
                 </section>
             </div>
         </section>
@@ -249,107 +256,107 @@
         <section>
             <div class="three column">
                 <section>
-                    <div class="one column">one</div>
-                    <div class="one column">one</div>
-                    <div class="one column">one</div>
+                    <div class="one column"><div>one</div></div>
+                    <div class="one column"><div>one</div></div>
+                    <div class="one column"><div>one</div></div>
                 </section>
             </div>
             <div class="six column">
                 <section>
-                    <div class="two column">two</div>
-                    <div class="two column">two</div>
-                    <div class="two column">two</div>
+                    <div class="two column"><div>two</div></div>
+                    <div class="two column"><div>two</div></div>
+                    <div class="two column"><div>two</div></div>
                 </section>
             </div>
             <div class="three column">
                 <section>
-                    <div class="one column">one</div>
-                    <div class="one column">one</div>
-                    <div class="one column">one</div>
+                    <div class="one column"><div>one</div></div>
+                    <div class="one column"><div>one</div></div>
+                    <div class="one column"><div>one</div></div>
                 </section>
             </div>
         </section>
 
     </div>
 
-    <!-- --------------------------------------------------- -->
+    <!-- -------------------------------------------------- -->
 
     <div class="col-16">
 
         <h2>16 columns w/ 1200px max width</h2>
 
         <section>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
         </section>
 
         <section>
-            <div class="two column">two</div>
-            <div class="two column">two</div>
-            <div class="two column">two</div>
-            <div class="two column">two</div>
-            <div class="two column">two</div>
-            <div class="two column">two</div>
-            <div class="two column">two</div>
-            <div class="two column">two</div>
+            <div class="two column"><div>two</div></div>
+            <div class="two column"><div>two</div></div>
+            <div class="two column"><div>two</div></div>
+            <div class="two column"><div>two</div></div>
+            <div class="two column"><div>two</div></div>
+            <div class="two column"><div>two</div></div>
+            <div class="two column"><div>two</div></div>
+            <div class="two column"><div>two</div></div>
         </section>
 
         <section>
-            <div class="four column">four</div>
-            <div class="four column">four</div>
-            <div class="four column">four</div>
-            <div class="four column">four</div>
+            <div class="four column"><div>four</div></div>
+            <div class="four column"><div>four</div></div>
+            <div class="four column"><div>four</div></div>
+            <div class="four column"><div>four</div></div>
         </section>
 
         <section>
-            <div class="eight column">eight</div>
-            <div class="eight column">eight</div>
+            <div class="eight column"><div>eight</div></div>
+            <div class="eight column"><div>eight</div></div>
         </section>
 
         <h3>Offsets</h3>
 
         <section>
-            <div class="two column push-two">two, push two</div>
-            <div class="two column push-two">two, push two</div>
-            <div class="two column push-two">two, push two</div>
-            <div class="two column push-two">two, push two</div>
+            <div class="two column push-two"><div>two, push two</div></div>
+            <div class="two column push-two"><div>two, push two</div></div>
+            <div class="two column push-two"><div>two, push two</div></div>
+            <div class="two column push-two"><div>two, push two</div></div>
         </section>
 
         <section>
-            <div class="two column pull-two">two, pull two</div>
-            <div class="two column pull-two">two, pull two</div>
-            <div class="two column pull-two">two, pull two</div>
-            <div class="two column pull-two">two, pull two</div>
+            <div class="two column pull-two"><div>two, pull two</div></div>
+            <div class="two column pull-two"><div>two, pull two</div></div>
+            <div class="two column pull-two"><div>two, pull two</div></div>
+            <div class="two column pull-two"><div>two, pull two</div></div>
         </section>
 
         <section>
-            <div class="four column">four</div>
-            <div class="four column push-two">four, push two</div>
-            <div class="four column push-two">four, push two</div>
+            <div class="four column"><div>four</div></div>
+            <div class="four column push-two"><div>four, push two</div></div>
+            <div class="four column push-two"><div>four, push two</div></div>
         </section>
 
         <section>
-            <div class="four column pull-two">four, pull two</div>
-            <div class="four column pull-two">four, pull two</div>
-            <div class="four column">four</div>
+            <div class="four column pull-two"><div>four, pull two</div></div>
+            <div class="four column pull-two"><div>four, pull two</div></div>
+            <div class="four column"><div>four</div></div>
         </section>
 
         <section>
-            <div class="eight column push-four">eight, push four</div>
+            <div class="eight column push-four"><div>eight, push four</div></div>
         </section>
 
     </div>
@@ -361,77 +368,77 @@
         <h2>16 columns w/ 960px max width</h2>
 
         <section>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
-            <div class="one column">one</div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
+            <div class="one column"><div>one</div></div>
         </section>
 
         <section>
-            <div class="two column">two</div>
-            <div class="two column">two</div>
-            <div class="two column">two</div>
-            <div class="two column">two</div>
-            <div class="two column">two</div>
-            <div class="two column">two</div>
-            <div class="two column">two</div>
-            <div class="two column">two</div>
+            <div class="two column"><div>two</div></div>
+            <div class="two column"><div>two</div></div>
+            <div class="two column"><div>two</div></div>
+            <div class="two column"><div>two</div></div>
+            <div class="two column"><div>two</div></div>
+            <div class="two column"><div>two</div></div>
+            <div class="two column"><div>two</div></div>
+            <div class="two column"><div>two</div></div>
         </section>
 
         <section>
-            <div class="four column">four</div>
-            <div class="four column">four</div>
-            <div class="four column">four</div>
-            <div class="four column">four</div>
+            <div class="four column"><div>four</div></div>
+            <div class="four column"><div>four</div></div>
+            <div class="four column"><div>four</div></div>
+            <div class="four column"><div>four</div></div>
         </section>
 
         <section>
-            <div class="eight column">eight</div>
-            <div class="eight column">eight</div>
+            <div class="eight column"><div>eight</div></div>
+            <div class="eight column"><div>eight</div></div>
         </section>
 
         <h3>Offsets</h3>
 
         <section>
-            <div class="two column push-two">two, push two</div>
-            <div class="two column push-two">two, push two</div>
-            <div class="two column push-two">two, push two</div>
-            <div class="two column push-two">two, push two</div>
+            <div class="two column push-two"><div>two, push two</div></div>
+            <div class="two column push-two"><div>two, push two</div></div>
+            <div class="two column push-two"><div>two, push two</div></div>
+            <div class="two column push-two"><div>two, push two</div></div>
         </section>
 
         <section>
-            <div class="two column pull-two">two, pull two</div>
-            <div class="two column pull-two">two, pull two</div>
-            <div class="two column pull-two">two, pull two</div>
-            <div class="two column pull-two">two, pull two</div>
+            <div class="two column pull-two"><div>two, pull two</div></div>
+            <div class="two column pull-two"><div>two, pull two</div></div>
+            <div class="two column pull-two"><div>two, pull two</div></div>
+            <div class="two column pull-two"><div>two, pull two</div></div>
         </section>
 
         <section>
-            <div class="four column">four</div>
-            <div class="four column push-two">four, push two</div>
-            <div class="four column push-two">four, push two</div>
+            <div class="four column"><div>four</div></div>
+            <div class="four column push-two"><div>four, push two</div></div>
+            <div class="four column push-two"><div>four, push two</div></div>
         </section>
 
         <section>
-            <div class="four column pull-two">four, pull two</div>
-            <div class="four column pull-two">four, pull two</div>
-            <div class="four column">four</div>
+            <div class="four column pull-two"><div>four, pull two</div></div>
+            <div class="four column pull-two"><div>four, pull two</div></div>
+            <div class="four column"><div>four</div></div>
         </section>
 
         <section>
-            <div class="eight column push-four">eight, push four</div>
+            <div class="eight column push-four"><div>eight, push four</div></div>
         </section>
 
     </div>
