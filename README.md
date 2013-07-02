@@ -75,9 +75,12 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
-_(Coming soon)_
+ * 2013-07-01   v0.4.0   Add grunt-cfpb-internal to manage versioning.
 
 ## License
 
-Copyright (c) 2013 Consumer Financial Protection Bureau  
-A work of the Public Domain.
+A work of the public domain. Software source code written entirely by CFPB staff, and by contractors who are developing software on behalf of CFPB, is by default a public domain work. For further details, please visit: http://www.consumerfinance.gov/developers/sourcecodepolicy/
+
+---
+
+*This file was generated on Mon Jul 01 2013 22:38:38.*

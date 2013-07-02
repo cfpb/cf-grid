@@ -122,12 +122,13 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-notify');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-cfpb-internal');
 
   /**
    * Create task aliases by registering new tasks
    */
   grunt.registerTask('test', ['jasmine']);
-  grunt.registerTask('build', ['less', 'shell', 'concat']);
+  grunt.registerTask('build', ['less', 'shell', 'concat', 'build-cfpb']);
 
   /**
    * The 'default' task will run whenever `grunt` is run without specifying a task
