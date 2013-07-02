@@ -79,8 +79,8 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## License
 
-A work of the public domain. Software source code written entirely by CFPB staff, and by contractors who are developing software on behalf of CFPB, is by default a public domain work. For further details, please visit: http://www.consumerfinance.gov/developers/sourcecodepolicy/
+A work of the public domain. Software source code written entirely by Consumer Financial Protection Bureau staff, and by contractors who are developing software on behalf of CFPB, is by default a public domain work. For further details, please visit: http://www.consumerfinance.gov/developers/sourcecodepolicy/
 
 ---
 
-*This file was generated on Mon Jul 01 2013 22:38:38.*
+*This file was generated on Mon Jul 01 2013 23:38:36.*
