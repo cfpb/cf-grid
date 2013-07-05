@@ -11,7 +11,7 @@
                   | $$                  
                   |__/                  
 
-* Ghost - v0.2.0 - 2013-07-01
+* Ghost - v0.2.0 - 2013-07-05
 * http://consumerfinance.gov
 * A Public Domain work of the Consumer Financial Protection Bureau */
 
@@ -28,14 +28,6 @@
 // Total number of columns.
 
 @total-columns: 12;
-
-// Border-box needs to be enforced on columns. This is mixed-in below.
-
-.border-box() {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
 
 // Column blocks have a bg color if set to true.
 
@@ -68,8 +60,9 @@
   // We use padding so margin can be used for centering
   // A percentage is used first for non-calc() browsers
 
-  padding: 0 ( @gutter-percentage / 2 );
-  padding: 0 calc( @gutter-width / 2 );
+  //padding: 0 ( @gutter-percentage / 2 );
+  //padding: 0 calc( @gutter-width / 2 );
+  padding: 0 ( @gutter-width / 2 );
 
 }
 
@@ -101,13 +94,20 @@
 
 }
 
-
 // Column()s hold actual content
 
-.column( @columns, @total-columns: @total-columns ) {
+.column {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  border: solid transparent;
+  border-width: 0 (@gutter-width / 2);
+  margin-right: -0.25em; // Remove whitespace caused by setting display to inline-block
+}
 
-  .border-box();
-  float: left;
+// Compute column widths
+.column( @columns: 1; @total-columns: @total-columns; @prefix: 0; @suffix: 0) {
 
   // We use calc() to allow flexible columns with fixed gutters.
   // But first, as a fallback, we set fluid column widths for older browsers.
@@ -125,7 +125,9 @@
   //                       total cols                                     total cols
 
   // width: percentage( @columns / @total-columns ) - ( @gutter-percentage * ( ( @total-columns - @columns ) / @total-columns ) );
-  width: percentage( @columns / @total-columns );
+
+  @width: percentage( @columns / @total-columns );
+  width: @width;
 
   // Now we use calc() to get the ideal flexible columns w/ fixed gutters.
   // 
@@ -136,7 +138,25 @@
   // @col-width: percentage( @columns / @total-columns ) + ( @gutter-percentage * ( @columns / @total-columns ) );
   // width: calc( ~"@{col-width} - @{gutter-width}" );
 
-  padding: 0 (@gutter-width / 2);
+
+  // Prefix/Suffix - force spacing to the left/right of a block
+
+  .prefix( @prefix ) when ( @prefix > 0 ) {
+
+    @offset: percentage( @prefix / @total-columns );
+    width: @width + @offset;
+    padding-left: @offset;
+
+  }
+
+  .suffix( @suffix ) when ( @suffix > 0 ) {
+
+    @offset: percentage( @suffix / @total-columns );
+    width: @width + @offset;
+    padding-right: @offset;
+
+  }
+
 }
 
 
@@ -191,6 +211,8 @@
 // }
 
 
+// Push and Pull classes for source ordering
+
 .push( @offset: 1, @total-columns: @total-columns ) {
 
   // Fallback for non-calc() browsers. This is the same formula we use for 
@@ -204,7 +226,7 @@
   // @push: percentage( @offset / @total-columns ) - ( @gutter-percentage * ( ( @total-columns - @offset / @total-columns ) ) );
   @push: percentage( @offset / @total-columns );
   // margin-left: @push + @gutter-percentage;
-  margin-left: @push;
+  //// margin-left: @push;
 
   // Now we use calc() for modern browsers. Same formula from the column() 
   // section but we add the gutter width.
@@ -226,8 +248,10 @@
   //   margin-left: calc( ~"@{push}" );
   // }
 
-}
+  position: relative;
+  left: @push;
 
+}
 
 .pull( @offset: 1, @total-columns: @total-columns ) {
 
@@ -241,7 +265,7 @@
 
   // @pull: percentage( @offset / @total-columns ) - ( @gutter-percentage * ( ( @total-columns - @offset / @total-columns ) ) );
   @pull: percentage( @offset / @total-columns );
-  margin-right: @pull;
+  //margin-right: @pull;
 
   // Now we use calc() for modern browsers. Same formula from the column() 
   // section which involves subtracting the fixed-width gutter. By adding the
@@ -254,6 +278,9 @@
   // @pull: percentage( @offset / @total-columns ) + ( @gutter-percentage * ( @offset / @total-columns ) );
   // @pull: percentage( @offset / @total-columns ) + ( @offset / @total-columns );
   // margin-right: calc( ~"@{pull}" );
+
+  position: relative;
+  right: @pull;
 
 }
 
