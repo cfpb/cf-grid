@@ -1,0 +1,78 @@
+@import "ghost.less";
+
+/**
+ *  A CSS version of Ghost
+ **/
+
+//  If you'd prefer vanilla CSS over LESS, this stylesheet will 
+//  generate a CSS version of Ghost with the same fixed-width 
+//  fluid-column functionality.
+//
+//  .wrapper = .wrapper()
+//  .row = .row()
+//  .col-X = .column( X )
+//  .push-X = .push( X )
+//  .pull-X = .pull( X )
+//
+//  Change the variables below before compiling to change your
+//  grid specifications.
+
+@wrapper-width: 1200px;
+@gutter-width: 30px;
+@total-columns: 12;
+
+.wrapper {
+  .wrapper();
+}
+
+.row {
+  .row();
+}
+
+.columnX ( @index ) when ( @index > 0 ) {
+
+  ( ~".col-@{index}" ) {
+    .column( @index );
+  }
+
+  .prefixX ( @index, @total-columns - @index );
+  .suffixX ( @index, @total-columns - @index );
+
+
+  ( ~".push-@{index}" ) {
+    .push( @index );
+  }
+
+  ( ~".pull-@{index}" ) {
+    .pull( @index );
+  }
+
+  .columnX( @index - 1 );
+
+}
+
+.prefixX ( @index, @indexP ) when (@indexP > 0) {
+  
+  ( ~".col-@{index}.prefix-@{indexP}" ) {
+    .column( @index );
+    .prefix( @indexP );
+  }
+
+  .prefixX ( @index, @indexP - 1 );
+
+}
+
+.suffixX ( @index, @indexS ) when (@indexS > 0) {
+  
+  ( ~".col-@{index}.suffix-@{indexS}" ) {
+    .column( @index );
+    .suffix( @indexS );
+  }
+
+  .suffixX ( @index, @indexS - 1 );
+
+}
+
+.columnX ( 0 ) {}
+
+.columnX ( @total-columns );
