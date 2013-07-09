@@ -32,7 +32,7 @@ h1 {
 
   .columnX ( @index ) when ( @index > 0 ) {
 
-    ( ~".col-@{index}" ) {
+    .col-@{index} {
       .column( @index );
     }
 
@@ -40,11 +40,11 @@ h1 {
     .suffixX ( @index, @total-columns - @index );
 
 
-    ( ~".push-@{index}" ) {
+    .push-@{index} {
       .push( @index );
     }
 
-    ( ~".pull-@{index}" ) {
+    .pull-@{index} {
       .pull( @index );
     }
 
@@ -54,10 +54,11 @@ h1 {
 
   .prefixX ( @index, @indexP ) when (@indexP > 0) {
     
-    ( ~".col-@{index}.prefix-@{indexP}" ) {
-      .column( @index );
-      .prefix( @indexP );
+    .col-@{index}.prefix-@{indexP} {
+      .column( @columns: @index; @prefix: @indexP; );
     }
+
+    .prefixSuffix ( @index, @indexP, @total-columns - @index - @indexP );
 
     .prefixX ( @index, @indexP - 1 );
 
@@ -65,12 +66,21 @@ h1 {
 
   .suffixX ( @index, @indexS ) when (@indexS > 0) {
     
-    ( ~".col-@{index}.suffix-@{indexS}" ) {
-      .column( @index );
-      .suffix( @indexS );
+    .col-@{index}.suffix-@{indexS} {
+      .column( @columns: @index; @suffix: @indexS; );
     }
 
     .suffixX ( @index, @indexS - 1 );
+
+  }
+
+  .prefixSuffix ( @index, @indexP, @indexS ) when (@indexS > 0) {
+
+    .col-@{index}.prefix-@{indexP}.suffix-@{indexS} {
+      .column( @columns: @index; @prefix: @indexP; @suffix: @indexS );
+    }
+
+    .prefixSuffix ( @index, @indexP, @indexS - 1 );
 
   }
 
@@ -78,78 +88,19 @@ h1 {
 
   .columnX ( @total-columns );
 
+  // end of class generation code
 
-  // .one {
-  //   .column(1);
-  // }
-
-  // .two {
-  //   .column(2);
-  // }
-
-  // .three {
-  //   .column(3);
-  // }
-
-  // .four {
-  //   .column(4);
-  // }
-
-  // .six {
-  //   .column(6);
-  // }
-
-  // .twelve {
-  //   .column(12);
-  // }
 
   .column {
     //padding: 20px 0;
     text-align: center;
     margin-bottom: 10px;
+
+    section {
+      text-align: left;
+    }
   }
 
-  // // Prefix tests
-
-  // .one.prefix-one {
-  //   .column(1);
-  //   .prefix(1);
-  // }
-  // .one.prefix-two {
-  //   .column(1);
-  //   .prefix(2);
-  // }
-
-  // .prefix-two {
-  //   .prefix(2);
-  // }
-  // .prefix-three {
-  //   .prefix(3);
-  // }
-  // .prefix-four {
-  //   .prefix(4);
-  // }
-  // .prefix-five {
-  //   .prefix(5);
-  // }
-  // .prefix-six {
-  //   .prefix(6);
-  // }
-  // .prefix-seven {
-  //   .prefix(7);
-  // }
-  // .prefix-eight {
-  //   .prefix(8);
-  // }
-  // .prefix-nine {
-  //   .prefix(9);
-  // }
-  // .prefix-ten {
-  //   .prefix(10);
-  // }
-  // .prefix-eleven {
-  //   .prefix(11);
-  // }
 
   // Push/pull tests
 
@@ -173,27 +124,6 @@ h1 {
     .pull(2);
   }
 
-  // Nesting tests
-  
-  .col-6 {
-    section {
-      .row();
-    }
-    .col-two {
-      .column( 2, 6 );
-      background-color: rgba( 0, 0, 0, .25 ) !important;
-    }
-  }
-  
-  .col-three {
-    section {
-      .row();
-    }
-    .col-one {
-      .column( 1, 3 );
-      background-color: rgba( 0, 0, 0, .25 ) !important;
-    }
-  }
 
   // Viewport adjustments
 
@@ -223,156 +153,6 @@ h1 {
 }
 
 
-/*@total-columns: 16;
-
-// Sixteen columns, 1200px wide
-
-.cols-16 {
-
-  .wrapper();
-
-  section {
-    .row();
-  }
-
-  .columnX ( @index ) when ( @index > 0 ) {
-
-    ( ~".col-@{index}" ) {
-      .column( @index );
-    }
-
-    .prefixX ( @index, @total-columns - @index );
-    .suffixX ( @index, @total-columns - @index );
-
-
-    ( ~".push-@{index}" ) {
-      .push( @index );
-    }
-
-    ( ~".pull-@{index}" ) {
-      .pull( @index );
-    }
-
-    .columnX( @index - 1 );
-
-  }
-
-  .prefixX ( @index, @indexP ) when (@indexP > 0) {
-    
-    ( ~".col-@{index}.prefix-@{indexP}" ) {
-      .column( @index );
-      .prefix( @indexP );
-    }
-
-    .prefixX ( @index, @indexP - 1 );
-
-  }
-
-  .suffixX ( @index, @indexS ) when (@indexS > 0) {
-    
-    ( ~".col-@{index}.suffix-@{indexS}" ) {
-      .column( @index );
-      .suffix( @indexS );
-    }
-
-    .suffixX ( @index, @indexS - 1 );
-
-  }
-
-  .columnX ( 0 ) {}
-
-  .columnX ( @total-columns );
-
-  // .one {
-  //   .column(1, 16);
-  // }
-
-  // .two {
-  //   .column(2, 16);
-  // }
-
-  // .four {
-  //   .column(4, 16);
-  // }
-
-  // .eight {
-  //   .column(8, 16);
-  // }
-
-  .column {
-    //padding: 20px 0;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-
-  // Push/pull tests
-
-  .push-one {
-    .push(1, 16);
-  }
-
-  .push-two {
-    .push(2, 16);
-  }
-
-  .push-four {
-    .push(4, 16);
-  }
-
-  .pull-two {
-    .pull(2, 16);
-  }
-
-  // Nesting tests
-  
-  .col-six {
-    section {
-      .row();
-    }
-    .col-two {
-      .column( 2, 6 );
-      background-color: rgba( 255, 255, 255, .5 ) !important;
-    }
-  }
-  
-  .col-three {
-    section {
-      .row();
-    }
-    .col-one {
-      .column( 1, 3 );
-      background-color: rgba( 255, 255, 255, .5 ) !important;
-    }
-  }
-
-  // Viewport adjustments
-
-  @media only screen and ( max-width: 767px ) {
-
-    .column {
-      .column(12);
-      // Because we're using push(), we have to make sure the offset is
-      // removed on smaller screens. Ideally this will someday be baked
-      // into core ghost.less.
-      margin-left: 0 !important;
-      margin-bottom: 10px;
-    }
-
-  }
-
-}
-
-
-// Sixteen columns, 960px wide
-
-.cols-16.w-960 {
-
-  .wrapper( 960px );
-
-}*/
-
-
 // Misc. test runner stuff
 
 body > div {
@@ -391,7 +171,8 @@ body > div {
 
     div {
       padding: 20px 0;
-      background-color: #f9af51 !important;
+      background-color: rgba(255, 0, 0, 0.25) !important;
+      text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
     }
   }
 }

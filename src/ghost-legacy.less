@@ -31,15 +31,15 @@
 
 .columnX ( @index ) when ( @index > 0 ) {
 
-  ( ~".col-@{index}" ) {
+  ( .col-@{index} ) {
     .column( @index );
   }
 
-  ( ~".push-@{index}" ) {
+  ( .push-@{index} ) {
     .push( @index );
   }
 
-  ( ~".pull-@{index}" ) {
+  ( .pull-@{index} ) {
     .pull( @index );
   }
 

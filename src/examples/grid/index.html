@@ -12,7 +12,7 @@
                                 // entry less file
         };
     </script>
-    <script src="static/less-1.3.3.min.js"></script>
+    <script src="static/less-1.4.1.min.js"></script>
 </head>
 
 <body>
@@ -107,21 +107,21 @@
         <section class="nesting">
             <div class="column col-6">
                 <div>
-                    <h4>six</h4>
+                    six
                     <section>
-                        <div class="column col-2"><div>two</div></div>
-                        <div class="column col-2"><div>two</div></div>
-                        <div class="column col-2"><div>two</div></div>
+                        <div class="column col-4"><div>four</div></div>
+                        <div class="column col-4"><div>four</div></div>
+                        <div class="column col-4"><div>four</div></div>
                     </section>
                 </div>
             </div>
             <div class="column col-6">
                 <div>
-                    <h4>six</h4>
+                    six
                     <section>
-                        <div class="column col-2"><div>two</div></div>
-                        <div class="column col-2"><div>two</div></div>
-                        <div class="column col-2"><div>two</div></div>
+                        <div class="column col-4"><div>four</div></div>
+                        <div class="column col-4"><div>four</div></div>
+                        <div class="column col-4"><div>four</div></div>
                     </section>
                 </div>
             </div>
@@ -129,25 +129,34 @@
 
         <section>
             <div class="column col-3">
-                <section>
-                    <div class="column col-1"><div>one</div></div>
-                    <div class="column col-1"><div>one</div></div>
-                    <div class="column col-1"><div>one</div></div>
-                </section>
+                <div>
+                    three
+                    <section>
+                        <div class="column col-6"><div>six</div></div>
+                        <div class="column col-6"><div>six</div></div>
+                    </section>
+                </div>
             </div>
             <div class="column col-6">
-                <section>
-                    <div class="column col-2"><div>two</div></div>
-                    <div class="column col-2"><div>two</div></div>
-                    <div class="column col-2"><div>two</div></div>
-                </section>
+                <div>
+                    three
+                    <section>
+                        <div class="column col-4"><div>four</div></div>
+                        <div class="column col-4"><div>four</div></div>
+                        <div class="column col-4"><div>four</div></div>
+                    </section>
+                </div>
             </div>
             <div class="column col-3">
-                <section>
-                    <div class="column col-1"><div>one</div></div>
-                    <div class="column col-1"><div>one</div></div>
-                    <div class="column col-1"><div>one</div></div>
-                </section>
+                <div>
+                    three
+                    <section>
+                        <div class="column col-3"><div>three</div></div>
+                        <div class="column col-3"><div>three</div></div>
+                        <div class="column col-3"><div>three</div></div>
+                        <div class="column col-3"><div>three</div></div>
+                    </section>
+                </div>
             </div>
         </section>
 
@@ -212,149 +221,75 @@
         <h3>Prefixing/Suffixing</h3>
 
         <section>
-            <div class="column col-1"><div>prefix zero</div></div>
-        </section>
-        <section>
-            <div class="column col-1 prefix-1"><div>prefix one</div></div>
-        </section>
-        <section>
-            <div class="column col-1 prefix-2"><div>prefix two</div></div>
-        </section>
-        <section>
-            <div class="column col-1 prefix-3"><div>prefix three</div></div>
-        </section>
-        <section>
-            <div class="column col-1 prefix-4"><div>prefix four</div></div>
-        </section>
-        <section>
-            <div class="column col-1 prefix-5"><div>prefix five</div></div>
-        </section>
-        <section>
-            <div class="column col-1 prefix-6"><div>prefix six</div></div>
-        </section>
-        <section>
-            <div class="column col-1 prefix-7"><div>prefix seven</div></div>
-        </section>
-        <section>
-            <div class="column col-1 prefix-8"><div>prefix eight</div></div>
-        </section>
-        <section>
-            <div class="column col-1 prefix-9"><div>prefix nine</div></div>
-        </section>
-        <section>
-            <div class="column col-1 prefix-10"><div>prefix ten</div></div>
-        </section>
-        <section>
-            <div class="column col-1 prefix-11"><div>prefix eleven</div></div>
-        </section>
-
-        <section>
-            <div class="column col-1 suffix-11"><div>suffix eleven</div></div>
-        </section>
-        <section>
-            <div class="column col-1 suffix-10"><div>suffix ten</div></div>
-        </section>
-        <section>
-            <div class="column col-1 suffix-9"><div>suffix nine</div></div>
-        </section>
-        <section>
-            <div class="column col-1 suffix-8"><div>suffix eight</div></div>
-        </section>
-        <section>
-            <div class="column col-1 suffix-7"><div>suffix seven</div></div>
-        </section>
-        <section>
-            <div class="column col-1 suffix-6"><div>suffix six</div></div>
-        </section>
-        <section>
-            <div class="column col-1 suffix-5"><div>suffix five</div></div>
-        </section>
-        <section>
-            <div class="column col-1 suffix-4"><div>suffix four</div></div>
-        </section>
-        <section>
-            <div class="column col-1 suffix-3"><div>suffix three</div></div>
-        </section>
-        <section>
-            <div class="column col-1 suffix-2"><div>suffix two</div></div>
-        </section>
-        <section>
-            <div class="column col-1 suffix-1"><div>suffix one</div></div>
-        </section>
-        <section>
-            <div class="column col-1"><div>suffix zero</div></div>
+            <div class="column col-1 suffix-11"><div>prefix 0, suffix 11</div></div>
+            <div class="column col-1 prefix-1 suffix-10"><div>prefix 1, suffix 10</div></div>
+            <div class="column col-1 prefix-2 suffix-9"><div>prefix 2, suffix 9</div></div>
+            <div class="column col-1 prefix-3 suffix-8"><div>prefix 3, suffix 8</div></div>
+            <div class="column col-1 prefix-4 suffix-7"><div>prefix 4, suffix 7</div></div>
+            <div class="column col-1 prefix-5 suffix-6"><div>prefix 5, suffix 6</div></div>
+            <div class="column col-1 prefix-6 suffix-5"><div>prefix 6, suffix 5</div></div>
+            <div class="column col-1 prefix-7 suffix-4"><div>prefix 7, suffix 4</div></div>
+            <div class="column col-1 prefix-8 suffix-3"><div>prefix 8, suffix 3</div></div>
+            <div class="column col-1 prefix-9 suffix-2"><div>prefix 9, suffix 2</div></div>
+            <div class="column col-1 prefix-10 suffix-1"><div>prefix 10, suffix 1</div></div>
+            <div class="column col-1 prefix-11"><div>prefix 11, suffix 0</div></div>
         </section>
 
         <h3>Push/Pull</h3>
 
         <section>
-            <div class="column col-2 push-two"><div>two, push two</div></div>
-            <div class="column col-2 push-two"><div>two, push two</div></div>
-            <div class="column col-2 push-two"><div>two, push two</div></div>
+            <div class="column col-4 push-8"><div>four, push eight</div></div>
+            <div class="column col-8 pull-4"><div>eight, pull four</div></div>
         </section>
 
         <section>
-            <div class="column col-2 pull-two"><div>two, pull two</div></div>
-            <div class="column col-2 pull-two"><div>two, pull two</div></div>
-            <div class="column col-2 pull-two"><div>two, pull two</div></div>
-        </section>
-
-        <section>
-            <div class="column col-3"><div>three</div></div>
-            <div class="column col-4 push-one"><div>four, push one</div></div>
-            <div class="column col-3 push-one"><div>three, push one</div></div>
-        </section>
-
-        <section>
-            <div class="column col-3 pull-one"><div>three, pull one</div></div>
-            <div class="column col-4 pull-one"><div>four, pull one</div></div>
-            <div class="column col-3"><div>three</div></div>
-        </section>
-
-        <section>
-            <div class="column col-6 push-three"><div>six, push three</div></div>
+            <div class="column col-9 push-3"><div>nine, push three</div></div>
+            <div class="column col-3 pull-9"><div>three, push nine</div></div>
         </section>
 
         <h3>Nesting</h3>
 
-        <section>
+        <section class="nesting">
             <div class="column col-6">
-                <section>
-                    <div class="column col-2"><div>two</div></div>
-                    <div class="column col-2"><div>two</div></div>
-                    <div class="column col-2"><div>two</div></div>
-                </section>
+                <div>
+                    six
+                    <section>
+                        <div class="column col-6"><div>six</div></div>
+                        <div class="column col-6"><div>six</div></div>
+                    </section>
+                </div>
             </div>
             <div class="column col-6">
-                <section>
-                    <div class="column col-2"><div>two</div></div>
-                    <div class="column col-2"><div>two</div></div>
-                    <div class="column col-2"><div>two</div></div>
-                </section>
+                <div>
+                    six
+                    <section>
+                        <div class="column col-4"><div>four</div></div>
+                        <div class="column col-4"><div>four</div></div>
+                        <div class="column col-4"><div>four</div></div>
+                    </section>
+                </div>
             </div>
         </section>
 
         <section>
-            <div class="column col-3">
-                <section>
-                    <div class="column col-1"><div>one</div></div>
-                    <div class="column col-1"><div>one</div></div>
-                    <div class="column col-1"><div>one</div></div>
-                </section>
+            <div class="column col-4">
+                <div>
+                    four
+                    <section>
+                        <div class="column col-6"><div>six</div></div>
+                        <div class="column col-6"><div>six</div></div>
+                    </section>
+                </div>
             </div>
-            <div class="column col-6">
-                <section>
-                    <div class="column col-2"><div>two</div></div>
-                    <div class="column col-2"><div>two</div></div>
-                    <div class="column col-2"><div>two</div></div>
-                </section>
-            </div>
-            <div class="column col-3">
-                <section>
-                    <div class="column col-1"><div>one</div></div>
-                    <div class="column col-1"><div>one</div></div>
-                    <div class="column col-1"><div>one</div></div>
-                </section>
+            <div class="column col-8">
+                <div>
+                    eight
+                    <section>
+                        <div class="column col-4"><div>four</div></div>
+                        <div class="column col-4"><div>four</div></div>
+                        <div class="column col-4"><div>four</div></div>
+                    </section>
+                </div>
             </div>
         </section>
 

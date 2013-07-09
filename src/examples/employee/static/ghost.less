@@ -73,6 +73,7 @@
 
   &:after {
     clear: both;
+    border: ;
   }
 
 }
@@ -89,12 +90,9 @@
   margin-right: -0.25em; // Remove whitespace caused by setting display to inline-block
 }
 
-// Compute column widths
-.column( @columns: 1; @total-columns: @total-columns; @prefix: 0; @suffix: 0) {
+// Compute column widths and prefix/suffix padding
+.column( @columns: 1; @total: @total-columns; @prefix: 0; @suffix: 0 ) {
 
-  // We use calc() to allow flexible columns with fixed gutters.
-  // But first, as a fallback, we set fluid column widths for older browsers.
-  // 
   // To calculate the percentage width of this element, we take the number of 
   // columns it'll span and divide by the total number of columns. We then have
   // to subtract the gutter width because it's specified using a margin rule later.
@@ -108,9 +106,12 @@
   //                       total cols                                     total cols
 
   // width: percentage( @columns / @total-columns ) - ( @gutter-percentage * ( ( @total-columns - @columns ) / @total-columns ) );
-
-  @width: percentage( @columns / @total-columns );
-  width: @width;
+  @width: percentage( @columns / @total );
+  
+  .nonPrefixSuffix( @prefix, @suffix );
+  .prefix( @prefix, @suffix );
+  .suffix( @suffix, @prefix );
+  .prefixSuffix( @prefix, @suffix );
 
   // Now we use calc() to get the ideal flexible columns w/ fixed gutters.
   // 
@@ -121,22 +122,35 @@
   // @col-width: percentage( @columns / @total-columns ) + ( @gutter-percentage * ( @columns / @total-columns ) );
   // width: calc( ~"@{col-width} - @{gutter-width}" );
 
+  .nonPrefixSuffix ( @prefix: 0; @suffix: 0 ) when ( @prefix = 0) and (@suffix = 0) {
+    width: @width;
+  }
 
   // Prefix/Suffix - force spacing to the left/right of a block
 
-  .prefix( @prefix ) when ( @prefix > 0 ) {
+  .prefix( @prefix: 0; @suffix: 0 ) when ( @prefix > 0 ) and ( @suffix = 0 ) {
 
-    @offset: percentage( @prefix / @total-columns );
+    @offset: percentage( @prefix / @total );
     width: @width + @offset;
     padding-left: @offset;
 
   }
 
-  .suffix( @suffix ) when ( @suffix > 0 ) {
+  .suffix( @suffix: 0; @prefix: 0 ) when ( @suffix > 0 ) and ( @prefix = 0 ) {
 
-    @offset: percentage( @suffix / @total-columns );
+    @offset: percentage( @suffix / @total );
     width: @width + @offset;
     padding-right: @offset;
+
+  }
+
+  .prefixSuffix( @prefix: 0; @suffix: 0 ) when ( @prefix > 0 ) and ( @suffix > 0 ) {
+
+    @left: percentage( @prefix / @total );
+    @right: percentage( @suffix / @total );
+    width: @width + @left + @right;
+    padding-left: @left;
+    padding-right: @right;
 
   }
 
@@ -145,7 +159,7 @@
 
 // When the element spans less than the full length of total columns, give it a gutter.
 
-.column( @columns, @total-columns: @total-columns ) when ( @columns < @total-columns ) {
+/*.column( @columns, @total-columns: @total-columns ) when ( @columns < @total-columns ) {
 
   // Margin on left is the full gutter's width in px
   // Again, using percentages for non-calc() browsers
@@ -160,18 +174,18 @@
   //   margin-left: 0;
   // }
 
-}
+}*/
 
 
 // When @columns spans the full length of total columns, remove gutters
 // because the content will fill the entire width of the page.
 
-.column( @columns, @total-columns: @total-columns ) when ( @columns >= @total-columns ) {
+/*.column( @columns, @total-columns: @total-columns ) when ( @columns >= @total-columns ) {
 
   width: 100%;
   margin-left: 0;
 
-}
+}*/
 
 
 // When @exposed is true, place gutters on the right so that content
@@ -270,9 +284,37 @@
 
 // Debug tools
 
-.column( @columns, @total-columns: @total-columns ) when ( @debug ) {
+.column( @columns; @total: @total-columns; @prefix: 0; @suffix: 0; ) when ( @debug ) {
 
   background-color: #ffc;
   // background-color: fade(#ffc, 50%);
+
+  // Prefix/Suffix - force spacing to the left/right of a block
+
+  .prefix( @prefix ) when ( @prefix > 0 ) {
+
+    @offset: percentage( @prefix / @total );
+    width: @width + @offset;
+    padding-left: @offset;
+
+  }
+
+  .suffix( @suffix ) when ( @suffix > 0 ) {
+
+    @offset: percentage( @suffix / @total );
+    width: @width + @offset;
+    padding-right: @offset;
+
+  }
+
+  .prefixSuffix( @prefix, @suffix ) when ( @prefix > 0 ) and ( @suffix > 0 ) {
+
+    @left: percentage( @prefix / @total );
+    @right: percentage( @suffix / @total );
+    width: @width + @left + @right;
+    padding-left: @left;
+    padding-right: @right;
+
+  }
 
 }

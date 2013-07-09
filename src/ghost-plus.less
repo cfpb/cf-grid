@@ -31,7 +31,7 @@
 
 .columnX ( @index ) when ( @index > 0 ) {
 
-  ( ~".col-@{index}" ) {
+  .col-@{index} {
     .column( @index );
   }
 
@@ -39,11 +39,11 @@
   .suffixX ( @index, @total-columns - @index );
 
 
-  ( ~".push-@{index}" ) {
+  .push-@{index} {
     .push( @index );
   }
 
-  ( ~".pull-@{index}" ) {
+  .pull-@{index} {
     .pull( @index );
   }
 
@@ -53,10 +53,11 @@
 
 .prefixX ( @index, @indexP ) when (@indexP > 0) {
   
-  ( ~".col-@{index}.prefix-@{indexP}" ) {
-    .column( @index );
-    .prefix( @indexP );
+  .col-@{index}.prefix-@{indexP} {
+    .column( @columns: @index; @prefix: @indexP; );
   }
+
+  .prefixSuffix ( @index, @indexP, @total-columns - @index - @indexP );
 
   .prefixX ( @index, @indexP - 1 );
 
@@ -64,12 +65,21 @@
 
 .suffixX ( @index, @indexS ) when (@indexS > 0) {
   
-  ( ~".col-@{index}.suffix-@{indexS}" ) {
-    .column( @index );
-    .suffix( @indexS );
+  .col-@{index}.suffix-@{indexS} {
+    .column( @columns: @index; @suffix: @indexS; );
   }
 
   .suffixX ( @index, @indexS - 1 );
+
+}
+
+.prefixSuffix ( @index, @indexP, @indexS ) when (@indexS > 0) {
+
+  .col-@{index}.prefix-@{indexP}.suffix-@{indexS} {
+    .column( @columns: @index; @prefix: @indexP; @suffix: @indexS );
+  }
+
+  .prefixSuffix ( @index, @indexP, @indexS - 1 );
 
 }
 
