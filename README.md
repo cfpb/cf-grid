@@ -75,6 +75,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
+ * 2013-07-12   v0.4.2   Add proper git tag.
  * 2013-07-11   v0.4.1   Bump package.json version to aid dependency management.
  * 2013-07-01   v0.4.0   Add grunt-cfpb-internal to manage versioning.
 
@@ -88,4 +89,4 @@ For further details, please see: http://www.consumerfinance.gov/developers/sourc
 
 ---
 
-*This file was generated on Thu Jul 11 2013 23:45:47.*
+*This file was generated on Thu Jul 11 2013 23:51:14.*

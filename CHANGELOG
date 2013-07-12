@@ -1,3 +1,8 @@
+v0.4.2:
+  date: 2013-07-12
+  changes:
+    - Add proper git tag.
+
 v0.4.1:
   date: 2013-07-11
   changes:
