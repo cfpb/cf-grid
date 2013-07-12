@@ -1,3 +1,8 @@
+v0.4.1:
+  date: 2013-07-11
+  changes:
+    - Bump package.json version to aid dependency management.
+
 v0.4.0:
   date: 2013-07-01
   changes:
