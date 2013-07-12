@@ -39,8 +39,3 @@ Thumbs.db
 # Grunt.js #
 ############
 node_modules/
-
-# Minified assets #
-###############
-*.min.js
-*.min.css

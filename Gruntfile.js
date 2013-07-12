@@ -78,7 +78,6 @@ module.exports = function(grunt) {
         },
         files: {
           'dist/ghost.css': ['src/ghost-legacy.less'],
-          'dist/ghost-plus.css': ['src/ghost-plus.less']
         }
       }
     },
