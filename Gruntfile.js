@@ -73,10 +73,11 @@ module.exports = function(grunt) {
       legacy: {
         options: {
           paths: ["src"],
-          banner: '<%= banner %>'
+          banner: '<%= banner %>',
+          yuicompress: false
         },
         files: {
-          'dist/ghost.css': ['src/ghost-legacy.less']
+          'dist/ghost.css': ['src/ghost-legacy.less'],
         }
       }
     },

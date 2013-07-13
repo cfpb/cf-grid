@@ -11,252 +11,196 @@
                   | $$                  
                   |__/                  
 
+<<<<<<< HEAD
 * Ghost - v0.4.2 - 2013-07-12
+=======
+* Ghost - v0.2.0 - 2013-07-12
+>>>>>>> e67c3f7990c6ff45128b465845ce0560c1e0f22f
 * http://consumerfinance.gov
 * A Public Domain work of the Consumer Financial Protection Bureau */
 
 // The following variables can be overridden in your application's stylesheet.
 
 // Grid's max width in px.
-
 @wrapper-width: 1200px;
 
 // Width between columns.
-
 @gutter-width: 30px;
 
 // Total number of columns.
-
 @total-columns: 12;
 
-// Border-box needs to be enforced on columns. This is mixed-in below.
-
-.border-box() {
-     -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 // Column blocks have a bg color if set to true.
-
 @debug: false;
-
-// Setting @exposed to true will shift gutters from the left side of columns
-// to the right. This allows elements to be left aligned which is necessary when 
-// rows are not used and blocks are allowed to float on their own. For example,
-// if you have a long unordered list of li's that you want to float without
-// having to break them up into rows, you could use this feature.
-
-@exposed: false;
 
 
 // Gutter percentage is calculated by putting gutter width over wrapper width.
 // You should not override this in your application's stylesheet.
-
 @gutter-percentage: percentage( @gutter-width / @wrapper-width );
 
 
-// A wrapper holds one or more rows.
-
-.wrapper( @wrapper-width: @wrapper-width ) {
-
-  max-width: @wrapper-width;
-  margin: 0 auto;
-  padding: 0;
-  position: relative;
-
-  // We use padding so margin can be used for centering
-  // A percentage is used first for non-calc() browsers
-
-  padding: 0 ( @gutter-percentage / 2 );
-  padding: 0 calc( @gutter-width / 2 );
-
+// Add box-sizing to IE
+.lt-ie8 {
 }
 
 
-// A row holds one or more column() elements
+// A wrapper holds one or more .column() elements.
 
-.row() {
-
+.wrapper( @wrapper-width: @wrapper-width ) {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: @wrapper-width;
+  padding: 0 ( @gutter-width / 2 );
   margin: 0 auto;
-  width: 100%;
+  position: relative;
   overflow: hidden;
   clear: both;
 
-  // Clearfix hack for IE 6/7 only
-
-  *zoom: 1;
+  .lt-ie8 & {
+    // Clearfix hack for IE 6/7 only
+    *zoom: 1;
+    // box-sizing polyfill: https://github.com/Schepp/box-sizing-polyfill
+    *behavior: url(boxsizing.htc);
+  }
 
   // Clearfix hack: http://nicolasgallagher.com/micro-clearfix-hack/
-
   &:before,
   &:after {
     content: " ";
     display: table; 
   }
-
   &:after {
     clear: both;
   }
-
 }
 
 
 // Column()s hold actual content
 
-.column( @columns, @total-columns: @total-columns ) {
+.col {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 
-  .border-box();
-  float: left;
+  // borders used for fixed gutters
+  border: solid transparent;
+  border-width: 0 (@gutter-width / 2);
 
-  // We use calc() to allow flexible columns with fixed gutters.
-  // But first, as a fallback, we set fluid column widths for older browsers.
-  // 
-  // To calculate the percentage width of this element, we take the number of 
-  // columns it'll span and divide by the total number of columns. We then have
-  // to subtract the gutter width because it's specified using a margin rule later.
-  // We don't simply subtract the gutter width because there are n - 1 gutters 
-  // per row. Instead, we subtract the gutter width multiplied by the column 
-  // difference over the number of total columns. This gives us a column that is 
-  // slightly larger than if we had simply subtracted 100% of the gutter width.
-  //  
-  //                      num cols used                            total cols - num cols used 
-  //  column width in % = ------------- - ( width of gutter in % * --------------------------- )
-  //                       total cols                                     total cols
+  margin-right: -0.25em; // Remove whitespace caused by setting display to inline-block
 
-  width: percentage( @columns / @total-columns ) - ( @gutter-percentage * ( ( @total-columns - @columns ) / @total-columns ) );
+  vertical-align: top;
 
-  // Now we use calc() to get the ideal flexible columns w/ fixed gutters.
-  // 
-  //                      num cols used                            num cols used 
-  //  column width in % = ------------- + ( width of gutter in % * ------------- )
-  //                       total cols                               total cols
+  // Tweaks are necessary for IE, of course.
+  // This creates a whole heap of extra rules, and thus should probably be pulled out 
+  // into a separate stylesheet that gets loaded via conditional comment.
+  .ie & {
+    margin-right: -0.26em;
+  }
+  .lt-ie8 & {
+    // hack inline-block into submission
+    display: inline;
 
-  @col-width: percentage( @columns / @total-columns ) + ( @gutter-percentage * ( @columns / @total-columns ) );
-  width: calc( ~"@{col-width} - @{gutter-width}" );
-
+    // Clearfix hack for IE 6/7 only
+    *zoom: 1;
+    // box-sizing polyfill: https://github.com/Schepp/box-sizing-polyfill
+    *behavior: url(boxsizing.htc);
+  }
 }
 
 
-// When the element spans less than the full length of total columns, give it a gutter.
+// Compute column widths and prefix/suffix padding
 
-.column( @columns, @total-columns: @total-columns ) when ( @columns < @total-columns ) {
+.column( @columns: 1; @total: @total-columns; @prefix: 0; @suffix: 0 ) {
 
-  // Margin on left is the full gutter's width in px
-  // Again, using percentages for non-calc() browsers
+  // Necessary bits from the simple class/mixin above
+  .col;
 
-  margin-right: 0;
-  margin-left: @gutter-percentage;
-  margin-left: calc( @gutter-width );
+  // To calculate the percentage width of the base element, we take the number of
+  // columns it'll span and divide by the total number of columns. As columns are
+  // specified as inline-block elements, standard columns require no further math.
+  //  
+  //                      num cols used
+  //  column width in % = -------------
+  //                       total cols
 
-  // Remove gutter from first children, each row will have n - 1 gutters.
+  @width: percentage( @columns / @total );
 
-  &:first-child {
-    margin-left: 0;
+
+  // Modifying standard width and padding for prefixed/suffixed columns, if necessary:
+  // LESS will now run through four possible child mixins, only one of which will
+  // actually be activated, depending on which one's guard conditions are met.
+  // At some point, consider how to modularize the prefix-suffix functionality and
+  // keep it optional.
+  
+  .nonPrefixSuffix( @prefix, @suffix );
+  .prefix( @prefix, @suffix );
+  .suffix( @suffix, @prefix );
+  .prefixSuffix( @prefix, @suffix );
+
+  // Child mixins
+
+  // Run this when neither prefix nor suffix are specified
+  .nonPrefixSuffix( @prefix: 0; @suffix: 0 ) when ( @prefix = 0 ) and ( @suffix = 0 ) {
+    width: @width;
+  }
+
+  // Run this when only prefix is specified
+  .prefix( @prefix: 0; @suffix: 0 ) when ( @prefix > 0 ) and ( @suffix = 0 ) {
+    @offset: percentage( @prefix / @total );
+    width: @width + @offset;
+    padding-left: @offset;
+    .lt-ie8 & {
+      padding-left: 0;
+    }
+  }
+
+  // Run this when only suffix is specified
+  .suffix( @suffix: 0; @prefix: 0 ) when ( @suffix > 0 ) and ( @prefix = 0 ) {
+    @offset: percentage( @suffix / @total );
+    width: @width + @offset;
+    padding-right: @offset;
+    .lt-ie8 & {
+      padding-right: 0;
+    }
+  }
+
+  // Run this when both prefix and suffix are specified
+  .prefixSuffix( @prefix: 0; @suffix: 0 ) when ( @prefix > 0 ) and ( @suffix > 0 ) {
+    @left: percentage( @prefix / @total );
+    @right: percentage( @suffix / @total );
+    width: @width + @left + @right;
+    padding-right: @right;
+    padding-left: @left;
+    .lt-ie8 & {
+      padding: right: 0;
+      padding-left: 0;
+    }
   }
 
 }
 
-
-// When @columns spans the full length of total columns, remove gutters
-// because the content will fill the entire width of the page.
-
-.column( @columns, @total-columns: @total-columns ) when ( @columns >= @total-columns ) {
-
-  width: 100%;
-  margin-left: 0;
-
-}
-
-
-// When @exposed is true, place gutters on the right so that content
-// can be left-aligned.
-
-.column( @columns, @total-columns: @total-columns ) when ( @exposed ) {
-
-  // There are the same number of gutters as column()s, so we calculate
-  // width in a simpler fashion.
-
-  width: percentage( @columns / @total-columns ) - @gutter-percentage;
-
-  @col-width: percentage( @columns / @total-columns );
-  width: calc( ~"@{col-width} - @{gutter-width}" );
-
-  margin-right: @gutter-percentage;
-  margin-right: calc( @gutter-width );
-  margin-left: 0;
-
-}
-
+// Push and Pull mixins for source ordering
 
 .push( @offset: 1, @total-columns: @total-columns ) {
-
-  // Fallback for non-calc() browsers. This is the same formula we use for 
-  // col widths above but we use it for the column()'s margin-left instead.
-  // We add the gutter width to the offset.
-  // 
-  //                num cols used                            total cols - num cols used 
-  //  offset in % = ------------- - ( width of gutter in % * --------------------------- ) + twice the orig gutter %
-  //                  total cols                                     total cols
-
-  @push: percentage( @offset / @total-columns ) - ( @gutter-percentage * ( ( @total-columns - @offset / @total-columns ) ) );
-  margin-left: @push + @gutter-percentage;
-
-  // Now we use calc() for modern browsers. Same formula from the column() 
-  // section but we add the gutter width.
-  // 
-  //                      num cols used                            num cols used 
-  //  column width in % = ------------- + ( width of gutter in % * ------------- )
-  //                       total cols                               total cols
-
-  @push: percentage( @offset / @total-columns ) + ( @gutter-percentage * ( @offset / @total-columns ) );
-  margin-left: calc( ~"@{push} + @{gutter-width}" );
-
-  // With first-children we want to add only one gutter width to the equation.
-
-  &:first-child {
-    @push: percentage( @offset / @total-columns ) - ( @gutter-percentage * ( ( @total-columns - @offset / @total-columns ) ) );
-    margin-left: @push;
-
-    @push: percentage( @offset / @total-columns ) + ( @gutter-percentage * ( @offset / @total-columns ) );
-    margin-left: calc( ~"@{push}" );
-  }
-
+  @push: percentage( @offset / @total-columns );
+  position: relative;
+  left: @push;
 }
 
-
 .pull( @offset: 1, @total-columns: @total-columns ) {
-
-  // Fallback for non-calc() browsers. This is the same formula we use for 
-  // col widths above but we use it for the column()'s margin-left instead.
-  // We add the gutter width to the offset.
-  // 
-  //                num cols used                            total cols - num cols used 
-  //  offset in % = ------------- - ( width of gutter in % * --------------------------- ) + orig gutter %
-  //                  total cols                                     total cols
-
-  @pull: percentage( @offset / @total-columns ) - ( @gutter-percentage * ( ( @total-columns - @offset / @total-columns ) ) );
-  margin-right: @pull;
-
-  // Now we use calc() for modern browsers. Same formula from the column() 
-  // section which involves subtracting the fixed-width gutter. By adding the
-  // gutter for the offset it cancels out the original subtraction.
-  // 
-  //                      num cols used                            num cols used 
-  //  column width in % = ------------- + ( width of gutter in % * ------------- )
-  //                       total cols                               total cols
-
-  @pull: percentage( @offset / @total-columns ) + ( @gutter-percentage * ( @offset / @total-columns ) );
-  margin-right: calc( ~"@{pull}" );
-
+  @pull: percentage( @offset / @total-columns );
+  position: relative;
+  right: @pull;
 }
 
 
 // Debug tools
 
-.column( @columns, @total-columns: @total-columns ) when ( @debug ) {
+.column( @columns; @total: @total-columns; @prefix: 0; @suffix: 0; ) when ( @debug ) {
 
   background-color: #ffc;
-  background-color: fade(#ffc, 50%);
+  background-color: fade(#ff0, 25%);
 
 }
