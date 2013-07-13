@@ -78,6 +78,9 @@ module.exports = function(grunt) {
         },
         files: {
           'dist/ghost.css': ['src/ghost-legacy.less'],
+          'src/examples/grid/static/example.css': ['src/examples/grid/static/example.less'],
+          'src/examples/employee/static/example.css': ['src/examples/employee/static/example.less'],
+          'src/examples/bootstrap/static/example.css': ['src/examples/bootstrap/static/example.less']
         }
       }
     },

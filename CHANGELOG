@@ -1,3 +1,9 @@
+v0.5.0:
+  date: 2013-07-13
+  changes:
+    - Total rewrite to use box-sizing and padding instead of calc().
+    - Compile examples' LESS.
+
 v0.4.2:
   date: 2013-07-12
   changes:
@@ -11,4 +17,4 @@ v0.4.1:
 v0.4.0:
   date: 2013-07-01
   changes:
-    - Add grunt-cfpb-internal to manage versioning.
+    - Add grunt-cfpb-internal to manage semantic versioning.

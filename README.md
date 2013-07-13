@@ -75,9 +75,10 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
+ * 2013-07-13   v0.5.0   Total rewrite to use box-sizing and padding instead of calc(). Compile examples' LESS.
  * 2013-07-12   v0.4.2   Add proper git tag.
  * 2013-07-11   v0.4.1   Bump package.json version to aid dependency management.
- * 2013-07-01   v0.4.0   Add grunt-cfpb-internal to manage versioning.
+ * 2013-07-01   v0.4.0   Add grunt-cfpb-internal to manage semantic versioning.
 
 ## License
 
@@ -89,4 +90,4 @@ For further details, please see: http://www.consumerfinance.gov/developers/sourc
 
 ---
 
-*This file was generated on Fri Jul 12 2013 00:16:58.*
+*This file was generated on Sat Jul 13 2013 15:35:44.*
