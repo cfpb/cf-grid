@@ -1,7 +1,7 @@
 v0.5.2:
   date: 2013-07-15
   changes: 
-    - Update README to be accurate.
+    - Update README to be accurate and add list of known issues.
     - Remove a little bit of outdated stuff from ghost.less.
 
 v0.5.1:
