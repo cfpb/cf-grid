@@ -11,7 +11,7 @@
                   | $$                  
                   |__/                  
 
-* Ghost - v0.5.0 - 2013-07-15
+* Ghost - v0.5.1 - 2013-07-15
 * http://consumerfinance.gov
 * A Public Domain work of the Consumer Financial Protection Bureau */
 
@@ -28,16 +28,6 @@
 
 // Column blocks have a bg color if set to true.
 @debug: false;
-
-
-// Gutter percentage is calculated by putting gutter width over wrapper width.
-// You should not override this in your application's stylesheet.
-@gutter-percentage: percentage( @gutter-width / @wrapper-width );
-
-
-// Add box-sizing to IE
-.lt-ie8 {
-}
 
 
 // A wrapper holds one or more .column() elements.
@@ -69,7 +59,7 @@
   &:after {
     clear: both;
   }
-}
+} // .wrapper()
 
 
 // Column()s hold actual content
@@ -103,7 +93,7 @@
     // box-sizing polyfill: https://github.com/Schepp/box-sizing-polyfill
     *behavior: url(boxsizing.htc);
   }
-}
+} // .col
 
 
 // Compute column widths and prefix/suffix padding
@@ -175,7 +165,7 @@
     }
   }
 
-}
+} // .column()
 
 // Push and Pull mixins for source ordering
 
