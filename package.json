@@ -1,7 +1,7 @@
 {
   "name": "Ghost",
   "description": "An invisible, LESS-based grid system using parametric mixins to encourage semantic HTML",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "homepage": "http://consumerfinance.gov",
   "author": {
     "name": "Consumer Financial Protection Bureau",

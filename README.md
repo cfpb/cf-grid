@@ -1,4 +1,4 @@
-# [Ghost](https://fake.ghe.domain/pages/contolini/ghost/grid/index.html)
+# [Ghost](https://fake.ghe.domain/pages/front/ghost/grid/index.html)
 
 A LESS-based CSS3 grid system using parametric mixins to encourage semantic HTML. Ghost has three main features:
 
@@ -63,7 +63,7 @@ _(Coming soon)_
 
 ## Examples
 
-There is a [test runner](https://fake.ghe.domain/pages/contolini/ghost/grid/index.html) and an example of [Bootstrap integration](https://fake.ghe.domain/pages/contolini/ghost/bootstrap/index.html). These examples can be found in the archive at `dist/example.zip`. They use less.js to compile their LESS. You'll need to run a server locally to avoid cross-origin complaints. Try `python -m SimpleHTTPServer` in the example's directory.
+There is a [test runner](https://fake.ghe.domain/pages/front/ghost/grid/index.html) and an example of [Bootstrap integration](https://fake.ghe.domain/pages/front/ghost/bootstrap/index.html). These examples can be found in the archive at `dist/example.zip`. They use less.js to compile their LESS. You'll need to run a server locally to avoid cross-origin complaints. Try `python -m SimpleHTTPServer` in the example's directory.
 
 Ghost is used by [Qui](https://fake.ghe.domain/pages/contolini/qui) (<a href="https://fake.ghe.domain/contolini/qui/blob/master/src/less/main.less">stylesheet</a>).
 
@@ -75,6 +75,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
+ * 2013-07-15   v0.5.1   Moved repo and updated documentation links accordingly.
  * 2013-07-13   v0.5.0   Total rewrite to use box-sizing and padding instead of calc(). Compile examples' LESS.
  * 2013-07-12   v0.4.2   Add proper git tag.
  * 2013-07-11   v0.4.1   Bump package.json version to aid dependency management.
@@ -90,4 +91,4 @@ For further details, please see: http://www.consumerfinance.gov/developers/sourc
 
 ---
 
-*This file was generated on Sat Jul 13 2013 15:35:44.*
+*This file was generated on Mon Jul 15 2013 13:07:52.*
