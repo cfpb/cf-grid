@@ -13,16 +13,6 @@
 @debug: false;
 
 
-// Gutter percentage is calculated by putting gutter width over wrapper width.
-// You should not override this in your application's stylesheet.
-@gutter-percentage: percentage( @gutter-width / @wrapper-width );
-
-
-// Add box-sizing to IE
-.lt-ie8 {
-}
-
-
 // A wrapper holds one or more .column() elements.
 
 .wrapper( @wrapper-width: @wrapper-width ) {
@@ -44,7 +34,20 @@
     *behavior: url(boxsizing.htc);
   }
 
+<<<<<<< HEAD
 }
+=======
+  // Clearfix hack: http://nicolasgallagher.com/micro-clearfix-hack/
+  &:before,
+  &:after {
+    content: " ";
+    display: table; 
+  }
+  &:after {
+    clear: both;
+  }
+} // .wrapper()
+>>>>>>> 4d3c379f6d65a20674abe3bdb32407ad6b9d59ab
 
 
 // Column()s hold actual content
@@ -78,7 +81,7 @@
     // box-sizing polyfill: https://github.com/Schepp/box-sizing-polyfill
     *behavior: url(boxsizing.htc);
   }
-}
+} // .col
 
 
 // Compute column widths and prefix/suffix padding
@@ -150,7 +153,7 @@
     }
   }
 
-}
+} // .column()
 
 // Push and Pull mixins for source ordering
 

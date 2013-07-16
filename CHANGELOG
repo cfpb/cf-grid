@@ -1,7 +1,13 @@
-v0.5.2:
+v0.5.3:
   date: 2013-07-16
   changes:
-    - Add missing boxsizing.htc polyfill.
+    - Add missing boxsizing.htc.
+
+v0.5.2:
+  date: 2013-07-15
+  changes: 
+    - Update README to be accurate and add list of known issues.
+    - Remove a little bit of outdated stuff from ghost.less.
 
 v0.5.1:
   date: 2013-07-15
