@@ -31,14 +31,6 @@
   *zoom: 1;
   *behavior: url(boxsizing.htc);
 }
-.employee-page:before,
-.employee-page:after {
-  content: " ";
-  display: table;
-}
-.employee-page:after {
-  clear: both;
-}
 .welcome,
 .copyright {
   display: inline-block;

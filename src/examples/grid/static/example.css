@@ -37,14 +37,6 @@ h1 {
   *zoom: 1;
   *behavior: url(boxsizing.htc);
 }
-h1:before,
-h1:after {
-  content: " ";
-  display: table;
-}
-h1:after {
-  clear: both;
-}
 .cols-12 {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -59,14 +51,6 @@ h1:after {
 .lt-ie8 .cols-12 {
   *zoom: 1;
   *behavior: url(boxsizing.htc);
-}
-.cols-12:before,
-.cols-12:after {
-  content: " ";
-  display: table;
-}
-.cols-12:after {
-  clear: both;
 }
 .cols-12 section {
   margin: 0 -15px;
@@ -9724,14 +9708,6 @@ h1:after {
 .lt-ie8 .cols-12.w-960 {
   *zoom: 1;
   *behavior: url(boxsizing.htc);
-}
-.cols-12.w-960:before,
-.cols-12.w-960:after {
-  content: " ";
-  display: table;
-}
-.cols-12.w-960:after {
-  clear: both;
 }
 body > div {
   border-bottom: 1px solid #ccc;
