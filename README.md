@@ -54,6 +54,8 @@ header {
 }
 ```
 
+**Note:** This functionality is optional and you can use Ghost in legacy mode.
+
 ## Getting Started
 
 Grab `ghost.less` from the `dist` directory and @import it at the top of your application's LESS stylesheet.
@@ -75,6 +77,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
+ * 2013-07-16   v0.5.2   Add missing boxsizing.htc polyfill.
  * 2013-07-15   v0.5.1   Moved repo and updated documentation links accordingly.
  * 2013-07-13   v0.5.0   Total rewrite to use box-sizing and padding instead of calc(). Compile examples' LESS.
  * 2013-07-12   v0.4.2   Add proper git tag.
@@ -91,4 +94,4 @@ For further details, please see: http://www.consumerfinance.gov/developers/sourc
 
 ---
 
-*This file was generated on Mon Jul 15 2013 13:07:52.*
+*This file was generated on Tue Jul 16 2013 14:04:25.*
