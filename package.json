@@ -37,7 +37,7 @@
     "grunt-contrib-less": "latest",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-connect": "~0.3.0",
-    "grunt-cfpb-internal": "git://fake.ghe.domain/contolini/grunt-cfpb-internal.git"
+    "grunt-cfpb-internal": "git://fake.ghe.domain/front/grunt-cfpb-internal.git"
   },
   "keywords": []
 }
