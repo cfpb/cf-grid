@@ -47,6 +47,7 @@ Using LESS that looks like this:
 }
 ```
 
+**Note:** This functionality is optional and you can use Ghost in legacy mode.
 
 ## Getting Started
 
@@ -98,6 +99,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
+ * 2013-07-16   v0.5.3   Add missing boxsizing.htc polyfill.
  * 2013-07-15   v0.5.2   Update README to be accurate and add list of known issues. Remove a little bit of outdated stuff from ghost.less.
  * 2013-07-15   v0.5.1   Moved repo and updated documentation links accordingly.
  * 2013-07-13   v0.5.0   Total rewrite to use box-sizing and padding instead of calc(). Compile examples' LESS.
@@ -121,4 +123,4 @@ For further details, please see: http://www.consumerfinance.gov/developers/sourc
 
 ---
 
-*This file was generated on Mon Jul 15 2013 14:34:04.*
+*This file was generated on Tue Jul 16 2013 14:17:15.*

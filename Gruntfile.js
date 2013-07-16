@@ -56,8 +56,12 @@ module.exports = function(grunt) {
       packageExample: {
         command: [
           'cp src/ghost.less src/examples/employee/static/ghost.less',
+          'cp src/boxsizing.htc src/examples/employee/static/boxsizing.htc',
           'cp src/ghost.less src/examples/bootstrap/static/ghost.less',
+          'cp src/boxsizing.htc src/examples/bootstrap/static/boxsizing.htc',
           'cp src/ghost.less src/examples/grid/static/ghost.less',
+          'cp src/boxsizing.htc src/examples/grid/static/boxsizing.htc',
+          'cp src/boxsizing.htc dist/boxsizing.htc',
           'cd src/examples',
           'zip -r ../../dist/examples.zip . -x \*.DS_Store \*style.css'
         ].join('&&')

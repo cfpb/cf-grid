@@ -29,10 +29,14 @@
   .lt-ie8 & {
     // Clearfix hack for IE 6/7 only
     *zoom: 1;
-    // box-sizing polyfill: https://github.com/Schepp/box-sizing-polyfill
+    // If you want IE 6/7 support, ensure boxsizing.htc is in the same dir as your stylesheet.
+    // Read more: https://github.com/Schepp/box-sizing-polyfill
     *behavior: url(boxsizing.htc);
   }
 
+<<<<<<< HEAD
+}
+=======
   // Clearfix hack: http://nicolasgallagher.com/micro-clearfix-hack/
   &:before,
   &:after {
@@ -43,6 +47,7 @@
     clear: both;
   }
 } // .wrapper()
+>>>>>>> 4d3c379f6d65a20674abe3bdb32407ad6b9d59ab
 
 
 // Column()s hold actual content
