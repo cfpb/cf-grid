@@ -61,8 +61,8 @@ enough to get you started.
 
 ## Examples
 
-There is a [test runner](https://fake.ghe.domain/pages/contolini/ghost/grid/index.html) and an example of 
-[Bootstrap integration](https://fake.ghe.domain/pages/contolini/ghost/bootstrap/index.html). These examples can be 
+There is a [test runner](https://fake.ghe.domain/pages/front/ghost/grid/index.html) and an example of 
+[Bootstrap integration](https://fake.ghe.domain/pages/front/ghost/bootstrap/index.html). These examples can be 
 found in the archive at `dist/example.zip`. They use less.js to compile their LESS. You'll need to run a server 
 locally to avoid cross-origin complaints. Try `python -m SimpleHTTPServer` in the example's directory.
 
@@ -90,7 +90,7 @@ Ghost is used by [Qui](https://fake.ghe.domain/pages/contolini/qui)
 Edit the files in `src` and run `grunt build` whenever you're ready to compile LESS and automagically copy 
 appropriate source files into the `dist` dir, archiving the examples in a .zip. Running `grunt` with no options 
 will start a server on port 8000 (for testing the 
-[examples](https://fake.ghe.domain/contolini/ghost/tree/master/src/examples) locally) and automatically `build` 
+[examples](https://fake.ghe.domain/front/ghost/tree/master/src/examples) locally) and automatically `build` 
 whenever a source file is changed.
 
 In lieu of a formal styleguide, take care to maintain the existing coding style.
