@@ -8,6 +8,7 @@ module.exports = function(grunt) {
      * Pull in the package.json file so we can read its metadata.
      */
     pkg: grunt.file.readJSON('package.json'),
+    version: Object.keys( grunt.file.readYAML('CHANGELOG') )[0],
 
     /**
      * Here's a banner with some template variables.
@@ -26,7 +27,7 @@ module.exports = function(grunt) {
       '                  | $$                  \n' +
       '                  | $$                  \n' +
       '                  |__/                  \n\n' +
-      '* <%= pkg.name %> - v<%= pkg.version %> - ' +
+      '* <%= pkg.name %> - <%= version %> - ' +
       '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
       '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
       '* A <%= _.pluck(pkg.licenses, "type").join(", ") %> work of the <%= pkg.author.name %> */\n\n',
