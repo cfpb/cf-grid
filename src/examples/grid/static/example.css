@@ -28,7 +28,6 @@ h1 {
   padding: 0 15px;
   margin: 0 auto;
   position: relative;
-  overflow: hidden;
   clear: both;
   margin-top: 100px;
   margin-bottom: 20px;
@@ -45,7 +44,6 @@ h1 {
   padding: 0 15px;
   margin: 0 auto;
   position: relative;
-  overflow: hidden;
   clear: both;
 }
 .lt-ie8 .cols-12 {
@@ -9702,7 +9700,6 @@ h1 {
   padding: 0 15px;
   margin: 0 auto;
   position: relative;
-  overflow: hidden;
   clear: both;
 }
 .lt-ie8 .cols-12.w-960 {
