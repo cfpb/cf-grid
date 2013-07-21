@@ -84,13 +84,12 @@ Ghost is used by [Qui](https://fake.ghe.domain/pages/contolini/qui)
 * **Compiled CSS can be very large** – It is essential that we begin serving gzipped assets on our servers, which 
   can reduce the filesize of repetitive CSS dramatically (on the order of 90%).
 
-
 ## Contributing
 
 Edit the files in `src` and run `grunt build` whenever you're ready to compile LESS and automagically copy 
 appropriate source files into the `dist` dir, archiving the examples in a .zip. Running `grunt` with no options 
 will start a server on port 8000 (for testing the 
-[examples](https://fake.ghe.domain/front/ghost/tree/master/src/examples) locally) and automatically `build` 
+[examples](https://fake.ghe.domain/contolini/ghost/tree/master/src/examples) locally) and automatically `build` 
 whenever a source file is changed.
 
 In lieu of a formal styleguide, take care to maintain the existing coding style.
@@ -104,7 +103,6 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
  * 2013-07-12   v0.4.2   Add proper git tag.
  * 2013-07-11   v0.4.1   Bump package.json version to aid dependency management.
  * 2013-07-01   v0.4.0   Add grunt-cfpb-internal to manage semantic versioning.
-
 
 ## License
 
@@ -121,4 +119,4 @@ For further details, please see: http://www.consumerfinance.gov/developers/sourc
 
 ---
 
-*This file was generated on Mon Jul 15 2013 14:34:04.*
+*This file was generated on Sun Jul 21 2013 14:31:44.*
