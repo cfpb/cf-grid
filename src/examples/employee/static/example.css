@@ -24,20 +24,11 @@
   padding: 0 15px;
   margin: 0 auto;
   position: relative;
-  overflow: hidden;
   clear: both;
 }
 .lt-ie8 .employee-page {
   *zoom: 1;
   *behavior: url(boxsizing.htc);
-}
-.employee-page:before,
-.employee-page:after {
-  content: " ";
-  display: table;
-}
-.employee-page:after {
-  clear: both;
 }
 .welcome,
 .copyright {

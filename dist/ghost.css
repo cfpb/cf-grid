@@ -27,20 +27,11 @@
   padding: 0 15px;
   margin: 0 auto;
   position: relative;
-  overflow: hidden;
   clear: both;
 }
 .lt-ie8 .wrapper {
   *zoom: 1;
   *behavior: url(boxsizing.htc);
-}
-.wrapper:before,
-.wrapper:after {
-  content: " ";
-  display: table;
-}
-.wrapper:after {
-  clear: both;
 }
 .col-12 {
   display: inline-block;

@@ -11,7 +11,7 @@
                   | $$                  
                   |__/                  
 
-* Ghost - v0.5.2 - 2013-07-21
+* Ghost - v0.6.0 - 2013-07-21
 * http://consumerfinance.gov
 * A Public Domain work of the Consumer Financial Protection Bureau */
 
@@ -40,26 +40,17 @@
   padding: 0 ( @gutter-width / 2 );
   margin: 0 auto;
   position: relative;
-  overflow: hidden;
   clear: both;
 
   .lt-ie8 & {
     // Clearfix hack for IE 6/7 only
     *zoom: 1;
-    // box-sizing polyfill: https://github.com/Schepp/box-sizing-polyfill
+    // If you want IE 6/7 support, ensure boxsizing.htc is in the same dir as your stylesheet.
+    // Read more: https://github.com/Schepp/box-sizing-polyfill
     *behavior: url(boxsizing.htc);
   }
 
-  // Clearfix hack: http://nicolasgallagher.com/micro-clearfix-hack/
-  &:before,
-  &:after {
-    content: " ";
-    display: table; 
-  }
-  &:after {
-    clear: both;
-  }
-} // .wrapper()
+}
 
 
 // Column()s hold actual content
