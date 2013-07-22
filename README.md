@@ -85,7 +85,6 @@ Ghost is used by [Qui](https://fake.ghe.domain/pages/contolini/qui)
 * **Compiled CSS can be very large** – It is essential that we begin serving gzipped assets on our servers, which 
   can reduce the filesize of repetitive CSS dramatically (on the order of 90%).
 
-
 ## Contributing
 
 Edit the files in `src` and run `grunt build` whenever you're ready to compile LESS and automagically copy 
@@ -108,7 +107,6 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
  * 2013-07-11   v0.4.1   Bump package.json version to aid dependency management.
  * 2013-07-01   v0.4.0   Add grunt-cfpb-internal to manage semantic versioning.
 
-
 ## License
 
 Software source code written entirely by Consumer Financial Protection Bureau staff, and by contractors who are 
@@ -124,4 +122,4 @@ For further details, please see: http://www.consumerfinance.gov/developers/sourc
 
 ---
 
-*This file was generated on Wed Jul 17 2013 02:26:53.*
+*This file was generated on Sun Jul 21 2013 14:33:26.*
