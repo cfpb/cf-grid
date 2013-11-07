@@ -1,3 +1,8 @@
+v0.6.3:
+  date: 2013-11-07
+  changes:
+    - Correct version number in bower.json.
+
 v0.6.2:
   date: 2013-11-07
   changes:
