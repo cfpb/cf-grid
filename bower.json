@@ -1,0 +1,6 @@
+{
+  "name": "ghost",
+  "private": true,
+  "version": "0.6.1",
+  "main": "src/ghost.less"
+}

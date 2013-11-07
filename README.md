@@ -90,7 +90,7 @@ Ghost is used by [Qui](https://fake.ghe.domain/pages/contolini/qui)
 Edit the files in `src` and run `grunt build` whenever you're ready to compile LESS and automagically copy 
 appropriate source files into the `dist` dir, archiving the examples in a .zip. Running `grunt` with no options 
 will start a server on port 8000 (for testing the 
-[examples](https://fake.ghe.domain/front/ghost/tree/master/src/examples) locally) and automatically `build` 
+[examples](https://fake.ghe.domain/contolini/ghost/tree/master/src/examples) locally) and automatically `build` 
 whenever a source file is changed.
 
 In lieu of a formal styleguide, take care to maintain the existing coding style.
@@ -98,6 +98,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
+ * 2013-11-07   v0.6.1   Add bower.json file.
  * 2013-07-17   v0.6.0   Removed overflow:hidden from wrapper.
  * 2013-07-16   v0.5.3   Add missing boxsizing.htc.
  * 2013-07-15   v0.5.2   Update README to be accurate and add list of known issues. Remove a little bit of outdated stuff from ghost.less.
@@ -122,4 +123,4 @@ For further details, please see: http://www.consumerfinance.gov/developers/sourc
 
 ---
 
-*This file was generated on Sun Jul 21 2013 14:33:26.*
+*This file was generated on Thu Nov 07 2013 15:45:17.*
