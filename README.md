@@ -98,6 +98,9 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
+ * 2013-11-07   v0.6.3   Correct version number in bower.json.
+ * 2013-11-07   v0.6.2   Correct link in CONTRIBUTING.md.
+ * 2013-11-07   v0.6.1   Add bower.json file.
  * 2013-07-17   v0.6.0   Removed overflow:hidden from wrapper.
  * 2013-07-16   v0.5.3   Add missing boxsizing.htc.
  * 2013-07-15   v0.5.2   Update README to be accurate and add list of known issues. Remove a little bit of outdated stuff from ghost.less.
@@ -122,4 +125,4 @@ For further details, please see: http://www.consumerfinance.gov/developers/sourc
 
 ---
 
-*This file was generated on Sun Jul 21 2013 14:33:26.*
+*This file was generated on Thu Nov 07 2013 17:09:48.*
