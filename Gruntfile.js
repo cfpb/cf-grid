@@ -106,6 +106,19 @@ module.exports = function(grunt) {
     },
 
     /**
+     * grunt-cfpb-internal: https://github.com/cfpb/grunt-cfpb-internal
+     * 
+     * Some internal CFPB tasks.
+     */
+    'build-cfpb': {
+      prod: {
+        options: {
+          commit: true
+        }
+      }
+    },
+
+    /**
      * Watch: https://github.com/gruntjs/grunt-contrib-watch
      * 
      * Run predefined tasks whenever watched file patterns are added, changed or deleted.

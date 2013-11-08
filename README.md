@@ -98,31 +98,32 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
- * 2013-11-07   v0.6.3   Correct version number in bower.json.
- * 2013-11-07   v0.6.2   Correct link in CONTRIBUTING.md.
- * 2013-11-07   v0.6.1   Add bower.json file.
- * 2013-07-17   v0.6.0   Removed overflow:hidden from wrapper.
- * 2013-07-16   v0.5.3   Add missing boxsizing.htc.
- * 2013-07-15   v0.5.2   Update README to be accurate and add list of known issues. Remove a little bit of outdated stuff from ghost.less.
- * 2013-07-15   v0.5.1   Moved repo and updated documentation links accordingly.
- * 2013-07-13   v0.5.0   Total rewrite to use box-sizing and padding instead of calc(). Compile examples' LESS.
- * 2013-07-12   v0.4.2   Add proper git tag.
- * 2013-07-11   v0.4.1   Bump package.json version to aid dependency management.
- * 2013-07-01   v0.4.0   Add grunt-cfpb-internal to manage semantic versioning.
+ * 2013-11-07   [v0.6.3](../../tree/v0.6.3)   Correct version number in bower.json.
+ * 2013-11-07   [v0.6.2](../../tree/v0.6.2)   Correct link in CONTRIBUTING.md.
+ * 2013-11-07   [v0.6.1](../../tree/v0.6.1)   Add bower.json file.
+ * 2013-07-17   [v0.6.0](../../tree/v0.6.0)   Removed overflow:hidden from wrapper.
+ * 2013-07-16   [v0.5.3](../../tree/v0.5.3)   Add missing boxsizing.htc.
+ * 2013-07-15   [v0.5.2](../../tree/v0.5.2)   Update README to be accurate and add list of known issues. Remove a little bit of outdated stuff from ghost.less.
+ * 2013-07-15   [v0.5.1](../../tree/v0.5.1)   Moved repo and updated documentation links accordingly.
+ * 2013-07-13   [v0.5.0](../../tree/v0.5.0)   Total rewrite to use box-sizing and padding instead of calc(). Compile examples' LESS.
+ * 2013-07-12   [v0.4.2](../../tree/v0.4.2)   Add proper git tag.
+ * 2013-07-11   [v0.4.1](../../tree/v0.4.1)   Bump package.json version to aid dependency management.
+ * 2013-07-01   [v0.4.0](../../tree/v0.4.0)   Add grunt-cfpb-internal to manage semantic versioning.
 
 ## License
 
-Software source code written entirely by Consumer Financial Protection Bureau staff, and by contractors who are 
-developing software on behalf of CFPB, is by default a public domain work.
+The project is in the public domain within the United States, and
+copyright and related rights in the work worldwide are waived through
+the [CC0 1.0 Universal public domain dedication](http://creativecommons.org/publicdomain/zero/1.0/).
 
-Software source code previously released under an open source license and then modified by CFPB staff is 
-considered a "joint work" (see 17 USC § 101); it is partially copyrighted, partially public domain, and as a whole 
-is protected by the copyrights of the non-government authors and must be released according to the terms of the 
-original open-source license.
+All contributions to this project will be released under the CC0
+dedication. By submitting a pull request, you are agreeing to comply
+with this waiver of copyright interest.
+
+Software source code previously released under an open source license and then modified by CFPB staff is considered a "joint work" (see 17 USC § 101); it is partially copyrighted, partially public domain, and as a whole is protected by the copyrights of the non-government authors and must be released according to the terms of the original open-source license.
 
 For further details, please see: http://www.consumerfinance.gov/developers/sourcecodepolicy/
 
-
 ---
 
-*This file was generated on Thu Nov 07 2013 17:09:48.*
+*This file was generated on Fri Nov 08 2013 14:17:00.*
