@@ -1,6 +1,7 @@
-# [Ghost](https://fake.ghe.domain/pages/front/ghost/grid/index.html)
+# [Ghost](https://cfpb.github.io/cf-grid/grid/index.html)
 
-A LESS-based CSS3 grid system using parametric mixins to encourage semantic HTML. Ghost has three main features:
+[Capital Framework](http://github.com/cfpb/capital-framework)'s LESS-based CSS3 grid system using parametric mixins
+to encourage semantic HTML, code-named **Ghost**. Ghost has three main features:
 
 1. Provides fixed-width gutters and fluid-width columns.
 1. Works seamlessly with any combination of grid and gutter widths.
@@ -49,9 +50,16 @@ Using LESS that looks like this:
 
 **Note:** This functionality is optional and you can use Ghost in legacy mode.
 
+
 ## Getting Started
 
+<<<<<<< HEAD
 Grab `ghost.less` from the `dist` directory and @import it at the top of your application's LESS stylesheet.
+=======
+If you're not building it along with [Capital Framework](http://github.com/cfpb/capital-framework), grab
+`ghost.less` from the `dist` directory and `@import` it at the top of your application's LESS stylesheet. If
+you want to support IE6/7, ensure `boxsizing.htc` is in the same directory as your compiled stylesheet.
+>>>>>>> 3847647... Start preparing for public release.
 
 
 ## Documentation
@@ -62,13 +70,10 @@ enough to get you started.
 
 ## Examples
 
-There is a [test runner](https://fake.ghe.domain/pages/front/ghost/grid/index.html) and an example of 
-[Bootstrap integration](https://fake.ghe.domain/pages/front/ghost/bootstrap/index.html). These examples can be 
+There is a [test runner](https://cfpb.github.io/cf-grid/grid/index.html) and an example of 
+[Bootstrap integration](https://cfpb.github.io/cf-grid/bootstrap/index.html). These examples can be 
 found in the archive at `dist/example.zip`. They use less.js to compile their LESS. You'll need to run a server 
 locally to avoid cross-origin complaints. Try `python -m SimpleHTTPServer` in the example's directory.
-
-Ghost is used by [Qui](https://fake.ghe.domain/pages/contolini/qui) 
-(<a href="https://fake.ghe.domain/contolini/qui/blob/master/src/less/main.less">stylesheet</a>).
 
 
 ## Known Issues
@@ -90,7 +95,7 @@ Ghost is used by [Qui](https://fake.ghe.domain/pages/contolini/qui)
 Edit the files in `src` and run `grunt build` whenever you're ready to compile LESS and automagically copy 
 appropriate source files into the `dist` dir, archiving the examples in a .zip. Running `grunt` with no options 
 will start a server on port 8000 (for testing the 
-[examples](https://fake.ghe.domain/front/ghost/tree/master/src/examples) locally) and automatically `build` 
+[examples](https://github.com/cfpb/cf-grid/tree/master/src/examples) locally) and automatically `build` 
 whenever a source file is changed.
 
 In lieu of a formal styleguide, take care to maintain the existing coding style.
@@ -98,6 +103,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
+ * 2014-01-09   [v0.6.4](../../tree/v0.6.4)   Start preparing for public release.
  * 2013-11-07   [v0.6.3](../../tree/v0.6.3)   Correct version number in bower.json.
  * 2013-11-07   [v0.6.2](../../tree/v0.6.2)   Correct link in CONTRIBUTING.md.
  * 2013-11-07   [v0.6.1](../../tree/v0.6.1)   Add bower.json file.
@@ -126,4 +132,4 @@ For further details, please see: http://www.consumerfinance.gov/developers/sourc
 
 ---
 
-*This file was generated on Fri Nov 08 2013 14:17:00.*
+*This file was generated on Thu Jan 09 2014 12:50:17.*
