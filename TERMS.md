@@ -1,7 +1,7 @@
-As a work of the United States Government, this package is in the
-public domain within the United States. Additionally, we waive
-copyright and related rights in the work worldwide through the CC0 1.0
-Universal public domain dedication.
+As a work of the United States Government, this package (excluding the
+exceptions below) is in the public domain within the United States. 
+Additionally, we waive copyright and related rights in the work worldwide
+through the CC0 1.0 Universal public domain dedication.
 
 Software source code previously released under an open source license and then
 modified by CFPB staff is considered a "joint work" (see 17 USC § 101); it is
@@ -41,8 +41,15 @@ author or the affirmer.
 [policy]: http://github.com/cfpb/source-code-policy/
 [CC0]: http://creativecommons.org/publicdomain/zero/1.0/legalcode
 
+## Exceptions
 
-## This project makes use of:
+This project makes use of:
 
 - [box-sizing Polyfill](http://github.com/Schepp/box-sizing-polyfill) by Christian Schepp Schaefer,
-  licensed under the GPL Version 3 license.
+  licensed under the GPL Version 3.
+- [bootstrap CSS](http://getbootstrap.com/) by Mark Otto and Jacob Thorton @ Twitter,
+  licensed under Apache Version 2.0.
+- [HTML5 Shiv](https://github.com/aFarkas/html5shiv) by Alexander Farakas, et al.
+  licensed under MIT/GPL2.
+- [LESS](http://lesscss.org) by Alexis Sellier
+  licensed under Apache 2.0.
