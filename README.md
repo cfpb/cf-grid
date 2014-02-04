@@ -121,6 +121,7 @@ with this waiver of copyright interest.
 
 ## Release History
 
+ * 2014-02-04   [0.6.7](../../tree/0.6.7)   Adds more info to bower.json.
  * 2014-02-04   [v0.6.6](../../tree/v0.6.6)   Updates links in package.json. Updates TERMS.
  * 2014-01-30   [v0.6.5](../../tree/v0.6.5)   Standardize TERMS and CONTRIBUTING.
  * 2014-01-09   [v0.6.4](../../tree/v0.6.4)   Start preparing for public release.
@@ -197,4 +198,4 @@ This project makes use of:
 
 ---
 
-*This file was generated on Tue Feb 04 2014 09:45:09.*
+*This file was generated on Tue Feb 04 2014 09:56:08.*
