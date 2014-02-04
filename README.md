@@ -4,8 +4,8 @@
 to encourage semantic HTML, code-named **Ghost**. Ghost has three main features:
 
 1. Provides fixed-width gutters and fluid-width columns.
-1. Works seamlessly with any combination of grid and gutter widths.
-1. Keeps HTML semantic by not including presentational classes in markup.
+2. Works seamlessly with any combination of grid and gutter widths.
+3. Keeps HTML semantic by not including presentational classes in markup.
 
 
 ## Semantic HTML
@@ -121,6 +121,7 @@ with this waiver of copyright interest.
 
 ## Release History
 
+ * 2014-02-04   [v0.6.6](../../tree/v0.6.6)   Updates links in package.json. Updates TERMS.
  * 2014-01-30   [v0.6.5](../../tree/v0.6.5)   Standardize TERMS and CONTRIBUTING.
  * 2014-01-09   [v0.6.4](../../tree/v0.6.4)   Start preparing for public release.
  * 2013-11-07   [v0.6.3](../../tree/v0.6.3)   Correct version number in bower.json.
@@ -137,10 +138,10 @@ with this waiver of copyright interest.
 
 ## License
 
-As a work of the United States Government, this package is in the
-public domain within the United States. Additionally, we waive
-copyright and related rights in the work worldwide through the CC0 1.0
-Universal public domain dedication.
+As a work of the United States Government, this package (excluding the
+exceptions below) is in the public domain within the United States. 
+Additionally, we waive copyright and related rights in the work worldwide
+through the CC0 1.0 Universal public domain dedication.
 
 Software source code previously released under an open source license and then
 modified by CFPB staff is considered a "joint work" (see 17 USC § 101); it is
@@ -180,13 +181,20 @@ author or the affirmer.
 [policy]: http://github.com/cfpb/source-code-policy/
 [CC0]: http://creativecommons.org/publicdomain/zero/1.0/legalcode
 
+## Exceptions
 
-## This project makes use of:
+This project makes use of:
 
 - [box-sizing Polyfill](http://github.com/Schepp/box-sizing-polyfill) by Christian Schepp Schaefer,
-  licensed under the GPL Version 3 license.
+  licensed under the GPL Version 3.
+- [bootstrap CSS](http://getbootstrap.com/) by Mark Otto and Jacob Thorton @ Twitter,
+  licensed under Apache Version 2.0.
+- [HTML5 Shiv](https://github.com/aFarkas/html5shiv) by Alexander Farakas, et al.
+  licensed under MIT/GPL2.
+- [LESS](http://lesscss.org) by Alexis Sellier
+  licensed under Apache 2.0.
 
 
 ---
 
-*This file was generated on Thu Jan 30 2014 15:25:46.*
+*This file was generated on Tue Feb 04 2014 09:45:09.*
