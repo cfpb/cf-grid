@@ -1,3 +1,8 @@
+0.6.7:
+  date: 2014-02-04
+  changes:
+    - Adds more info to bower.json.
+
 v0.6.6:
   date: 2014-02-04
   changes:
