@@ -1,7 +1,8 @@
 {
   "name": "cf-grid",
-  "description": "An invisible, LESS-based grid system using parametric mixins to encourage semantic HTML",
-  "version": "0.6.7",
+  "version": "0.6.8",
+  "description": "A Less-based grid system using parametric mixins. Part of Capital Framework.",
+  "keywords": ["capital-framework", "capital", "grid", "less"],
   "author": {
     "name": "Consumer Financial Protection Bureau",
     "url": "http://cfpb.github.io/"
@@ -11,20 +12,16 @@
     "type": "git",
     "url": "https://github.com/cfpb/cf-grid.git"
   },
-  "bugs": {
-    "url": "https://github.com/cfpb/cf-grid/issues"
-  },
+  "bugs": "https://github.com/cfpb/cf-grid/issues",
   "licenses": [
     {
       "type": "Public Domain",
       "url": "https://github.com/cfpb/cf-grid/blob/master/TERMS.md"
     }
   ],
+  "main": "src/ghost.less",
   "engines": {
     "node": ">=0.8.0"
-  },
-  "scripts": {
-    "test": "grunt jasmine"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
@@ -36,6 +33,5 @@
     "grunt-contrib-watch": "~0.4.4",
     "grunt-notify": "~0.1.4",
     "grunt-shell": "~0.2.2"
-  },
-  "keywords": []
+  }
 }

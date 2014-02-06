@@ -11,28 +11,6 @@ module.exports = function(grunt) {
     version: Object.keys( grunt.file.readYAML('CHANGELOG') )[0],
 
     /**
-     * Here's a banner with some template variables.
-     * We'll be inserting it at the top of minified assets.
-     */
-    banner: 
-      '/*                                      \n' +
-      '            /$$$$$$          /$$        \n' +
-      '           /$$__  $$        | $$        \n' +
-      '  /$$$$$$$| $$  \\__//$$$$$$ | $$$$$$$  \n' +
-      ' /$$_____/| $$$$   /$$__  $$| $$__  $$  \n' +
-      '| $$      | $$_/  | $$  \\ $$| $$  \\ $$\n' +
-      '| $$      | $$    | $$  | $$| $$  | $$  \n' +
-      '|  $$$$$$$| $$    | $$$$$$$/| $$$$$$$/  \n' +
-      ' \\_______/|__/    | $$____/ |_______/  \n' +
-      '                  | $$                  \n' +
-      '                  | $$                  \n' +
-      '                  |__/                  \n\n' +
-      '* <%= pkg.name %> - <%= version %> - ' +
-      '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
-      '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
-      '* A <%= _.pluck(pkg.licenses, "type").join(", ") %> work of the <%= pkg.author.name %> */\n\n',
-
-    /**
      * Connect: https://github.com/gruntjs/grunt-contrib-connect
      * 
      * Start a connect web server.
@@ -41,7 +19,7 @@ module.exports = function(grunt) {
       demo: {
         options: {
           port: 8000,
-          base: 'src/examples'
+          base: 'src/examples/grid/'
         }
       }
     },
@@ -56,10 +34,6 @@ module.exports = function(grunt) {
     shell: {
       packageExample: {
         command: [
-          'cp src/ghost.less src/examples/employee/static/ghost.less',
-          'cp src/boxsizing.htc src/examples/employee/static/boxsizing.htc',
-          'cp src/ghost.less src/examples/bootstrap/static/ghost.less',
-          'cp src/boxsizing.htc src/examples/bootstrap/static/boxsizing.htc',
           'cp src/ghost.less src/examples/grid/static/ghost.less',
           'cp src/boxsizing.htc src/examples/grid/static/boxsizing.htc',
           'cp src/boxsizing.htc dist/boxsizing.htc',
@@ -83,9 +57,7 @@ module.exports = function(grunt) {
         },
         files: {
           'dist/ghost.css': ['src/ghost-legacy.less'],
-          'src/examples/grid/static/example.css': ['src/examples/grid/static/example.less'],
-          'src/examples/employee/static/example.css': ['src/examples/employee/static/example.less'],
-          'src/examples/bootstrap/static/example.css': ['src/examples/bootstrap/static/example.less']
+          'src/examples/grid/static/example.css': ['src/examples/grid/static/example.less']
         }
       }
     },
@@ -149,8 +121,7 @@ module.exports = function(grunt) {
   /**
    * Create task aliases by registering new tasks
    */
-  grunt.registerTask('test', ['jasmine']);
-  grunt.registerTask('build', ['less', 'shell', 'concat', 'build-cfpb']);
+  grunt.registerTask('build', ['less', 'shell', 'concat']);
 
   /**
    * The 'default' task will run whenever `grunt` is run without specifying a task

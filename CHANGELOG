@@ -1,3 +1,10 @@
+0.6.8:
+  date: 2014-02-07
+  changes:
+    - Remove outdated examples.
+    - Bring README & JSON files in line with other components.
+    - Remove grunt-cfpb-init from workflow for now.
+
 0.6.7:
   date: 2014-02-04
   changes:
