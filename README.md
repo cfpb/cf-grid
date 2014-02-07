@@ -1,8 +1,10 @@
-# [Ghost](https://cfpb.github.io/cf-grid/)
+# Ghost
 
 A Less-based CSS3 grid system using parametric mixins to encourage semantic HTML, code-named **Ghost**.
 This component can be used by itself, but it was made for Capital Framework, a new front end framework
 developed at the [Consumer Financial Protection Bureau](http://cfpb.github.io/).
+
+- [See the demo](https://cfpb.github.io/cf-grid/)
 
 
 Ghost has three main features:
@@ -98,5 +100,7 @@ You can also just copy the `ghost.less` file into your project and `@import` it 
   as a problem on rows with very many columns, which is not likely to happen in real-world layout scenarios, 
   so we are electing to ignore the issue at this time.
 * **Prefix/Suffix not supported in IE7** – It doesn't seem to be able to handle percentage-based padding.
-* **Compiled CSS can be very large** – It is essential that static assets are served gzipped, which 
-  can reduce the filesize of repetitive CSS dramatically (on the order of 90%).
+* **Compiled CSS can be very large** –
+  If you're using the legacy mode (where all of the classes are generated for you),
+  it is essential that static assets are served gzipped,
+  which can reduce the filesize of repetitive CSS dramatically (on the order of 90%).
