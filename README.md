@@ -1,11 +1,14 @@
-# Ghost
+# [Ghost](https://fake.ghe.domain/pages/contolini/ghost/grid/index.html)
 
-A LESS-based CSS3 grid system using parametric mixins to encourage semantic HTML. Ghost has two purposes:
+A LESS-based CSS3 grid system using parametric mixins to encourage semantic HTML. Ghost has three main features:
 
-1. Provide fixed-width gutters with fluid-width columns without resorting to padding hacks.
-1. Keep HTML semantic by not including presentational classes in markup.
+1. Provides fixed-width gutters with fluid-width columns without resorting to padding hacks.
+1. Works seamlessly with any combination of grid and gutter widths.
+1. Keeps HTML semantic by not including presentational classes in markup.
 
-Ghost uses CSS3's <a href="http://updates.html5rocks.com/2012/03/CSS-layout-gets-smarter-with-calc">calc() property</a> to provide fixed-width gutters. Older browsers fallback to fluid gutters.
+## Fixed gutters, fluid columns
+
+Ghost uses CSS3's <a href="http://updates.html5rocks.com/2012/03/CSS-layout-gets-smarter-with-calc">calc() property</a> to provide fixed-width gutters. Older browsers fallback to fluid gutters. The gutter widths and grid width are set using the `@gutter-width` and `@wrapper-width` variables, respectively.
 
 ## Semantic HTML
 
@@ -53,26 +56,26 @@ header {
 
 ## Getting Started
 
-Grab `ghost.less` from the `dist` directory and @import it at the top of your application's LESS stylesheet. Some in-progress examples of how to use Ghost can be found in `dist/examples.zip`.
+Grab `ghost.less` from the `dist` directory and @import it at the top of your application's LESS stylesheet.
 
 ## Documentation
 _(Coming soon)_
 
 ## Examples
 
-Examples can be found in the archive at `dist/example.zip`. Note: They use less.js to compile their LESS. You'll need to run a server locally to avoid cross-origin complaints. Try `python -m SimpleHTTPServer` in the example's directory. There is a an example [using Bootstrap](https://fake.ghe.domain/contolini/ghost/blob/master/src/examples/bootstrap/static/example.less) and another with [unstyled html](https://fake.ghe.domain/contolini/ghost/blob/master/src/examples/employee/static/example.less).
+There is a [test runner](https://fake.ghe.domain/pages/contolini/ghost/grid/index.html) and an example of [Bootstrap integration](https://fake.ghe.domain/pages/contolini/ghost/bootstrap/index.html). These examples can be found in the archive at `dist/example.zip`. They use less.js to compile their LESS. You'll need to run a server locally to avoid cross-origin complaints. Try `python -m SimpleHTTPServer` in the example's directory.
 
 Ghost is used by [Qui](https://fake.ghe.domain/pages/contolini/qui) (<a href="https://fake.ghe.domain/contolini/qui/blob/master/src/less/main.less">stylesheet</a>).
 
 ## Contributing
 
-Running `grunt` will compile LESS and run a build script that copies appropriate source files into the `dist` dir, archiving the examples in a .zip. `grunt watch` to build when files change.
+Run `grunt`. Whenever a file is changed, grunt will compile LESS and run a build script that copies appropriate source files into the `dist` dir, archiving the examples in a .zip.
 
 In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
-_(Nothing yet)_
+_(Coming soon)_
 
 ## License
 
