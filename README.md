@@ -12,6 +12,7 @@ Ghost has three main features:
 1. Provides fixed-width gutters and fluid-width columns.
 2. Works seamlessly with any combination of grid and gutter widths.
 3. Keeps HTML semantic by not including presentational classes in markup.
+4. Row-agnostic. Put as many columns as you want in a container. Great for RWD.
 
 - [See the demo](http://cfpb.github.io/cf-grid/)
 
