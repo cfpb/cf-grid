@@ -130,10 +130,6 @@ h1 {
   @media only screen and ( max-width: 767px ) {
 
     .col {
-      // We're using an important flag to ensure the above nested children 
-      // are also set to 12 columns. Normally, you'd have CSS rules for 
-      // nested children in your media query but to keep things simple in 
-      // this test runner I'm just using !important to coerce all columns.
       .column(12);
       // For the push() column()s, we have to make sure the offset is removed.
       margin-left: 0;
