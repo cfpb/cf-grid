@@ -50,5 +50,3 @@ This project makes use of:
   licensed under the GNU General Public License version 3.0.
 - [HTML5 Shiv](https://github.com/aFarkas/html5shiv) by Alexander Farkas, et al.,
   licensed under MIT/GPL-2.0.
-- [Less.js](https://github.com/less/less.js) by Alexis Sellier & The Core Less Team,
-  licensed under the Apache License 2.0.
