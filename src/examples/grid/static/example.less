@@ -1,6 +1,12 @@
-// Make sure you import Ghost.
+/* ==========================================================================
+   Setting up Ghost
+   ========================================================================== */
+
+// Import Ghost.
 @import "ghost.less";
 
+// You can override the default number of columns and the default width to
+// whatever you need.
 @total-columns: 12;
 @wrapper-width: 1200px;
 
@@ -13,6 +19,66 @@
 @import "ghost-legacy.less";
 
 
+/* ==========================================================================
+   Making custom wrappers and adding custom properties to the columns
+   ========================================================================== */
+
+.cols-12 {
+
+  // Make .cols-12 a Ghost .wrapper.
+  .wrapper();
+
+  // Make an alternate .wrapper that has a max-width of 960px.
+  &.w-960 {
+    .wrapper( 960px );
+
+  }
+
+  // Space .wrappers apart from each other.
+  padding-top: 20px !important;
+  padding-bottom: 40px !important;
+  clear: both;
+  border-bottom: 1px solid #ccc;
+
+  // We're wrapping each set of columns in a section tag.
+  section {
+    margin: 0 -15px;
+  }
+
+}
+
+.col {
+  // Center the text inside of each column...
+  text-align: center;
+  margin-bottom: 10px;
+
+  div {
+    padding: 20px 0;
+    background-color: #FCC;
+    background-color: rgba(255, 0, 0, 0.25);
+  }
+
+  section {
+    // ... but since each column is using inline-block we have to make sure
+    // that nested columns stil align left.
+    text-align: left;
+  }
+}
+
+// for screens under 768px make each column span all 12 columns regardless.
+@media only screen and ( max-width: 767px ) {
+  .col {
+    .column(12);
+    // For columns using push() we have to make sure the offset is removed.
+    margin-left: 0;
+  }
+}
+
+
+/* ==========================================================================
+   Base Styles
+   ========================================================================== */
+
 body {
   font-family: "Avenir Next", Arial, sans-serif;
   margin: 0;
@@ -22,74 +88,6 @@ h1 {
   .wrapper();
   margin-top: 100px;
   margin-bottom: 20px;
-}
-
-// Twelve columns, 1200px wide
-
-.cols-12 {
-
-  .wrapper();
-
-  section {
-    margin: 0 -15px;
-  }
-
-  .col {
-    //padding: 20px 0;
-    text-align: center;
-    margin-bottom: 10px;
-
-    section {
-      text-align: left;
-    }
-  }
-
-  // Viewport adjustments
-
-  @media only screen and ( max-width: 767px ) {
-
-    .col {
-      .column(12);
-      // For the push() column()s, we have to make sure the offset is removed.
-      margin-left: 0;
-    }
-
-  }
-
-}
-
-
-// Twelve columns, 960px wide
-
-.cols-12.w-960 {
-
-  .wrapper( 960px );
-
-}
-
-
-// Misc. test runner stuff
-
-body > div {
-
-  border-bottom: 1px solid #ccc;
-  padding-top: 20px !important;
-  padding-bottom: 40px !important;
-  clear: both;
-
-}
-
-
-.cols-12 .col,
-.cols-16 .col {
-  margin-bottom: 10px;
-
-  div {
-    padding: 20px 0;
-    background-color: #FCC;
-    background-color: rgba(255, 0, 0, 0.25);
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
-  }
 }
 
 h2, h3 {
