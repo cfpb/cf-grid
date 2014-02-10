@@ -35,6 +35,7 @@ module.exports = function(grunt) {
       packageExample: {
         command: [
           'cp src/ghost.less src/examples/grid/static/ghost.less',
+          'cp src/ghost-legacy.less src/examples/grid/static/ghost-legacy.less',
           'cp src/boxsizing.htc src/examples/grid/static/boxsizing.htc',
           'cp src/boxsizing.htc dist/boxsizing.htc',
           'cd src/examples',

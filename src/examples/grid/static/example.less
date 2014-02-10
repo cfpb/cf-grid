@@ -1,5 +1,6 @@
 // Make sure you import Ghost.
 @import "ghost.less";
+@import "ghost-legacy.less";
 
 @total-columns: 12;
 @wrapper-width: 1200px;
@@ -28,69 +29,6 @@ h1 {
     margin: 0 -15px;
   }
 
-  // column class generation, based on ghost-plus.less
-
-  .columnX ( @index ) when ( @index > 0 ) {
-
-    .col-@{index} {
-      .column( @index );
-    }
-
-    .prefixX ( @index, @total-columns - @index );
-    .suffixX ( @index, @total-columns - @index );
-
-
-    .push-@{index} {
-      .push( @index );
-    }
-
-    .pull-@{index} {
-      .pull( @index );
-    }
-
-    .columnX( @index - 1 );
-
-  }
-
-  .prefixX ( @index, @indexP ) when (@indexP > 0) {
-    
-    .col-@{index}.prefix-@{indexP} {
-      .column( @columns: @index; @prefix: @indexP; );
-    }
-
-    .prefixSuffix ( @index, @indexP, @total-columns - @index - @indexP );
-
-    .prefixX ( @index, @indexP - 1 );
-
-  }
-
-  .suffixX ( @index, @indexS ) when (@indexS > 0) {
-    
-    .col-@{index}.suffix-@{indexS} {
-      .column( @columns: @index; @suffix: @indexS; );
-    }
-
-    .suffixX ( @index, @indexS - 1 );
-
-  }
-
-  .prefixSuffix ( @index, @indexP, @indexS ) when (@indexS > 0) {
-
-    .col-@{index}.prefix-@{indexP}.suffix-@{indexS} {
-      .column( @columns: @index; @prefix: @indexP; @suffix: @indexS );
-    }
-
-    .prefixSuffix ( @index, @indexP, @indexS - 1 );
-
-  }
-
-  .columnX ( 0 ) {}
-
-  .columnX ( @total-columns );
-
-  // end of class generation code
-
-
   .col {
     //padding: 20px 0;
     text-align: center;
@@ -100,30 +38,6 @@ h1 {
       text-align: left;
     }
   }
-
-
-  // Push/pull tests
-
-  .push-one {
-    .push(1);
-  }
-
-  .push-two {
-    .push(2);
-  }
-
-  .push-three {
-    .push(3);
-  }
-
-  .pull-one {
-    .pull(1);
-  }
-
-  .pull-two {
-    .pull(2);
-  }
-
 
   // Viewport adjustments
 
