@@ -40,7 +40,10 @@
   clear: both;
   border-bottom: 1px solid #ccc;
 
-  // We're wrapping each set of columns in a section tag.
+  // Each Ghost column has both left and right gutters. since we're wrapping
+  // each set of columns in a section tag we can negate the left gutter on the
+  // first column and the right gutter on the last column by simply using
+  // negative margins on its container.
   section {
     margin: 0 -15px;
   }
@@ -50,18 +53,19 @@
 .col {
   // Center the text inside of each column...
   text-align: center;
+  // Space each column apart vertically.
   margin-bottom: 10px;
-
-  div {
-    padding: 20px 0;
-    background-color: #FCC;
-    background-color: rgba(255, 0, 0, 0.25);
-  }
 
   section {
     // ... but since each column is using inline-block we have to make sure
     // that nested columns stil align left.
     text-align: left;
+  }
+
+  div {
+    padding: 20px 0;
+    background-color: #FCC;
+    background-color: rgba(255, 0, 0, 0.25);
   }
 }
 
