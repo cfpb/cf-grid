@@ -7,7 +7,7 @@ developed at the [Consumer Financial Protection Bureau](http://cfpb.github.io/).
 - [See the demo](https://cfpb.github.io/cf-grid/)
 
 
-Ghost has three main features:
+Ghost has four main features:
 
 1. Provides fixed-width gutters and fluid-width columns.
 2. Works seamlessly with any combination of grid and gutter widths.
