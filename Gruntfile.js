@@ -35,6 +35,7 @@ module.exports = function(grunt) {
       packageExample: {
         command: [
           'cp src/ghost.less src/examples/grid/static/ghost.less',
+          'cp src/ghost-legacy.less src/examples/grid/static/ghost-legacy.less',
           'cp src/boxsizing.htc src/examples/grid/static/boxsizing.htc',
           'cp src/boxsizing.htc dist/boxsizing.htc',
           'cd src/examples',
@@ -102,7 +103,7 @@ module.exports = function(grunt) {
       },
       scripts: {
         files: ['Gruntfile.js', 'src/*.less', 'src/examples/**/static/example.less'],
-        tasks: ['build']
+        tasks: ['default']
       }
     }
   });
@@ -121,11 +122,11 @@ module.exports = function(grunt) {
   /**
    * Create task aliases by registering new tasks
    */
-  grunt.registerTask('build', ['less', 'shell', 'concat']);
+  grunt.registerTask('serve', ['connect:demo', 'watch']);
 
   /**
    * The 'default' task will run whenever `grunt` is run without specifying a task
    */
-  grunt.registerTask('default', ['connect:demo', 'watch']);
+  grunt.registerTask('default', ['less', 'shell', 'concat']);
 
 };

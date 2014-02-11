@@ -9,19 +9,12 @@
     <meta charset="UTF-8">
     <title>Ghost Example</title>
     
-    <!--[if lt IE 9]><script src="static/html5shiv.js"></script><![endif]-->
-    
-    <link rel="stylesheet/less" href="static/example.less" >
-
+    <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/2.0.8/es5-shim.min.js"></script>
-    <script>
-        less = {
-            relativeUrls: true, // whether to adjust url's to be relative
-                                // if false, url's are already relative to the
-                                // entry less file
-        };
-    </script>
-    <script src="static/less-1.4.1.min.js"></script>
+    <![endif]-->
+    
+    <link rel="stylesheet" href="static/example.css" >
+
 </head>
 
 <body>
@@ -175,7 +168,7 @@
 
     </div>
 
-    <!-- -------------------------------------------------- -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
     <div class="cols-12 w-960">
 
@@ -307,170 +300,6 @@
         </section>
 
     </div>
-
-    <!-- -------------------------------------------------- -->
-
-    <!-- <div class="cols-16">
-
-        <h2>16 columns w/ 1200px max width</h2>
-
-        <section>
-            <div class="col col-1"><div>one</div></div>
-            <div class="col col-1"><div>one</div></div>
-            <div class="col col-1"><div>one</div></div>
-            <div class="col col-1"><div>one</div></div>
-            <div class="col col-1"><div>one</div></div>
-            <div class="col col-1"><div>one</div></div>
-            <div class="col col-1"><div>one</div></div>
-            <div class="col col-1"><div>one</div></div>
-            <div class="col col-1"><div>one</div></div>
-            <div class="col col-1"><div>one</div></div>
-            <div class="col col-1"><div>one</div></div>
-            <div class="col col-1"><div>one</div></div>
-            <div class="col col-1"><div>one</div></div>
-            <div class="col col-1"><div>one</div></div>
-            <div class="col col-1"><div>one</div></div>
-            <div class="col col-1"><div>one</div></div>
-        </section>
-
-        <section>
-            <div class="col col-2"><div>two</div></div>
-            <div class="col col-2"><div>two</div></div>
-            <div class="col col-2"><div>two</div></div>
-            <div class="col col-2"><div>two</div></div>
-            <div class="col col-2"><div>two</div></div>
-            <div class="col col-2"><div>two</div></div>
-            <div class="col col-2"><div>two</div></div>
-            <div class="col col-2"><div>two</div></div>
-        </section>
-
-        <section>
-            <div class="col col-4"><div>four</div></div>
-            <div class="col col-4"><div>four</div></div>
-            <div class="col col-4"><div>four</div></div>
-            <div class="col col-4"><div>four</div></div>
-        </section>
-
-        <section>
-            <div class="col col-8"><div>eight</div></div>
-            <div class="col col-8"><div>eight</div></div>
-        </section>
-
-        <h3>Offsets</h3>
-
-        <section>
-            <div class="col col-2 push-two"><div>two, push two</div></div>
-            <div class="col col-2 push-two"><div>two, push two</div></div>
-            <div class="col col-2 push-two"><div>two, push two</div></div>
-            <div class="col col-2 push-two"><div>two, push two</div></div>
-        </section>
-
-        <section>
-            <div class="col col-2 pull-two"><div>two, pull two</div></div>
-            <div class="col col-2 pull-two"><div>two, pull two</div></div>
-            <div class="col col-2 pull-two"><div>two, pull two</div></div>
-            <div class="col col-2 pull-two"><div>two, pull two</div></div>
-        </section>
-
-        <section>
-            <div class="col col-4"><div>four</div></div>
-            <div class="col col-4 push-two"><div>four, push two</div></div>
-            <div class="col col-4 push-two"><div>four, push two</div></div>
-        </section>
-
-        <section>
-            <div class="col col-4 pull-two"><div>four, pull two</div></div>
-            <div class="col col-4 pull-two"><div>four, pull two</div></div>
-            <div class="col col-4"><div>four</div></div>
-        </section>
-
-        <section>
-            <div class="col col-8 push-four"><div>eight, push four</div></div>
-        </section>
-
-    </div> -->
-
-    <!-- --------------------------------------------------- -->
-
-    <!-- <div class="cols-16 w-960">
-
-        <h2>16 columns w/ 960px max width</h2>
-
-        <section>
-            <div class="col col-1"><div>one</div></div>
-            <div class="col col-1"><div>one</div></div>
-            <div class="col col-1"><div>one</div></div>
-            <div class="col col-1"><div>one</div></div>
-            <div class="col col-1"><div>one</div></div>
-            <div class="col col-1"><div>one</div></div>
-            <div class="col col-1"><div>one</div></div>
-            <div class="col col-1"><div>one</div></div>
-            <div class="col col-1"><div>one</div></div>
-            <div class="col col-1"><div>one</div></div>
-            <div class="col col-1"><div>one</div></div>
-            <div class="col col-1"><div>one</div></div>
-            <div class="col col-1"><div>one</div></div>
-            <div class="col col-1"><div>one</div></div>
-            <div class="col col-1"><div>one</div></div>
-            <div class="col col-1"><div>one</div></div>
-        </section>
-
-        <section>
-            <div class="col col-2"><div>two</div></div>
-            <div class="col col-2"><div>two</div></div>
-            <div class="col col-2"><div>two</div></div>
-            <div class="col col-2"><div>two</div></div>
-            <div class="col col-2"><div>two</div></div>
-            <div class="col col-2"><div>two</div></div>
-            <div class="col col-2"><div>two</div></div>
-            <div class="col col-2"><div>two</div></div>
-        </section>
-
-        <section>
-            <div class="col col-4"><div>four</div></div>
-            <div class="col col-4"><div>four</div></div>
-            <div class="col col-4"><div>four</div></div>
-            <div class="col col-4"><div>four</div></div>
-        </section>
-
-        <section>
-            <div class="col col-8"><div>eight</div></div>
-            <div class="col col-8"><div>eight</div></div>
-        </section>
-
-        <h3>Offsets</h3>
-
-        <section>
-            <div class="col col-2 push-two"><div>two, push two</div></div>
-            <div class="col col-2 push-two"><div>two, push two</div></div>
-            <div class="col col-2 push-two"><div>two, push two</div></div>
-            <div class="col col-2 push-two"><div>two, push two</div></div>
-        </section>
-
-        <section>
-            <div class="col col-2 pull-two"><div>two, pull two</div></div>
-            <div class="col col-2 pull-two"><div>two, pull two</div></div>
-            <div class="col col-2 pull-two"><div>two, pull two</div></div>
-            <div class="col col-2 pull-two"><div>two, pull two</div></div>
-        </section>
-
-        <section>
-            <div class="col col-4"><div>four</div></div>
-            <div class="col col-4 push-two"><div>four, push two</div></div>
-            <div class="col col-4 push-two"><div>four, push two</div></div>
-        </section>
-
-        <section>
-            <div class="col col-4 pull-two"><div>four, pull two</div></div>
-            <div class="col col-4 pull-two"><div>four, pull two</div></div>
-            <div class="col col-4"><div>four</div></div>
-        </section>
-
-        <section>
-            <div class="col col-8 push-four"><div>eight, push four</div></div>
-        </section>
-
-    </div> -->
 
 </body>
 

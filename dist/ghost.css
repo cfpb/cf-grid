@@ -69,7 +69,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
+  width: 91.66666667%;
 }
 .ie .col-11 {
   margin-right: -0.26em;
@@ -88,8 +88,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 99.99999999999999%;
-  padding-left: 8.333333333333332%;
+  width: 100%;
+  padding-left: 8.33333333%;
 }
 .ie .col-11.prefix-1 {
   margin-right: -0.26em;
@@ -111,8 +111,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 99.99999999999999%;
-  padding-right: 8.333333333333332%;
+  width: 100%;
+  padding-right: 8.33333333%;
 }
 .ie .col-11.suffix-1 {
   margin-right: -0.26em;
@@ -127,11 +127,11 @@
 }
 .push-11 {
   position: relative;
-  left: 91.66666666666666%;
+  left: 91.66666667%;
 }
 .pull-11 {
   position: relative;
-  right: 91.66666666666666%;
+  right: 91.66666667%;
 }
 .col-10 {
   display: inline-block;
@@ -142,7 +142,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333334%;
+  width: 83.33333333%;
 }
 .ie .col-10 {
   margin-right: -0.26em;
@@ -162,7 +162,7 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
-  padding-left: 16.666666666666664%;
+  padding-left: 16.66666667%;
 }
 .ie .col-10.prefix-2 {
   margin-right: -0.26em;
@@ -184,8 +184,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666667%;
-  padding-left: 8.333333333333332%;
+  width: 91.66666667%;
+  padding-left: 8.33333333%;
 }
 .ie .col-10.prefix-1 {
   margin-right: -0.26em;
@@ -208,8 +208,8 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
-  padding-right: 8.333333333333332%;
-  padding-left: 8.333333333333332%;
+  padding-right: 8.33333333%;
+  padding-left: 8.33333333%;
 }
 .ie .col-10.prefix-1.suffix-1 {
   margin-right: -0.26em;
@@ -233,7 +233,7 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
-  padding-right: 16.666666666666664%;
+  padding-right: 16.66666667%;
 }
 .ie .col-10.suffix-2 {
   margin-right: -0.26em;
@@ -255,8 +255,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666667%;
-  padding-right: 8.333333333333332%;
+  width: 91.66666667%;
+  padding-right: 8.33333333%;
 }
 .ie .col-10.suffix-1 {
   margin-right: -0.26em;
@@ -271,11 +271,11 @@
 }
 .push-10 {
   position: relative;
-  left: 83.33333333333334%;
+  left: 83.33333333%;
 }
 .pull-10 {
   position: relative;
-  right: 83.33333333333334%;
+  right: 83.33333333%;
 }
 .col-9 {
   display: inline-block;
@@ -328,8 +328,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
-  padding-left: 16.666666666666664%;
+  width: 91.66666667%;
+  padding-left: 16.66666667%;
 }
 .ie .col-9.prefix-2 {
   margin-right: -0.26em;
@@ -351,9 +351,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 99.99999999999999%;
-  padding-right: 8.333333333333332%;
-  padding-left: 16.666666666666664%;
+  width: 100%;
+  padding-right: 8.33333333%;
+  padding-left: 16.66666667%;
 }
 .ie .col-9.prefix-2.suffix-1 {
   margin-right: -0.26em;
@@ -376,8 +376,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333333%;
-  padding-left: 8.333333333333332%;
+  width: 83.33333333%;
+  padding-left: 8.33333333%;
 }
 .ie .col-9.prefix-1 {
   margin-right: -0.26em;
@@ -400,8 +400,8 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
-  padding-right: 16.666666666666664%;
-  padding-left: 8.333333333333332%;
+  padding-right: 16.66666667%;
+  padding-left: 8.33333333%;
 }
 .ie .col-9.prefix-1.suffix-2 {
   margin-right: -0.26em;
@@ -424,9 +424,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
-  padding-right: 8.333333333333332%;
-  padding-left: 8.333333333333332%;
+  width: 91.66666667%;
+  padding-right: 8.33333333%;
+  padding-left: 8.33333333%;
 }
 .ie .col-9.prefix-1.suffix-1 {
   margin-right: -0.26em;
@@ -472,8 +472,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
-  padding-right: 16.666666666666664%;
+  width: 91.66666667%;
+  padding-right: 16.66666667%;
 }
 .ie .col-9.suffix-2 {
   margin-right: -0.26em;
@@ -495,8 +495,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333333%;
-  padding-right: 8.333333333333332%;
+  width: 83.33333333%;
+  padding-right: 8.33333333%;
 }
 .ie .col-9.suffix-1 {
   margin-right: -0.26em;
@@ -526,7 +526,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 66.66666666666666%;
+  width: 66.66666667%;
 }
 .ie .col-8 {
   margin-right: -0.26em;
@@ -545,8 +545,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 99.99999999999999%;
-  padding-left: 33.33333333333333%;
+  width: 100%;
+  padding-left: 33.33333333%;
 }
 .ie .col-8.prefix-4 {
   margin-right: -0.26em;
@@ -568,7 +568,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
+  width: 91.66666667%;
   padding-left: 25%;
 }
 .ie .col-8.prefix-3 {
@@ -591,8 +591,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 99.99999999999999%;
-  padding-right: 8.333333333333332%;
+  width: 100%;
+  padding-right: 8.33333333%;
   padding-left: 25%;
 }
 .ie .col-8.prefix-3.suffix-1 {
@@ -616,8 +616,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333331%;
-  padding-left: 16.666666666666664%;
+  width: 83.33333333%;
+  padding-left: 16.66666667%;
 }
 .ie .col-8.prefix-2 {
   margin-right: -0.26em;
@@ -639,9 +639,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 99.99999999999997%;
-  padding-right: 16.666666666666664%;
-  padding-left: 16.666666666666664%;
+  width: 100%;
+  padding-right: 16.66666667%;
+  padding-left: 16.66666667%;
 }
 .ie .col-8.prefix-2.suffix-2 {
   margin-right: -0.26em;
@@ -664,9 +664,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666664%;
-  padding-right: 8.333333333333332%;
-  padding-left: 16.666666666666664%;
+  width: 91.66666667%;
+  padding-right: 8.33333333%;
+  padding-left: 16.66666667%;
 }
 .ie .col-8.prefix-2.suffix-1 {
   margin-right: -0.26em;
@@ -689,8 +689,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 74.99999999999999%;
-  padding-left: 8.333333333333332%;
+  width: 75%;
+  padding-left: 8.33333333%;
 }
 .ie .col-8.prefix-1 {
   margin-right: -0.26em;
@@ -712,9 +712,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 99.99999999999999%;
+  width: 100%;
   padding-right: 25%;
-  padding-left: 8.333333333333332%;
+  padding-left: 8.33333333%;
 }
 .ie .col-8.prefix-1.suffix-3 {
   margin-right: -0.26em;
@@ -737,9 +737,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
-  padding-right: 16.666666666666664%;
-  padding-left: 8.333333333333332%;
+  width: 91.66666667%;
+  padding-right: 16.66666667%;
+  padding-left: 8.33333333%;
 }
 .ie .col-8.prefix-1.suffix-2 {
   margin-right: -0.26em;
@@ -762,9 +762,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333331%;
-  padding-right: 8.333333333333332%;
-  padding-left: 8.333333333333332%;
+  width: 83.33333333%;
+  padding-right: 8.33333333%;
+  padding-left: 8.33333333%;
 }
 .ie .col-8.prefix-1.suffix-1 {
   margin-right: -0.26em;
@@ -787,8 +787,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 99.99999999999999%;
-  padding-right: 33.33333333333333%;
+  width: 100%;
+  padding-right: 33.33333333%;
 }
 .ie .col-8.suffix-4 {
   margin-right: -0.26em;
@@ -810,7 +810,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
+  width: 91.66666667%;
   padding-right: 25%;
 }
 .ie .col-8.suffix-3 {
@@ -833,8 +833,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333331%;
-  padding-right: 16.666666666666664%;
+  width: 83.33333333%;
+  padding-right: 16.66666667%;
 }
 .ie .col-8.suffix-2 {
   margin-right: -0.26em;
@@ -856,8 +856,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 74.99999999999999%;
-  padding-right: 8.333333333333332%;
+  width: 75%;
+  padding-right: 8.33333333%;
 }
 .ie .col-8.suffix-1 {
   margin-right: -0.26em;
@@ -872,11 +872,11 @@
 }
 .push-8 {
   position: relative;
-  left: 66.66666666666666%;
+  left: 66.66666667%;
 }
 .pull-8 {
   position: relative;
-  right: 66.66666666666666%;
+  right: 66.66666667%;
 }
 .col-7 {
   display: inline-block;
@@ -887,7 +887,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 58.333333333333336%;
+  width: 58.33333333%;
 }
 .ie .col-7 {
   margin-right: -0.26em;
@@ -907,7 +907,7 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
-  padding-left: 41.66666666666667%;
+  padding-left: 41.66666667%;
 }
 .ie .col-7.prefix-5 {
   margin-right: -0.26em;
@@ -929,8 +929,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
-  padding-left: 33.33333333333333%;
+  width: 91.66666667%;
+  padding-left: 33.33333333%;
 }
 .ie .col-7.prefix-4 {
   margin-right: -0.26em;
@@ -952,9 +952,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 99.99999999999999%;
-  padding-right: 8.333333333333332%;
-  padding-left: 33.33333333333333%;
+  width: 100%;
+  padding-right: 8.33333333%;
+  padding-left: 33.33333333%;
 }
 .ie .col-7.prefix-4.suffix-1 {
   margin-right: -0.26em;
@@ -977,7 +977,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333334%;
+  width: 83.33333333%;
   padding-left: 25%;
 }
 .ie .col-7.prefix-3 {
@@ -1001,7 +1001,7 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
-  padding-right: 16.666666666666664%;
+  padding-right: 16.66666667%;
   padding-left: 25%;
 }
 .ie .col-7.prefix-3.suffix-2 {
@@ -1025,8 +1025,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666667%;
-  padding-right: 8.333333333333332%;
+  width: 91.66666667%;
+  padding-right: 8.33333333%;
   padding-left: 25%;
 }
 .ie .col-7.prefix-3.suffix-1 {
@@ -1051,7 +1051,7 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 75%;
-  padding-left: 16.666666666666664%;
+  padding-left: 16.66666667%;
 }
 .ie .col-7.prefix-2 {
   margin-right: -0.26em;
@@ -1075,7 +1075,7 @@
   vertical-align: top;
   width: 100%;
   padding-right: 25%;
-  padding-left: 16.666666666666664%;
+  padding-left: 16.66666667%;
 }
 .ie .col-7.prefix-2.suffix-3 {
   margin-right: -0.26em;
@@ -1098,9 +1098,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
-  padding-right: 16.666666666666664%;
-  padding-left: 16.666666666666664%;
+  width: 91.66666667%;
+  padding-right: 16.66666667%;
+  padding-left: 16.66666667%;
 }
 .ie .col-7.prefix-2.suffix-2 {
   margin-right: -0.26em;
@@ -1123,9 +1123,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333333%;
-  padding-right: 8.333333333333332%;
-  padding-left: 16.666666666666664%;
+  width: 83.33333333%;
+  padding-right: 8.33333333%;
+  padding-left: 16.66666667%;
 }
 .ie .col-7.prefix-2.suffix-1 {
   margin-right: -0.26em;
@@ -1148,8 +1148,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 66.66666666666667%;
-  padding-left: 8.333333333333332%;
+  width: 66.66666667%;
+  padding-left: 8.33333333%;
 }
 .ie .col-7.prefix-1 {
   margin-right: -0.26em;
@@ -1172,8 +1172,8 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
-  padding-right: 33.33333333333333%;
-  padding-left: 8.333333333333332%;
+  padding-right: 33.33333333%;
+  padding-left: 8.33333333%;
 }
 .ie .col-7.prefix-1.suffix-4 {
   margin-right: -0.26em;
@@ -1196,9 +1196,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666667%;
+  width: 91.66666667%;
   padding-right: 25%;
-  padding-left: 8.333333333333332%;
+  padding-left: 8.33333333%;
 }
 .ie .col-7.prefix-1.suffix-3 {
   margin-right: -0.26em;
@@ -1221,9 +1221,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333334%;
-  padding-right: 16.666666666666664%;
-  padding-left: 8.333333333333332%;
+  width: 83.33333333%;
+  padding-right: 16.66666667%;
+  padding-left: 8.33333333%;
 }
 .ie .col-7.prefix-1.suffix-2 {
   margin-right: -0.26em;
@@ -1247,8 +1247,8 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 75%;
-  padding-right: 8.333333333333332%;
-  padding-left: 8.333333333333332%;
+  padding-right: 8.33333333%;
+  padding-left: 8.33333333%;
 }
 .ie .col-7.prefix-1.suffix-1 {
   margin-right: -0.26em;
@@ -1272,7 +1272,7 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
-  padding-right: 41.66666666666667%;
+  padding-right: 41.66666667%;
 }
 .ie .col-7.suffix-5 {
   margin-right: -0.26em;
@@ -1294,8 +1294,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
-  padding-right: 33.33333333333333%;
+  width: 91.66666667%;
+  padding-right: 33.33333333%;
 }
 .ie .col-7.suffix-4 {
   margin-right: -0.26em;
@@ -1317,7 +1317,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333334%;
+  width: 83.33333333%;
   padding-right: 25%;
 }
 .ie .col-7.suffix-3 {
@@ -1341,7 +1341,7 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 75%;
-  padding-right: 16.666666666666664%;
+  padding-right: 16.66666667%;
 }
 .ie .col-7.suffix-2 {
   margin-right: -0.26em;
@@ -1363,8 +1363,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 66.66666666666667%;
-  padding-right: 8.333333333333332%;
+  width: 66.66666667%;
+  padding-right: 8.33333333%;
 }
 .ie .col-7.suffix-1 {
   margin-right: -0.26em;
@@ -1379,11 +1379,11 @@
 }
 .push-7 {
   position: relative;
-  left: 58.333333333333336%;
+  left: 58.33333333%;
 }
 .pull-7 {
   position: relative;
-  right: 58.333333333333336%;
+  right: 58.33333333%;
 }
 .col-6 {
   display: inline-block;
@@ -1436,8 +1436,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666667%;
-  padding-left: 41.66666666666667%;
+  width: 91.66666667%;
+  padding-left: 41.66666667%;
 }
 .ie .col-6.prefix-5 {
   margin-right: -0.26em;
@@ -1460,8 +1460,8 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
-  padding-right: 8.333333333333332%;
-  padding-left: 41.66666666666667%;
+  padding-right: 8.33333333%;
+  padding-left: 41.66666667%;
 }
 .ie .col-6.prefix-5.suffix-1 {
   margin-right: -0.26em;
@@ -1484,8 +1484,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333333%;
-  padding-left: 33.33333333333333%;
+  width: 83.33333333%;
+  padding-left: 33.33333333%;
 }
 .ie .col-6.prefix-4 {
   margin-right: -0.26em;
@@ -1508,8 +1508,8 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
-  padding-right: 16.666666666666664%;
-  padding-left: 33.33333333333333%;
+  padding-right: 16.66666667%;
+  padding-left: 33.33333333%;
 }
 .ie .col-6.prefix-4.suffix-2 {
   margin-right: -0.26em;
@@ -1532,9 +1532,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
-  padding-right: 8.333333333333332%;
-  padding-left: 33.33333333333333%;
+  width: 91.66666667%;
+  padding-right: 8.33333333%;
+  padding-left: 33.33333333%;
 }
 .ie .col-6.prefix-4.suffix-1 {
   margin-right: -0.26em;
@@ -1605,8 +1605,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
-  padding-right: 16.666666666666664%;
+  width: 91.66666667%;
+  padding-right: 16.66666667%;
   padding-left: 25%;
 }
 .ie .col-6.prefix-3.suffix-2 {
@@ -1630,8 +1630,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333333%;
-  padding-right: 8.333333333333332%;
+  width: 83.33333333%;
+  padding-right: 8.33333333%;
   padding-left: 25%;
 }
 .ie .col-6.prefix-3.suffix-1 {
@@ -1655,8 +1655,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 66.66666666666666%;
-  padding-left: 16.666666666666664%;
+  width: 66.66666667%;
+  padding-left: 16.66666667%;
 }
 .ie .col-6.prefix-2 {
   margin-right: -0.26em;
@@ -1678,9 +1678,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 99.99999999999999%;
-  padding-right: 33.33333333333333%;
-  padding-left: 16.666666666666664%;
+  width: 100%;
+  padding-right: 33.33333333%;
+  padding-left: 16.66666667%;
 }
 .ie .col-6.prefix-2.suffix-4 {
   margin-right: -0.26em;
@@ -1703,9 +1703,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
+  width: 91.66666667%;
   padding-right: 25%;
-  padding-left: 16.666666666666664%;
+  padding-left: 16.66666667%;
 }
 .ie .col-6.prefix-2.suffix-3 {
   margin-right: -0.26em;
@@ -1728,9 +1728,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333331%;
-  padding-right: 16.666666666666664%;
-  padding-left: 16.666666666666664%;
+  width: 83.33333333%;
+  padding-right: 16.66666667%;
+  padding-left: 16.66666667%;
 }
 .ie .col-6.prefix-2.suffix-2 {
   margin-right: -0.26em;
@@ -1753,9 +1753,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 74.99999999999999%;
-  padding-right: 8.333333333333332%;
-  padding-left: 16.666666666666664%;
+  width: 75%;
+  padding-right: 8.33333333%;
+  padding-left: 16.66666667%;
 }
 .ie .col-6.prefix-2.suffix-1 {
   margin-right: -0.26em;
@@ -1778,8 +1778,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 58.33333333333333%;
-  padding-left: 8.333333333333332%;
+  width: 58.33333333%;
+  padding-left: 8.33333333%;
 }
 .ie .col-6.prefix-1 {
   margin-right: -0.26em;
@@ -1802,8 +1802,8 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
-  padding-right: 41.66666666666667%;
-  padding-left: 8.333333333333332%;
+  padding-right: 41.66666667%;
+  padding-left: 8.33333333%;
 }
 .ie .col-6.prefix-1.suffix-5 {
   margin-right: -0.26em;
@@ -1826,9 +1826,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
-  padding-right: 33.33333333333333%;
-  padding-left: 8.333333333333332%;
+  width: 91.66666667%;
+  padding-right: 33.33333333%;
+  padding-left: 8.33333333%;
 }
 .ie .col-6.prefix-1.suffix-4 {
   margin-right: -0.26em;
@@ -1851,9 +1851,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333333%;
+  width: 83.33333333%;
   padding-right: 25%;
-  padding-left: 8.333333333333332%;
+  padding-left: 8.33333333%;
 }
 .ie .col-6.prefix-1.suffix-3 {
   margin-right: -0.26em;
@@ -1877,8 +1877,8 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 75%;
-  padding-right: 16.666666666666664%;
-  padding-left: 8.333333333333332%;
+  padding-right: 16.66666667%;
+  padding-left: 8.33333333%;
 }
 .ie .col-6.prefix-1.suffix-2 {
   margin-right: -0.26em;
@@ -1901,9 +1901,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 66.66666666666666%;
-  padding-right: 8.333333333333332%;
-  padding-left: 8.333333333333332%;
+  width: 66.66666667%;
+  padding-right: 8.33333333%;
+  padding-left: 8.33333333%;
 }
 .ie .col-6.prefix-1.suffix-1 {
   margin-right: -0.26em;
@@ -1949,8 +1949,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666667%;
-  padding-right: 41.66666666666667%;
+  width: 91.66666667%;
+  padding-right: 41.66666667%;
 }
 .ie .col-6.suffix-5 {
   margin-right: -0.26em;
@@ -1972,8 +1972,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333333%;
-  padding-right: 33.33333333333333%;
+  width: 83.33333333%;
+  padding-right: 33.33333333%;
 }
 .ie .col-6.suffix-4 {
   margin-right: -0.26em;
@@ -2018,8 +2018,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 66.66666666666666%;
-  padding-right: 16.666666666666664%;
+  width: 66.66666667%;
+  padding-right: 16.66666667%;
 }
 .ie .col-6.suffix-2 {
   margin-right: -0.26em;
@@ -2041,8 +2041,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 58.33333333333333%;
-  padding-right: 8.333333333333332%;
+  width: 58.33333333%;
+  padding-right: 8.33333333%;
 }
 .ie .col-6.suffix-1 {
   margin-right: -0.26em;
@@ -2072,7 +2072,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 41.66666666666667%;
+  width: 41.66666667%;
 }
 .ie .col-5 {
   margin-right: -0.26em;
@@ -2092,7 +2092,7 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
-  padding-left: 58.333333333333336%;
+  padding-left: 58.33333333%;
 }
 .ie .col-5.prefix-7 {
   margin-right: -0.26em;
@@ -2114,7 +2114,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666667%;
+  width: 91.66666667%;
   padding-left: 50%;
 }
 .ie .col-5.prefix-6 {
@@ -2138,7 +2138,7 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
-  padding-right: 8.333333333333332%;
+  padding-right: 8.33333333%;
   padding-left: 50%;
 }
 .ie .col-5.prefix-6.suffix-1 {
@@ -2162,8 +2162,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333334%;
-  padding-left: 41.66666666666667%;
+  width: 83.33333333%;
+  padding-left: 41.66666667%;
 }
 .ie .col-5.prefix-5 {
   margin-right: -0.26em;
@@ -2186,8 +2186,8 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
-  padding-right: 16.666666666666664%;
-  padding-left: 41.66666666666667%;
+  padding-right: 16.66666667%;
+  padding-left: 41.66666667%;
 }
 .ie .col-5.prefix-5.suffix-2 {
   margin-right: -0.26em;
@@ -2210,9 +2210,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666667%;
-  padding-right: 8.333333333333332%;
-  padding-left: 41.66666666666667%;
+  width: 91.66666667%;
+  padding-right: 8.33333333%;
+  padding-left: 41.66666667%;
 }
 .ie .col-5.prefix-5.suffix-1 {
   margin-right: -0.26em;
@@ -2236,7 +2236,7 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 75%;
-  padding-left: 33.33333333333333%;
+  padding-left: 33.33333333%;
 }
 .ie .col-5.prefix-4 {
   margin-right: -0.26em;
@@ -2260,7 +2260,7 @@
   vertical-align: top;
   width: 100%;
   padding-right: 25%;
-  padding-left: 33.33333333333333%;
+  padding-left: 33.33333333%;
 }
 .ie .col-5.prefix-4.suffix-3 {
   margin-right: -0.26em;
@@ -2283,9 +2283,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
-  padding-right: 16.666666666666664%;
-  padding-left: 33.33333333333333%;
+  width: 91.66666667%;
+  padding-right: 16.66666667%;
+  padding-left: 33.33333333%;
 }
 .ie .col-5.prefix-4.suffix-2 {
   margin-right: -0.26em;
@@ -2308,9 +2308,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333333%;
-  padding-right: 8.333333333333332%;
-  padding-left: 33.33333333333333%;
+  width: 83.33333333%;
+  padding-right: 8.33333333%;
+  padding-left: 33.33333333%;
 }
 .ie .col-5.prefix-4.suffix-1 {
   margin-right: -0.26em;
@@ -2333,7 +2333,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 66.66666666666667%;
+  width: 66.66666667%;
   padding-left: 25%;
 }
 .ie .col-5.prefix-3 {
@@ -2357,7 +2357,7 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
-  padding-right: 33.33333333333333%;
+  padding-right: 33.33333333%;
   padding-left: 25%;
 }
 .ie .col-5.prefix-3.suffix-4 {
@@ -2381,7 +2381,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666667%;
+  width: 91.66666667%;
   padding-right: 25%;
   padding-left: 25%;
 }
@@ -2406,8 +2406,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333334%;
-  padding-right: 16.666666666666664%;
+  width: 83.33333333%;
+  padding-right: 16.66666667%;
   padding-left: 25%;
 }
 .ie .col-5.prefix-3.suffix-2 {
@@ -2432,7 +2432,7 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 75%;
-  padding-right: 8.333333333333332%;
+  padding-right: 8.33333333%;
   padding-left: 25%;
 }
 .ie .col-5.prefix-3.suffix-1 {
@@ -2456,8 +2456,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 58.333333333333336%;
-  padding-left: 16.666666666666664%;
+  width: 58.33333333%;
+  padding-left: 16.66666667%;
 }
 .ie .col-5.prefix-2 {
   margin-right: -0.26em;
@@ -2480,8 +2480,8 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
-  padding-right: 41.66666666666667%;
-  padding-left: 16.666666666666664%;
+  padding-right: 41.66666667%;
+  padding-left: 16.66666667%;
 }
 .ie .col-5.prefix-2.suffix-5 {
   margin-right: -0.26em;
@@ -2504,9 +2504,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
-  padding-right: 33.33333333333333%;
-  padding-left: 16.666666666666664%;
+  width: 91.66666667%;
+  padding-right: 33.33333333%;
+  padding-left: 16.66666667%;
 }
 .ie .col-5.prefix-2.suffix-4 {
   margin-right: -0.26em;
@@ -2529,9 +2529,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333334%;
+  width: 83.33333333%;
   padding-right: 25%;
-  padding-left: 16.666666666666664%;
+  padding-left: 16.66666667%;
 }
 .ie .col-5.prefix-2.suffix-3 {
   margin-right: -0.26em;
@@ -2555,8 +2555,8 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 75%;
-  padding-right: 16.666666666666664%;
-  padding-left: 16.666666666666664%;
+  padding-right: 16.66666667%;
+  padding-left: 16.66666667%;
 }
 .ie .col-5.prefix-2.suffix-2 {
   margin-right: -0.26em;
@@ -2579,9 +2579,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 66.66666666666667%;
-  padding-right: 8.333333333333332%;
-  padding-left: 16.666666666666664%;
+  width: 66.66666667%;
+  padding-right: 8.33333333%;
+  padding-left: 16.66666667%;
 }
 .ie .col-5.prefix-2.suffix-1 {
   margin-right: -0.26em;
@@ -2605,7 +2605,7 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 50%;
-  padding-left: 8.333333333333332%;
+  padding-left: 8.33333333%;
 }
 .ie .col-5.prefix-1 {
   margin-right: -0.26em;
@@ -2629,7 +2629,7 @@
   vertical-align: top;
   width: 100%;
   padding-right: 50%;
-  padding-left: 8.333333333333332%;
+  padding-left: 8.33333333%;
 }
 .ie .col-5.prefix-1.suffix-6 {
   margin-right: -0.26em;
@@ -2652,9 +2652,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666667%;
-  padding-right: 41.66666666666667%;
-  padding-left: 8.333333333333332%;
+  width: 91.66666667%;
+  padding-right: 41.66666667%;
+  padding-left: 8.33333333%;
 }
 .ie .col-5.prefix-1.suffix-5 {
   margin-right: -0.26em;
@@ -2677,9 +2677,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333333%;
-  padding-right: 33.33333333333333%;
-  padding-left: 8.333333333333332%;
+  width: 83.33333333%;
+  padding-right: 33.33333333%;
+  padding-left: 8.33333333%;
 }
 .ie .col-5.prefix-1.suffix-4 {
   margin-right: -0.26em;
@@ -2704,7 +2704,7 @@
   vertical-align: top;
   width: 75%;
   padding-right: 25%;
-  padding-left: 8.333333333333332%;
+  padding-left: 8.33333333%;
 }
 .ie .col-5.prefix-1.suffix-3 {
   margin-right: -0.26em;
@@ -2727,9 +2727,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 66.66666666666666%;
-  padding-right: 16.666666666666664%;
-  padding-left: 8.333333333333332%;
+  width: 66.66666667%;
+  padding-right: 16.66666667%;
+  padding-left: 8.33333333%;
 }
 .ie .col-5.prefix-1.suffix-2 {
   margin-right: -0.26em;
@@ -2752,9 +2752,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 58.33333333333333%;
-  padding-right: 8.333333333333332%;
-  padding-left: 8.333333333333332%;
+  width: 58.33333333%;
+  padding-right: 8.33333333%;
+  padding-left: 8.33333333%;
 }
 .ie .col-5.prefix-1.suffix-1 {
   margin-right: -0.26em;
@@ -2778,7 +2778,7 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
-  padding-right: 58.333333333333336%;
+  padding-right: 58.33333333%;
 }
 .ie .col-5.suffix-7 {
   margin-right: -0.26em;
@@ -2800,7 +2800,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666667%;
+  width: 91.66666667%;
   padding-right: 50%;
 }
 .ie .col-5.suffix-6 {
@@ -2823,8 +2823,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333334%;
-  padding-right: 41.66666666666667%;
+  width: 83.33333333%;
+  padding-right: 41.66666667%;
 }
 .ie .col-5.suffix-5 {
   margin-right: -0.26em;
@@ -2847,7 +2847,7 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 75%;
-  padding-right: 33.33333333333333%;
+  padding-right: 33.33333333%;
 }
 .ie .col-5.suffix-4 {
   margin-right: -0.26em;
@@ -2869,7 +2869,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 66.66666666666667%;
+  width: 66.66666667%;
   padding-right: 25%;
 }
 .ie .col-5.suffix-3 {
@@ -2892,8 +2892,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 58.333333333333336%;
-  padding-right: 16.666666666666664%;
+  width: 58.33333333%;
+  padding-right: 16.66666667%;
 }
 .ie .col-5.suffix-2 {
   margin-right: -0.26em;
@@ -2916,7 +2916,7 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 50%;
-  padding-right: 8.333333333333332%;
+  padding-right: 8.33333333%;
 }
 .ie .col-5.suffix-1 {
   margin-right: -0.26em;
@@ -2931,11 +2931,11 @@
 }
 .push-5 {
   position: relative;
-  left: 41.66666666666667%;
+  left: 41.66666667%;
 }
 .pull-5 {
   position: relative;
-  right: 41.66666666666667%;
+  right: 41.66666667%;
 }
 .col-4 {
   display: inline-block;
@@ -2946,7 +2946,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 33.33333333333333%;
+  width: 33.33333333%;
 }
 .ie .col-4 {
   margin-right: -0.26em;
@@ -2965,8 +2965,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 99.99999999999999%;
-  padding-left: 66.66666666666666%;
+  width: 100%;
+  padding-left: 66.66666667%;
 }
 .ie .col-4.prefix-8 {
   margin-right: -0.26em;
@@ -2988,8 +2988,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
-  padding-left: 58.333333333333336%;
+  width: 91.66666667%;
+  padding-left: 58.33333333%;
 }
 .ie .col-4.prefix-7 {
   margin-right: -0.26em;
@@ -3011,9 +3011,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 99.99999999999999%;
-  padding-right: 8.333333333333332%;
-  padding-left: 58.333333333333336%;
+  width: 100%;
+  padding-right: 8.33333333%;
+  padding-left: 58.33333333%;
 }
 .ie .col-4.prefix-7.suffix-1 {
   margin-right: -0.26em;
@@ -3036,7 +3036,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333333%;
+  width: 83.33333333%;
   padding-left: 50%;
 }
 .ie .col-4.prefix-6 {
@@ -3060,7 +3060,7 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
-  padding-right: 16.666666666666664%;
+  padding-right: 16.66666667%;
   padding-left: 50%;
 }
 .ie .col-4.prefix-6.suffix-2 {
@@ -3084,8 +3084,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
-  padding-right: 8.333333333333332%;
+  width: 91.66666667%;
+  padding-right: 8.33333333%;
   padding-left: 50%;
 }
 .ie .col-4.prefix-6.suffix-1 {
@@ -3110,7 +3110,7 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 75%;
-  padding-left: 41.66666666666667%;
+  padding-left: 41.66666667%;
 }
 .ie .col-4.prefix-5 {
   margin-right: -0.26em;
@@ -3134,7 +3134,7 @@
   vertical-align: top;
   width: 100%;
   padding-right: 25%;
-  padding-left: 41.66666666666667%;
+  padding-left: 41.66666667%;
 }
 .ie .col-4.prefix-5.suffix-3 {
   margin-right: -0.26em;
@@ -3157,9 +3157,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
-  padding-right: 16.666666666666664%;
-  padding-left: 41.66666666666667%;
+  width: 91.66666667%;
+  padding-right: 16.66666667%;
+  padding-left: 41.66666667%;
 }
 .ie .col-4.prefix-5.suffix-2 {
   margin-right: -0.26em;
@@ -3182,9 +3182,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333333%;
-  padding-right: 8.333333333333332%;
-  padding-left: 41.66666666666667%;
+  width: 83.33333333%;
+  padding-right: 8.33333333%;
+  padding-left: 41.66666667%;
 }
 .ie .col-4.prefix-5.suffix-1 {
   margin-right: -0.26em;
@@ -3207,8 +3207,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 66.66666666666666%;
-  padding-left: 33.33333333333333%;
+  width: 66.66666667%;
+  padding-left: 33.33333333%;
 }
 .ie .col-4.prefix-4 {
   margin-right: -0.26em;
@@ -3230,9 +3230,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 99.99999999999999%;
-  padding-right: 33.33333333333333%;
-  padding-left: 33.33333333333333%;
+  width: 100%;
+  padding-right: 33.33333333%;
+  padding-left: 33.33333333%;
 }
 .ie .col-4.prefix-4.suffix-4 {
   margin-right: -0.26em;
@@ -3255,9 +3255,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
+  width: 91.66666667%;
   padding-right: 25%;
-  padding-left: 33.33333333333333%;
+  padding-left: 33.33333333%;
 }
 .ie .col-4.prefix-4.suffix-3 {
   margin-right: -0.26em;
@@ -3280,9 +3280,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333331%;
-  padding-right: 16.666666666666664%;
-  padding-left: 33.33333333333333%;
+  width: 83.33333333%;
+  padding-right: 16.66666667%;
+  padding-left: 33.33333333%;
 }
 .ie .col-4.prefix-4.suffix-2 {
   margin-right: -0.26em;
@@ -3305,9 +3305,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 74.99999999999999%;
-  padding-right: 8.333333333333332%;
-  padding-left: 33.33333333333333%;
+  width: 75%;
+  padding-right: 8.33333333%;
+  padding-left: 33.33333333%;
 }
 .ie .col-4.prefix-4.suffix-1 {
   margin-right: -0.26em;
@@ -3330,7 +3330,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 58.33333333333333%;
+  width: 58.33333333%;
   padding-left: 25%;
 }
 .ie .col-4.prefix-3 {
@@ -3354,7 +3354,7 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
-  padding-right: 41.66666666666667%;
+  padding-right: 41.66666667%;
   padding-left: 25%;
 }
 .ie .col-4.prefix-3.suffix-5 {
@@ -3378,8 +3378,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
-  padding-right: 33.33333333333333%;
+  width: 91.66666667%;
+  padding-right: 33.33333333%;
   padding-left: 25%;
 }
 .ie .col-4.prefix-3.suffix-4 {
@@ -3403,7 +3403,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333333%;
+  width: 83.33333333%;
   padding-right: 25%;
   padding-left: 25%;
 }
@@ -3429,7 +3429,7 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 75%;
-  padding-right: 16.666666666666664%;
+  padding-right: 16.66666667%;
   padding-left: 25%;
 }
 .ie .col-4.prefix-3.suffix-2 {
@@ -3453,8 +3453,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 66.66666666666666%;
-  padding-right: 8.333333333333332%;
+  width: 66.66666667%;
+  padding-right: 8.33333333%;
   padding-left: 25%;
 }
 .ie .col-4.prefix-3.suffix-1 {
@@ -3478,8 +3478,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 49.99999999999999%;
-  padding-left: 16.666666666666664%;
+  width: 50%;
+  padding-left: 16.66666667%;
 }
 .ie .col-4.prefix-2 {
   margin-right: -0.26em;
@@ -3503,7 +3503,7 @@
   vertical-align: top;
   width: 100%;
   padding-right: 50%;
-  padding-left: 16.666666666666664%;
+  padding-left: 16.66666667%;
 }
 .ie .col-4.prefix-2.suffix-6 {
   margin-right: -0.26em;
@@ -3526,9 +3526,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
-  padding-right: 41.66666666666667%;
-  padding-left: 16.666666666666664%;
+  width: 91.66666667%;
+  padding-right: 41.66666667%;
+  padding-left: 16.66666667%;
 }
 .ie .col-4.prefix-2.suffix-5 {
   margin-right: -0.26em;
@@ -3551,9 +3551,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333331%;
-  padding-right: 33.33333333333333%;
-  padding-left: 16.666666666666664%;
+  width: 83.33333333%;
+  padding-right: 33.33333333%;
+  padding-left: 16.66666667%;
 }
 .ie .col-4.prefix-2.suffix-4 {
   margin-right: -0.26em;
@@ -3578,7 +3578,7 @@
   vertical-align: top;
   width: 75%;
   padding-right: 25%;
-  padding-left: 16.666666666666664%;
+  padding-left: 16.66666667%;
 }
 .ie .col-4.prefix-2.suffix-3 {
   margin-right: -0.26em;
@@ -3601,9 +3601,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 66.66666666666666%;
-  padding-right: 16.666666666666664%;
-  padding-left: 16.666666666666664%;
+  width: 66.66666667%;
+  padding-right: 16.66666667%;
+  padding-left: 16.66666667%;
 }
 .ie .col-4.prefix-2.suffix-2 {
   margin-right: -0.26em;
@@ -3626,9 +3626,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 58.33333333333333%;
-  padding-right: 8.333333333333332%;
-  padding-left: 16.666666666666664%;
+  width: 58.33333333%;
+  padding-right: 8.33333333%;
+  padding-left: 16.66666667%;
 }
 .ie .col-4.prefix-2.suffix-1 {
   margin-right: -0.26em;
@@ -3651,8 +3651,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 41.66666666666666%;
-  padding-left: 8.333333333333332%;
+  width: 41.66666667%;
+  padding-left: 8.33333333%;
 }
 .ie .col-4.prefix-1 {
   margin-right: -0.26em;
@@ -3675,8 +3675,8 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
-  padding-right: 58.333333333333336%;
-  padding-left: 8.333333333333332%;
+  padding-right: 58.33333333%;
+  padding-left: 8.33333333%;
 }
 .ie .col-4.prefix-1.suffix-7 {
   margin-right: -0.26em;
@@ -3699,9 +3699,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
+  width: 91.66666667%;
   padding-right: 50%;
-  padding-left: 8.333333333333332%;
+  padding-left: 8.33333333%;
 }
 .ie .col-4.prefix-1.suffix-6 {
   margin-right: -0.26em;
@@ -3724,9 +3724,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333333%;
-  padding-right: 41.66666666666667%;
-  padding-left: 8.333333333333332%;
+  width: 83.33333333%;
+  padding-right: 41.66666667%;
+  padding-left: 8.33333333%;
 }
 .ie .col-4.prefix-1.suffix-5 {
   margin-right: -0.26em;
@@ -3749,9 +3749,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 74.99999999999999%;
-  padding-right: 33.33333333333333%;
-  padding-left: 8.333333333333332%;
+  width: 75%;
+  padding-right: 33.33333333%;
+  padding-left: 8.33333333%;
 }
 .ie .col-4.prefix-1.suffix-4 {
   margin-right: -0.26em;
@@ -3774,9 +3774,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 66.66666666666666%;
+  width: 66.66666667%;
   padding-right: 25%;
-  padding-left: 8.333333333333332%;
+  padding-left: 8.33333333%;
 }
 .ie .col-4.prefix-1.suffix-3 {
   margin-right: -0.26em;
@@ -3799,9 +3799,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 58.33333333333332%;
-  padding-right: 16.666666666666664%;
-  padding-left: 8.333333333333332%;
+  width: 58.33333333%;
+  padding-right: 16.66666667%;
+  padding-left: 8.33333333%;
 }
 .ie .col-4.prefix-1.suffix-2 {
   margin-right: -0.26em;
@@ -3824,9 +3824,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 49.999999999999986%;
-  padding-right: 8.333333333333332%;
-  padding-left: 8.333333333333332%;
+  width: 50%;
+  padding-right: 8.33333333%;
+  padding-left: 8.33333333%;
 }
 .ie .col-4.prefix-1.suffix-1 {
   margin-right: -0.26em;
@@ -3849,8 +3849,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 99.99999999999999%;
-  padding-right: 66.66666666666666%;
+  width: 100%;
+  padding-right: 66.66666667%;
 }
 .ie .col-4.suffix-8 {
   margin-right: -0.26em;
@@ -3872,8 +3872,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
-  padding-right: 58.333333333333336%;
+  width: 91.66666667%;
+  padding-right: 58.33333333%;
 }
 .ie .col-4.suffix-7 {
   margin-right: -0.26em;
@@ -3895,7 +3895,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333333%;
+  width: 83.33333333%;
   padding-right: 50%;
 }
 .ie .col-4.suffix-6 {
@@ -3919,7 +3919,7 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 75%;
-  padding-right: 41.66666666666667%;
+  padding-right: 41.66666667%;
 }
 .ie .col-4.suffix-5 {
   margin-right: -0.26em;
@@ -3941,8 +3941,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 66.66666666666666%;
-  padding-right: 33.33333333333333%;
+  width: 66.66666667%;
+  padding-right: 33.33333333%;
 }
 .ie .col-4.suffix-4 {
   margin-right: -0.26em;
@@ -3964,7 +3964,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 58.33333333333333%;
+  width: 58.33333333%;
   padding-right: 25%;
 }
 .ie .col-4.suffix-3 {
@@ -3987,8 +3987,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 49.99999999999999%;
-  padding-right: 16.666666666666664%;
+  width: 50%;
+  padding-right: 16.66666667%;
 }
 .ie .col-4.suffix-2 {
   margin-right: -0.26em;
@@ -4010,8 +4010,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 41.66666666666666%;
-  padding-right: 8.333333333333332%;
+  width: 41.66666667%;
+  padding-right: 8.33333333%;
 }
 .ie .col-4.suffix-1 {
   margin-right: -0.26em;
@@ -4026,11 +4026,11 @@
 }
 .push-4 {
   position: relative;
-  left: 33.33333333333333%;
+  left: 33.33333333%;
 }
 .pull-4 {
   position: relative;
-  right: 33.33333333333333%;
+  right: 33.33333333%;
 }
 .col-3 {
   display: inline-block;
@@ -4083,8 +4083,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
-  padding-left: 66.66666666666666%;
+  width: 91.66666667%;
+  padding-left: 66.66666667%;
 }
 .ie .col-3.prefix-8 {
   margin-right: -0.26em;
@@ -4106,9 +4106,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 99.99999999999999%;
-  padding-right: 8.333333333333332%;
-  padding-left: 66.66666666666666%;
+  width: 100%;
+  padding-right: 8.33333333%;
+  padding-left: 66.66666667%;
 }
 .ie .col-3.prefix-8.suffix-1 {
   margin-right: -0.26em;
@@ -4131,8 +4131,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333334%;
-  padding-left: 58.333333333333336%;
+  width: 83.33333333%;
+  padding-left: 58.33333333%;
 }
 .ie .col-3.prefix-7 {
   margin-right: -0.26em;
@@ -4155,8 +4155,8 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
-  padding-right: 16.666666666666664%;
-  padding-left: 58.333333333333336%;
+  padding-right: 16.66666667%;
+  padding-left: 58.33333333%;
 }
 .ie .col-3.prefix-7.suffix-2 {
   margin-right: -0.26em;
@@ -4179,9 +4179,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666667%;
-  padding-right: 8.333333333333332%;
-  padding-left: 58.333333333333336%;
+  width: 91.66666667%;
+  padding-right: 8.33333333%;
+  padding-left: 58.33333333%;
 }
 .ie .col-3.prefix-7.suffix-1 {
   margin-right: -0.26em;
@@ -4252,8 +4252,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
-  padding-right: 16.666666666666664%;
+  width: 91.66666667%;
+  padding-right: 16.66666667%;
   padding-left: 50%;
 }
 .ie .col-3.prefix-6.suffix-2 {
@@ -4277,8 +4277,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333333%;
-  padding-right: 8.333333333333332%;
+  width: 83.33333333%;
+  padding-right: 8.33333333%;
   padding-left: 50%;
 }
 .ie .col-3.prefix-6.suffix-1 {
@@ -4302,8 +4302,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 66.66666666666667%;
-  padding-left: 41.66666666666667%;
+  width: 66.66666667%;
+  padding-left: 41.66666667%;
 }
 .ie .col-3.prefix-5 {
   margin-right: -0.26em;
@@ -4326,8 +4326,8 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
-  padding-right: 33.33333333333333%;
-  padding-left: 41.66666666666667%;
+  padding-right: 33.33333333%;
+  padding-left: 41.66666667%;
 }
 .ie .col-3.prefix-5.suffix-4 {
   margin-right: -0.26em;
@@ -4350,9 +4350,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666667%;
+  width: 91.66666667%;
   padding-right: 25%;
-  padding-left: 41.66666666666667%;
+  padding-left: 41.66666667%;
 }
 .ie .col-3.prefix-5.suffix-3 {
   margin-right: -0.26em;
@@ -4375,9 +4375,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333334%;
-  padding-right: 16.666666666666664%;
-  padding-left: 41.66666666666667%;
+  width: 83.33333333%;
+  padding-right: 16.66666667%;
+  padding-left: 41.66666667%;
 }
 .ie .col-3.prefix-5.suffix-2 {
   margin-right: -0.26em;
@@ -4401,8 +4401,8 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 75%;
-  padding-right: 8.333333333333332%;
-  padding-left: 41.66666666666667%;
+  padding-right: 8.33333333%;
+  padding-left: 41.66666667%;
 }
 .ie .col-3.prefix-5.suffix-1 {
   margin-right: -0.26em;
@@ -4425,8 +4425,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 58.33333333333333%;
-  padding-left: 33.33333333333333%;
+  width: 58.33333333%;
+  padding-left: 33.33333333%;
 }
 .ie .col-3.prefix-4 {
   margin-right: -0.26em;
@@ -4449,8 +4449,8 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
-  padding-right: 41.66666666666667%;
-  padding-left: 33.33333333333333%;
+  padding-right: 41.66666667%;
+  padding-left: 33.33333333%;
 }
 .ie .col-3.prefix-4.suffix-5 {
   margin-right: -0.26em;
@@ -4473,9 +4473,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
-  padding-right: 33.33333333333333%;
-  padding-left: 33.33333333333333%;
+  width: 91.66666667%;
+  padding-right: 33.33333333%;
+  padding-left: 33.33333333%;
 }
 .ie .col-3.prefix-4.suffix-4 {
   margin-right: -0.26em;
@@ -4498,9 +4498,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333333%;
+  width: 83.33333333%;
   padding-right: 25%;
-  padding-left: 33.33333333333333%;
+  padding-left: 33.33333333%;
 }
 .ie .col-3.prefix-4.suffix-3 {
   margin-right: -0.26em;
@@ -4524,8 +4524,8 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 75%;
-  padding-right: 16.666666666666664%;
-  padding-left: 33.33333333333333%;
+  padding-right: 16.66666667%;
+  padding-left: 33.33333333%;
 }
 .ie .col-3.prefix-4.suffix-2 {
   margin-right: -0.26em;
@@ -4548,9 +4548,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 66.66666666666666%;
-  padding-right: 8.333333333333332%;
-  padding-left: 33.33333333333333%;
+  width: 66.66666667%;
+  padding-right: 8.33333333%;
+  padding-left: 33.33333333%;
 }
 .ie .col-3.prefix-4.suffix-1 {
   margin-right: -0.26em;
@@ -4621,8 +4621,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666667%;
-  padding-right: 41.66666666666667%;
+  width: 91.66666667%;
+  padding-right: 41.66666667%;
   padding-left: 25%;
 }
 .ie .col-3.prefix-3.suffix-5 {
@@ -4646,8 +4646,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333333%;
-  padding-right: 33.33333333333333%;
+  width: 83.33333333%;
+  padding-right: 33.33333333%;
   padding-left: 25%;
 }
 .ie .col-3.prefix-3.suffix-4 {
@@ -4696,8 +4696,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 66.66666666666666%;
-  padding-right: 16.666666666666664%;
+  width: 66.66666667%;
+  padding-right: 16.66666667%;
   padding-left: 25%;
 }
 .ie .col-3.prefix-3.suffix-2 {
@@ -4721,8 +4721,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 58.33333333333333%;
-  padding-right: 8.333333333333332%;
+  width: 58.33333333%;
+  padding-right: 8.33333333%;
   padding-left: 25%;
 }
 .ie .col-3.prefix-3.suffix-1 {
@@ -4746,8 +4746,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 41.666666666666664%;
-  padding-left: 16.666666666666664%;
+  width: 41.66666667%;
+  padding-left: 16.66666667%;
 }
 .ie .col-3.prefix-2 {
   margin-right: -0.26em;
@@ -4770,8 +4770,8 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
-  padding-right: 58.333333333333336%;
-  padding-left: 16.666666666666664%;
+  padding-right: 58.33333333%;
+  padding-left: 16.66666667%;
 }
 .ie .col-3.prefix-2.suffix-7 {
   margin-right: -0.26em;
@@ -4794,9 +4794,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
+  width: 91.66666667%;
   padding-right: 50%;
-  padding-left: 16.666666666666664%;
+  padding-left: 16.66666667%;
 }
 .ie .col-3.prefix-2.suffix-6 {
   margin-right: -0.26em;
@@ -4819,9 +4819,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333334%;
-  padding-right: 41.66666666666667%;
-  padding-left: 16.666666666666664%;
+  width: 83.33333333%;
+  padding-right: 41.66666667%;
+  padding-left: 16.66666667%;
 }
 .ie .col-3.prefix-2.suffix-5 {
   margin-right: -0.26em;
@@ -4845,8 +4845,8 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 75%;
-  padding-right: 33.33333333333333%;
-  padding-left: 16.666666666666664%;
+  padding-right: 33.33333333%;
+  padding-left: 16.66666667%;
 }
 .ie .col-3.prefix-2.suffix-4 {
   margin-right: -0.26em;
@@ -4869,9 +4869,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 66.66666666666666%;
+  width: 66.66666667%;
   padding-right: 25%;
-  padding-left: 16.666666666666664%;
+  padding-left: 16.66666667%;
 }
 .ie .col-3.prefix-2.suffix-3 {
   margin-right: -0.26em;
@@ -4894,9 +4894,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 58.33333333333333%;
-  padding-right: 16.666666666666664%;
-  padding-left: 16.666666666666664%;
+  width: 58.33333333%;
+  padding-right: 16.66666667%;
+  padding-left: 16.66666667%;
 }
 .ie .col-3.prefix-2.suffix-2 {
   margin-right: -0.26em;
@@ -4920,8 +4920,8 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 50%;
-  padding-right: 8.333333333333332%;
-  padding-left: 16.666666666666664%;
+  padding-right: 8.33333333%;
+  padding-left: 16.66666667%;
 }
 .ie .col-3.prefix-2.suffix-1 {
   margin-right: -0.26em;
@@ -4944,8 +4944,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 33.33333333333333%;
-  padding-left: 8.333333333333332%;
+  width: 33.33333333%;
+  padding-left: 8.33333333%;
 }
 .ie .col-3.prefix-1 {
   margin-right: -0.26em;
@@ -4967,9 +4967,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 99.99999999999999%;
-  padding-right: 66.66666666666666%;
-  padding-left: 8.333333333333332%;
+  width: 100%;
+  padding-right: 66.66666667%;
+  padding-left: 8.33333333%;
 }
 .ie .col-3.prefix-1.suffix-8 {
   margin-right: -0.26em;
@@ -4992,9 +4992,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
-  padding-right: 58.333333333333336%;
-  padding-left: 8.333333333333332%;
+  width: 91.66666667%;
+  padding-right: 58.33333333%;
+  padding-left: 8.33333333%;
 }
 .ie .col-3.prefix-1.suffix-7 {
   margin-right: -0.26em;
@@ -5017,9 +5017,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333333%;
+  width: 83.33333333%;
   padding-right: 50%;
-  padding-left: 8.333333333333332%;
+  padding-left: 8.33333333%;
 }
 .ie .col-3.prefix-1.suffix-6 {
   margin-right: -0.26em;
@@ -5043,8 +5043,8 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 75%;
-  padding-right: 41.66666666666667%;
-  padding-left: 8.333333333333332%;
+  padding-right: 41.66666667%;
+  padding-left: 8.33333333%;
 }
 .ie .col-3.prefix-1.suffix-5 {
   margin-right: -0.26em;
@@ -5067,9 +5067,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 66.66666666666666%;
-  padding-right: 33.33333333333333%;
-  padding-left: 8.333333333333332%;
+  width: 66.66666667%;
+  padding-right: 33.33333333%;
+  padding-left: 8.33333333%;
 }
 .ie .col-3.prefix-1.suffix-4 {
   margin-right: -0.26em;
@@ -5092,9 +5092,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 58.33333333333333%;
+  width: 58.33333333%;
   padding-right: 25%;
-  padding-left: 8.333333333333332%;
+  padding-left: 8.33333333%;
 }
 .ie .col-3.prefix-1.suffix-3 {
   margin-right: -0.26em;
@@ -5117,9 +5117,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 49.99999999999999%;
-  padding-right: 16.666666666666664%;
-  padding-left: 8.333333333333332%;
+  width: 50%;
+  padding-right: 16.66666667%;
+  padding-left: 8.33333333%;
 }
 .ie .col-3.prefix-1.suffix-2 {
   margin-right: -0.26em;
@@ -5142,9 +5142,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 41.66666666666666%;
-  padding-right: 8.333333333333332%;
-  padding-left: 8.333333333333332%;
+  width: 41.66666667%;
+  padding-right: 8.33333333%;
+  padding-left: 8.33333333%;
 }
 .ie .col-3.prefix-1.suffix-1 {
   margin-right: -0.26em;
@@ -5190,8 +5190,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
-  padding-right: 66.66666666666666%;
+  width: 91.66666667%;
+  padding-right: 66.66666667%;
 }
 .ie .col-3.suffix-8 {
   margin-right: -0.26em;
@@ -5213,8 +5213,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333334%;
-  padding-right: 58.333333333333336%;
+  width: 83.33333333%;
+  padding-right: 58.33333333%;
 }
 .ie .col-3.suffix-7 {
   margin-right: -0.26em;
@@ -5259,8 +5259,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 66.66666666666667%;
-  padding-right: 41.66666666666667%;
+  width: 66.66666667%;
+  padding-right: 41.66666667%;
 }
 .ie .col-3.suffix-5 {
   margin-right: -0.26em;
@@ -5282,8 +5282,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 58.33333333333333%;
-  padding-right: 33.33333333333333%;
+  width: 58.33333333%;
+  padding-right: 33.33333333%;
 }
 .ie .col-3.suffix-4 {
   margin-right: -0.26em;
@@ -5328,8 +5328,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 41.666666666666664%;
-  padding-right: 16.666666666666664%;
+  width: 41.66666667%;
+  padding-right: 16.66666667%;
 }
 .ie .col-3.suffix-2 {
   margin-right: -0.26em;
@@ -5351,8 +5351,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 33.33333333333333%;
-  padding-right: 8.333333333333332%;
+  width: 33.33333333%;
+  padding-right: 8.33333333%;
 }
 .ie .col-3.suffix-1 {
   margin-right: -0.26em;
@@ -5382,7 +5382,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 16.666666666666664%;
+  width: 16.66666667%;
 }
 .ie .col-2 {
   margin-right: -0.26em;
@@ -5402,7 +5402,7 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
-  padding-left: 83.33333333333334%;
+  padding-left: 83.33333333%;
 }
 .ie .col-2.prefix-10 {
   margin-right: -0.26em;
@@ -5424,7 +5424,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
+  width: 91.66666667%;
   padding-left: 75%;
 }
 .ie .col-2.prefix-9 {
@@ -5447,8 +5447,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 99.99999999999999%;
-  padding-right: 8.333333333333332%;
+  width: 100%;
+  padding-right: 8.33333333%;
   padding-left: 75%;
 }
 .ie .col-2.prefix-9.suffix-1 {
@@ -5472,8 +5472,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333331%;
-  padding-left: 66.66666666666666%;
+  width: 83.33333333%;
+  padding-left: 66.66666667%;
 }
 .ie .col-2.prefix-8 {
   margin-right: -0.26em;
@@ -5495,9 +5495,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 99.99999999999997%;
-  padding-right: 16.666666666666664%;
-  padding-left: 66.66666666666666%;
+  width: 100%;
+  padding-right: 16.66666667%;
+  padding-left: 66.66666667%;
 }
 .ie .col-2.prefix-8.suffix-2 {
   margin-right: -0.26em;
@@ -5520,9 +5520,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666664%;
-  padding-right: 8.333333333333332%;
-  padding-left: 66.66666666666666%;
+  width: 91.66666667%;
+  padding-right: 8.33333333%;
+  padding-left: 66.66666667%;
 }
 .ie .col-2.prefix-8.suffix-1 {
   margin-right: -0.26em;
@@ -5546,7 +5546,7 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 75%;
-  padding-left: 58.333333333333336%;
+  padding-left: 58.33333333%;
 }
 .ie .col-2.prefix-7 {
   margin-right: -0.26em;
@@ -5570,7 +5570,7 @@
   vertical-align: top;
   width: 100%;
   padding-right: 25%;
-  padding-left: 58.333333333333336%;
+  padding-left: 58.33333333%;
 }
 .ie .col-2.prefix-7.suffix-3 {
   margin-right: -0.26em;
@@ -5593,9 +5593,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
-  padding-right: 16.666666666666664%;
-  padding-left: 58.333333333333336%;
+  width: 91.66666667%;
+  padding-right: 16.66666667%;
+  padding-left: 58.33333333%;
 }
 .ie .col-2.prefix-7.suffix-2 {
   margin-right: -0.26em;
@@ -5618,9 +5618,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333333%;
-  padding-right: 8.333333333333332%;
-  padding-left: 58.333333333333336%;
+  width: 83.33333333%;
+  padding-right: 8.33333333%;
+  padding-left: 58.33333333%;
 }
 .ie .col-2.prefix-7.suffix-1 {
   margin-right: -0.26em;
@@ -5643,7 +5643,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 66.66666666666666%;
+  width: 66.66666667%;
   padding-left: 50%;
 }
 .ie .col-2.prefix-6 {
@@ -5666,8 +5666,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 99.99999999999999%;
-  padding-right: 33.33333333333333%;
+  width: 100%;
+  padding-right: 33.33333333%;
   padding-left: 50%;
 }
 .ie .col-2.prefix-6.suffix-4 {
@@ -5691,7 +5691,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
+  width: 91.66666667%;
   padding-right: 25%;
   padding-left: 50%;
 }
@@ -5716,8 +5716,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333331%;
-  padding-right: 16.666666666666664%;
+  width: 83.33333333%;
+  padding-right: 16.66666667%;
   padding-left: 50%;
 }
 .ie .col-2.prefix-6.suffix-2 {
@@ -5741,8 +5741,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 74.99999999999999%;
-  padding-right: 8.333333333333332%;
+  width: 75%;
+  padding-right: 8.33333333%;
   padding-left: 50%;
 }
 .ie .col-2.prefix-6.suffix-1 {
@@ -5766,8 +5766,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 58.333333333333336%;
-  padding-left: 41.66666666666667%;
+  width: 58.33333333%;
+  padding-left: 41.66666667%;
 }
 .ie .col-2.prefix-5 {
   margin-right: -0.26em;
@@ -5790,8 +5790,8 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
-  padding-right: 41.66666666666667%;
-  padding-left: 41.66666666666667%;
+  padding-right: 41.66666667%;
+  padding-left: 41.66666667%;
 }
 .ie .col-2.prefix-5.suffix-5 {
   margin-right: -0.26em;
@@ -5814,9 +5814,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
-  padding-right: 33.33333333333333%;
-  padding-left: 41.66666666666667%;
+  width: 91.66666667%;
+  padding-right: 33.33333333%;
+  padding-left: 41.66666667%;
 }
 .ie .col-2.prefix-5.suffix-4 {
   margin-right: -0.26em;
@@ -5839,9 +5839,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333334%;
+  width: 83.33333333%;
   padding-right: 25%;
-  padding-left: 41.66666666666667%;
+  padding-left: 41.66666667%;
 }
 .ie .col-2.prefix-5.suffix-3 {
   margin-right: -0.26em;
@@ -5865,8 +5865,8 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 75%;
-  padding-right: 16.666666666666664%;
-  padding-left: 41.66666666666667%;
+  padding-right: 16.66666667%;
+  padding-left: 41.66666667%;
 }
 .ie .col-2.prefix-5.suffix-2 {
   margin-right: -0.26em;
@@ -5889,9 +5889,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 66.66666666666667%;
-  padding-right: 8.333333333333332%;
-  padding-left: 41.66666666666667%;
+  width: 66.66666667%;
+  padding-right: 8.33333333%;
+  padding-left: 41.66666667%;
 }
 .ie .col-2.prefix-5.suffix-1 {
   margin-right: -0.26em;
@@ -5914,8 +5914,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 49.99999999999999%;
-  padding-left: 33.33333333333333%;
+  width: 50%;
+  padding-left: 33.33333333%;
 }
 .ie .col-2.prefix-4 {
   margin-right: -0.26em;
@@ -5939,7 +5939,7 @@
   vertical-align: top;
   width: 100%;
   padding-right: 50%;
-  padding-left: 33.33333333333333%;
+  padding-left: 33.33333333%;
 }
 .ie .col-2.prefix-4.suffix-6 {
   margin-right: -0.26em;
@@ -5962,9 +5962,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
-  padding-right: 41.66666666666667%;
-  padding-left: 33.33333333333333%;
+  width: 91.66666667%;
+  padding-right: 41.66666667%;
+  padding-left: 33.33333333%;
 }
 .ie .col-2.prefix-4.suffix-5 {
   margin-right: -0.26em;
@@ -5987,9 +5987,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333331%;
-  padding-right: 33.33333333333333%;
-  padding-left: 33.33333333333333%;
+  width: 83.33333333%;
+  padding-right: 33.33333333%;
+  padding-left: 33.33333333%;
 }
 .ie .col-2.prefix-4.suffix-4 {
   margin-right: -0.26em;
@@ -6014,7 +6014,7 @@
   vertical-align: top;
   width: 75%;
   padding-right: 25%;
-  padding-left: 33.33333333333333%;
+  padding-left: 33.33333333%;
 }
 .ie .col-2.prefix-4.suffix-3 {
   margin-right: -0.26em;
@@ -6037,9 +6037,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 66.66666666666666%;
-  padding-right: 16.666666666666664%;
-  padding-left: 33.33333333333333%;
+  width: 66.66666667%;
+  padding-right: 16.66666667%;
+  padding-left: 33.33333333%;
 }
 .ie .col-2.prefix-4.suffix-2 {
   margin-right: -0.26em;
@@ -6062,9 +6062,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 58.33333333333333%;
-  padding-right: 8.333333333333332%;
-  padding-left: 33.33333333333333%;
+  width: 58.33333333%;
+  padding-right: 8.33333333%;
+  padding-left: 33.33333333%;
 }
 .ie .col-2.prefix-4.suffix-1 {
   margin-right: -0.26em;
@@ -6087,7 +6087,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 41.666666666666664%;
+  width: 41.66666667%;
   padding-left: 25%;
 }
 .ie .col-2.prefix-3 {
@@ -6111,7 +6111,7 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
-  padding-right: 58.333333333333336%;
+  padding-right: 58.33333333%;
   padding-left: 25%;
 }
 .ie .col-2.prefix-3.suffix-7 {
@@ -6135,7 +6135,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
+  width: 91.66666667%;
   padding-right: 50%;
   padding-left: 25%;
 }
@@ -6160,8 +6160,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333334%;
-  padding-right: 41.66666666666667%;
+  width: 83.33333333%;
+  padding-right: 41.66666667%;
   padding-left: 25%;
 }
 .ie .col-2.prefix-3.suffix-5 {
@@ -6186,7 +6186,7 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 75%;
-  padding-right: 33.33333333333333%;
+  padding-right: 33.33333333%;
   padding-left: 25%;
 }
 .ie .col-2.prefix-3.suffix-4 {
@@ -6210,7 +6210,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 66.66666666666666%;
+  width: 66.66666667%;
   padding-right: 25%;
   padding-left: 25%;
 }
@@ -6235,8 +6235,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 58.33333333333333%;
-  padding-right: 16.666666666666664%;
+  width: 58.33333333%;
+  padding-right: 16.66666667%;
   padding-left: 25%;
 }
 .ie .col-2.prefix-3.suffix-2 {
@@ -6261,7 +6261,7 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 50%;
-  padding-right: 8.333333333333332%;
+  padding-right: 8.33333333%;
   padding-left: 25%;
 }
 .ie .col-2.prefix-3.suffix-1 {
@@ -6285,8 +6285,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 33.33333333333333%;
-  padding-left: 16.666666666666664%;
+  width: 33.33333333%;
+  padding-left: 16.66666667%;
 }
 .ie .col-2.prefix-2 {
   margin-right: -0.26em;
@@ -6308,9 +6308,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 99.99999999999999%;
-  padding-right: 66.66666666666666%;
-  padding-left: 16.666666666666664%;
+  width: 100%;
+  padding-right: 66.66666667%;
+  padding-left: 16.66666667%;
 }
 .ie .col-2.prefix-2.suffix-8 {
   margin-right: -0.26em;
@@ -6333,9 +6333,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
-  padding-right: 58.333333333333336%;
-  padding-left: 16.666666666666664%;
+  width: 91.66666667%;
+  padding-right: 58.33333333%;
+  padding-left: 16.66666667%;
 }
 .ie .col-2.prefix-2.suffix-7 {
   margin-right: -0.26em;
@@ -6358,9 +6358,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333333%;
+  width: 83.33333333%;
   padding-right: 50%;
-  padding-left: 16.666666666666664%;
+  padding-left: 16.66666667%;
 }
 .ie .col-2.prefix-2.suffix-6 {
   margin-right: -0.26em;
@@ -6384,8 +6384,8 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 75%;
-  padding-right: 41.66666666666667%;
-  padding-left: 16.666666666666664%;
+  padding-right: 41.66666667%;
+  padding-left: 16.66666667%;
 }
 .ie .col-2.prefix-2.suffix-5 {
   margin-right: -0.26em;
@@ -6408,9 +6408,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 66.66666666666666%;
-  padding-right: 33.33333333333333%;
-  padding-left: 16.666666666666664%;
+  width: 66.66666667%;
+  padding-right: 33.33333333%;
+  padding-left: 16.66666667%;
 }
 .ie .col-2.prefix-2.suffix-4 {
   margin-right: -0.26em;
@@ -6433,9 +6433,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 58.33333333333333%;
+  width: 58.33333333%;
   padding-right: 25%;
-  padding-left: 16.666666666666664%;
+  padding-left: 16.66666667%;
 }
 .ie .col-2.prefix-2.suffix-3 {
   margin-right: -0.26em;
@@ -6458,9 +6458,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 49.99999999999999%;
-  padding-right: 16.666666666666664%;
-  padding-left: 16.666666666666664%;
+  width: 50%;
+  padding-right: 16.66666667%;
+  padding-left: 16.66666667%;
 }
 .ie .col-2.prefix-2.suffix-2 {
   margin-right: -0.26em;
@@ -6483,9 +6483,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 41.66666666666666%;
-  padding-right: 8.333333333333332%;
-  padding-left: 16.666666666666664%;
+  width: 41.66666667%;
+  padding-right: 8.33333333%;
+  padding-left: 16.66666667%;
 }
 .ie .col-2.prefix-2.suffix-1 {
   margin-right: -0.26em;
@@ -6508,8 +6508,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 24.999999999999996%;
-  padding-left: 8.333333333333332%;
+  width: 25%;
+  padding-left: 8.33333333%;
 }
 .ie .col-2.prefix-1 {
   margin-right: -0.26em;
@@ -6533,7 +6533,7 @@
   vertical-align: top;
   width: 100%;
   padding-right: 75%;
-  padding-left: 8.333333333333332%;
+  padding-left: 8.33333333%;
 }
 .ie .col-2.prefix-1.suffix-9 {
   margin-right: -0.26em;
@@ -6556,9 +6556,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
-  padding-right: 66.66666666666666%;
-  padding-left: 8.333333333333332%;
+  width: 91.66666667%;
+  padding-right: 66.66666667%;
+  padding-left: 8.33333333%;
 }
 .ie .col-2.prefix-1.suffix-8 {
   margin-right: -0.26em;
@@ -6581,9 +6581,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333333%;
-  padding-right: 58.333333333333336%;
-  padding-left: 8.333333333333332%;
+  width: 83.33333333%;
+  padding-right: 58.33333333%;
+  padding-left: 8.33333333%;
 }
 .ie .col-2.prefix-1.suffix-7 {
   margin-right: -0.26em;
@@ -6608,7 +6608,7 @@
   vertical-align: top;
   width: 75%;
   padding-right: 50%;
-  padding-left: 8.333333333333332%;
+  padding-left: 8.33333333%;
 }
 .ie .col-2.prefix-1.suffix-6 {
   margin-right: -0.26em;
@@ -6631,9 +6631,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 66.66666666666667%;
-  padding-right: 41.66666666666667%;
-  padding-left: 8.333333333333332%;
+  width: 66.66666667%;
+  padding-right: 41.66666667%;
+  padding-left: 8.33333333%;
 }
 .ie .col-2.prefix-1.suffix-5 {
   margin-right: -0.26em;
@@ -6656,9 +6656,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 58.33333333333333%;
-  padding-right: 33.33333333333333%;
-  padding-left: 8.333333333333332%;
+  width: 58.33333333%;
+  padding-right: 33.33333333%;
+  padding-left: 8.33333333%;
 }
 .ie .col-2.prefix-1.suffix-4 {
   margin-right: -0.26em;
@@ -6683,7 +6683,7 @@
   vertical-align: top;
   width: 50%;
   padding-right: 25%;
-  padding-left: 8.333333333333332%;
+  padding-left: 8.33333333%;
 }
 .ie .col-2.prefix-1.suffix-3 {
   margin-right: -0.26em;
@@ -6706,9 +6706,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 41.66666666666666%;
-  padding-right: 16.666666666666664%;
-  padding-left: 8.333333333333332%;
+  width: 41.66666667%;
+  padding-right: 16.66666667%;
+  padding-left: 8.33333333%;
 }
 .ie .col-2.prefix-1.suffix-2 {
   margin-right: -0.26em;
@@ -6731,9 +6731,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 33.33333333333333%;
-  padding-right: 8.333333333333332%;
-  padding-left: 8.333333333333332%;
+  width: 33.33333333%;
+  padding-right: 8.33333333%;
+  padding-left: 8.33333333%;
 }
 .ie .col-2.prefix-1.suffix-1 {
   margin-right: -0.26em;
@@ -6757,7 +6757,7 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
-  padding-right: 83.33333333333334%;
+  padding-right: 83.33333333%;
 }
 .ie .col-2.suffix-10 {
   margin-right: -0.26em;
@@ -6779,7 +6779,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
+  width: 91.66666667%;
   padding-right: 75%;
 }
 .ie .col-2.suffix-9 {
@@ -6802,8 +6802,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333331%;
-  padding-right: 66.66666666666666%;
+  width: 83.33333333%;
+  padding-right: 66.66666667%;
 }
 .ie .col-2.suffix-8 {
   margin-right: -0.26em;
@@ -6826,7 +6826,7 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 75%;
-  padding-right: 58.333333333333336%;
+  padding-right: 58.33333333%;
 }
 .ie .col-2.suffix-7 {
   margin-right: -0.26em;
@@ -6848,7 +6848,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 66.66666666666666%;
+  width: 66.66666667%;
   padding-right: 50%;
 }
 .ie .col-2.suffix-6 {
@@ -6871,8 +6871,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 58.333333333333336%;
-  padding-right: 41.66666666666667%;
+  width: 58.33333333%;
+  padding-right: 41.66666667%;
 }
 .ie .col-2.suffix-5 {
   margin-right: -0.26em;
@@ -6894,8 +6894,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 49.99999999999999%;
-  padding-right: 33.33333333333333%;
+  width: 50%;
+  padding-right: 33.33333333%;
 }
 .ie .col-2.suffix-4 {
   margin-right: -0.26em;
@@ -6917,7 +6917,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 41.666666666666664%;
+  width: 41.66666667%;
   padding-right: 25%;
 }
 .ie .col-2.suffix-3 {
@@ -6940,8 +6940,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 33.33333333333333%;
-  padding-right: 16.666666666666664%;
+  width: 33.33333333%;
+  padding-right: 16.66666667%;
 }
 .ie .col-2.suffix-2 {
   margin-right: -0.26em;
@@ -6963,8 +6963,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 24.999999999999996%;
-  padding-right: 8.333333333333332%;
+  width: 25%;
+  padding-right: 8.33333333%;
 }
 .ie .col-2.suffix-1 {
   margin-right: -0.26em;
@@ -6979,11 +6979,11 @@
 }
 .push-2 {
   position: relative;
-  left: 16.666666666666664%;
+  left: 16.66666667%;
 }
 .pull-2 {
   position: relative;
-  right: 16.666666666666664%;
+  right: 16.66666667%;
 }
 .col-1 {
   display: inline-block;
@@ -6994,7 +6994,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 8.333333333333332%;
+  width: 8.33333333%;
 }
 .ie .col-1 {
   margin-right: -0.26em;
@@ -7013,8 +7013,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 99.99999999999999%;
-  padding-left: 91.66666666666666%;
+  width: 100%;
+  padding-left: 91.66666667%;
 }
 .ie .col-1.prefix-11 {
   margin-right: -0.26em;
@@ -7036,8 +7036,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666667%;
-  padding-left: 83.33333333333334%;
+  width: 91.66666667%;
+  padding-left: 83.33333333%;
 }
 .ie .col-1.prefix-10 {
   margin-right: -0.26em;
@@ -7060,8 +7060,8 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
-  padding-right: 8.333333333333332%;
-  padding-left: 83.33333333333334%;
+  padding-right: 8.33333333%;
+  padding-left: 83.33333333%;
 }
 .ie .col-1.prefix-10.suffix-1 {
   margin-right: -0.26em;
@@ -7084,7 +7084,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333333%;
+  width: 83.33333333%;
   padding-left: 75%;
 }
 .ie .col-1.prefix-9 {
@@ -7108,7 +7108,7 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
-  padding-right: 16.666666666666664%;
+  padding-right: 16.66666667%;
   padding-left: 75%;
 }
 .ie .col-1.prefix-9.suffix-2 {
@@ -7132,8 +7132,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
-  padding-right: 8.333333333333332%;
+  width: 91.66666667%;
+  padding-right: 8.33333333%;
   padding-left: 75%;
 }
 .ie .col-1.prefix-9.suffix-1 {
@@ -7157,8 +7157,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 74.99999999999999%;
-  padding-left: 66.66666666666666%;
+  width: 75%;
+  padding-left: 66.66666667%;
 }
 .ie .col-1.prefix-8 {
   margin-right: -0.26em;
@@ -7180,9 +7180,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 99.99999999999999%;
+  width: 100%;
   padding-right: 25%;
-  padding-left: 66.66666666666666%;
+  padding-left: 66.66666667%;
 }
 .ie .col-1.prefix-8.suffix-3 {
   margin-right: -0.26em;
@@ -7205,9 +7205,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
-  padding-right: 16.666666666666664%;
-  padding-left: 66.66666666666666%;
+  width: 91.66666667%;
+  padding-right: 16.66666667%;
+  padding-left: 66.66666667%;
 }
 .ie .col-1.prefix-8.suffix-2 {
   margin-right: -0.26em;
@@ -7230,9 +7230,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333331%;
-  padding-right: 8.333333333333332%;
-  padding-left: 66.66666666666666%;
+  width: 83.33333333%;
+  padding-right: 8.33333333%;
+  padding-left: 66.66666667%;
 }
 .ie .col-1.prefix-8.suffix-1 {
   margin-right: -0.26em;
@@ -7255,8 +7255,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 66.66666666666667%;
-  padding-left: 58.333333333333336%;
+  width: 66.66666667%;
+  padding-left: 58.33333333%;
 }
 .ie .col-1.prefix-7 {
   margin-right: -0.26em;
@@ -7279,8 +7279,8 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
-  padding-right: 33.33333333333333%;
-  padding-left: 58.333333333333336%;
+  padding-right: 33.33333333%;
+  padding-left: 58.33333333%;
 }
 .ie .col-1.prefix-7.suffix-4 {
   margin-right: -0.26em;
@@ -7303,9 +7303,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666667%;
+  width: 91.66666667%;
   padding-right: 25%;
-  padding-left: 58.333333333333336%;
+  padding-left: 58.33333333%;
 }
 .ie .col-1.prefix-7.suffix-3 {
   margin-right: -0.26em;
@@ -7328,9 +7328,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333334%;
-  padding-right: 16.666666666666664%;
-  padding-left: 58.333333333333336%;
+  width: 83.33333333%;
+  padding-right: 16.66666667%;
+  padding-left: 58.33333333%;
 }
 .ie .col-1.prefix-7.suffix-2 {
   margin-right: -0.26em;
@@ -7354,8 +7354,8 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 75%;
-  padding-right: 8.333333333333332%;
-  padding-left: 58.333333333333336%;
+  padding-right: 8.33333333%;
+  padding-left: 58.33333333%;
 }
 .ie .col-1.prefix-7.suffix-1 {
   margin-right: -0.26em;
@@ -7378,7 +7378,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 58.33333333333333%;
+  width: 58.33333333%;
   padding-left: 50%;
 }
 .ie .col-1.prefix-6 {
@@ -7402,7 +7402,7 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
-  padding-right: 41.66666666666667%;
+  padding-right: 41.66666667%;
   padding-left: 50%;
 }
 .ie .col-1.prefix-6.suffix-5 {
@@ -7426,8 +7426,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
-  padding-right: 33.33333333333333%;
+  width: 91.66666667%;
+  padding-right: 33.33333333%;
   padding-left: 50%;
 }
 .ie .col-1.prefix-6.suffix-4 {
@@ -7451,7 +7451,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333333%;
+  width: 83.33333333%;
   padding-right: 25%;
   padding-left: 50%;
 }
@@ -7477,7 +7477,7 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 75%;
-  padding-right: 16.666666666666664%;
+  padding-right: 16.66666667%;
   padding-left: 50%;
 }
 .ie .col-1.prefix-6.suffix-2 {
@@ -7501,8 +7501,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 66.66666666666666%;
-  padding-right: 8.333333333333332%;
+  width: 66.66666667%;
+  padding-right: 8.33333333%;
   padding-left: 50%;
 }
 .ie .col-1.prefix-6.suffix-1 {
@@ -7527,7 +7527,7 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 50%;
-  padding-left: 41.66666666666667%;
+  padding-left: 41.66666667%;
 }
 .ie .col-1.prefix-5 {
   margin-right: -0.26em;
@@ -7551,7 +7551,7 @@
   vertical-align: top;
   width: 100%;
   padding-right: 50%;
-  padding-left: 41.66666666666667%;
+  padding-left: 41.66666667%;
 }
 .ie .col-1.prefix-5.suffix-6 {
   margin-right: -0.26em;
@@ -7574,9 +7574,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666667%;
-  padding-right: 41.66666666666667%;
-  padding-left: 41.66666666666667%;
+  width: 91.66666667%;
+  padding-right: 41.66666667%;
+  padding-left: 41.66666667%;
 }
 .ie .col-1.prefix-5.suffix-5 {
   margin-right: -0.26em;
@@ -7599,9 +7599,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333333%;
-  padding-right: 33.33333333333333%;
-  padding-left: 41.66666666666667%;
+  width: 83.33333333%;
+  padding-right: 33.33333333%;
+  padding-left: 41.66666667%;
 }
 .ie .col-1.prefix-5.suffix-4 {
   margin-right: -0.26em;
@@ -7626,7 +7626,7 @@
   vertical-align: top;
   width: 75%;
   padding-right: 25%;
-  padding-left: 41.66666666666667%;
+  padding-left: 41.66666667%;
 }
 .ie .col-1.prefix-5.suffix-3 {
   margin-right: -0.26em;
@@ -7649,9 +7649,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 66.66666666666666%;
-  padding-right: 16.666666666666664%;
-  padding-left: 41.66666666666667%;
+  width: 66.66666667%;
+  padding-right: 16.66666667%;
+  padding-left: 41.66666667%;
 }
 .ie .col-1.prefix-5.suffix-2 {
   margin-right: -0.26em;
@@ -7674,9 +7674,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 58.33333333333333%;
-  padding-right: 8.333333333333332%;
-  padding-left: 41.66666666666667%;
+  width: 58.33333333%;
+  padding-right: 8.33333333%;
+  padding-left: 41.66666667%;
 }
 .ie .col-1.prefix-5.suffix-1 {
   margin-right: -0.26em;
@@ -7699,8 +7699,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 41.66666666666666%;
-  padding-left: 33.33333333333333%;
+  width: 41.66666667%;
+  padding-left: 33.33333333%;
 }
 .ie .col-1.prefix-4 {
   margin-right: -0.26em;
@@ -7723,8 +7723,8 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
-  padding-right: 58.333333333333336%;
-  padding-left: 33.33333333333333%;
+  padding-right: 58.33333333%;
+  padding-left: 33.33333333%;
 }
 .ie .col-1.prefix-4.suffix-7 {
   margin-right: -0.26em;
@@ -7747,9 +7747,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
+  width: 91.66666667%;
   padding-right: 50%;
-  padding-left: 33.33333333333333%;
+  padding-left: 33.33333333%;
 }
 .ie .col-1.prefix-4.suffix-6 {
   margin-right: -0.26em;
@@ -7772,9 +7772,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333333%;
-  padding-right: 41.66666666666667%;
-  padding-left: 33.33333333333333%;
+  width: 83.33333333%;
+  padding-right: 41.66666667%;
+  padding-left: 33.33333333%;
 }
 .ie .col-1.prefix-4.suffix-5 {
   margin-right: -0.26em;
@@ -7797,9 +7797,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 74.99999999999999%;
-  padding-right: 33.33333333333333%;
-  padding-left: 33.33333333333333%;
+  width: 75%;
+  padding-right: 33.33333333%;
+  padding-left: 33.33333333%;
 }
 .ie .col-1.prefix-4.suffix-4 {
   margin-right: -0.26em;
@@ -7822,9 +7822,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 66.66666666666666%;
+  width: 66.66666667%;
   padding-right: 25%;
-  padding-left: 33.33333333333333%;
+  padding-left: 33.33333333%;
 }
 .ie .col-1.prefix-4.suffix-3 {
   margin-right: -0.26em;
@@ -7847,9 +7847,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 58.33333333333332%;
-  padding-right: 16.666666666666664%;
-  padding-left: 33.33333333333333%;
+  width: 58.33333333%;
+  padding-right: 16.66666667%;
+  padding-left: 33.33333333%;
 }
 .ie .col-1.prefix-4.suffix-2 {
   margin-right: -0.26em;
@@ -7872,9 +7872,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 49.999999999999986%;
-  padding-right: 8.333333333333332%;
-  padding-left: 33.33333333333333%;
+  width: 50%;
+  padding-right: 8.33333333%;
+  padding-left: 33.33333333%;
 }
 .ie .col-1.prefix-4.suffix-1 {
   margin-right: -0.26em;
@@ -7897,7 +7897,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 33.33333333333333%;
+  width: 33.33333333%;
   padding-left: 25%;
 }
 .ie .col-1.prefix-3 {
@@ -7920,8 +7920,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 99.99999999999999%;
-  padding-right: 66.66666666666666%;
+  width: 100%;
+  padding-right: 66.66666667%;
   padding-left: 25%;
 }
 .ie .col-1.prefix-3.suffix-8 {
@@ -7945,8 +7945,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
-  padding-right: 58.333333333333336%;
+  width: 91.66666667%;
+  padding-right: 58.33333333%;
   padding-left: 25%;
 }
 .ie .col-1.prefix-3.suffix-7 {
@@ -7970,7 +7970,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333333%;
+  width: 83.33333333%;
   padding-right: 50%;
   padding-left: 25%;
 }
@@ -7996,7 +7996,7 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 75%;
-  padding-right: 41.66666666666667%;
+  padding-right: 41.66666667%;
   padding-left: 25%;
 }
 .ie .col-1.prefix-3.suffix-5 {
@@ -8020,8 +8020,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 66.66666666666666%;
-  padding-right: 33.33333333333333%;
+  width: 66.66666667%;
+  padding-right: 33.33333333%;
   padding-left: 25%;
 }
 .ie .col-1.prefix-3.suffix-4 {
@@ -8045,7 +8045,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 58.33333333333333%;
+  width: 58.33333333%;
   padding-right: 25%;
   padding-left: 25%;
 }
@@ -8070,8 +8070,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 49.99999999999999%;
-  padding-right: 16.666666666666664%;
+  width: 50%;
+  padding-right: 16.66666667%;
   padding-left: 25%;
 }
 .ie .col-1.prefix-3.suffix-2 {
@@ -8095,8 +8095,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 41.66666666666666%;
-  padding-right: 8.333333333333332%;
+  width: 41.66666667%;
+  padding-right: 8.33333333%;
   padding-left: 25%;
 }
 .ie .col-1.prefix-3.suffix-1 {
@@ -8120,8 +8120,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 24.999999999999996%;
-  padding-left: 16.666666666666664%;
+  width: 25%;
+  padding-left: 16.66666667%;
 }
 .ie .col-1.prefix-2 {
   margin-right: -0.26em;
@@ -8145,7 +8145,7 @@
   vertical-align: top;
   width: 100%;
   padding-right: 75%;
-  padding-left: 16.666666666666664%;
+  padding-left: 16.66666667%;
 }
 .ie .col-1.prefix-2.suffix-9 {
   margin-right: -0.26em;
@@ -8168,9 +8168,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
-  padding-right: 66.66666666666666%;
-  padding-left: 16.666666666666664%;
+  width: 91.66666667%;
+  padding-right: 66.66666667%;
+  padding-left: 16.66666667%;
 }
 .ie .col-1.prefix-2.suffix-8 {
   margin-right: -0.26em;
@@ -8193,9 +8193,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333333%;
-  padding-right: 58.333333333333336%;
-  padding-left: 16.666666666666664%;
+  width: 83.33333333%;
+  padding-right: 58.33333333%;
+  padding-left: 16.66666667%;
 }
 .ie .col-1.prefix-2.suffix-7 {
   margin-right: -0.26em;
@@ -8220,7 +8220,7 @@
   vertical-align: top;
   width: 75%;
   padding-right: 50%;
-  padding-left: 16.666666666666664%;
+  padding-left: 16.66666667%;
 }
 .ie .col-1.prefix-2.suffix-6 {
   margin-right: -0.26em;
@@ -8243,9 +8243,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 66.66666666666667%;
-  padding-right: 41.66666666666667%;
-  padding-left: 16.666666666666664%;
+  width: 66.66666667%;
+  padding-right: 41.66666667%;
+  padding-left: 16.66666667%;
 }
 .ie .col-1.prefix-2.suffix-5 {
   margin-right: -0.26em;
@@ -8268,9 +8268,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 58.33333333333333%;
-  padding-right: 33.33333333333333%;
-  padding-left: 16.666666666666664%;
+  width: 58.33333333%;
+  padding-right: 33.33333333%;
+  padding-left: 16.66666667%;
 }
 .ie .col-1.prefix-2.suffix-4 {
   margin-right: -0.26em;
@@ -8295,7 +8295,7 @@
   vertical-align: top;
   width: 50%;
   padding-right: 25%;
-  padding-left: 16.666666666666664%;
+  padding-left: 16.66666667%;
 }
 .ie .col-1.prefix-2.suffix-3 {
   margin-right: -0.26em;
@@ -8318,9 +8318,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 41.66666666666666%;
-  padding-right: 16.666666666666664%;
-  padding-left: 16.666666666666664%;
+  width: 41.66666667%;
+  padding-right: 16.66666667%;
+  padding-left: 16.66666667%;
 }
 .ie .col-1.prefix-2.suffix-2 {
   margin-right: -0.26em;
@@ -8343,9 +8343,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 33.33333333333333%;
-  padding-right: 8.333333333333332%;
-  padding-left: 16.666666666666664%;
+  width: 33.33333333%;
+  padding-right: 8.33333333%;
+  padding-left: 16.66666667%;
 }
 .ie .col-1.prefix-2.suffix-1 {
   margin-right: -0.26em;
@@ -8368,8 +8368,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 16.666666666666664%;
-  padding-left: 8.333333333333332%;
+  width: 16.66666667%;
+  padding-left: 8.33333333%;
 }
 .ie .col-1.prefix-1 {
   margin-right: -0.26em;
@@ -8392,8 +8392,8 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 100%;
-  padding-right: 83.33333333333334%;
-  padding-left: 8.333333333333332%;
+  padding-right: 83.33333333%;
+  padding-left: 8.33333333%;
 }
 .ie .col-1.prefix-1.suffix-10 {
   margin-right: -0.26em;
@@ -8416,9 +8416,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666666%;
+  width: 91.66666667%;
   padding-right: 75%;
-  padding-left: 8.333333333333332%;
+  padding-left: 8.33333333%;
 }
 .ie .col-1.prefix-1.suffix-9 {
   margin-right: -0.26em;
@@ -8441,9 +8441,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333331%;
-  padding-right: 66.66666666666666%;
-  padding-left: 8.333333333333332%;
+  width: 83.33333333%;
+  padding-right: 66.66666667%;
+  padding-left: 8.33333333%;
 }
 .ie .col-1.prefix-1.suffix-8 {
   margin-right: -0.26em;
@@ -8467,8 +8467,8 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 75%;
-  padding-right: 58.333333333333336%;
-  padding-left: 8.333333333333332%;
+  padding-right: 58.33333333%;
+  padding-left: 8.33333333%;
 }
 .ie .col-1.prefix-1.suffix-7 {
   margin-right: -0.26em;
@@ -8491,9 +8491,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 66.66666666666666%;
+  width: 66.66666667%;
   padding-right: 50%;
-  padding-left: 8.333333333333332%;
+  padding-left: 8.33333333%;
 }
 .ie .col-1.prefix-1.suffix-6 {
   margin-right: -0.26em;
@@ -8516,9 +8516,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 58.333333333333336%;
-  padding-right: 41.66666666666667%;
-  padding-left: 8.333333333333332%;
+  width: 58.33333333%;
+  padding-right: 41.66666667%;
+  padding-left: 8.33333333%;
 }
 .ie .col-1.prefix-1.suffix-5 {
   margin-right: -0.26em;
@@ -8541,9 +8541,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 49.99999999999999%;
-  padding-right: 33.33333333333333%;
-  padding-left: 8.333333333333332%;
+  width: 50%;
+  padding-right: 33.33333333%;
+  padding-left: 8.33333333%;
 }
 .ie .col-1.prefix-1.suffix-4 {
   margin-right: -0.26em;
@@ -8566,9 +8566,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 41.666666666666664%;
+  width: 41.66666667%;
   padding-right: 25%;
-  padding-left: 8.333333333333332%;
+  padding-left: 8.33333333%;
 }
 .ie .col-1.prefix-1.suffix-3 {
   margin-right: -0.26em;
@@ -8591,9 +8591,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 33.33333333333333%;
-  padding-right: 16.666666666666664%;
-  padding-left: 8.333333333333332%;
+  width: 33.33333333%;
+  padding-right: 16.66666667%;
+  padding-left: 8.33333333%;
 }
 .ie .col-1.prefix-1.suffix-2 {
   margin-right: -0.26em;
@@ -8616,9 +8616,9 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 24.999999999999996%;
-  padding-right: 8.333333333333332%;
-  padding-left: 8.333333333333332%;
+  width: 25%;
+  padding-right: 8.33333333%;
+  padding-left: 8.33333333%;
 }
 .ie .col-1.prefix-1.suffix-1 {
   margin-right: -0.26em;
@@ -8641,8 +8641,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 99.99999999999999%;
-  padding-right: 91.66666666666666%;
+  width: 100%;
+  padding-right: 91.66666667%;
 }
 .ie .col-1.suffix-11 {
   margin-right: -0.26em;
@@ -8664,8 +8664,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 91.66666666666667%;
-  padding-right: 83.33333333333334%;
+  width: 91.66666667%;
+  padding-right: 83.33333333%;
 }
 .ie .col-1.suffix-10 {
   margin-right: -0.26em;
@@ -8687,7 +8687,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 83.33333333333333%;
+  width: 83.33333333%;
   padding-right: 75%;
 }
 .ie .col-1.suffix-9 {
@@ -8710,8 +8710,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 74.99999999999999%;
-  padding-right: 66.66666666666666%;
+  width: 75%;
+  padding-right: 66.66666667%;
 }
 .ie .col-1.suffix-8 {
   margin-right: -0.26em;
@@ -8733,8 +8733,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 66.66666666666667%;
-  padding-right: 58.333333333333336%;
+  width: 66.66666667%;
+  padding-right: 58.33333333%;
 }
 .ie .col-1.suffix-7 {
   margin-right: -0.26em;
@@ -8756,7 +8756,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 58.33333333333333%;
+  width: 58.33333333%;
   padding-right: 50%;
 }
 .ie .col-1.suffix-6 {
@@ -8780,7 +8780,7 @@
   margin-right: -0.25em;
   vertical-align: top;
   width: 50%;
-  padding-right: 41.66666666666667%;
+  padding-right: 41.66666667%;
 }
 .ie .col-1.suffix-5 {
   margin-right: -0.26em;
@@ -8802,8 +8802,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 41.66666666666666%;
-  padding-right: 33.33333333333333%;
+  width: 41.66666667%;
+  padding-right: 33.33333333%;
 }
 .ie .col-1.suffix-4 {
   margin-right: -0.26em;
@@ -8825,7 +8825,7 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 33.33333333333333%;
+  width: 33.33333333%;
   padding-right: 25%;
 }
 .ie .col-1.suffix-3 {
@@ -8848,8 +8848,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 24.999999999999996%;
-  padding-right: 16.666666666666664%;
+  width: 25%;
+  padding-right: 16.66666667%;
 }
 .ie .col-1.suffix-2 {
   margin-right: -0.26em;
@@ -8871,8 +8871,8 @@
   border-width: 0 15px;
   margin-right: -0.25em;
   vertical-align: top;
-  width: 16.666666666666664%;
-  padding-right: 8.333333333333332%;
+  width: 16.66666667%;
+  padding-right: 8.33333333%;
 }
 .ie .col-1.suffix-1 {
   margin-right: -0.26em;
@@ -8887,9 +8887,9 @@
 }
 .push-1 {
   position: relative;
-  left: 8.333333333333332%;
+  left: 8.33333333%;
 }
 .pull-1 {
   position: relative;
-  right: 8.333333333333332%;
+  right: 8.33333333%;
 }
