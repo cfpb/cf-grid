@@ -4,9 +4,6 @@ A Less-based CSS3 grid system using parametric mixins to encourage semantic HTML
 This component can be used by itself, but it was made for Capital Framework, a new front end framework
 developed at the [Consumer Financial Protection Bureau](http://cfpb.github.io/).
 
-- [See the demo](https://cfpb.github.io/cf-grid/)
-
-
 Ghost has four main features:
 
 1. Provides fixed-width gutters and fluid-width columns.
@@ -14,7 +11,7 @@ Ghost has four main features:
 3. Keeps HTML semantic by not including presentational classes in markup.
 4. Row-agnostic. Put as many columns as you want in a container. Great for RWD.
 
-- [See the demo](http://cfpb.github.io/cf-grid/)
+- [See the demo](http://cfpb.github.io/cf-grid/src/examples/grid/)
 
 
 ## Semantic HTML
