@@ -13303,7 +13303,8 @@
   *behavior: url(boxsizing.htc);
 }
 .cols-12 section {
-  margin: 0 -15px;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 .col {
   text-align: center;
