@@ -66,7 +66,7 @@ commented well enough to get you started.
 Edit the files in `src` and run `grunt build` whenever you're ready to compile Less and automagically
 copy appropriate source files into the `dist` dir, archiving the examples in a .zip.
 Running `grunt` with no options will start a server on port 8000 (for testing the 
-[examples](https://github.com/cfpb/cf-grid/tree/master/src/examples) locally)
+[examples](https://github.com/cfpb/cf-grid/tree/gh-pages/src/examples) locally)
 and automatically `build` whenever a source file is changed.
 
 
@@ -74,7 +74,7 @@ and automatically `build` whenever a source file is changed.
 
 We welcome your feedback and contributions.
 
-- [Find out about contributing](https://github.com/cfpb/cf-grid/blob/master/CONTRIBUTING.md)
+- [Find out about contributing](https://github.com/cfpb/cf-grid/blob/gh-pages/CONTRIBUTING.md)
 - [File a bug](https://github.com/cfpb/cf-grid/issues/new?body=%23%23%20URL%0D%0D%0D%23%23%20Actual%20Behavior%0D%0D%0D%23%23%20Expected%20Behavior%0D%0D%0D%23%23%20Steps%20to%20Reproduce%0D%0D%0D%23%23%20Screenshot&labels=bug)
 
 
