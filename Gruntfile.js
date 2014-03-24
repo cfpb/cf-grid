@@ -53,7 +53,6 @@ module.exports = function(grunt) {
       legacy: {
         options: {
           paths: ["src"],
-          banner: '<%= banner %>',
           yuicompress: false
         },
         files: {
@@ -69,9 +68,6 @@ module.exports = function(grunt) {
      * Concatenate files.
      */
     concat: {
-      options: {
-        banner: '<%= banner %>'
-      },
       dist: {
         src: ['src/ghost.less'],
         dest: 'dist/ghost.less'

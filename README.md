@@ -1,8 +1,10 @@
 # Ghost
 
-A Less-based CSS3 grid system using parametric mixins to encourage semantic HTML, code-named **Ghost**.
-This component can be used by itself, but it was made for Capital Framework, a new front end framework
-developed at the [Consumer Financial Protection Bureau](http://cfpb.github.io/).
+A Less-based CSS3 grid system using parametric mixins to encourage semantic
+HTML, code-named **Ghost**.
+This component can be used by itself, but it was made for Capital Framework,
+a new front end framework developed at the
+[Consumer Financial Protection Bureau](http://cfpb.github.io/).
 
 Ghost has four main features:
 
@@ -58,33 +60,27 @@ Using Less that looks like this:
 (i.e., with traditional `.col-#` classes).
 
 
-## Documentation
-
-More extensive documentation is coming soon, but in the meantime, the `ghost.less` file should be
-commented well enough to get you started.
-
-Edit the files in `src` and run `grunt build` whenever you're ready to compile Less and automagically
-copy appropriate source files into the `dist` dir, archiving the examples in a .zip.
-Running `grunt` with no options will start a server on port 8000 (for testing the 
-[examples](https://github.com/cfpb/cf-grid/tree/gh-pages/src/examples) locally)
-and automatically `build` whenever a source file is changed.
-
-
 ## Contributing
 
 We welcome your feedback and contributions.
 
-- [Find out about contributing](https://github.com/cfpb/cf-grid/blob/gh-pages/CONTRIBUTING.md)
+- [Find out about contributing](http://cfpb.github.io/capital-framework/contributing/)
 - [File a bug](https://github.com/cfpb/cf-grid/issues/new?body=%23%23%20URL%0D%0D%0D%23%23%20Actual%20Behavior%0D%0D%0D%23%23%20Expected%20Behavior%0D%0D%0D%23%23%20Steps%20to%20Reproduce%0D%0D%0D%23%23%20Screenshot&labels=bug)
 
 
-## Using this component independent of Capital Framework
+## Getting Started
 
-If you're already using [Bower](http://bower.io/), simply add this component as a dependency
-and integrate it into your build process.
-It's not currently in the Bower registry, so you'll have to point to this Git repo's URL.
+[Read the docs](http://cfpb.github.io/capital-framework/components/)
 
-You can also just copy the `ghost.less` file into your project and `@import` it into your main Less file.
+More extensive documentation is coming soon, but in the meantime,
+the `ghost.less` file should be commented well enough to get you started.
+
+Edit the files in `src` and run `grunt build` whenever you're ready to compile
+Less and automagically copy appropriate source files into the `dist` dir,
+archiving the examples in a .zip.
+Running `grunt` with no options will start a server on port 8000 (for testing the 
+[examples](https://github.com/cfpb/cf-grid/tree/gh-pages/src/examples) locally)
+and automatically `build` whenever a source file is changed.
 
 
 ## Known Issues
