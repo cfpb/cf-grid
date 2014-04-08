@@ -1,3 +1,8 @@
+0.7.0:
+  date: 2014-04-08
+  changes:
+    - Add .nested-col-group mixin to remove left/right gutters on nested grids.
+
 0.6.8:
   date: 2014-02-07
   changes:
