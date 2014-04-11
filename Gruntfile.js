@@ -10,26 +10,6 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     /**
-     * Shell: https://github.com/sindresorhus/grunt-shell
-     * 
-     * Grunt task to run shell commands.
-     * For now we're just copying the src file over to dist and
-     * zipping the example directory.
-     */
-    shell: {
-      packageExample: {
-        command: [
-          'cp src/ghost.less src/examples/grid/static/ghost.less',
-          'cp src/ghost-legacy.less src/examples/grid/static/ghost-legacy.less',
-          'cp src/boxsizing.htc src/examples/grid/static/boxsizing.htc',
-          'cp src/boxsizing.htc dist/boxsizing.htc',
-          'cd src/examples',
-          'zip -r ../../dist/examples.zip . -x \*.DS_Store \*style.css'
-        ].join('&&')
-      }
-    },
-
-    /**
      * LESS: https://github.com/gruntjs/grunt-contrib-less
      * 
      * Compile LESS files to CSS.
@@ -64,7 +44,6 @@ module.exports = function(grunt) {
   /**
    * The above tasks are loaded here.
    */
-  grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-concat');
 
