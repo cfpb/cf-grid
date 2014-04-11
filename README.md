@@ -13,7 +13,7 @@ Ghost has four main features:
 3. Keeps HTML semantic by not including presentational classes in markup.
 4. Row-agnostic. Put as many columns as you want in a container. Great for RWD.
 
-- [See the demo](http://cfpb.github.io/cf-grid/src/examples/grid/)
+- [See the demo](http://cfpb.github.io/cf-grid/demo/)
 
 
 ## Semantic HTML
@@ -70,17 +70,8 @@ We welcome your feedback and contributions.
 
 ## Getting Started
 
-[Read the docs](http://cfpb.github.io/capital-framework/components/)
-
 More extensive documentation is coming soon, but in the meantime,
 the `ghost.less` file should be commented well enough to get you started.
-
-Edit the files in `src` and run `grunt build` whenever you're ready to compile
-Less and automagically copy appropriate source files into the `dist` dir,
-archiving the examples in a .zip.
-Running `grunt` with no options will start a server on port 8000 (for testing the 
-[examples](https://github.com/cfpb/cf-grid/tree/gh-pages/src/examples) locally)
-and automatically `build` whenever a source file is changed.
 
 
 ## Known Issues
