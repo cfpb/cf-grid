@@ -21,8 +21,8 @@ module.exports = function(grunt) {
           yuicompress: false
         },
         files: {
-          'demo/static/css/ghost-legacy.css': ['src/ghost-legacy.less'],
-          'demo/static/css/demo.css': ['demo/static/css/demo.less']
+          'example/static/css/ghost-legacy.css': ['src/ghost-legacy.less'],
+          'example/static/css/example.css': ['example/static/css/example.less']
         }
       }
     }
