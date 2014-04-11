@@ -25,7 +25,6 @@
   },
   "devDependencies": {
     "grunt": "~0.4.1",
-    "grunt-cfpb-internal": "git://github.com/cfpb/grunt-cfpb-internal.git",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-less": "latest",
     "grunt-notify": "~0.1.4",

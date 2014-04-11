@@ -58,19 +58,6 @@ module.exports = function(grunt) {
         src: ['src/ghost.less'],
         dest: 'dist/ghost.less'
       }
-    },
-
-    /**
-     * grunt-cfpb-internal: https://github.com/cfpb/grunt-cfpb-internal
-     * 
-     * Some internal CFPB tasks.
-     */
-    'build-cfpb': {
-      prod: {
-        options: {
-          commit: true
-        }
-      }
     }
 
   });
@@ -82,7 +69,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-notify');
-  grunt.loadNpmTasks('grunt-cfpb-internal');
 
   /**
    * The 'default' task will run whenever `grunt` is run without specifying a task
