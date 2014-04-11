@@ -1,6 +1,11 @@
 {
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-less": "latest"
+    "cf-component-demo": "git://github.com/cfpb/cf-component-demo.git",
+    "cf-grunt-config": "git://github.com/cfpb/cf-grunt-config.git",
+    "glob": "~3.2.9",
+    "grunt": "~0.4.4",
+    "jit-grunt": "~0.4.1",
+    "load-grunt-tasks": "~0.4.0",
+    "time-grunt": "~0.3.1"
   }
 }
