@@ -25,18 +25,6 @@ module.exports = function(grunt) {
           'src/examples/grid/static/example.css': ['src/examples/grid/static/example.less']
         }
       }
-    },
-
-    /**
-     * Concat: https://github.com/gruntjs/grunt-contrib-concat
-     * 
-     * Concatenate files.
-     */
-    concat: {
-      dist: {
-        src: ['src/ghost.less'],
-        dest: 'dist/ghost.less'
-      }
     }
 
   });
@@ -45,11 +33,10 @@ module.exports = function(grunt) {
    * The above tasks are loaded here.
    */
   grunt.loadNpmTasks('grunt-contrib-less');
-  grunt.loadNpmTasks('grunt-contrib-concat');
 
   /**
    * The 'default' task will run whenever `grunt` is run without specifying a task
    */
-  grunt.registerTask('default', ['less', 'shell', 'concat']);
+  grunt.registerTask('default', ['less']);
 
 };
