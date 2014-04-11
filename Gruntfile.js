@@ -68,7 +68,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-notify');
 
   /**
    * The 'default' task will run whenever `grunt` is run without specifying a task

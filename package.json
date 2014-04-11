@@ -27,7 +27,6 @@
     "grunt": "~0.4.1",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-less": "latest",
-    "grunt-notify": "~0.1.4",
     "grunt-shell": "~0.2.2"
   }
 }
