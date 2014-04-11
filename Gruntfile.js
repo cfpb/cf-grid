@@ -8,7 +8,6 @@ module.exports = function(grunt) {
      * Pull in the package.json file so we can read its metadata.
      */
     pkg: grunt.file.readJSON('package.json'),
-    version: Object.keys( grunt.file.readYAML('CHANGELOG') )[0],
 
     /**
      * Shell: https://github.com/sindresorhus/grunt-shell
