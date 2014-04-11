@@ -11,20 +11,6 @@ module.exports = function(grunt) {
     version: Object.keys( grunt.file.readYAML('CHANGELOG') )[0],
 
     /**
-     * Connect: https://github.com/gruntjs/grunt-contrib-connect
-     * 
-     * Start a connect web server.
-     */
-    connect: {
-      demo: {
-        options: {
-          port: 8000,
-          base: 'src/examples/grid/'
-        }
-      }
-    },
-
-    /**
      * Shell: https://github.com/sindresorhus/grunt-shell
      * 
      * Grunt task to run shell commands.
@@ -85,23 +71,8 @@ module.exports = function(grunt) {
           commit: true
         }
       }
-    },
-
-    /**
-     * Watch: https://github.com/gruntjs/grunt-contrib-watch
-     * 
-     * Run predefined tasks whenever watched file patterns are added, changed or deleted.
-     * Add files to monitor below.
-     */
-    watch: {
-      options: {
-        livereload: true
-      },
-      scripts: {
-        files: ['Gruntfile.js', 'src/*.less', 'src/examples/**/static/example.less'],
-        tasks: ['default']
-      }
     }
+
   });
 
   /**
@@ -110,15 +81,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-notify');
-  grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-cfpb-internal');
-
-  /**
-   * Create task aliases by registering new tasks
-   */
-  grunt.registerTask('serve', ['connect:demo', 'watch']);
 
   /**
    * The 'default' task will run whenever `grunt` is run without specifying a task
