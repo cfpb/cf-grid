@@ -70,6 +70,8 @@ module.exports = function(grunt) {
         },
         files: {
           'src-generated/cf-grid-generated.css': [
+            'src/vendor/normalize-css/normalize.css',
+            'src/vendor/normalize-legacy-addon/normalize-legacy-addon.css',
             'src-generated/cf-grid-generated.less'
           ]
         }
@@ -82,6 +84,8 @@ module.exports = function(grunt) {
         },
         files: {
           'custom-demo/static/css/demo.css': [
+            'src/vendor/normalize-css/normalize.css',
+            'src/vendor/normalize-legacy-addon/normalize-legacy-addon.css',
             'custom-demo/static/css/demo.less'
           ]
         }
@@ -129,7 +133,7 @@ module.exports = function(grunt) {
   /**
    * Create custom task aliases for our component build workflow.
    */
-  grunt.registerTask('vendor', ['bower', 'copy:component_assets', 'copy:docs_assets', 'concat']);
-  grunt.registerTask('default', ['concat', 'less', 'string-replace', 'autoprefixer', 'copy:docs', 'topdoc:docs']);
+  grunt.registerTask('vendor', ['bower', 'copy:component_assets', 'copy:docs_assets', 'concat:main']);
+  grunt.registerTask('default', ['concat:main', 'less:generated', 'less:custom-demo', 'string-replace', 'autoprefixer', 'copy:docs', 'topdoc:docs']);
 
 };
