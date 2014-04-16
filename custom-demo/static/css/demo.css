@@ -15658,6 +15658,8 @@ input[type="radio"] {
   *behavior: url(/cf-grid/custom-demo/static/css/boxsizing.htc);
 }
 .cols-12 section {
+  display: block;
+  position: relative;
   margin-left: -15px;
   margin-right: -15px;
 }
