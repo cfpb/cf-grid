@@ -148,6 +148,6 @@ module.exports = function(grunt) {
    * Create custom task aliases for our component build workflow.
    */
   grunt.registerTask('vendor', ['bower']);
-  grunt.registerTask('default', ['less:generated', 'less:custom-demo', 'autoprefixer', 'topdoc:docs']);
+  grunt.registerTask('default', ['less:src', 'less:generated', 'less:custom-demo', 'autoprefixer', 'topdoc:docs']);
 
 };
