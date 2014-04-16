@@ -216,16 +216,20 @@
 .column( @columns; @total: @total-columns; @prefix: 0; @suffix: 0; ) when ( @debug ) {
 
   border-left-color: #FFB149;
+  border-left-color: fade(#FF9E1B, 25%);
   border-right-color: #FFB149;
+  border-right-color: fade(#FF9E1B, 25%);
   background-color: #F6D9D3;
+  background-color: fade(#D12124, 20%);
 
   &:before,
   &:after {
     content: "";
     display: block;
     width: 100%;
-    height: @gutter-width * 0.5;
+    height: @gutter-width * 0.25;
     background-color: #DA6750;
+    background-color: fade(#DA6750, 75%);
   }
 
   &:before {
