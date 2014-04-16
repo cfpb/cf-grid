@@ -1,19 +1,19 @@
-# Ghost
+# cf-grid
 
-A Less-based CSS3 grid system using parametric mixins to encourage semantic
-HTML, code-named **Ghost**.
+A Less-based CSS3 grid system using parametric mixins to encourage semantic HTML.
 This component can be used by itself, but it was made for Capital Framework,
 a new front end framework developed at the
 [Consumer Financial Protection Bureau](http://cfpb.github.io/).
 
-Ghost has four main features:
+cf-grid has four main features:
 
 1. Provides fixed-width gutters and fluid-width columns.
 2. Works seamlessly with any combination of grid and gutter widths.
 3. Keeps HTML semantic by not including presentational classes in markup.
 4. Row-agnostic. Put as many columns as you want in a container. Great for RWD.
 
-- [See the demo](http://cfpb.github.io/cf-grid/src/examples/grid/)
+- [View the docs](http://cfpb.github.io/cf-grid/custom-demo/) _still a work in progress_
+- [See the custom demo](http://cfpb.github.io/cf-grid/custom-demo/)
 
 
 ## Semantic HTML
@@ -31,7 +31,7 @@ Instead of:
 </header>
 ```
 
-Ghost allows you to write:
+cf-grid allows you to write:
 
 ```html
 <header>
@@ -56,8 +56,8 @@ Using Less that looks like this:
 }
 ```
 
-**Note:** This functionality is optional and you can use Ghost in legacy mode
-(i.e., with traditional `.col-#` classes).
+**Note:** This functionality is optional and you can use cf-grid in generated
+mode (i.e., with traditional `.col-#` classes).
 
 
 ## Contributing
@@ -70,17 +70,12 @@ We welcome your feedback and contributions.
 
 ## Getting Started
 
-[Read the docs](http://cfpb.github.io/capital-framework/components/)
+Note that [the docs](http://cfpb.github.io/cf-grid/custom-demo/) are still a
+work in progress.
+The `cf-grid.less` file should be commented well enough to fill in some missing
+gaps in documentation.
 
-More extensive documentation is coming soon, but in the meantime,
-the `ghost.less` file should be commented well enough to get you started.
-
-Edit the files in `src` and run `grunt build` whenever you're ready to compile
-Less and automagically copy appropriate source files into the `dist` dir,
-archiving the examples in a .zip.
-Running `grunt` with no options will start a server on port 8000 (for testing the 
-[examples](https://github.com/cfpb/cf-grid/tree/gh-pages/src/examples) locally)
-and automatically `build` whenever a source file is changed.
+[Also, please read the Capital Framework docs](https://cfpb.github.io/capital-framework/components/).
 
 
 ## Known Issues
@@ -95,6 +90,6 @@ and automatically `build` whenever a source file is changed.
   so we are electing to ignore the issue at this time.
 * **Prefix/Suffix not supported in IE7** – It doesn't seem to be able to handle percentage-based padding.
 * **Compiled CSS can be very large** –
-  If you're using the legacy mode (where all of the classes are generated for you),
+  If you're using the generated mode (where all of the classes are generated for you),
   it is essential that static assets are served gzipped,
   which can reduce the filesize of repetitive CSS dramatically (on the order of 90%).

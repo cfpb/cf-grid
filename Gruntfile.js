@@ -2,127 +2,152 @@ module.exports = function(grunt) {
 
   'use strict';
 
-  grunt.initConfig({
+  require('time-grunt')(grunt);
 
-    /**
-     * Pull in the package.json file so we can read its metadata.
-     */
-    pkg: grunt.file.readJSON('package.json'),
-    version: Object.keys( grunt.file.readYAML('CHANGELOG') )[0],
+  var path = require('path');
+  var extend = require('node.extend');
 
-    /**
-     * Connect: https://github.com/gruntjs/grunt-contrib-connect
-     * 
-     * Start a connect web server.
-     */
-    connect: {
-      demo: {
-        options: {
-          port: 8000,
-          base: 'src/examples/grid/'
-        }
-      }
+
+  /**
+   * Load the tasks we want to use, which are specified as dependencies in
+   * the package.json file of cf-grunt-config.
+   */
+
+  // Sets the CWD to the cf-grunt-config package so that the loadTasks method
+  // (employed in jit-grunt) looks in the correct place.
+  grunt.file.setBase('./node_modules/cf-grunt-config/');
+  // Loads all Grunt tasks in the node_modules directory within the new CWD.
+  require('jit-grunt')(grunt, {
+    // Below line needed because task name does not match package name
+    bower: 'grunt-bower-task'
+  });
+  // Sets the CWD back to the project root so that the tasks work as expected.
+  grunt.file.setBase('../../');
+
+
+  /**
+   * Initialize a variable to represent the Grunt task configuration.
+   */
+  var config = {
+
+    // Define a couple of utility variables that may be used in task options.
+    pkg: grunt.file.readJSON('bower.json'),
+    env: process.env,
+    opt: {
+      // Include path to compiled extra CSS for IE7 and below.
+      // Definitely needed if this component depends on an icon font.
+      // ltIE8Source: 'static/css/main.lt-ie8.min.css',
+
+      // Include path to compiled alternate CSS for IE8 and below.
+      // Definitely needed if this component depends on media queries.
+      // ltIE9AltSource: 'static/css/main.lt-ie9.min.css',
+
+      // Set whether or not to include html5shiv for demoing a component.
+      // Only necessary if component patterns include new HTML5 elements
+      html5Shiv: true,
+
+      // Set whether you'd like to use a JS hack to force a redraw in the browser
+      // to avoid an IE8 bug where fonts do not appear or appear as boxes on load.
+      // ie8FontFaceHack: true,
+
+      // Set a path to a concatenated JS file that you'd like to add before the
+      // closing body tag.
+      // jsBody: 'static/js/component.min.js',
+
+      // Here's a banner with some template variables.
+      // We'll be inserting it at the top of minified assets.
+      // banner: grunt.file.read('./node_modules/cf-grunt-config/cfpb-banner.txt'),
     },
 
-    /**
-     * Shell: https://github.com/sindresorhus/grunt-shell
-     * 
-     * Grunt task to run shell commands.
-     * For now we're just copying the src file over to dist and
-     * zipping the example directory.
-     */
-    shell: {
-      packageExample: {
-        command: [
-          'cp src/ghost.less src/examples/grid/static/ghost.less',
-          'cp src/ghost-legacy.less src/examples/grid/static/ghost-legacy.less',
-          'cp src/boxsizing.htc src/examples/grid/static/boxsizing.htc',
-          'cp src/boxsizing.htc dist/boxsizing.htc',
-          'cd src/examples',
-          'zip -r ../../dist/examples.zip . -x \*.DS_Store \*style.css'
-        ].join('&&')
-      }
-    },
+    // Define tasks specific to this project here
 
-    /**
-     * LESS: https://github.com/gruntjs/grunt-contrib-less
-     * 
-     * Compile LESS files to CSS.
-     */
     less: {
-      legacy: {
+      // Compile src/cf-grid.less for the docs.
+      src: {
         options: {
-          paths: ["src"],
-          yuicompress: false
+          paths: grunt.file.expand('src'),
+          sourceMap: false
         },
         files: {
-          'dist/ghost.css': ['src/ghost-legacy.less'],
-          'src/examples/grid/static/example.css': ['src/examples/grid/static/example.less']
+          'docs/static/css/main.css': [
+            'src/vendor/normalize-css/normalize.css',
+            'src/vendor/normalize-legacy-addon/normalize-legacy-addon.css',
+            'src/cf-grid.less'
+          ]
         }
-      }
-    },
-
-    /**
-     * Concat: https://github.com/gruntjs/grunt-contrib-concat
-     * 
-     * Concatenate files.
-     */
-    concat: {
-      dist: {
-        src: ['src/ghost.less'],
-        dest: 'dist/ghost.less'
-      }
-    },
-
-    /**
-     * grunt-cfpb-internal: https://github.com/cfpb/grunt-cfpb-internal
-     * 
-     * Some internal CFPB tasks.
-     */
-    'build-cfpb': {
-      prod: {
-        options: {
-          commit: true
-        }
-      }
-    },
-
-    /**
-     * Watch: https://github.com/gruntjs/grunt-contrib-watch
-     * 
-     * Run predefined tasks whenever watched file patterns are added, changed or deleted.
-     * Add files to monitor below.
-     */
-    watch: {
-      options: {
-        livereload: true
       },
-      scripts: {
-        files: ['Gruntfile.js', 'src/*.less', 'src/examples/**/static/example.less'],
-        tasks: ['default']
+      // Compile a version of cf-grids for CSS use.
+      generated: {
+        options: {
+          paths: grunt.file.expand('src'),
+          sourceMap: false
+        },
+        files: {
+          'src-generated/cf-grid-generated.css': [
+            'src/vendor/normalize-css/normalize.css',
+            'src/vendor/normalize-legacy-addon/normalize-legacy-addon.css',
+            'src-generated/cf-grid-generated.less'
+          ]
+        }
+      },
+      // Compile a version of cf-grid-generated.less for the custom demo.
+      'custom-demo': {
+        options: {
+          paths: grunt.file.expand('src','src-generated'),
+          sourceMap: false
+        },
+        files: {
+          'custom-demo/static/css/demo.css': [
+            'src/vendor/normalize-css/normalize.css',
+            'src/vendor/normalize-legacy-addon/normalize-legacy-addon.css',
+            'custom-demo/static/css/demo.less'
+          ]
+        }
       }
     }
-  });
+
+  };
+
 
   /**
-   * The above tasks are loaded here.
+   * Define a function that, given the path argument, returns an object
+   * containing all JS files in that directory.
    */
-  grunt.loadNpmTasks('grunt-shell');
-  grunt.loadNpmTasks('grunt-contrib-less');
-  grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-notify');
-  grunt.loadNpmTasks('grunt-contrib-connect');
-  grunt.loadNpmTasks('grunt-cfpb-internal');
+  function loadConfig(path) {
+    var glob = require('glob');
+    var object = {};
+    var key;
+
+    glob.sync('*', {cwd: path}).forEach(function(option) {
+      key = option.replace(/\.js$/,'');
+      object[key] = require(path + option);
+      grunt.verbose.writeln("External config item - " + key + ": " + object[key]);
+    });
+
+    return object;
+  }
+
 
   /**
-   * Create task aliases by registering new tasks
+   * Combine the config variable defined above with the results of calling the
+   * loadConfig function with the given path, which is where our external
+   * task options get installed by npm.
    */
-  grunt.registerTask('serve', ['connect:demo', 'watch']);
+  config = extend(true, loadConfig('./node_modules/cf-grunt-config/tasks/options/'), config);
+
+  grunt.initConfig(config);
+
 
   /**
-   * The 'default' task will run whenever `grunt` is run without specifying a task
+   * Load any project-specific tasks installed in the customary location.
    */
-  grunt.registerTask('default', ['less', 'shell', 'concat']);
+  require('load-grunt-tasks')(grunt);
+
+
+  /**
+   * Create custom task aliases for our component build workflow.
+   */
+  grunt.registerTask('vendor', ['bower']);
+  grunt.registerTask('default', ['less:src', 'less:generated', 'less:custom-demo', 'autoprefixer', 'topdoc:docs']);
 
 };
