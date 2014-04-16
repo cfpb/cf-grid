@@ -61,6 +61,16 @@ module.exports = function(grunt) {
 
     // Define tasks specific to this project here
 
+    copy: {
+      'boxsizing': {
+        files:
+        [{
+          src: ['src/vendor/box-sizing-polyfill/boxsizing.htc'],
+          dest: 'custom-demo/static/css/boxsizing.htc'
+        }]
+      }
+    },
+
     less: {
       // Compile src/cf-grid.less for the docs.
       src: {
@@ -147,7 +157,7 @@ module.exports = function(grunt) {
   /**
    * Create custom task aliases for our component build workflow.
    */
-  grunt.registerTask('vendor', ['bower']);
+  grunt.registerTask('vendor', ['bower', 'copy:boxsizing']);
   grunt.registerTask('default', ['less:src', 'less:generated', 'less:custom-demo', 'autoprefixer', 'topdoc:docs']);
 
 };
