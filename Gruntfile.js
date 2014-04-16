@@ -62,7 +62,21 @@ module.exports = function(grunt) {
     // Define tasks specific to this project here
 
     less: {
-      // Output a compiled version of cf-grids
+      // Compile src/cf-grid.less for the docs.
+      src: {
+        options: {
+          paths: grunt.file.expand('src'),
+          sourceMap: false
+        },
+        files: {
+          'docs/static/css/main.css': [
+            'src/vendor/normalize-css/normalize.css',
+            'src/vendor/normalize-legacy-addon/normalize-legacy-addon.css',
+            'src/cf-grid.less'
+          ]
+        }
+      },
+      // Compile a version of cf-grids for CSS use.
       generated: {
         options: {
           paths: grunt.file.expand('src'),
@@ -76,7 +90,7 @@ module.exports = function(grunt) {
           ]
         }
       },
-      // Compile the custom demo styles
+      // Compile a version of cf-grid-generated.less for the custom demo.
       'custom-demo': {
         options: {
           paths: grunt.file.expand('src','src-generated'),
@@ -133,7 +147,7 @@ module.exports = function(grunt) {
   /**
    * Create custom task aliases for our component build workflow.
    */
-  grunt.registerTask('vendor', ['bower', 'copy:component_assets', 'copy:docs_assets', 'concat:main']);
-  grunt.registerTask('default', ['concat:main', 'less:generated', 'less:custom-demo', 'string-replace', 'autoprefixer', 'copy:docs', 'topdoc:docs']);
+  grunt.registerTask('vendor', ['bower']);
+  grunt.registerTask('default', ['less:generated', 'less:custom-demo', 'autoprefixer', 'topdoc:docs']);
 
 };
