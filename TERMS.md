@@ -48,5 +48,5 @@ This project makes use of:
 
 - [box-sizing Polyfill](http://github.com/Schepp/box-sizing-polyfill) by Christian Schepp Schaefer,
   licensed under the GNU General Public License version 3.0.
-- [Normalize](http://necolas.github.io/normalize.css/) by Nicolas Gallagher, co-created with Jonathan Neal is licensed
-under MIT.
+- [Normalize](http://necolas.github.io/normalize.css/) by Nicolas Gallagher,
+co-created with Jonathan Neal is licensed under MIT.
