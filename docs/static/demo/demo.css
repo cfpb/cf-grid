@@ -48,14 +48,51 @@ body {
   margin-top: 1.375em;
 }
 
+.demo_codenotes,
+.demo_notes {
+  width: 55%;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.demo_codenotes + .demo_notes {
+  margin-top: 1.5em;
+}
+
+.demo-pattern-list .demo_codenotes,
+.demo-pattern-list .demo_notes {
+  width: 100%;
+}
+
+.demo_codenotes li + li,
+.demo_notes li + li {
+  margin-top: 1em;
+}
+
+.demo_notes {
+  color: #43484E;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.875em; /* 14 / 16 */
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.demo_notes li {
+  padding-left: 1em;
+  border-left: 4px solid #DBEDD4;
+}
+
 .demo-pattern-css {
   margin-top: 1.375em;
 }
 
+.code,
 .css,
 .html {
   margin: 0;
   background: #F8F8F8;
+  border: 1px solid #ddd;
+  border-radius: 3px;
 }
 
 .wrapper-footer {

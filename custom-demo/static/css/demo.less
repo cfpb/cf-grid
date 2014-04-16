@@ -1,22 +1,20 @@
 /* ==========================================================================
-   Setting up Ghost
+   Setting up cf-grids
    ========================================================================== */
 
-// Import Ghost.
-@import "ghost.less";
+// cf-grids provides cf-grid-generated.less which will generate class names like
+// `.col-1` and `.col-1.prefix-1` that you can use in your markup if you don't
+// want to set the columns yourself in Less.
+@import "../src-generated/cf-grid-generated.less";
 
 // You can override the default number of columns and the default width to
 // whatever you need.
 @total-columns: 12;
 @wrapper-width: 1200px;
 
-// Give columns a background color to aid debugging.
+// Adds a background color to columns and their gutters.
+// Also adds bars to the top and bottom of each column.
 @debug: true;
-
-// Ghost provides a legacy file that will generate class names like `.col-1`
-// and `.col-1.prefix-1` that you can use in your markup if you don't want to
-// set the columns yourself.
-@import "ghost-legacy.less";
 
 
 /* ==========================================================================
@@ -25,22 +23,20 @@
 
 .cols-12 {
 
-  // Make .cols-12 a Ghost .wrapper.
+  // Make .cols-12 a cf-grids .wrapper.
   .wrapper();
 
-  // Make an alternate .wrapper that has a max-width of 960px.
+  // Make .cols-12.w-960 an alternate .wrapper that has a max-width of 960px.
   &.w-960 {
     .wrapper( 960px );
-
   }
 
   // Space .wrappers apart from each other.
-  padding-top: 20px !important;
-  padding-bottom: 40px !important;
-  clear: both;
-  border-bottom: 1px solid #ccc;
+  margin-top: 20px;
+  margin-bottom: 40px;
 
-  // Each Ghost column has both left and right gutters. since we're wrapping
+  // Make section elements inside of .cols-12 a .nested-col-group.
+  // Each cf-grids column has both left and right gutters. since we're wrapping
   // each set of columns in a section tag we can negate the left gutter on the
   // first column and the right gutter on the last column by simply using
   // negative margins on its container.
@@ -51,31 +47,8 @@
 }
 
 .col {
-  // Center the text inside of each column...
-  text-align: center;
   // Space each column apart vertically.
   margin-bottom: 10px;
-
-  section {
-    // ... but since each column is using inline-block we have to make sure
-    // that nested columns stil align left.
-    text-align: left;
-  }
-
-  div {
-    padding: 20px 0;
-    background-color: #FCC;
-    background-color: rgba(255, 0, 0, 0.25);
-  }
-}
-
-// for screens under 768px make each column span all 12 columns regardless.
-@media only screen and ( max-width: 767px ) {
-  .col {
-    .column(12);
-    // For columns using push() we have to make sure the offset is removed.
-    margin-left: 0;
-  }
 }
 
 
@@ -97,3 +70,8 @@ h1 {
 h2, h3 {
   clear: both;
 }
+
+p {
+  text-align: center;
+}
+

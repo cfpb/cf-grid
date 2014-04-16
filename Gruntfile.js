@@ -5,6 +5,7 @@ module.exports = function(grunt) {
   require('time-grunt')(grunt);
 
   var path = require('path');
+  var extend = require('node.extend');
 
 
   /**
@@ -30,7 +31,7 @@ module.exports = function(grunt) {
   var config = {
 
     // Define a couple of utility variables that may be used in task options.
-    pkg: grunt.file.readJSON('package.json'),
+    pkg: grunt.file.readJSON('bower.json'),
     env: process.env,
     opt: {
       // Include path to compiled extra CSS for IE7 and below.
@@ -60,6 +61,33 @@ module.exports = function(grunt) {
 
     // Define tasks specific to this project here
 
+    less: {
+      // Output a compiled version of cf-grids
+      generated: {
+        options: {
+          paths: grunt.file.expand('src'),
+          sourceMap: false
+        },
+        files: {
+          'src-generated/cf-grid-generated.css': [
+            'src-generated/cf-grid-generated.less'
+          ]
+        }
+      },
+      // Compile the custom demo styles
+      'custom-demo': {
+        options: {
+          paths: grunt.file.expand('src','src-generated'),
+          sourceMap: false
+        },
+        files: {
+          'custom-demo/static/css/demo.css': [
+            'custom-demo/static/css/demo.less'
+          ]
+        }
+      }
+    }
+
   };
 
 
@@ -87,7 +115,7 @@ module.exports = function(grunt) {
    * loadConfig function with the given path, which is where our external
    * task options get installed by npm.
    */
-  grunt.util._.extend(config, loadConfig('./node_modules/cf-grunt-config/tasks/options/'));
+  config = extend(true, loadConfig('./node_modules/cf-grunt-config/tasks/options/'), config);
 
   grunt.initConfig(config);
 
@@ -102,6 +130,6 @@ module.exports = function(grunt) {
    * Create custom task aliases for our component build workflow.
    */
   grunt.registerTask('vendor', ['bower', 'copy:component_assets', 'copy:docs_assets', 'concat']);
-  grunt.registerTask('default', ['concat', 'less', 'string-replace', 'autoprefixer', 'copy:docs', 'topdoc']);
+  grunt.registerTask('default', ['concat', 'less', 'string-replace', 'autoprefixer', 'copy:docs', 'topdoc:docs']);
 
 };

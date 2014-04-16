@@ -1,15 +1,14 @@
-@import "cf-grid.less";
+@import (reference) "../src/cf-grid.less";
 
 /**
- *  A CSS version of Ghost
+ *  A CSS version of cf-grid
  **/
 
 //  If you'd prefer vanilla CSS over LESS, this stylesheet will 
-//  generate a CSS version of Ghost with the same fixed-gutter, 
+//  generate a CSS version of cf-grid with the same fixed-gutter, 
 //  fluid-column functionality.
 //
 //  .wrapper = .wrapper()
-//  .row = .row()
 //  .col-X = .column( X )
 //  .prefix-Y = .column( @columns: X; @prefix: Y; )
 //  .suffix-Z = .column( @columns: X; @suffix: Z; )
@@ -93,3 +92,4 @@
 .columnX ( 0 ) {}
 
 .columnX ( @total-columns );
+
