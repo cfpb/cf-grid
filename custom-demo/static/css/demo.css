@@ -570,7 +570,7 @@ input[type="radio"] {
 }
 .lt-ie8 .wrapper {
   *zoom: 1;
-  *behavior: url(boxsizing.htc);
+  *behavior: url(http://himedlooff.github.io/cf-grid/custom-demo/static/css/boxsizing.htc);
 }
 .col-12 {
   display: inline-block;
@@ -15637,11 +15637,11 @@ input[type="radio"] {
 }
 .lt-ie8 .cols-12 {
   *zoom: 1;
-  *behavior: url(boxsizing.htc);
+  *behavior: url(http://himedlooff.github.io/cf-grid/custom-demo/static/css/boxsizing.htc);
 }
 .lt-ie8 .cols-12 {
   *zoom: 1;
-  *behavior: url(boxsizing.htc);
+  *behavior: url(http://himedlooff.github.io/cf-grid/custom-demo/static/css/boxsizing.htc);
 }
 .cols-12.w-960 {
   -webkit-box-sizing: border-box;
@@ -15655,7 +15655,7 @@ input[type="radio"] {
 }
 .lt-ie8 .cols-12.w-960 {
   *zoom: 1;
-  *behavior: url(boxsizing.htc);
+  *behavior: url(http://himedlooff.github.io/cf-grid/custom-demo/static/css/boxsizing.htc);
 }
 .cols-12 section {
   margin-left: -15px;
@@ -15685,11 +15685,11 @@ h1 {
 }
 .lt-ie8 h1 {
   *zoom: 1;
-  *behavior: url(boxsizing.htc);
+  *behavior: url(http://himedlooff.github.io/cf-grid/custom-demo/static/css/boxsizing.htc);
 }
 .lt-ie8 h1 {
   *zoom: 1;
-  *behavior: url(boxsizing.htc);
+  *behavior: url(http://himedlooff.github.io/cf-grid/custom-demo/static/css/boxsizing.htc);
 }
 h2,
 h3 {
