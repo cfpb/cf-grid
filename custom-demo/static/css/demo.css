@@ -15657,7 +15657,7 @@ input[type="radio"] {
   *zoom: 1;
   *behavior: url(/cf-grid/custom-demo/static/css/boxsizing.htc);
 }
-.cols-12 .cols {
+.cols-12 section {
   display: block;
   position: relative;
   margin-left: -15px;
