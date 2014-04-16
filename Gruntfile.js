@@ -97,10 +97,10 @@ module.exports = function(grunt) {
           sourceMap: false
         },
         files: {
-          'custom-demo/static/css/demo.css': [
+          'custom-demo/static/css/custom-demo.css': [
             'src/vendor/normalize-css/normalize.css',
             'src/vendor/normalize-legacy-addon/normalize-legacy-addon.css',
-            'custom-demo/static/css/demo.less'
+            'custom-demo/static/css/custom-demo.less'
           ]
         }
       }
