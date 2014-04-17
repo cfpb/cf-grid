@@ -61,6 +61,16 @@ module.exports = function(grunt) {
 
     // Define tasks specific to this project here
 
+    copy: {
+      'boxsizing': {
+        files:
+        [{
+          src: ['src/vendor/box-sizing-polyfill/boxsizing.htc'],
+          dest: 'custom-demo/static/css/boxsizing.htc'
+        }]
+      }
+    },
+
     less: {
       // Compile src/cf-grid.less for the docs.
       src: {
@@ -97,10 +107,10 @@ module.exports = function(grunt) {
           sourceMap: false
         },
         files: {
-          'custom-demo/static/css/demo.css': [
+          'custom-demo/static/css/custom-demo.css': [
             'src/vendor/normalize-css/normalize.css',
             'src/vendor/normalize-legacy-addon/normalize-legacy-addon.css',
-            'custom-demo/static/css/demo.less'
+            'custom-demo/static/css/custom-demo.less'
           ]
         }
       }
@@ -147,7 +157,7 @@ module.exports = function(grunt) {
   /**
    * Create custom task aliases for our component build workflow.
    */
-  grunt.registerTask('vendor', ['bower']);
+  grunt.registerTask('vendor', ['bower', 'copy:boxsizing']);
   grunt.registerTask('default', ['less:src', 'less:generated', 'less:custom-demo', 'autoprefixer', 'topdoc:docs']);
 
 };

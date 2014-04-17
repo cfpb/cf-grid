@@ -6,6 +6,7 @@
 *.exe
 *.o
 *.so
+_site
 
 # Packages #
 ############
@@ -18,6 +19,7 @@
 *.jar
 *.rar
 *.tar
+*.zip
 
 # Logs and databases #
 ######################
@@ -36,6 +38,8 @@ Icon?
 ehthumbs.db
 Thumbs.db
 
-# Grunt.js #
-############
+# Dependencies #
+################
 node_modules/
+bower_components/
+src/vendor/

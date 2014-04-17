@@ -22,6 +22,7 @@
   "license": "https://github.com/cfpb/cf-grid/blob/gh-pages/TERMS.md",
   "main": "src/ghost.less",
   "dependencies": {
+    "box-sizing-polyfill": "latest",
     "normalize-css": "~3.0.0",
     "normalize-legacy-addon": "git://github.com/cfpb/normalize-legacy-addon.git#0.1.0"
   }
