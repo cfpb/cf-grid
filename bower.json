@@ -20,7 +20,7 @@
     "url": "https://github.com/cfpb/cf-grid.git"
   },
   "license": "https://github.com/cfpb/cf-grid/blob/gh-pages/TERMS.md",
-  "main": "src/ghost.less",
+  "main": "src/cf-grid.less",
   "dependencies": {
     "box-sizing-polyfill": "latest",
     "normalize-css": "~3.0.0",
