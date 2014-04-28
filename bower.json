@@ -1,6 +1,6 @@
 {
   "name": "cf-grid",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "A Less-based grid system using parametric mixins. Part of Capital Framework.",
   "keywords": [
     "capital-framework",
@@ -22,7 +22,7 @@
   "license": "https://github.com/cfpb/cf-grid/blob/gh-pages/TERMS.md",
   "main": "src/cf-grid.less",
   "dependencies": {
-    "box-sizing-polyfill": "latest",
+    "box-sizing-polyfill": "git://github.com/Schepp/box-sizing-polyfill#a483a1e49c54707979ae6ed49ce58fb81eca4ae3",
     "normalize-css": "~3.0.0",
     "normalize-legacy-addon": "git://github.com/cfpb/normalize-legacy-addon.git#0.1.0"
   }
