@@ -10,12 +10,12 @@
     <link rel="stylesheet" type="text/css" href="static/demo/brackets.css">
   </head>
   <body>
-    <div class="wrapper">
+    <div class="demo-wrapper">
       <header class="demo_header">
         <h1 class="h5">cf-grid docs</h1>
       </header>
       <ul class="demo-component-list">
-        <li id="global-less-variables" class="demo-component-list_item wrapper">
+        <li id="global-less-variables" class="demo-component-list_item demo-wrapper">
           <h1 class="demo-component-list_header">Global Less variables</h1>
           <ul class="demo_notes">
             <li>The following variables are default values used in creating grids. They can be overridden in your application's stylesheet. Most mixins allows you to override these values by passing them arguments.</li>
@@ -69,9 +69,21 @@
                 </ul>
               </header>
             </li>
+            <li class="demo-pattern-list_item">
+              <header class="demo-pattern-list_header">
+                <ul class="demo_codenotes">
+                  <li>
+                    <pre class="code"><code>@box-sizing-polyfill-path</code></pre>
+                  </li>
+                </ul>
+                <ul class="demo_notes">
+                  <li>The path where boxsizing.htc is located.</li>
+                </ul>
+              </header>
+            </li>
           </ul>
         </li>
-        <li id="wrapper" class="demo-component-list_item wrapper">
+        <li id="wrapper" class="demo-component-list_item demo-wrapper">
           <h1 class="demo-component-list_header">Wrapper</h1>
           <ul class="demo_notes">
             <li>Wrappers are centered containers with a max-width and fixed gutters that match the gutter widths of columns.</li>
@@ -116,7 +128,7 @@
             </li>
           </ul>
         </li>
-        <li id="columns" class="demo-component-list_item wrapper">
+        <li id="columns" class="demo-component-list_item demo-wrapper">
           <h1 class="demo-component-list_header">Columns</h1>
           <ul class="demo-pattern-list">
             <li class="demo-pattern-list_item">
@@ -166,7 +178,7 @@
             </li>
           </ul>
         </li>
-        <li id="push-and-pull-mixins-for-source-ordering" class="demo-component-list_item wrapper">
+        <li id="push-and-pull-mixins-for-source-ordering" class="demo-component-list_item demo-wrapper">
           <h1 class="demo-component-list_header">Push and Pull mixins for source ordering</h1>
           <ul class="demo-pattern-list">
             <li class="demo-pattern-list_item">
@@ -206,7 +218,7 @@
             </li>
           </ul>
         </li>
-        <li id="nested-columns" class="demo-component-list_item wrapper">
+        <li id="nested-columns" class="demo-component-list_item demo-wrapper">
           <h1 class="demo-component-list_header">Nested columns</h1>
           <ul class="demo_notes">
             <li>Since all cf-grid columns have left and right gutters you will notice undesireable offsetting when nesting columns. Normally this is removed with complex selectors or by adding classes to the first and last column per 'row'. In cf-grid the way to get around this is by wrapping your columns in a container that utilizes the .nested-col-group() mixin. This mixin uses negative left and right margins to pull the columns back into alignment with parent columns.</li>

@@ -27,6 +27,10 @@
       - "@debug"
       notes:
         - "Gives column blocks a background color if set to true."
+    - codenotes:
+      - "@box-sizing-polyfill-path"
+      notes:
+        - "The path where boxsizing.htc is located."
     tags:
     - "cf-grid"
 */
@@ -35,6 +39,7 @@
 @gutter-width: 30px;
 @total-columns: 12;
 @debug: false;
+@box-sizing-polyfill-path: '/cf-grid/custom-demo/static/css';
 
 
 /* topdoc
@@ -84,7 +89,7 @@
 
   .lt-ie8 & {
     *zoom: 1; // Clearfix hack for IE 6/7 only
-    *behavior: url(/cf-grid/custom-demo/static/css/boxsizing.htc);
+    *behavior: url('@{box-sizing-polyfill-path}/boxsizing.htc');
   }
 
 }
@@ -157,7 +162,7 @@
     display: inline;
 
     *zoom: 1; // Clearfix hack for IE 6/7 only
-    *behavior: url(/cf-grid/custom-demo/static/css/boxsizing.htc);
+    *behavior: url('@{box-sizing-polyfill-path}/boxsizing.htc');
   }
 
   // Modifying standard width and padding for prefixed/suffixed columns, if necessary:

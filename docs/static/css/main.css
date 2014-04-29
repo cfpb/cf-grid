@@ -580,6 +580,10 @@ input[type="radio"] {
       - "@debug"
       notes:
         - "Gives column blocks a background color if set to true."
+    - codenotes:
+      - "@box-sizing-polyfill-path"
+      notes:
+        - "The path where boxsizing.htc is located."
     tags:
     - "cf-grid"
 */
