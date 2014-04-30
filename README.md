@@ -12,7 +12,6 @@ cf-grid has four main features:
 3. Keeps HTML semantic by not including presentational classes in markup.
 4. Row-agnostic. Put as many columns as you want in a container. Great for RWD.
 
-- [View the docs](http://cfpb.github.io/cf-grid/custom-demo/) _still a work in progress_
 - [See the custom demo](http://cfpb.github.io/cf-grid/custom-demo/)
 
 
@@ -70,12 +69,13 @@ We welcome your feedback and contributions.
 
 ## Getting Started
 
-Note that [the docs](http://cfpb.github.io/cf-grid/custom-demo/) are still a
-work in progress.
-The `cf-grid.less` file should be commented well enough to fill in some missing
-gaps in documentation.
+_NOTE:_ It is important to override the `@box-sizing-polyfill-path` Less
+variable to point to the `boxsizing.htc` file using a root relative path.
+Since `boxsizing.htc` is a Bower dependency for cf-grid it will automatically
+be downloaded with cf-grid when using Bower.
 
-[Also, please read the Capital Framework docs](https://cfpb.github.io/capital-framework/components/).
+- [View the docs](http://cfpb.github.io/cf-grid/docs)
+- [Capital Framework docs](https://cfpb.github.io/capital-framework/components/).
 
 
 ## Known Issues
