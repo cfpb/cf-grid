@@ -12,7 +12,6 @@ cf-grid has four main features:
 3. Keeps HTML semantic by not including presentational classes in markup.
 4. Row-agnostic. Put as many columns as you want in a container. Great for RWD.
 
-- [View the docs](http://cfpb.github.io/cf-grid/docs)
 - [See the custom demo](http://cfpb.github.io/cf-grid/custom-demo/)
 
 
