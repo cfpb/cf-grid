@@ -565,6 +565,11 @@ input[type="radio"] {
   family: "cf-grid"
   patterns:
     - codenotes:
+        - "@box-sizing-polyfill-path: '/cf-grid/custom-demo/static/css';"
+      notes:
+        - "The path where boxsizing.htc is located."
+        - "This path MUST be overridden in your project and set to a root relative url."
+    - codenotes:
         - "@wrapper-width: 1200px;"
       notes:
         - "The grid's maximum width in px."
@@ -580,10 +585,6 @@ input[type="radio"] {
         - "@debug"
       notes:
         - "Gives column blocks a background color if set to true."
-    - codenotes:
-        - "@box-sizing-polyfill-path"
-      notes:
-        - "The path where boxsizing.htc is located."
   tags:
     - "cf-grid"
 */
@@ -628,7 +629,7 @@ input[type="radio"] {
     - name: "Less mixin"
       codenotes:
         - ".column( @columns: 1; @total: @total-columns; @prefix: 0; @suffix: 0 )"
-        notes:
+      notes:
         - "Computes column widths and prefix/suffix padding."
         - "CSS borders are used for fixed gutters."
     - name: "Usage"
@@ -647,7 +648,7 @@ input[type="radio"] {
           </div>
     - name: "This is a placeholder for documenting prefix and suffix"
       codenotes:
-      - ...
+        - "..."
   tags:
     - "cf-grid"
 */
