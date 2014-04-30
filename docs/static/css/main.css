@@ -593,7 +593,8 @@ input[type="radio"] {
   notes:
     - "Wrappers are centered containers with a max-width and fixed gutters
       that match the gutter widths of columns."
-    - "If you want IE 6/7 support, ensure boxsizing.htc is in the same dir as your stylesheet.
+    - "To support IE 6/7, ensure that the path to boxsizing.htc is set using
+      the @box-sizing-polyfill-path Less variable.
       Read more: https://github.com/Schepp/box-sizing-polyfill."
   family: "cf-grid"
   patterns:
