@@ -559,18 +559,11 @@ input[type="radio"] {
  *  A CSS version of cf-grid
  **/
 .wrapper {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  max-width: 1200px;
+  max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
   position: relative;
   clear: both;
-}
-.lt-ie8 .wrapper {
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .col-12 {
   display: inline-block;
@@ -594,8 +587,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-12 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .col-12:before,
 .col-12:after {
@@ -642,8 +636,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-11 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .col-11:before,
 .col-11:after {
@@ -683,8 +678,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-11.prefix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-11.prefix-1 {
   padding-left: 0;
@@ -727,8 +723,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-11.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-11.suffix-1 {
   padding-right: 0;
@@ -778,8 +775,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-10 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .col-10:before,
 .col-10:after {
@@ -819,8 +817,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-10.prefix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-10.prefix-2 {
   padding-left: 0;
@@ -863,8 +862,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-10.prefix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-10.prefix-1 {
   padding-left: 0;
@@ -908,8 +908,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-10.prefix-1.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-10.prefix-1.suffix-1 {
   padding-right: 0;
@@ -953,8 +954,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-10.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-10.suffix-2 {
   padding-right: 0;
@@ -997,8 +999,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-10.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-10.suffix-1 {
   padding-right: 0;
@@ -1048,8 +1051,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-9 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .col-9:before,
 .col-9:after {
@@ -1089,8 +1093,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-9.prefix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-9.prefix-3 {
   padding-left: 0;
@@ -1133,8 +1138,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-9.prefix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-9.prefix-2 {
   padding-left: 0;
@@ -1178,8 +1184,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-9.prefix-2.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-9.prefix-2.suffix-1 {
   padding-right: 0;
@@ -1223,8 +1230,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-9.prefix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-9.prefix-1 {
   padding-left: 0;
@@ -1268,8 +1276,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-9.prefix-1.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-9.prefix-1.suffix-2 {
   padding-right: 0;
@@ -1314,8 +1323,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-9.prefix-1.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-9.prefix-1.suffix-1 {
   padding-right: 0;
@@ -1359,8 +1369,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-9.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-9.suffix-3 {
   padding-right: 0;
@@ -1403,8 +1414,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-9.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-9.suffix-2 {
   padding-right: 0;
@@ -1447,8 +1459,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-9.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-9.suffix-1 {
   padding-right: 0;
@@ -1498,8 +1511,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-8 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .col-8:before,
 .col-8:after {
@@ -1539,8 +1553,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-8.prefix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-8.prefix-4 {
   padding-left: 0;
@@ -1583,8 +1598,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-8.prefix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-8.prefix-3 {
   padding-left: 0;
@@ -1628,8 +1644,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-8.prefix-3.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-8.prefix-3.suffix-1 {
   padding-right: 0;
@@ -1673,8 +1690,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-8.prefix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-8.prefix-2 {
   padding-left: 0;
@@ -1718,8 +1736,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-8.prefix-2.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-8.prefix-2.suffix-2 {
   padding-right: 0;
@@ -1764,8 +1783,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-8.prefix-2.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-8.prefix-2.suffix-1 {
   padding-right: 0;
@@ -1809,8 +1829,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-8.prefix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-8.prefix-1 {
   padding-left: 0;
@@ -1854,8 +1875,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-8.prefix-1.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-8.prefix-1.suffix-3 {
   padding-right: 0;
@@ -1900,8 +1922,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-8.prefix-1.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-8.prefix-1.suffix-2 {
   padding-right: 0;
@@ -1946,8 +1969,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-8.prefix-1.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-8.prefix-1.suffix-1 {
   padding-right: 0;
@@ -1991,8 +2015,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-8.suffix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-8.suffix-4 {
   padding-right: 0;
@@ -2035,8 +2060,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-8.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-8.suffix-3 {
   padding-right: 0;
@@ -2079,8 +2105,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-8.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-8.suffix-2 {
   padding-right: 0;
@@ -2123,8 +2150,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-8.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-8.suffix-1 {
   padding-right: 0;
@@ -2174,8 +2202,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-7 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .col-7:before,
 .col-7:after {
@@ -2215,8 +2244,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-7.prefix-5 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-7.prefix-5 {
   padding-left: 0;
@@ -2259,8 +2289,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-7.prefix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-7.prefix-4 {
   padding-left: 0;
@@ -2304,8 +2335,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-7.prefix-4.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-7.prefix-4.suffix-1 {
   padding-right: 0;
@@ -2349,8 +2381,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-7.prefix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-7.prefix-3 {
   padding-left: 0;
@@ -2394,8 +2427,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-7.prefix-3.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-7.prefix-3.suffix-2 {
   padding-right: 0;
@@ -2440,8 +2474,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-7.prefix-3.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-7.prefix-3.suffix-1 {
   padding-right: 0;
@@ -2485,8 +2520,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-7.prefix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-7.prefix-2 {
   padding-left: 0;
@@ -2530,8 +2566,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-7.prefix-2.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-7.prefix-2.suffix-3 {
   padding-right: 0;
@@ -2576,8 +2613,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-7.prefix-2.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-7.prefix-2.suffix-2 {
   padding-right: 0;
@@ -2622,8 +2660,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-7.prefix-2.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-7.prefix-2.suffix-1 {
   padding-right: 0;
@@ -2667,8 +2706,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-7.prefix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-7.prefix-1 {
   padding-left: 0;
@@ -2712,8 +2752,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-7.prefix-1.suffix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-7.prefix-1.suffix-4 {
   padding-right: 0;
@@ -2758,8 +2799,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-7.prefix-1.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-7.prefix-1.suffix-3 {
   padding-right: 0;
@@ -2804,8 +2846,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-7.prefix-1.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-7.prefix-1.suffix-2 {
   padding-right: 0;
@@ -2850,8 +2893,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-7.prefix-1.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-7.prefix-1.suffix-1 {
   padding-right: 0;
@@ -2895,8 +2939,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-7.suffix-5 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-7.suffix-5 {
   padding-right: 0;
@@ -2939,8 +2984,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-7.suffix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-7.suffix-4 {
   padding-right: 0;
@@ -2983,8 +3029,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-7.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-7.suffix-3 {
   padding-right: 0;
@@ -3027,8 +3074,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-7.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-7.suffix-2 {
   padding-right: 0;
@@ -3071,8 +3119,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-7.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-7.suffix-1 {
   padding-right: 0;
@@ -3122,8 +3171,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-6 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .col-6:before,
 .col-6:after {
@@ -3163,8 +3213,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-6.prefix-6 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-6.prefix-6 {
   padding-left: 0;
@@ -3207,8 +3258,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-6.prefix-5 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-6.prefix-5 {
   padding-left: 0;
@@ -3252,8 +3304,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-6.prefix-5.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-6.prefix-5.suffix-1 {
   padding-right: 0;
@@ -3297,8 +3350,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-6.prefix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-6.prefix-4 {
   padding-left: 0;
@@ -3342,8 +3396,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-6.prefix-4.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-6.prefix-4.suffix-2 {
   padding-right: 0;
@@ -3388,8 +3443,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-6.prefix-4.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-6.prefix-4.suffix-1 {
   padding-right: 0;
@@ -3433,8 +3489,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-6.prefix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-6.prefix-3 {
   padding-left: 0;
@@ -3478,8 +3535,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-6.prefix-3.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-6.prefix-3.suffix-3 {
   padding-right: 0;
@@ -3524,8 +3582,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-6.prefix-3.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-6.prefix-3.suffix-2 {
   padding-right: 0;
@@ -3570,8 +3629,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-6.prefix-3.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-6.prefix-3.suffix-1 {
   padding-right: 0;
@@ -3615,8 +3675,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-6.prefix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-6.prefix-2 {
   padding-left: 0;
@@ -3660,8 +3721,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-6.prefix-2.suffix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-6.prefix-2.suffix-4 {
   padding-right: 0;
@@ -3706,8 +3768,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-6.prefix-2.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-6.prefix-2.suffix-3 {
   padding-right: 0;
@@ -3752,8 +3815,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-6.prefix-2.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-6.prefix-2.suffix-2 {
   padding-right: 0;
@@ -3798,8 +3862,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-6.prefix-2.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-6.prefix-2.suffix-1 {
   padding-right: 0;
@@ -3843,8 +3908,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-6.prefix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-6.prefix-1 {
   padding-left: 0;
@@ -3888,8 +3954,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-6.prefix-1.suffix-5 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-6.prefix-1.suffix-5 {
   padding-right: 0;
@@ -3934,8 +4001,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-6.prefix-1.suffix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-6.prefix-1.suffix-4 {
   padding-right: 0;
@@ -3980,8 +4048,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-6.prefix-1.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-6.prefix-1.suffix-3 {
   padding-right: 0;
@@ -4026,8 +4095,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-6.prefix-1.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-6.prefix-1.suffix-2 {
   padding-right: 0;
@@ -4072,8 +4142,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-6.prefix-1.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-6.prefix-1.suffix-1 {
   padding-right: 0;
@@ -4117,8 +4188,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-6.suffix-6 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-6.suffix-6 {
   padding-right: 0;
@@ -4161,8 +4233,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-6.suffix-5 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-6.suffix-5 {
   padding-right: 0;
@@ -4205,8 +4278,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-6.suffix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-6.suffix-4 {
   padding-right: 0;
@@ -4249,8 +4323,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-6.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-6.suffix-3 {
   padding-right: 0;
@@ -4293,8 +4368,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-6.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-6.suffix-2 {
   padding-right: 0;
@@ -4337,8 +4413,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-6.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-6.suffix-1 {
   padding-right: 0;
@@ -4388,8 +4465,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-5 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .col-5:before,
 .col-5:after {
@@ -4429,8 +4507,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-5.prefix-7 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-5.prefix-7 {
   padding-left: 0;
@@ -4473,8 +4552,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-5.prefix-6 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-5.prefix-6 {
   padding-left: 0;
@@ -4518,8 +4598,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-5.prefix-6.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-5.prefix-6.suffix-1 {
   padding-right: 0;
@@ -4563,8 +4644,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-5.prefix-5 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-5.prefix-5 {
   padding-left: 0;
@@ -4608,8 +4690,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-5.prefix-5.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-5.prefix-5.suffix-2 {
   padding-right: 0;
@@ -4654,8 +4737,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-5.prefix-5.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-5.prefix-5.suffix-1 {
   padding-right: 0;
@@ -4699,8 +4783,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-5.prefix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-5.prefix-4 {
   padding-left: 0;
@@ -4744,8 +4829,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-5.prefix-4.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-5.prefix-4.suffix-3 {
   padding-right: 0;
@@ -4790,8 +4876,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-5.prefix-4.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-5.prefix-4.suffix-2 {
   padding-right: 0;
@@ -4836,8 +4923,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-5.prefix-4.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-5.prefix-4.suffix-1 {
   padding-right: 0;
@@ -4881,8 +4969,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-5.prefix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-5.prefix-3 {
   padding-left: 0;
@@ -4926,8 +5015,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-5.prefix-3.suffix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-5.prefix-3.suffix-4 {
   padding-right: 0;
@@ -4972,8 +5062,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-5.prefix-3.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-5.prefix-3.suffix-3 {
   padding-right: 0;
@@ -5018,8 +5109,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-5.prefix-3.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-5.prefix-3.suffix-2 {
   padding-right: 0;
@@ -5064,8 +5156,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-5.prefix-3.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-5.prefix-3.suffix-1 {
   padding-right: 0;
@@ -5109,8 +5202,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-5.prefix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-5.prefix-2 {
   padding-left: 0;
@@ -5154,8 +5248,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-5.prefix-2.suffix-5 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-5.prefix-2.suffix-5 {
   padding-right: 0;
@@ -5200,8 +5295,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-5.prefix-2.suffix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-5.prefix-2.suffix-4 {
   padding-right: 0;
@@ -5246,8 +5342,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-5.prefix-2.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-5.prefix-2.suffix-3 {
   padding-right: 0;
@@ -5292,8 +5389,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-5.prefix-2.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-5.prefix-2.suffix-2 {
   padding-right: 0;
@@ -5338,8 +5436,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-5.prefix-2.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-5.prefix-2.suffix-1 {
   padding-right: 0;
@@ -5383,8 +5482,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-5.prefix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-5.prefix-1 {
   padding-left: 0;
@@ -5428,8 +5528,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-5.prefix-1.suffix-6 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-5.prefix-1.suffix-6 {
   padding-right: 0;
@@ -5474,8 +5575,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-5.prefix-1.suffix-5 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-5.prefix-1.suffix-5 {
   padding-right: 0;
@@ -5520,8 +5622,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-5.prefix-1.suffix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-5.prefix-1.suffix-4 {
   padding-right: 0;
@@ -5566,8 +5669,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-5.prefix-1.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-5.prefix-1.suffix-3 {
   padding-right: 0;
@@ -5612,8 +5716,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-5.prefix-1.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-5.prefix-1.suffix-2 {
   padding-right: 0;
@@ -5658,8 +5763,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-5.prefix-1.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-5.prefix-1.suffix-1 {
   padding-right: 0;
@@ -5703,8 +5809,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-5.suffix-7 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-5.suffix-7 {
   padding-right: 0;
@@ -5747,8 +5854,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-5.suffix-6 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-5.suffix-6 {
   padding-right: 0;
@@ -5791,8 +5899,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-5.suffix-5 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-5.suffix-5 {
   padding-right: 0;
@@ -5835,8 +5944,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-5.suffix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-5.suffix-4 {
   padding-right: 0;
@@ -5879,8 +5989,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-5.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-5.suffix-3 {
   padding-right: 0;
@@ -5923,8 +6034,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-5.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-5.suffix-2 {
   padding-right: 0;
@@ -5967,8 +6079,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-5.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-5.suffix-1 {
   padding-right: 0;
@@ -6018,8 +6131,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .col-4:before,
 .col-4:after {
@@ -6059,8 +6173,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.prefix-8 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.prefix-8 {
   padding-left: 0;
@@ -6103,8 +6218,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.prefix-7 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.prefix-7 {
   padding-left: 0;
@@ -6148,8 +6264,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.prefix-7.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.prefix-7.suffix-1 {
   padding-right: 0;
@@ -6193,8 +6310,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.prefix-6 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.prefix-6 {
   padding-left: 0;
@@ -6238,8 +6356,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.prefix-6.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.prefix-6.suffix-2 {
   padding-right: 0;
@@ -6284,8 +6403,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.prefix-6.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.prefix-6.suffix-1 {
   padding-right: 0;
@@ -6329,8 +6449,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.prefix-5 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.prefix-5 {
   padding-left: 0;
@@ -6374,8 +6495,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.prefix-5.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.prefix-5.suffix-3 {
   padding-right: 0;
@@ -6420,8 +6542,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.prefix-5.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.prefix-5.suffix-2 {
   padding-right: 0;
@@ -6466,8 +6589,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.prefix-5.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.prefix-5.suffix-1 {
   padding-right: 0;
@@ -6511,8 +6635,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.prefix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.prefix-4 {
   padding-left: 0;
@@ -6556,8 +6681,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.prefix-4.suffix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.prefix-4.suffix-4 {
   padding-right: 0;
@@ -6602,8 +6728,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.prefix-4.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.prefix-4.suffix-3 {
   padding-right: 0;
@@ -6648,8 +6775,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.prefix-4.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.prefix-4.suffix-2 {
   padding-right: 0;
@@ -6694,8 +6822,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.prefix-4.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.prefix-4.suffix-1 {
   padding-right: 0;
@@ -6739,8 +6868,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.prefix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.prefix-3 {
   padding-left: 0;
@@ -6784,8 +6914,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.prefix-3.suffix-5 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.prefix-3.suffix-5 {
   padding-right: 0;
@@ -6830,8 +6961,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.prefix-3.suffix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.prefix-3.suffix-4 {
   padding-right: 0;
@@ -6876,8 +7008,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.prefix-3.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.prefix-3.suffix-3 {
   padding-right: 0;
@@ -6922,8 +7055,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.prefix-3.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.prefix-3.suffix-2 {
   padding-right: 0;
@@ -6968,8 +7102,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.prefix-3.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.prefix-3.suffix-1 {
   padding-right: 0;
@@ -7013,8 +7148,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.prefix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.prefix-2 {
   padding-left: 0;
@@ -7058,8 +7194,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.prefix-2.suffix-6 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.prefix-2.suffix-6 {
   padding-right: 0;
@@ -7104,8 +7241,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.prefix-2.suffix-5 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.prefix-2.suffix-5 {
   padding-right: 0;
@@ -7150,8 +7288,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.prefix-2.suffix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.prefix-2.suffix-4 {
   padding-right: 0;
@@ -7196,8 +7335,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.prefix-2.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.prefix-2.suffix-3 {
   padding-right: 0;
@@ -7242,8 +7382,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.prefix-2.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.prefix-2.suffix-2 {
   padding-right: 0;
@@ -7288,8 +7429,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.prefix-2.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.prefix-2.suffix-1 {
   padding-right: 0;
@@ -7333,8 +7475,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.prefix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.prefix-1 {
   padding-left: 0;
@@ -7378,8 +7521,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.prefix-1.suffix-7 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.prefix-1.suffix-7 {
   padding-right: 0;
@@ -7424,8 +7568,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.prefix-1.suffix-6 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.prefix-1.suffix-6 {
   padding-right: 0;
@@ -7470,8 +7615,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.prefix-1.suffix-5 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.prefix-1.suffix-5 {
   padding-right: 0;
@@ -7516,8 +7662,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.prefix-1.suffix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.prefix-1.suffix-4 {
   padding-right: 0;
@@ -7562,8 +7709,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.prefix-1.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.prefix-1.suffix-3 {
   padding-right: 0;
@@ -7608,8 +7756,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.prefix-1.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.prefix-1.suffix-2 {
   padding-right: 0;
@@ -7654,8 +7803,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.prefix-1.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.prefix-1.suffix-1 {
   padding-right: 0;
@@ -7699,8 +7849,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.suffix-8 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.suffix-8 {
   padding-right: 0;
@@ -7743,8 +7894,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.suffix-7 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.suffix-7 {
   padding-right: 0;
@@ -7787,8 +7939,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.suffix-6 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.suffix-6 {
   padding-right: 0;
@@ -7831,8 +7984,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.suffix-5 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.suffix-5 {
   padding-right: 0;
@@ -7875,8 +8029,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.suffix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.suffix-4 {
   padding-right: 0;
@@ -7919,8 +8074,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.suffix-3 {
   padding-right: 0;
@@ -7963,8 +8119,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.suffix-2 {
   padding-right: 0;
@@ -8007,8 +8164,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-4.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-4.suffix-1 {
   padding-right: 0;
@@ -8058,8 +8216,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .col-3:before,
 .col-3:after {
@@ -8099,8 +8258,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-9 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-9 {
   padding-left: 0;
@@ -8143,8 +8303,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-8 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-8 {
   padding-left: 0;
@@ -8188,8 +8349,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-8.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-8.suffix-1 {
   padding-right: 0;
@@ -8233,8 +8395,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-7 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-7 {
   padding-left: 0;
@@ -8278,8 +8441,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-7.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-7.suffix-2 {
   padding-right: 0;
@@ -8324,8 +8488,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-7.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-7.suffix-1 {
   padding-right: 0;
@@ -8369,8 +8534,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-6 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-6 {
   padding-left: 0;
@@ -8414,8 +8580,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-6.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-6.suffix-3 {
   padding-right: 0;
@@ -8460,8 +8627,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-6.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-6.suffix-2 {
   padding-right: 0;
@@ -8506,8 +8674,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-6.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-6.suffix-1 {
   padding-right: 0;
@@ -8551,8 +8720,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-5 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-5 {
   padding-left: 0;
@@ -8596,8 +8766,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-5.suffix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-5.suffix-4 {
   padding-right: 0;
@@ -8642,8 +8813,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-5.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-5.suffix-3 {
   padding-right: 0;
@@ -8688,8 +8860,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-5.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-5.suffix-2 {
   padding-right: 0;
@@ -8734,8 +8907,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-5.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-5.suffix-1 {
   padding-right: 0;
@@ -8779,8 +8953,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-4 {
   padding-left: 0;
@@ -8824,8 +8999,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-4.suffix-5 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-4.suffix-5 {
   padding-right: 0;
@@ -8870,8 +9046,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-4.suffix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-4.suffix-4 {
   padding-right: 0;
@@ -8916,8 +9093,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-4.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-4.suffix-3 {
   padding-right: 0;
@@ -8962,8 +9140,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-4.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-4.suffix-2 {
   padding-right: 0;
@@ -9008,8 +9187,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-4.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-4.suffix-1 {
   padding-right: 0;
@@ -9053,8 +9233,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-3 {
   padding-left: 0;
@@ -9098,8 +9279,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-3.suffix-6 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-3.suffix-6 {
   padding-right: 0;
@@ -9144,8 +9326,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-3.suffix-5 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-3.suffix-5 {
   padding-right: 0;
@@ -9190,8 +9373,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-3.suffix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-3.suffix-4 {
   padding-right: 0;
@@ -9236,8 +9420,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-3.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-3.suffix-3 {
   padding-right: 0;
@@ -9282,8 +9467,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-3.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-3.suffix-2 {
   padding-right: 0;
@@ -9328,8 +9514,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-3.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-3.suffix-1 {
   padding-right: 0;
@@ -9373,8 +9560,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-2 {
   padding-left: 0;
@@ -9418,8 +9606,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-2.suffix-7 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-2.suffix-7 {
   padding-right: 0;
@@ -9464,8 +9653,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-2.suffix-6 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-2.suffix-6 {
   padding-right: 0;
@@ -9510,8 +9700,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-2.suffix-5 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-2.suffix-5 {
   padding-right: 0;
@@ -9556,8 +9747,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-2.suffix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-2.suffix-4 {
   padding-right: 0;
@@ -9602,8 +9794,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-2.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-2.suffix-3 {
   padding-right: 0;
@@ -9648,8 +9841,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-2.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-2.suffix-2 {
   padding-right: 0;
@@ -9694,8 +9888,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-2.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-2.suffix-1 {
   padding-right: 0;
@@ -9739,8 +9934,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-1 {
   padding-left: 0;
@@ -9784,8 +9980,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-1.suffix-8 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-1.suffix-8 {
   padding-right: 0;
@@ -9830,8 +10027,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-1.suffix-7 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-1.suffix-7 {
   padding-right: 0;
@@ -9876,8 +10074,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-1.suffix-6 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-1.suffix-6 {
   padding-right: 0;
@@ -9922,8 +10121,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-1.suffix-5 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-1.suffix-5 {
   padding-right: 0;
@@ -9968,8 +10168,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-1.suffix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-1.suffix-4 {
   padding-right: 0;
@@ -10014,8 +10215,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-1.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-1.suffix-3 {
   padding-right: 0;
@@ -10060,8 +10262,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-1.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-1.suffix-2 {
   padding-right: 0;
@@ -10106,8 +10309,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.prefix-1.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.prefix-1.suffix-1 {
   padding-right: 0;
@@ -10151,8 +10355,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.suffix-9 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.suffix-9 {
   padding-right: 0;
@@ -10195,8 +10400,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.suffix-8 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.suffix-8 {
   padding-right: 0;
@@ -10239,8 +10445,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.suffix-7 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.suffix-7 {
   padding-right: 0;
@@ -10283,8 +10490,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.suffix-6 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.suffix-6 {
   padding-right: 0;
@@ -10327,8 +10535,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.suffix-5 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.suffix-5 {
   padding-right: 0;
@@ -10371,8 +10580,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.suffix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.suffix-4 {
   padding-right: 0;
@@ -10415,8 +10625,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.suffix-3 {
   padding-right: 0;
@@ -10459,8 +10670,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.suffix-2 {
   padding-right: 0;
@@ -10503,8 +10715,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-3.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-3.suffix-1 {
   padding-right: 0;
@@ -10554,8 +10767,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .col-2:before,
 .col-2:after {
@@ -10595,8 +10809,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-10 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-10 {
   padding-left: 0;
@@ -10639,8 +10854,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-9 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-9 {
   padding-left: 0;
@@ -10684,8 +10900,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-9.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-9.suffix-1 {
   padding-right: 0;
@@ -10729,8 +10946,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-8 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-8 {
   padding-left: 0;
@@ -10774,8 +10992,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-8.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-8.suffix-2 {
   padding-right: 0;
@@ -10820,8 +11039,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-8.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-8.suffix-1 {
   padding-right: 0;
@@ -10865,8 +11085,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-7 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-7 {
   padding-left: 0;
@@ -10910,8 +11131,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-7.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-7.suffix-3 {
   padding-right: 0;
@@ -10956,8 +11178,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-7.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-7.suffix-2 {
   padding-right: 0;
@@ -11002,8 +11225,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-7.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-7.suffix-1 {
   padding-right: 0;
@@ -11047,8 +11271,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-6 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-6 {
   padding-left: 0;
@@ -11092,8 +11317,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-6.suffix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-6.suffix-4 {
   padding-right: 0;
@@ -11138,8 +11364,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-6.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-6.suffix-3 {
   padding-right: 0;
@@ -11184,8 +11411,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-6.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-6.suffix-2 {
   padding-right: 0;
@@ -11230,8 +11458,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-6.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-6.suffix-1 {
   padding-right: 0;
@@ -11275,8 +11504,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-5 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-5 {
   padding-left: 0;
@@ -11320,8 +11550,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-5.suffix-5 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-5.suffix-5 {
   padding-right: 0;
@@ -11366,8 +11597,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-5.suffix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-5.suffix-4 {
   padding-right: 0;
@@ -11412,8 +11644,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-5.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-5.suffix-3 {
   padding-right: 0;
@@ -11458,8 +11691,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-5.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-5.suffix-2 {
   padding-right: 0;
@@ -11504,8 +11738,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-5.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-5.suffix-1 {
   padding-right: 0;
@@ -11549,8 +11784,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-4 {
   padding-left: 0;
@@ -11594,8 +11830,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-4.suffix-6 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-4.suffix-6 {
   padding-right: 0;
@@ -11640,8 +11877,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-4.suffix-5 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-4.suffix-5 {
   padding-right: 0;
@@ -11686,8 +11924,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-4.suffix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-4.suffix-4 {
   padding-right: 0;
@@ -11732,8 +11971,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-4.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-4.suffix-3 {
   padding-right: 0;
@@ -11778,8 +12018,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-4.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-4.suffix-2 {
   padding-right: 0;
@@ -11824,8 +12065,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-4.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-4.suffix-1 {
   padding-right: 0;
@@ -11869,8 +12111,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-3 {
   padding-left: 0;
@@ -11914,8 +12157,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-3.suffix-7 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-3.suffix-7 {
   padding-right: 0;
@@ -11960,8 +12204,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-3.suffix-6 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-3.suffix-6 {
   padding-right: 0;
@@ -12006,8 +12251,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-3.suffix-5 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-3.suffix-5 {
   padding-right: 0;
@@ -12052,8 +12298,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-3.suffix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-3.suffix-4 {
   padding-right: 0;
@@ -12098,8 +12345,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-3.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-3.suffix-3 {
   padding-right: 0;
@@ -12144,8 +12392,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-3.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-3.suffix-2 {
   padding-right: 0;
@@ -12190,8 +12439,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-3.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-3.suffix-1 {
   padding-right: 0;
@@ -12235,8 +12485,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-2 {
   padding-left: 0;
@@ -12280,8 +12531,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-2.suffix-8 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-2.suffix-8 {
   padding-right: 0;
@@ -12326,8 +12578,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-2.suffix-7 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-2.suffix-7 {
   padding-right: 0;
@@ -12372,8 +12625,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-2.suffix-6 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-2.suffix-6 {
   padding-right: 0;
@@ -12418,8 +12672,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-2.suffix-5 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-2.suffix-5 {
   padding-right: 0;
@@ -12464,8 +12719,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-2.suffix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-2.suffix-4 {
   padding-right: 0;
@@ -12510,8 +12766,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-2.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-2.suffix-3 {
   padding-right: 0;
@@ -12556,8 +12813,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-2.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-2.suffix-2 {
   padding-right: 0;
@@ -12602,8 +12860,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-2.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-2.suffix-1 {
   padding-right: 0;
@@ -12647,8 +12906,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-1 {
   padding-left: 0;
@@ -12692,8 +12952,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-1.suffix-9 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-1.suffix-9 {
   padding-right: 0;
@@ -12738,8 +12999,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-1.suffix-8 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-1.suffix-8 {
   padding-right: 0;
@@ -12784,8 +13046,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-1.suffix-7 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-1.suffix-7 {
   padding-right: 0;
@@ -12830,8 +13093,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-1.suffix-6 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-1.suffix-6 {
   padding-right: 0;
@@ -12876,8 +13140,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-1.suffix-5 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-1.suffix-5 {
   padding-right: 0;
@@ -12922,8 +13187,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-1.suffix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-1.suffix-4 {
   padding-right: 0;
@@ -12968,8 +13234,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-1.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-1.suffix-3 {
   padding-right: 0;
@@ -13014,8 +13281,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-1.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-1.suffix-2 {
   padding-right: 0;
@@ -13060,8 +13328,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.prefix-1.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.prefix-1.suffix-1 {
   padding-right: 0;
@@ -13105,8 +13374,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.suffix-10 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.suffix-10 {
   padding-right: 0;
@@ -13149,8 +13419,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.suffix-9 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.suffix-9 {
   padding-right: 0;
@@ -13193,8 +13464,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.suffix-8 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.suffix-8 {
   padding-right: 0;
@@ -13237,8 +13509,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.suffix-7 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.suffix-7 {
   padding-right: 0;
@@ -13281,8 +13554,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.suffix-6 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.suffix-6 {
   padding-right: 0;
@@ -13325,8 +13599,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.suffix-5 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.suffix-5 {
   padding-right: 0;
@@ -13369,8 +13644,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.suffix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.suffix-4 {
   padding-right: 0;
@@ -13413,8 +13689,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.suffix-3 {
   padding-right: 0;
@@ -13457,8 +13734,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.suffix-2 {
   padding-right: 0;
@@ -13501,8 +13779,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-2.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-2.suffix-1 {
   padding-right: 0;
@@ -13552,8 +13831,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .col-1:before,
 .col-1:after {
@@ -13593,8 +13873,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-11 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-11 {
   padding-left: 0;
@@ -13637,8 +13918,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-10 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-10 {
   padding-left: 0;
@@ -13682,8 +13964,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-10.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-10.suffix-1 {
   padding-right: 0;
@@ -13727,8 +14010,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-9 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-9 {
   padding-left: 0;
@@ -13772,8 +14056,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-9.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-9.suffix-2 {
   padding-right: 0;
@@ -13818,8 +14103,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-9.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-9.suffix-1 {
   padding-right: 0;
@@ -13863,8 +14149,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-8 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-8 {
   padding-left: 0;
@@ -13908,8 +14195,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-8.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-8.suffix-3 {
   padding-right: 0;
@@ -13954,8 +14242,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-8.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-8.suffix-2 {
   padding-right: 0;
@@ -14000,8 +14289,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-8.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-8.suffix-1 {
   padding-right: 0;
@@ -14045,8 +14335,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-7 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-7 {
   padding-left: 0;
@@ -14090,8 +14381,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-7.suffix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-7.suffix-4 {
   padding-right: 0;
@@ -14136,8 +14428,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-7.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-7.suffix-3 {
   padding-right: 0;
@@ -14182,8 +14475,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-7.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-7.suffix-2 {
   padding-right: 0;
@@ -14228,8 +14522,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-7.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-7.suffix-1 {
   padding-right: 0;
@@ -14273,8 +14568,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-6 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-6 {
   padding-left: 0;
@@ -14318,8 +14614,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-6.suffix-5 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-6.suffix-5 {
   padding-right: 0;
@@ -14364,8 +14661,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-6.suffix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-6.suffix-4 {
   padding-right: 0;
@@ -14410,8 +14708,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-6.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-6.suffix-3 {
   padding-right: 0;
@@ -14456,8 +14755,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-6.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-6.suffix-2 {
   padding-right: 0;
@@ -14502,8 +14802,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-6.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-6.suffix-1 {
   padding-right: 0;
@@ -14547,8 +14848,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-5 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-5 {
   padding-left: 0;
@@ -14592,8 +14894,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-5.suffix-6 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-5.suffix-6 {
   padding-right: 0;
@@ -14638,8 +14941,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-5.suffix-5 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-5.suffix-5 {
   padding-right: 0;
@@ -14684,8 +14988,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-5.suffix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-5.suffix-4 {
   padding-right: 0;
@@ -14730,8 +15035,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-5.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-5.suffix-3 {
   padding-right: 0;
@@ -14776,8 +15082,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-5.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-5.suffix-2 {
   padding-right: 0;
@@ -14822,8 +15129,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-5.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-5.suffix-1 {
   padding-right: 0;
@@ -14867,8 +15175,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-4 {
   padding-left: 0;
@@ -14912,8 +15221,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-4.suffix-7 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-4.suffix-7 {
   padding-right: 0;
@@ -14958,8 +15268,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-4.suffix-6 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-4.suffix-6 {
   padding-right: 0;
@@ -15004,8 +15315,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-4.suffix-5 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-4.suffix-5 {
   padding-right: 0;
@@ -15050,8 +15362,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-4.suffix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-4.suffix-4 {
   padding-right: 0;
@@ -15096,8 +15409,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-4.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-4.suffix-3 {
   padding-right: 0;
@@ -15142,8 +15456,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-4.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-4.suffix-2 {
   padding-right: 0;
@@ -15188,8 +15503,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-4.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-4.suffix-1 {
   padding-right: 0;
@@ -15233,8 +15549,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-3 {
   padding-left: 0;
@@ -15278,8 +15595,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-3.suffix-8 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-3.suffix-8 {
   padding-right: 0;
@@ -15324,8 +15642,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-3.suffix-7 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-3.suffix-7 {
   padding-right: 0;
@@ -15370,8 +15689,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-3.suffix-6 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-3.suffix-6 {
   padding-right: 0;
@@ -15416,8 +15736,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-3.suffix-5 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-3.suffix-5 {
   padding-right: 0;
@@ -15462,8 +15783,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-3.suffix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-3.suffix-4 {
   padding-right: 0;
@@ -15508,8 +15830,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-3.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-3.suffix-3 {
   padding-right: 0;
@@ -15554,8 +15877,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-3.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-3.suffix-2 {
   padding-right: 0;
@@ -15600,8 +15924,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-3.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-3.suffix-1 {
   padding-right: 0;
@@ -15645,8 +15970,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-2 {
   padding-left: 0;
@@ -15690,8 +16016,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-2.suffix-9 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-2.suffix-9 {
   padding-right: 0;
@@ -15736,8 +16063,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-2.suffix-8 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-2.suffix-8 {
   padding-right: 0;
@@ -15782,8 +16110,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-2.suffix-7 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-2.suffix-7 {
   padding-right: 0;
@@ -15828,8 +16157,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-2.suffix-6 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-2.suffix-6 {
   padding-right: 0;
@@ -15874,8 +16204,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-2.suffix-5 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-2.suffix-5 {
   padding-right: 0;
@@ -15920,8 +16251,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-2.suffix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-2.suffix-4 {
   padding-right: 0;
@@ -15966,8 +16298,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-2.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-2.suffix-3 {
   padding-right: 0;
@@ -16012,8 +16345,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-2.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-2.suffix-2 {
   padding-right: 0;
@@ -16058,8 +16392,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-2.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-2.suffix-1 {
   padding-right: 0;
@@ -16103,8 +16438,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-1 {
   padding-left: 0;
@@ -16148,8 +16484,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-1.suffix-10 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-1.suffix-10 {
   padding-right: 0;
@@ -16194,8 +16531,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-1.suffix-9 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-1.suffix-9 {
   padding-right: 0;
@@ -16240,8 +16578,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-1.suffix-8 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-1.suffix-8 {
   padding-right: 0;
@@ -16286,8 +16625,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-1.suffix-7 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-1.suffix-7 {
   padding-right: 0;
@@ -16332,8 +16672,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-1.suffix-6 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-1.suffix-6 {
   padding-right: 0;
@@ -16378,8 +16719,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-1.suffix-5 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-1.suffix-5 {
   padding-right: 0;
@@ -16424,8 +16766,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-1.suffix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-1.suffix-4 {
   padding-right: 0;
@@ -16470,8 +16813,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-1.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-1.suffix-3 {
   padding-right: 0;
@@ -16516,8 +16860,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-1.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-1.suffix-2 {
   padding-right: 0;
@@ -16562,8 +16907,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.prefix-1.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.prefix-1.suffix-1 {
   padding-right: 0;
@@ -16607,8 +16953,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.suffix-11 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.suffix-11 {
   padding-right: 0;
@@ -16651,8 +16998,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.suffix-10 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.suffix-10 {
   padding-right: 0;
@@ -16695,8 +17043,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.suffix-9 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.suffix-9 {
   padding-right: 0;
@@ -16739,8 +17088,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.suffix-8 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.suffix-8 {
   padding-right: 0;
@@ -16783,8 +17133,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.suffix-7 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.suffix-7 {
   padding-right: 0;
@@ -16827,8 +17178,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.suffix-6 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.suffix-6 {
   padding-right: 0;
@@ -16871,8 +17223,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.suffix-5 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.suffix-5 {
   padding-right: 0;
@@ -16915,8 +17268,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.suffix-4 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.suffix-4 {
   padding-right: 0;
@@ -16959,8 +17313,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.suffix-3 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.suffix-3 {
   padding-right: 0;
@@ -17003,8 +17358,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.suffix-2 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.suffix-2 {
   padding-right: 0;
@@ -17047,8 +17403,9 @@ input[type="radio"] {
 }
 .lt-ie8 .col-1.suffix-1 {
   display: inline;
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
+  margin-right: 0;
+  zoom: 1;
+  behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .lt-ie8 .col-1.suffix-1 {
   padding-right: 0;
@@ -17080,10 +17437,7 @@ input[type="radio"] {
    Making custom wrappers and adding custom properties to the columns
    ========================================================================== */
 .cols-12 {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  max-width: 1200px;
+  max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
   position: relative;
@@ -17091,27 +17445,12 @@ input[type="radio"] {
   margin-top: 20px;
   margin-bottom: 40px;
 }
-.lt-ie8 .cols-12 {
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
-}
-.lt-ie8 .cols-12 {
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
-}
 .cols-12.w-960 {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  max-width: 960px;
+  max-width: 930px;
   padding: 0 15px;
   margin: 0 auto;
   position: relative;
   clear: both;
-}
-.lt-ie8 .cols-12.w-960 {
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 .cols-12 section {
   display: block;
@@ -17126,28 +17465,17 @@ input[type="radio"] {
    Base Styles
    ========================================================================== */
 body {
-  font-family: "Avenir Next", Arial, sans-serif;
+  font-family: Georgia, "Times New Roman", serif;
   margin: 0;
 }
 h1 {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  max-width: 1200px;
+  max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
   position: relative;
   clear: both;
   margin-top: 100px;
   margin-bottom: 20px;
-}
-.lt-ie8 h1 {
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
-}
-.lt-ie8 h1 {
-  *zoom: 1;
-  *behavior: url('/cf-grid/custom-demo/static/css/boxsizing.htc');
 }
 h2,
 h3 {

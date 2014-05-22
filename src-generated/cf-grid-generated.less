@@ -8,12 +8,12 @@
 //  generate a CSS version of cf-grid with the same fixed-gutter, 
 //  fluid-column functionality.
 //
-//  .wrapper = .wrapper()
-//  .col-X = .column( X )
-//  .prefix-Y = .column( @columns: X; @prefix: Y; )
-//  .suffix-Z = .column( @columns: X; @suffix: Z; )
-//  .push-X = .push( X )
-//  .pull-X = .pull( X )
+//  .wrapper = .grid_wrapper()
+//  .col-X = .grid_column( X )
+//  .prefix-Y = .grid_column( @columns: X; @prefix: Y; )
+//  .suffix-Z = .grid_column( @columns: X; @suffix: Z; )
+//  .push-X = .grid_push( X )
+//  .pull-X = .grid_pull( X )
 //
 //  Change the variables below before compiling to change your
 //  grid specifications.
@@ -22,32 +22,32 @@
 // going to use this, you best be gzipping on the server-side.
 
 
-@wrapper-width: 1200px;
-@gutter-width: 30px;
-@total-columns: 12;
+@grid_wrapper-width: 1200px;
+@grid_gutter-width: 30px;
+@grid_total-columns: 12;
 
 
 .wrapper {
-  .wrapper();
+  .grid_wrapper();
 }
 
 
 .columnX ( @index ) when ( @index > 0 ) {
 
   .col-@{index} {
-    .column( @index );
+    .grid_column( @index );
   }
 
-  .prefixX ( @index, @total-columns - @index );
-  .suffixX ( @index, @total-columns - @index );
+  .prefixX ( @index, @grid_total-columns - @index );
+  .suffixX ( @index, @grid_total-columns - @index );
 
 
   .push-@{index} {
-    .push( @index );
+    .grid_push( @index );
   }
 
   .pull-@{index} {
-    .pull( @index );
+    .grid_pull( @index );
   }
 
   .columnX( @index - 1 );
@@ -58,10 +58,10 @@
 .prefixX ( @index, @indexP ) when (@indexP > 0) {
   
   .col-@{index}.prefix-@{indexP} {
-    .column( @columns: @index; @prefix: @indexP; );
+    .grid_column( @columns: @index; @prefix: @indexP; );
   }
 
-  .prefixSuffix ( @index, @indexP, @total-columns - @index - @indexP );
+  .prefixSuffix ( @index, @indexP, @grid_total-columns - @index - @indexP );
   .prefixX ( @index, @indexP - 1 );
 
 }
@@ -70,7 +70,7 @@
 .suffixX ( @index, @indexS ) when (@indexS > 0) {
   
   .col-@{index}.suffix-@{indexS} {
-    .column( @columns: @index; @suffix: @indexS; );
+    .grid_column( @columns: @index; @suffix: @indexS; );
   }
 
   .suffixX ( @index, @indexS - 1 );
@@ -81,7 +81,7 @@
 .prefixSuffix ( @index, @indexP, @indexS ) when (@indexS > 0) {
 
   .col-@{index}.prefix-@{indexP}.suffix-@{indexS} {
-    .column( @columns: @index; @prefix: @indexP; @suffix: @indexS );
+    .grid_column( @columns: @index; @prefix: @indexP; @suffix: @indexS );
   }
 
   .prefixSuffix ( @index, @indexP, @indexS - 1 );
@@ -91,5 +91,5 @@
 
 .columnX ( 0 ) {}
 
-.columnX ( @total-columns );
+.columnX ( @grid_total-columns );
 

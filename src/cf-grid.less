@@ -12,35 +12,35 @@
   family: "cf-grid"
   patterns:
     - codenotes:
-        - "@box-sizing-polyfill-path: '/cf-grid/custom-demo/static/css';"
+        - "@grid_box-sizing-polyfill-path: '/cf-grid/custom-demo/static/css';"
       notes:
         - "The path where boxsizing.htc is located."
         - "This path MUST be overridden in your project and set to a root relative url."
     - codenotes:
-        - "@wrapper-width: 1200px;"
+        - "@grid_wrapper-width: 1200px;"
       notes:
         - "The grid's maximum width in px."
     - codenotes:
-        - "@gutter-width: 30px;"
+        - "@grid_gutter-width: 30px;"
       notes:
         - "The fixed width between columns."
     - codenotes:
-        - "@total-columns: 12;"
+        - "@grid_total-columns: 12;"
       notes:
         - "The total number of columns used in calculating column widths."
     - codenotes:
-        - "@debug"
+        - "@grid_debug"
       notes:
         - "Gives column blocks a background color if set to true."
   tags:
     - "cf-grid"
 */
 
-@box-sizing-polyfill-path: '/cf-grid/custom-demo/static/css';
-@wrapper-width: 1200px;
-@gutter-width: 30px;
-@total-columns: 12;
-@debug: false;
+@grid_box-sizing-polyfill-path: '/cf-grid/custom-demo/static/css';
+@grid_wrapper-width: 1200px;
+@grid_gutter-width: 30px;
+@grid_total-columns: 12;
+@grid_debug: false;
 
 
 /* topdoc
@@ -49,13 +49,13 @@
     - "Wrappers are centered containers with a max-width and fixed gutters
       that match the gutter widths of columns."
     - "To support IE 6/7, ensure that the path to boxsizing.htc is set using
-      the @box-sizing-polyfill-path Less variable.
+      the @grid_box-sizing-polyfill-path Less variable.
       Read more: https://github.com/Schepp/box-sizing-polyfill."
   family: "cf-grid"
   patterns:
     - name: "Less mixin"
       codenotes:
-        - ".wrapper( @wrapper-width: @wrapper-width )"
+        - ".grid_wrapper( @grid_wrapper-width: @grid_wrapper-width )"
       notes:
         - "You can create wrappers with different max-widths by passing a pixel
           value into the mixin."
@@ -63,10 +63,10 @@
       codenotes:
         - |
           .main-wrapper {
-            .wrapper();
+            .grid_wrapper();
           }
           .wide-wrapper {
-            .wrapper( 1900px );
+            .grid_wrapper( 1900px );
           }
         - |
           <div class="main-wrapper">
@@ -79,21 +79,12 @@
     - "cf-grid"
 */
 
-.wrapper( @wrapper-width: @wrapper-width ) {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-  max-width: @wrapper-width;
-  padding: 0 ( @gutter-width / 2 );
+.grid_wrapper( @grid_wrapper-width: @grid_wrapper-width ) {
+  max-width: ( @grid_wrapper-width - @grid_gutter-width );
+  padding: 0 ( @grid_gutter-width / 2 );
   margin: 0 auto;
   position: relative;
   clear: both;
-
-  .lt-ie8 & {
-    *zoom: 1; // Clearfix hack for IE 6/7 only
-    *behavior: url('@{box-sizing-polyfill-path}/boxsizing.htc');
-  }
-
 }
 
 
@@ -103,7 +94,7 @@
   patterns:
     - name: "Less mixin"
       codenotes:
-        - ".column( @columns: 1; @total: @total-columns; @prefix: 0; @suffix: 0 )"
+        - ".grid_column( @columns: 1; @total: @grid_total-columns; @prefix: 0; @suffix: 0 )"
       notes:
         - "Computes column widths and prefix/suffix padding."
         - "CSS borders are used for fixed gutters."
@@ -111,10 +102,10 @@
       codenotes:
         - |
           .main-wrapper {
-            .wrapper();
+            .grid_wrapper();
           }
           .half {
-            .column(1, 2);
+            .grid_column(1, 2);
           }
         - |
           <div class="main-wrapper">
@@ -128,7 +119,7 @@
     - "cf-grid"
 */
 
-.column( @columns: 1; @total: @total-columns; @prefix: 0; @suffix: 0 ) {
+.grid_column( @columns: 1; @total: @grid_total-columns; @prefix: 0; @suffix: 0 ) {
 
   display: inline-block;
   -webkit-box-sizing: border-box;
@@ -146,7 +137,7 @@
   @width: percentage( @columns / @total );
 
   border: solid transparent;
-  border-width: 0 (@gutter-width / 2);
+  border-width: 0 (@grid_gutter-width / 2);
 
   // Remove whitespace caused by setting display to inline-block
   margin-right: -0.25em;
@@ -160,11 +151,16 @@
     margin-right: -0.26em;
   }
   .lt-ie8 & {
-    // hack inline-block into submission
+    // Hack inline-block into submission
     display: inline;
+    // Mixing negative margins and the box-sizing hack can be dangerous.
+    // This is a temporary fix for: https://github.com/cfpb/cf-grid/issues/17
+    margin-right: 0;
 
-    *zoom: 1; // Clearfix hack for IE 6/7 only
-    *behavior: url('@{box-sizing-polyfill-path}/boxsizing.htc');
+    // Clearfix hack for IE 6/7 only
+    zoom: 1;
+    // Box-sizing polyfill
+    behavior: url('@{grid_box-sizing-polyfill-path}/boxsizing.htc');
   }
 
   // Modifying standard width and padding for prefixed/suffixed columns, if necessary:
@@ -220,7 +216,7 @@
 
 }
 
-.column( @columns; @total: @total-columns; @prefix: 0; @suffix: 0; ) when ( @debug ) {
+.grid_column( @columns; @total: @grid_total-columns; @prefix: 0; @suffix: 0; ) when ( @grid_debug ) {
 
   border-left-color: #FFB149;
   border-left-color: fade(#FF9E1B, 25%);
@@ -234,17 +230,17 @@
     content: "";
     display: block;
     width: 100%;
-    height: @gutter-width * 0.25;
+    height: @grid_gutter-width * 0.25;
     background-color: #DA6750;
     background-color: fade(#DA6750, 75%);
   }
 
   &:before {
-    margin-bottom: @gutter-width * 0.25;
+    margin-bottom: @grid_gutter-width * 0.25;
   }
 
   &:after {
-    margin-top: @gutter-width * 0.25;
+    margin-top: @grid_gutter-width * 0.25;
   }
 
 }
@@ -255,18 +251,18 @@
   family: "cf-grid"
   patterns:
     - codenotes:
-        - ".push( @offset: 1, @total-columns: @total-columns )"
-        - ".pull( @offset: 1, @total-columns: @total-columns )"
+        - ".push( @offset: 1, @grid_total-columns: @grid_total-columns )"
+        - ".pull( @offset: 1, @grid_total-columns: @grid_total-columns )"
     - name: "Usage"
       codenotes:
         - |
           .first {
-            .column(1, 2);
-            .pull(1)l
+            .grid_column(1, 2);
+            .grid_pull(1);
           }
           .second {
-            .column(1, 2);
-            .push(1)l
+            .grid_column(1, 2);
+            .grid_push(1);
           }
         - |
           <div>
@@ -277,14 +273,14 @@
     - "cf-grid"
 */
 
-.push( @offset: 1, @total-columns: @total-columns ) {
-  @push: percentage( @offset / @total-columns );
+.grid_push( @offset: 1, @grid_total-columns: @grid_total-columns ) {
+  @push: percentage( @offset / @grid_total-columns );
   position: relative;
   left: @push;
 }
 
-.pull( @offset: 1, @total-columns: @total-columns ) {
-  @pull: percentage( @offset / @total-columns );
+.grid_pull( @offset: 1, @grid_total-columns: @grid_total-columns ) {
+  @pull: percentage( @offset / @grid_total-columns );
   position: relative;
   right: @pull;
 }
@@ -298,7 +294,7 @@
       Normally this is removed with complex selectors or by adding classes
       to the first and last column per 'row'.
       In cf-grid the way to get around this is by wrapping your columns in a
-      container that utilizes the .nested-col-group() mixin.
+      container that utilizes the .grid_nested-col-group() mixin.
       This mixin uses negative left and right margins to pull the columns back
       into alignment with parent columns."
     - "NOTE: Working this way allows you to easily create responsive grids.
@@ -312,18 +308,18 @@
   patterns:
     - name: "Less mixin"
       codenotes:
-        - ".nested-col-group()"
+        - ".grid_nested-col-group()"
     - name: "Usage"
       codenotes:
         - |
           .main-wrapper {
-            .wrapper();
+            .grid_wrapper();
           }
           .cols {
-            .nested-col-group();
+            .grid_nested-col-group();
           }
           .half {
-            .column(1, 2);
+            .grid_column(1, 2);
           }
         - |
           <div class="main-wrapper">
@@ -344,11 +340,11 @@
     - "cf-grid"
 */
 
-.nested-col-group() {
+.grid_nested-col-group() {
   display: block;
   position: relative;
-  margin-left: ( @gutter-width / 2 ) * -1;
-  margin-right: ( @gutter-width / 2 ) * -1;
+  margin-left: ( @grid_gutter-width / 2 ) * -1;
+  margin-right: ( @grid_gutter-width / 2 ) * -1;
 }
 
 
