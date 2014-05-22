@@ -25,7 +25,7 @@
               <header class="demo-pattern-list_header">
                 <ul class="demo_codenotes">
                   <li>
-                    <pre class="code"><code>@box-sizing-polyfill-path: '/cf-grid/custom-demo/static/css';</code></pre>
+                    <pre class="code"><code>@grid_box-sizing-polyfill-path: '/cf-grid/custom-demo/static/css';</code></pre>
                   </li>
                 </ul>
                 <ul class="demo_notes">
@@ -38,7 +38,7 @@
               <header class="demo-pattern-list_header">
                 <ul class="demo_codenotes">
                   <li>
-                    <pre class="code"><code>@wrapper-width: 1200px;</code></pre>
+                    <pre class="code"><code>@grid_wrapper-width: 1200px;</code></pre>
                   </li>
                 </ul>
                 <ul class="demo_notes">
@@ -50,7 +50,7 @@
               <header class="demo-pattern-list_header">
                 <ul class="demo_codenotes">
                   <li>
-                    <pre class="code"><code>@gutter-width: 30px;</code></pre>
+                    <pre class="code"><code>@grid_gutter-width: 30px;</code></pre>
                   </li>
                 </ul>
                 <ul class="demo_notes">
@@ -62,7 +62,7 @@
               <header class="demo-pattern-list_header">
                 <ul class="demo_codenotes">
                   <li>
-                    <pre class="code"><code>@total-columns: 12;</code></pre>
+                    <pre class="code"><code>@grid_total-columns: 12;</code></pre>
                   </li>
                 </ul>
                 <ul class="demo_notes">
@@ -74,7 +74,7 @@
               <header class="demo-pattern-list_header">
                 <ul class="demo_codenotes">
                   <li>
-                    <pre class="code"><code>@debug</code></pre>
+                    <pre class="code"><code>@grid_debug</code></pre>
                   </li>
                 </ul>
                 <ul class="demo_notes">
@@ -88,7 +88,7 @@
           <h1 class="demo-component-list_header">Wrapper</h1>
           <ul class="demo_notes">
             <li>Wrappers are centered containers with a max-width and fixed gutters that match the gutter widths of columns.</li>
-            <li>To support IE 6/7, ensure that the path to boxsizing.htc is set using the @box-sizing-polyfill-path Less variable. Read more: https://github.com/Schepp/box-sizing-polyfill.</li>
+            <li>To support IE 6/7, ensure that the path to boxsizing.htc is set using the @grid_box-sizing-polyfill-path Less variable. Read more: https://github.com/Schepp/box-sizing-polyfill.</li>
           </ul>
           <ul class="demo-pattern-list">
             <li class="demo-pattern-list_item">
@@ -96,7 +96,7 @@
                 <h3>Less mixin</h3>
                 <ul class="demo_codenotes">
                   <li>
-                    <pre class="code"><code>.wrapper( @wrapper-width: @wrapper-width )</code></pre>
+                    <pre class="code"><code>.grid_wrapper( @grid_wrapper-width: @grid_wrapper-width )</code></pre>
                   </li>
                 </ul>
                 <ul class="demo_notes">
@@ -110,10 +110,10 @@
                 <ul class="demo_codenotes">
                   <li>
                     <pre class="code"><code>.main-wrapper {
-  .wrapper();
+  .grid_wrapper();
 }
 .wide-wrapper {
-  .wrapper( 1900px );
+  .grid_wrapper( 1900px );
 }</code></pre>
                   </li>
                   <li>
@@ -137,7 +137,7 @@
                 <h3>Less mixin</h3>
                 <ul class="demo_codenotes">
                   <li>
-                    <pre class="code"><code>.column( @columns: 1; @total: @total-columns; @prefix: 0; @suffix: 0 )</code></pre>
+                    <pre class="code"><code>.grid_column( @columns: 1; @total: @grid_total-columns; @prefix: 0; @suffix: 0 )</code></pre>
                   </li>
                 </ul>
                 <ul class="demo_notes">
@@ -152,10 +152,10 @@
                 <ul class="demo_codenotes">
                   <li>
                     <pre class="code"><code>.main-wrapper {
-  .wrapper();
+  .grid_wrapper();
 }
 .half {
-  .column(1, 2);
+  .grid_column(1, 2);
 }</code></pre>
                   </li>
                   <li>
@@ -186,10 +186,10 @@
               <header class="demo-pattern-list_header">
                 <ul class="demo_codenotes">
                   <li>
-                    <pre class="code"><code>.push( @offset: 1, @total-columns: @total-columns )</code></pre>
+                    <pre class="code"><code>.push( @offset: 1, @grid_total-columns: @grid_total-columns )</code></pre>
                   </li>
                   <li>
-                    <pre class="code"><code>.pull( @offset: 1, @total-columns: @total-columns )</code></pre>
+                    <pre class="code"><code>.pull( @offset: 1, @grid_total-columns: @grid_total-columns )</code></pre>
                   </li>
                 </ul>
               </header>
@@ -200,12 +200,12 @@
                 <ul class="demo_codenotes">
                   <li>
                     <pre class="code"><code>.first {
-  .column(1, 2);
-  .pull(1)l
+  .grid_column(1, 2);
+  .grid_pull(1);
 }
 .second {
-  .column(1, 2);
-  .push(1)l
+  .grid_column(1, 2);
+  .grid_push(1);
 }</code></pre>
                   </li>
                   <li>
@@ -222,7 +222,7 @@
         <li id="nested-columns" class="demo-component-list_item demo-wrapper">
           <h1 class="demo-component-list_header">Nested columns</h1>
           <ul class="demo_notes">
-            <li>Since all cf-grid columns have left and right gutters you will notice undesireable offsetting when nesting columns. Normally this is removed with complex selectors or by adding classes to the first and last column per 'row'. In cf-grid the way to get around this is by wrapping your columns in a container that utilizes the .nested-col-group() mixin. This mixin uses negative left and right margins to pull the columns back into alignment with parent columns.</li>
+            <li>Since all cf-grid columns have left and right gutters you will notice undesireable offsetting when nesting columns. Normally this is removed with complex selectors or by adding classes to the first and last column per 'row'. In cf-grid the way to get around this is by wrapping your columns in a container that utilizes the .grid_nested-col-group() mixin. This mixin uses negative left and right margins to pull the columns back into alignment with parent columns.</li>
             <li>NOTE: Working this way allows you to easily create responsive grids. You are free to control the number of columns per 'row' without having to deal with the first and last columns of each row.</li>
             <li>NOTE: cf-grids does not use 'rows' and there is no row container. To clarify, if you have a 12 column grid and place 24 columns inside of a wrapper cf-grid columns will automaitcally stack into 2 'rows' of 12.</li>
           </ul>
@@ -232,7 +232,7 @@
                 <h3>Less mixin</h3>
                 <ul class="demo_codenotes">
                   <li>
-                    <pre class="code"><code>.nested-col-group()</code></pre>
+                    <pre class="code"><code>.grid_nested-col-group()</code></pre>
                   </li>
                 </ul>
               </header>
@@ -243,13 +243,13 @@
                 <ul class="demo_codenotes">
                   <li>
                     <pre class="code"><code>.main-wrapper {
-  .wrapper();
+  .grid_wrapper();
 }
 .cols {
-  .nested-col-group();
+  .grid_nested-col-group();
 }
 .half {
-  .column(1, 2);
+  .grid_column(1, 2);
 }</code></pre>
                   </li>
                   <li>

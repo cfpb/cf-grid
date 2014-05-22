@@ -9,12 +9,12 @@
 
 // You can override the default number of columns and the default width to
 // whatever you need.
-@total-columns: 12;
-@wrapper-width: 1200px;
+@grid_total-columns: 12;
+@grid_wrapper-width: 1200px;
 
 // Adds a background color to columns and their gutters.
 // Also adds bars to the top and bottom of each column.
-@debug: true;
+@grid_debug: true;
 
 
 /* ==========================================================================
@@ -24,11 +24,11 @@
 .cols-12 {
 
   // Make .cols-12 a cf-grids .wrapper.
-  .wrapper();
+  .grid_wrapper();
 
   // Make .cols-12.w-960 an alternate .wrapper that has a max-width of 960px.
   &.w-960 {
-    .wrapper( 960px );
+    .grid_wrapper( 960px );
   }
 
   // Space .wrappers apart from each other.
@@ -41,7 +41,7 @@
   // first column and the right gutter on the last column by simply using
   // negative margins on its container.
   section {
-    .nested-col-group();
+    .grid_nested-col-group();
   }
 
 }
@@ -57,12 +57,12 @@
    ========================================================================== */
 
 body {
-  font-family: "Avenir Next", Arial, sans-serif;
+  font-family: Georgia, "Times New Roman", serif;
   margin: 0;
 }
 
 h1 {
-  .wrapper();
+  .grid_wrapper();
   margin-top: 100px;
   margin-bottom: 20px;
 }
