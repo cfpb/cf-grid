@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "cf-component-demo": "git://github.com/cfpb/cf-component-demo.git",
+    "cf-component-demo": "git://github.com/cfpb/cf-component-demo.git#0.9.0",
     "cf-grunt-config": "git://github.com/cfpb/cf-grunt-config.git",
     "glob": "~3.2.9",
     "grunt": "~0.4.4",

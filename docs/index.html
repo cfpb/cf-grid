@@ -1,115 +1,132 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
+
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js">
+  <!-- <![endif]-->
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>cf-grid docs</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="static/demo/demo.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic">
+    <link rel="stylesheet" type="text/css" href="static/docs/brackets.css">
+    <link rel="stylesheet" type="text/css" href="static/docs/docs.css">
     <link rel="stylesheet" type="text/css" href="static/css/main.css">
-    <link rel="stylesheet" type="text/css" href="static/demo/brackets.css">
+    <script>
+      // Confirm availability of JS and remove no-js class from html
+      var docElement = document.documentElement;
+      docElement.className = docElement.className.replace(/(^|\s)no-js(\s|$)/, '$1$2');
+    </script>
   </head>
   <body>
-    <div class="demo-wrapper">
-      <header class="demo_header">
-        <h1 class="h5">cf-grid docs</h1>
-      </header>
-      <ul class="demo-component-list">
-        <li id="global-less-variables" class="demo-component-list_item demo-wrapper">
-          <h1 class="demo-component-list_header">Global Less variables</h1>
-          <ul class="demo_notes">
-            <li>The following variables are default values used in creating grids. They can be overridden in your application's stylesheet. Most mixins allows you to override these values by passing them arguments.</li>
-          </ul>
-          <ul class="demo-pattern-list">
-            <li class="demo-pattern-list_item">
-              <header class="demo-pattern-list_header">
-                <ul class="demo_codenotes">
+    <div class="docs-sidebar-wrapper">
+      <div class="docs-sidebar-wrapper_body">
+        <div class="docs-masthead">
+          <h1 class="docs-title"><span class="docs-icon">&lt;/&gt;</span> cf-grid docs
+          </h1><a href="https://github.com/cfpb/cf-grid" class="docs-repo">view the repository</a>
+        </div>
+        <div id="global-less-variables" class="docs-component">
+          <h2 class="docs-component_header"><span>Global Less variables</span></h2>
+          <div class="docs-component_intro">
+            <ul class="docs-notes">
+              <li>The following variables are default values used in creating grids. They can be overridden in your application's stylesheet. Most mixins allows you to override these values by passing them arguments.</li>
+            </ul>
+          </div>
+          <div class="docs-patterns">
+            <div class="docs-pattern">
+              <footer class="docs-pattern_footer">
+                <ul class="docs-codenotes">
                   <li>
-                    <pre class="code"><code>@grid_box-sizing-polyfill-path: '/cf-grid/custom-demo/static/css';</code></pre>
+                    <pre class="docs-code"><code>@grid_box-sizing-polyfill-path: '/cf-grid/custom-demo/static/css';</code></pre>
                   </li>
                 </ul>
-                <ul class="demo_notes">
+                <ul class="docs-notes">
                   <li>The path where boxsizing.htc is located.</li>
                   <li>This path MUST be overridden in your project and set to a root relative url.</li>
                 </ul>
-              </header>
-            </li>
-            <li class="demo-pattern-list_item">
-              <header class="demo-pattern-list_header">
-                <ul class="demo_codenotes">
+              </footer>
+            </div>
+            <div class="docs-pattern">
+              <footer class="docs-pattern_footer">
+                <ul class="docs-codenotes">
                   <li>
-                    <pre class="code"><code>@grid_wrapper-width: 1200px;</code></pre>
+                    <pre class="docs-code"><code>@grid_wrapper-width: 1200px;</code></pre>
                   </li>
                 </ul>
-                <ul class="demo_notes">
+                <ul class="docs-notes">
                   <li>The grid's maximum width in px.</li>
                 </ul>
-              </header>
-            </li>
-            <li class="demo-pattern-list_item">
-              <header class="demo-pattern-list_header">
-                <ul class="demo_codenotes">
+              </footer>
+            </div>
+            <div class="docs-pattern">
+              <footer class="docs-pattern_footer">
+                <ul class="docs-codenotes">
                   <li>
-                    <pre class="code"><code>@grid_gutter-width: 30px;</code></pre>
+                    <pre class="docs-code"><code>@grid_gutter-width: 30px;</code></pre>
                   </li>
                 </ul>
-                <ul class="demo_notes">
+                <ul class="docs-notes">
                   <li>The fixed width between columns.</li>
                 </ul>
-              </header>
-            </li>
-            <li class="demo-pattern-list_item">
-              <header class="demo-pattern-list_header">
-                <ul class="demo_codenotes">
+              </footer>
+            </div>
+            <div class="docs-pattern">
+              <footer class="docs-pattern_footer">
+                <ul class="docs-codenotes">
                   <li>
-                    <pre class="code"><code>@grid_total-columns: 12;</code></pre>
+                    <pre class="docs-code"><code>@grid_total-columns: 12;</code></pre>
                   </li>
                 </ul>
-                <ul class="demo_notes">
+                <ul class="docs-notes">
                   <li>The total number of columns used in calculating column widths.</li>
                 </ul>
-              </header>
-            </li>
-            <li class="demo-pattern-list_item">
-              <header class="demo-pattern-list_header">
-                <ul class="demo_codenotes">
+              </footer>
+            </div>
+            <div class="docs-pattern">
+              <footer class="docs-pattern_footer">
+                <ul class="docs-codenotes">
                   <li>
-                    <pre class="code"><code>@grid_debug</code></pre>
+                    <pre class="docs-code"><code>@grid_debug</code></pre>
                   </li>
                 </ul>
-                <ul class="demo_notes">
+                <ul class="docs-notes">
                   <li>Gives column blocks a background color if set to true.</li>
                 </ul>
-              </header>
-            </li>
-          </ul>
-        </li>
-        <li id="wrapper" class="demo-component-list_item demo-wrapper">
-          <h1 class="demo-component-list_header">Wrapper</h1>
-          <ul class="demo_notes">
-            <li>Wrappers are centered containers with a max-width and fixed gutters that match the gutter widths of columns.</li>
-            <li>To support IE 6/7, ensure that the path to boxsizing.htc is set using the @grid_box-sizing-polyfill-path Less variable. Read more: https://github.com/Schepp/box-sizing-polyfill.</li>
-          </ul>
-          <ul class="demo-pattern-list">
-            <li class="demo-pattern-list_item">
-              <header class="demo-pattern-list_header">
-                <h3>Less mixin</h3>
-                <ul class="demo_codenotes">
+              </footer>
+            </div>
+          </div>
+        </div>
+        <div id="wrapper" class="docs-component">
+          <h2 class="docs-component_header"><span>Wrapper</span></h2>
+          <div class="docs-component_intro">
+            <ul class="docs-notes">
+              <li>Wrappers are centered containers with a max-width and fixed gutters that match the gutter widths of columns.</li>
+              <li>To support IE 6/7, ensure that the path to boxsizing.htc is set using the @grid_box-sizing-polyfill-path Less variable. Read more: https://github.com/Schepp/box-sizing-polyfill.</li>
+            </ul>
+          </div>
+          <div class="docs-patterns">
+            <div class="docs-pattern">
+              <h3 class="docs-pattern_header">Less mixin</h3>
+              <footer class="docs-pattern_footer">
+                <ul class="docs-codenotes">
                   <li>
-                    <pre class="code"><code>.grid_wrapper( @grid_wrapper-width: @grid_wrapper-width )</code></pre>
+                    <pre class="docs-code"><code>.grid_wrapper( @grid_wrapper-width: @grid_wrapper-width )</code></pre>
                   </li>
                 </ul>
-                <ul class="demo_notes">
+                <ul class="docs-notes">
                   <li>You can create wrappers with different max-widths by passing a pixel value into the mixin.</li>
                 </ul>
-              </header>
-            </li>
-            <li class="demo-pattern-list_item">
-              <header class="demo-pattern-list_header">
-                <h3>Usage</h3>
-                <ul class="demo_codenotes">
+              </footer>
+            </div>
+            <div class="docs-pattern">
+              <h3 class="docs-pattern_header">Usage</h3>
+              <footer class="docs-pattern_footer">
+                <ul class="docs-codenotes">
                   <li>
-                    <pre class="code"><code>.main-wrapper {
+                    <pre class="docs-code"><code>.main-wrapper {
   .grid_wrapper();
 }
 .wide-wrapper {
@@ -117,7 +134,7 @@
 }</code></pre>
                   </li>
                   <li>
-                    <pre class="code"><code>&lt;div class=&quot;main-wrapper&quot;&gt;
+                    <pre class="docs-code"><code>&lt;div class=&quot;main-wrapper&quot;&gt;
     This container now has left and right padding and a centered max width.
 &lt;/div&gt;
 &lt;div class=&quot;wide-wrapper&quot;&gt;
@@ -125,33 +142,33 @@
 &lt;/div&gt;</code></pre>
                   </li>
                 </ul>
-              </header>
-            </li>
-          </ul>
-        </li>
-        <li id="columns" class="demo-component-list_item demo-wrapper">
-          <h1 class="demo-component-list_header">Columns</h1>
-          <ul class="demo-pattern-list">
-            <li class="demo-pattern-list_item">
-              <header class="demo-pattern-list_header">
-                <h3>Less mixin</h3>
-                <ul class="demo_codenotes">
+              </footer>
+            </div>
+          </div>
+        </div>
+        <div id="columns" class="docs-component">
+          <h2 class="docs-component_header"><span>Columns</span></h2>
+          <div class="docs-patterns">
+            <div class="docs-pattern">
+              <h3 class="docs-pattern_header">Less mixin</h3>
+              <footer class="docs-pattern_footer">
+                <ul class="docs-codenotes">
                   <li>
-                    <pre class="code"><code>.grid_column( @columns: 1; @total: @grid_total-columns; @prefix: 0; @suffix: 0 )</code></pre>
+                    <pre class="docs-code"><code>.grid_column( @columns: 1; @total: @grid_total-columns; @prefix: 0; @suffix: 0 )</code></pre>
                   </li>
                 </ul>
-                <ul class="demo_notes">
+                <ul class="docs-notes">
                   <li>Computes column widths and prefix/suffix padding.</li>
                   <li>CSS borders are used for fixed gutters.</li>
                 </ul>
-              </header>
-            </li>
-            <li class="demo-pattern-list_item">
-              <header class="demo-pattern-list_header">
-                <h3>Usage</h3>
-                <ul class="demo_codenotes">
+              </footer>
+            </div>
+            <div class="docs-pattern">
+              <h3 class="docs-pattern_header">Usage</h3>
+              <footer class="docs-pattern_footer">
+                <ul class="docs-codenotes">
                   <li>
-                    <pre class="code"><code>.main-wrapper {
+                    <pre class="docs-code"><code>.main-wrapper {
   .grid_wrapper();
 }
 .half {
@@ -159,47 +176,47 @@
 }</code></pre>
                   </li>
                   <li>
-                    <pre class="code"><code>&lt;div class=&quot;main-wrapper&quot;&gt;
+                    <pre class="docs-code"><code>&lt;div class=&quot;main-wrapper&quot;&gt;
     &lt;div class=&quot;half&quot;&gt;I am half of my parent.&lt;/div&gt;
     &lt;div class=&quot;half&quot;&gt;I am half of my parent.&lt;/div&gt;
 &lt;/div&gt;</code></pre>
                   </li>
                 </ul>
-              </header>
-            </li>
-            <li class="demo-pattern-list_item">
-              <header class="demo-pattern-list_header">
-                <h3>This is a placeholder for documenting prefix and suffix</h3>
-                <ul class="demo_codenotes">
+              </footer>
+            </div>
+            <div class="docs-pattern">
+              <h3 class="docs-pattern_header">This is a placeholder for documenting prefix and suffix</h3>
+              <footer class="docs-pattern_footer">
+                <ul class="docs-codenotes">
                   <li>
-                    <pre class="code"><code>...</code></pre>
+                    <pre class="docs-code"><code>...</code></pre>
                   </li>
                 </ul>
-              </header>
-            </li>
-          </ul>
-        </li>
-        <li id="push-and-pull-mixins-for-source-ordering" class="demo-component-list_item demo-wrapper">
-          <h1 class="demo-component-list_header">Push and Pull mixins for source ordering</h1>
-          <ul class="demo-pattern-list">
-            <li class="demo-pattern-list_item">
-              <header class="demo-pattern-list_header">
-                <ul class="demo_codenotes">
+              </footer>
+            </div>
+          </div>
+        </div>
+        <div id="push-and-pull-mixins-for-source-ordering" class="docs-component">
+          <h2 class="docs-component_header"><span>Push and Pull mixins for source ordering</span></h2>
+          <div class="docs-patterns">
+            <div class="docs-pattern">
+              <footer class="docs-pattern_footer">
+                <ul class="docs-codenotes">
                   <li>
-                    <pre class="code"><code>.push( @offset: 1, @grid_total-columns: @grid_total-columns )</code></pre>
+                    <pre class="docs-code"><code>.push( @offset: 1, @grid_total-columns: @grid_total-columns )</code></pre>
                   </li>
                   <li>
-                    <pre class="code"><code>.pull( @offset: 1, @grid_total-columns: @grid_total-columns )</code></pre>
+                    <pre class="docs-code"><code>.pull( @offset: 1, @grid_total-columns: @grid_total-columns )</code></pre>
                   </li>
                 </ul>
-              </header>
-            </li>
-            <li class="demo-pattern-list_item">
-              <header class="demo-pattern-list_header">
-                <h3>Usage</h3>
-                <ul class="demo_codenotes">
+              </footer>
+            </div>
+            <div class="docs-pattern">
+              <h3 class="docs-pattern_header">Usage</h3>
+              <footer class="docs-pattern_footer">
+                <ul class="docs-codenotes">
                   <li>
-                    <pre class="code"><code>.first {
+                    <pre class="docs-code"><code>.first {
   .grid_column(1, 2);
   .grid_pull(1);
 }
@@ -209,40 +226,42 @@
 }</code></pre>
                   </li>
                   <li>
-                    <pre class="code"><code>&lt;div&gt;
+                    <pre class="docs-code"><code>&lt;div&gt;
     &lt;div class=&quot;second&quot;&gt;I am first in the markup but appear after .first.&lt;/div&gt;
     &lt;div class=&quot;first&quot;&gt;I am second in the markup but appear before .second.&lt;/div&gt;
 &lt;/div&gt;</code></pre>
                   </li>
                 </ul>
-              </header>
-            </li>
-          </ul>
-        </li>
-        <li id="nested-columns" class="demo-component-list_item demo-wrapper">
-          <h1 class="demo-component-list_header">Nested columns</h1>
-          <ul class="demo_notes">
-            <li>Since all cf-grid columns have left and right gutters you will notice undesireable offsetting when nesting columns. Normally this is removed with complex selectors or by adding classes to the first and last column per 'row'. In cf-grid the way to get around this is by wrapping your columns in a container that utilizes the .grid_nested-col-group() mixin. This mixin uses negative left and right margins to pull the columns back into alignment with parent columns.</li>
-            <li>NOTE: Working this way allows you to easily create responsive grids. You are free to control the number of columns per 'row' without having to deal with the first and last columns of each row.</li>
-            <li>NOTE: cf-grids does not use 'rows' and there is no row container. To clarify, if you have a 12 column grid and place 24 columns inside of a wrapper cf-grid columns will automaitcally stack into 2 'rows' of 12.</li>
-          </ul>
-          <ul class="demo-pattern-list">
-            <li class="demo-pattern-list_item">
-              <header class="demo-pattern-list_header">
-                <h3>Less mixin</h3>
-                <ul class="demo_codenotes">
+              </footer>
+            </div>
+          </div>
+        </div>
+        <div id="nested-columns" class="docs-component">
+          <h2 class="docs-component_header"><span>Nested columns</span></h2>
+          <div class="docs-component_intro">
+            <ul class="docs-notes">
+              <li>Since all cf-grid columns have left and right gutters you will notice undesireable offsetting when nesting columns. Normally this is removed with complex selectors or by adding classes to the first and last column per 'row'. In cf-grid the way to get around this is by wrapping your columns in a container that utilizes the .grid_nested-col-group() mixin. This mixin uses negative left and right margins to pull the columns back into alignment with parent columns.</li>
+              <li>NOTE: Working this way allows you to easily create responsive grids. You are free to control the number of columns per 'row' without having to deal with the first and last columns of each row.</li>
+              <li>NOTE: cf-grids does not use 'rows' and there is no row container. To clarify, if you have a 12 column grid and place 24 columns inside of a wrapper cf-grid columns will automaitcally stack into 2 'rows' of 12.</li>
+            </ul>
+          </div>
+          <div class="docs-patterns">
+            <div class="docs-pattern">
+              <h3 class="docs-pattern_header">Less mixin</h3>
+              <footer class="docs-pattern_footer">
+                <ul class="docs-codenotes">
                   <li>
-                    <pre class="code"><code>.grid_nested-col-group()</code></pre>
+                    <pre class="docs-code"><code>.grid_nested-col-group()</code></pre>
                   </li>
                 </ul>
-              </header>
-            </li>
-            <li class="demo-pattern-list_item">
-              <header class="demo-pattern-list_header">
-                <h3>Usage</h3>
-                <ul class="demo_codenotes">
+              </footer>
+            </div>
+            <div class="docs-pattern">
+              <h3 class="docs-pattern_header">Usage</h3>
+              <footer class="docs-pattern_footer">
+                <ul class="docs-codenotes">
                   <li>
-                    <pre class="code"><code>.main-wrapper {
+                    <pre class="docs-code"><code>.main-wrapper {
   .grid_wrapper();
 }
 .cols {
@@ -253,7 +272,7 @@
 }</code></pre>
                   </li>
                   <li>
-                    <pre class="code"><code>&lt;div class=&quot;main-wrapper&quot;&gt;
+                    <pre class="docs-code"><code>&lt;div class=&quot;main-wrapper&quot;&gt;
     &lt;div class=&quot;half&quot;&gt;
         &lt;div class=&quot;cols&quot;&gt;
             &lt;div class=&quot;half&quot;&gt;&lt;/div&gt;
@@ -269,15 +288,25 @@
 &lt;/div&gt;</code></pre>
                   </li>
                 </ul>
-              </header>
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <footer class="wrapper-footer">
-        <h4><a href="https://github.com/cfpb/cf-grid">View the repository</a></h4>
-      </footer>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="docs-sidebar-wrapper_sidebar">
+        <ul class="docs-nav">
+          <li class="docs-nav_item"><a href="https://cfpb.github.io/cf-core/docs/" class="docs-nav_link">cf-core</a></li>
+          <li class="docs-nav_item"><a href="https://cfpb.github.io/cf-buttons/docs/" class="docs-nav_link">cf-buttons</a></li>
+          <li class="docs-nav_item"><a href="https://cfpb.github.io/cf-expandables/docs/" class="docs-nav_link">cf-expandables</a></li>
+          <li class="docs-nav_item"><a href="https://cfpb.github.io/cf-forms/docs/" class="docs-nav_link">cf-forms</a></li>
+          <li class="docs-nav_item"><a href="https://cfpb.github.io/cf-grid/docs/" class="docs-nav_link">cf-grid</a></li>
+          <li class="docs-nav_item"><a href="https://cfpb.github.io/cf-icons/docs/" class="docs-nav_link">cf-icons</a></li>
+          <li class="docs-nav_item"><a href="https://cfpb.github.io/cf-layout/docs/" class="docs-nav_link">cf-layout</a></li>
+          <li class="docs-nav_item"><a href="https://cfpb.github.io/cf-pagination/docs/" class="docs-nav_link">cf-pagination</a></li>
+          <li class="docs-nav_item"><a href="https://cfpb.github.io/cf-typography/docs/" class="docs-nav_link">cf-typography</a></li>
+        </ul>
+      </div>
     </div>
-    <script src="static/demo/main.min.js"></script>
+    <script src="static/docs/main.min.js"></script>
   </body>
 </html>
