@@ -1,12 +1,12 @@
 {
   "devDependencies": {
-    "cf-component-demo": "git://github.com/cfpb/cf-component-demo.git#0.9.0",
-    "cf-grunt-config": "git://github.com/cfpb/cf-grunt-config.git",
-    "glob": "~3.2.9",
+    "cf-component-demo": "git://github.com/cfpb/cf-component-demo.git#0.9.1",
+    "cf-grunt-config": "~0.3.1",
+    "glob": "~4.3.2",
     "grunt": "~0.4.4",
-    "jit-grunt": "~0.4.1",
-    "load-grunt-tasks": "~0.4.0",
+    "jit-grunt": "~0.9.0",
+    "load-grunt-tasks": "~2.0.0",
     "node.extend": "~1.0.10",
-    "time-grunt": "~0.3.1"
+    "time-grunt": "~1.0.0"
   }
 }
