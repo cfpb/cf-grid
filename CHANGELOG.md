@@ -6,6 +6,7 @@ We follow the [Semantic Versioning 2.0.0](http://semver.org/) format.
 
 ### Updated
 - NPM dependencies.
+- Updated open source files.
 
 ### Added
 - Missing `CHANGELOG.md`, `screenshot.png` and `.bowerrc` files.
