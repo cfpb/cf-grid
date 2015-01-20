@@ -1,4 +1,3 @@
-
 # cf-grid
 
 A Less-based CSS3 grid system using parametric mixins to encourage semantic HTML.
