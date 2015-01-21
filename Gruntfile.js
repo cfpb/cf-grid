@@ -13,16 +13,14 @@ module.exports = function(grunt) {
    * the package.json file of cf-grunt-config.
    */
 
-  // Sets the CWD to the cf-grunt-config package so that the loadTasks method
-  // (employed in jit-grunt) looks in the correct place.
-  grunt.file.setBase('./node_modules/cf-grunt-config/');
   // Loads all Grunt tasks in the node_modules directory within the new CWD.
   require('jit-grunt')(grunt, {
     // Below line needed because task name does not match package name
     bower: 'grunt-bower-task'
+  })({
+    // Options
+    pluginsRoot: 'node_modules/cf-grunt-config/node_modules'
   });
-  // Sets the CWD back to the project root so that the tasks work as expected.
-  grunt.file.setBase('../../');
 
 
   /**
