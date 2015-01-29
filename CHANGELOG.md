@@ -2,6 +2,12 @@ All notable changes to this project will be documented in this file.
 We follow the [Semantic Versioning 2.0.0](http://semver.org/) format.
 
 
+## 0.9.3 - 2015-01-28
+
+### Fixed
+- Incorrect docs.
+
+
 ## 0.9.2 - 2015-01-19
 
 ### Updated
