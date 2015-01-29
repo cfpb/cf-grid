@@ -72,17 +72,17 @@ Using Less that looks like this:
 
 ```less
 .welcome-message {
-  .column(4);
+  .grid_column(4);
 }
 
 .customer-info {
-  .column(8);
+  .grid_column(8);
 }
 ```
 
 **Note:**
 This functionality is optional and you can use cf-grid in generated mode
-(i.e., with traditional `.col-#` classes).
+(i.e., with traditional `.col-#` classes) by compiling `cf-grid-generated.less`.
 
 
 ## Known Issues
