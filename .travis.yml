@@ -1,0 +1,8 @@
+before_script:
+  - npm install -g http-server
+  - npm install -g pa11y
+  - npm install -g pa11y-reporter-ci
+ 
+script: 
+  - nohup http-server -p 8080 >/dev/null 2>&1 &
+  - npm test
