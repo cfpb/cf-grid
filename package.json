@@ -1,10 +1,13 @@
 {
   "scripts": {
-    "test": "pa11y localhost:8080/custom-demo -r ci -s WCAG2AA"
+    "pretest": "forever stopall -s && forever start -s ./node_modules/.bin/http-server",
+    "test": "pa11y localhost:8080/custom-demo -r ci -s WCAG2AA",
+    "posttest": "forever stopall -s"
   },
   "devDependencies": {
     "cf-component-demo": "git://github.com/cfpb/cf-component-demo.git#0.9.1",
     "cf-grunt-config": "~0.3.1",
+    "forever": "^0.14.1",
     "glob": "~4.3.2",
     "grunt": "~0.4.4",
     "http-server": "^0.8.0",
@@ -13,6 +16,7 @@
     "node.extend": "~1.0.10",
     "pa11y": "^1.7.0",
     "pa11y-reporter-ci": "0.0.1",
+    "phantomjs": "^1.9.16",
     "time-grunt": "~1.0.0"
   }
 }
