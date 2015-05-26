@@ -1,5 +1,7 @@
 # cf-grid
 
+[![Build Status](https://img.shields.io/travis/cfpb/cf-grid.svg)](https://travis-ci.org/cfpb/cf-grid) 
+
 A Less-based CSS3 grid system using parametric mixins to encourage semantic HTML.
 This component can be used by itself, but it was made for Capital Framework,
 a new front end framework developed at the
@@ -115,6 +117,14 @@ We welcome your feedback and contributions.
 - [Find out about contributing](CONTRIBUTING.md)
 - File a bug using this [handy template](https://github.com/cfpb/cf-grid/issues/new?body=%23%23%20URL%0D%0D%0D%23%23%20Actual%20Behavior%0D%0D%0D%23%23%20Expected%20Behavior%0D%0D%0D%23%23%20Steps%20to%20Reproduce%0D%0D%0D%23%23%20Screenshot&labels=bug)
 
+## Running tests
+
+Before contributing to our codebase, please ensure all tests pass. After cloning this repository to your machine, run:
+
+```sh
+$ npm install
+$ npm test
+```
 
 ----
 
