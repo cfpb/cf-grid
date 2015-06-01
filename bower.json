@@ -1,6 +1,6 @@
 {
   "name": "cf-grid",
-  "version": "0.9.3",
+  "version": "1.0.0",
   "description": "A Less-based grid system using parametric mixins. Part of Capital Framework.",
   "keywords": [
     "capital-framework",

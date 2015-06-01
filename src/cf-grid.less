@@ -3,6 +3,9 @@
    Grid mixins
    ========================================================================== */
 
+@import (less) "../../normalize-css/normalize.css";
+@import (less) "../../normalize-legacy-addon/normalize-legacy-addon.css";
+
 /* topdoc
   name: Less variables
   notes:
@@ -13,7 +16,7 @@
   family: cf-grid
   patterns:
     - codenotes:
-        - "@grid_box-sizing-polyfill-path: '/cf-grid/custom-demo/static/css';"
+        - "@grid_box-sizing-polyfill-path: '../../box-sizing-polyfill;"
       notes:
         - "The path where boxsizing.htc is located."
         - "This path MUST be overridden in your project and set to a root relative url."
@@ -37,7 +40,7 @@
     - cf-grid
 */
 
-@grid_box-sizing-polyfill-path: '/cf-grid/custom-demo/static/css';
+@grid_box-sizing-polyfill-path: '../../box-sizing-polyfill';
 @grid_wrapper-width:            1200px;
 @grid_gutter-width:             30px;
 @grid_total-columns:            12;

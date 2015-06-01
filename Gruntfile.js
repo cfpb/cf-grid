@@ -73,27 +73,24 @@ module.exports = function(grunt) {
       // Compile src/cf-grid.less for the docs.
       src: {
         options: {
-          paths: grunt.file.expand('src'),
-          sourceMap: false
+          paths: grunt.file.expand('src/vendor/**'),
+          sourceMap: true,
+          sourceMapRootpath: '/'
         },
         files: {
           'docs/static/css/main.css': [
-            'src/vendor/normalize-css/normalize.css',
-            'src/vendor/normalize-legacy-addon/normalize-legacy-addon.css',
-            'src/cf-grid.less'
+            'src/cf-*.less'
           ]
         }
       },
       // Compile a version of cf-grids for CSS use.
       generated: {
         options: {
-          paths: grunt.file.expand('src'),
+          paths: grunt.file.expand('src/vendor/**'),
           sourceMap: false
         },
         files: {
           'src-generated/cf-grid-generated.css': [
-            'src/vendor/normalize-css/normalize.css',
-            'src/vendor/normalize-legacy-addon/normalize-legacy-addon.css',
             'src-generated/cf-grid-generated.less'
           ]
         }
@@ -101,13 +98,11 @@ module.exports = function(grunt) {
       // Compile a version of cf-grid-generated.less for the custom demo.
       'custom-demo': {
         options: {
-          paths: grunt.file.expand('src','src-generated'),
+          paths: grunt.file.expand('src/vendor/**','src-generated'),
           sourceMap: false
         },
         files: {
           'custom-demo/static/css/custom-demo.css': [
-            'src/vendor/normalize-css/normalize.css',
-            'src/vendor/normalize-legacy-addon/normalize-legacy-addon.css',
             'custom-demo/static/css/custom-demo.less'
           ]
         }
@@ -155,7 +150,7 @@ module.exports = function(grunt) {
   /**
    * Create custom task aliases for our component build workflow.
    */
-  grunt.registerTask('vendor', ['bower', 'copy:boxsizing']);
+  grunt.registerTask('vendor', ['copy:boxsizing']);
   grunt.registerTask('default', ['less:src', 'less:generated', 'less:custom-demo', 'autoprefixer', 'topdoc:docs']);
 
 };
