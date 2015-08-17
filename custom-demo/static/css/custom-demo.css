@@ -560,9 +560,9 @@ input[type="radio"] {
  **/
 .wrapper {
   max-width: 1170px;
-  padding: 0 15px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin: 0 auto;
-  position: relative;
   clear: both;
 }
 .col-12 {
@@ -16346,18 +16346,18 @@ input[type="radio"] {
    ========================================================================== */
 .cols-12 {
   max-width: 1170px;
-  padding: 0 15px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin: 0 auto;
-  position: relative;
   clear: both;
   margin-top: 20px;
   margin-bottom: 40px;
 }
 .cols-12.w-960 {
   max-width: 930px;
-  padding: 0 15px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin: 0 auto;
-  position: relative;
   clear: both;
 }
 .cols-12 section {
@@ -16378,9 +16378,9 @@ body {
 }
 h1 {
   max-width: 1170px;
-  padding: 0 15px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin: 0 auto;
-  position: relative;
   clear: both;
   margin-top: 100px;
   margin-bottom: 20px;

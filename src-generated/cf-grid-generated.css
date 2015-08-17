@@ -554,9 +554,9 @@ input[type="radio"] {
  **/
 .wrapper {
   max-width: 1170px;
-  padding: 0 15px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin: 0 auto;
-  position: relative;
   clear: both;
 }
 .col-12 {
